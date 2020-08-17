@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {Menu} from "semantic-ui-react";
 
+// Styles for NavItem
 export const StyledNavItem = styled(Menu.Item)`
   &&& {
     color: #000000;

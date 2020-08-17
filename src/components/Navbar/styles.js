@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {Button, Image, Menu} from "semantic-ui-react";
 
+// Styles for the Navbar wrapper
 export const StyledNavbarWrapper = styled(Menu)`
   &&& {
     background-color: #ffffff;
@@ -13,6 +14,7 @@ export const StyledNavbarWrapper = styled(Menu)`
   }
 `;
 
+// Styles for the NavItem wrapper
 export const StyledNavItemsWrapper = styled.div`
   &&& {
     display: flex;
@@ -21,6 +23,7 @@ export const StyledNavItemsWrapper = styled.div`
   }
 `;
 
+// Styles for the logo
 export const StyledLogo = styled(Image)`
   &&& {
     width: 100px;
@@ -28,6 +31,7 @@ export const StyledLogo = styled(Image)`
   }
 `;
 
+// Styles for the "Contact Us" button
 export const StyledContactUsButton = styled(Button)`
   &&& {
     background-color: #4A607B;

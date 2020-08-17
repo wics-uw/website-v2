@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 // import {Link} from "react-scroll";
 import {StyledNavItem} from "./styles";
 
+// NavItem component (Navigation items/links)
 class NavItem extends Component {
   render() {
     return (
