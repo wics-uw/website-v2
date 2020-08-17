@@ -8,6 +8,8 @@ export const StyledNavItem = styled(Menu.Item)`
     text-align: center;
     cursor: pointer;
     font-size: 16px;
-    margin: 0px 43px 0px 0px !important;
+    line-height: 19px;
+    padding: 0px 43px 0px 0px !important;
+    font-family: Karla;
   }
 `;

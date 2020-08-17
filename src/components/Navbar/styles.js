@@ -51,5 +51,6 @@ export const StyledContactUsButton = styled(Button)`
     border-radius: 42px;
     cursor: pointer;
     font-weight: normal;
+    font-family: Karla;
   }
 `;
