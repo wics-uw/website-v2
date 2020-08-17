@@ -14,12 +14,12 @@ export const StyledNavbarWrapper = styled(Menu)`
   }
 `;
 
-// Styles for the NavItem wrapper
-export const StyledNavItemsWrapper = styled.div`
+// Styles for the logo wrapper
+export const StyledLogoWrapper = styled.div`
   &&& {
+    flex: 1;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: flex-start;
   }
 `;
 
@@ -28,6 +28,15 @@ export const StyledLogo = styled(Image)`
   &&& {
     width: 100px;
     margin: 0px 0px 0px 100px;
+  }
+`;
+
+// Styles for the NavItem wrapper
+export const StyledNavItemsWrapper = styled.div`
+  &&& {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 71px 0px 0px;
   }
 `;
 
@@ -40,8 +49,7 @@ export const StyledContactUsButton = styled(Button)`
     width: 118px;
     height: 42px;
     border-radius: 42px;
-    margin: 0px 43px 0px 0px;
     cursor: pointer;
-    font-size: 16px;
+    font-weight: normal;
   }
 `;

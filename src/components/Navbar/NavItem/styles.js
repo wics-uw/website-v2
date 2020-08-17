@@ -4,10 +4,10 @@ import {Menu} from "semantic-ui-react";
 // Styles for NavItem
 export const StyledNavItem = styled(Menu.Item)`
   &&& {
-    color: #000000;
+    color: #000000 !important;
     text-align: center;
     cursor: pointer;
     font-size: 16px;
-    margin: 0px 43px 0px 0px;
+    margin: 0px 43px 0px 0px !important;
   }
 `;
