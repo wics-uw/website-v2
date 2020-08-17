@@ -1,9 +1,10 @@
 import React from 'react';
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <div>
-      This is WiCS's new website.
+      <Navbar/>
     </div>
   );
 }
