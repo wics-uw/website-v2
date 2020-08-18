@@ -11,5 +11,10 @@ export const StyledNavItem = styled(Menu.Item)`
     line-height: 19px;
     padding: 0px 43px 0px 0px !important;
     font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    &:last-child {
+    padding: 0px 31px 0px 0px !important;
+    }
   }
 `;

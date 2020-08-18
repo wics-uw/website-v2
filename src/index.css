@@ -16,3 +16,13 @@ code {
     font-family: "Karla";
     src: url("./font/Karla-Regular.ttf");
 }
+
+@font-face {
+    font-family: "Karla Bold";
+    src: url("./font/Karla-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Karla Italic";
+    src: url("./font/Karla-Italic.ttf");
+}

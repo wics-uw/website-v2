@@ -36,7 +36,6 @@ export const StyledNavItemsWrapper = styled.div`
   &&& {
     display: flex;
     justify-content: flex-end;
-    margin: 0px 71px 0px 0px;
   }
 `;
 
@@ -48,9 +47,14 @@ export const StyledContactUsButton = styled(Button)`
     border: none;
     width: 118px;
     height: 42px;
+    padding: 0px;
     border-radius: 42px;
     cursor: pointer;
+    font-size: 16px;
     font-weight: normal;
     font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    margin-right: 71px;
   }
 `;

@@ -24,10 +24,10 @@ class Navbar extends Component {
           <NavItem link={'resources'} item={strings.navbar.resources}/>
           <NavItem link={'committee'} item={strings.navbar.committee}/>
           <NavItem link={'sponsors'} item={strings.navbar.sponsors}/>
-          <StyledContactUsButton>
-            {strings.navbar.contactUs}
-          </StyledContactUsButton>
         </StyledNavItemsWrapper>
+        <StyledContactUsButton>
+          {strings.navbar.contactUs}
+        </StyledContactUsButton>
       </StyledNavbarWrapper>
     )
   }
