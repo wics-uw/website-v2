@@ -4,15 +4,16 @@ import {
   StyledLogo,
   StyledColumnWrapper,
   StyledRow,
-  StyledColumn,
   StyledCopyright,
   StyledEmail,
   StyledText,
+  MenuLink,
+  StyledColumn,
 } from "./styles";
 import fb_logo from "../../res/images/fb_logo.png";
 import github_logo from "../../res/images/github_logo.png";
 import insta_logo from "../../res/images/insta_logo.png";
-import twitter_logo from "../../res/images/twitter_logo.png";
+import discord_logo from "../../res/images/discord_logo.png";
 
 class Footer extends Component {
   render() {
@@ -25,17 +26,34 @@ class Footer extends Component {
         <StyledColumnWrapper>
           <StyledRow>
             <StyledColumn>
-              Faculty WiCS Site
-              <StyledLogo src={fb_logo} size="tiny" />
+              <MenuLink href="https://cs.uwaterloo.ca/wics">
+                Faculty WiCS Site
+              </MenuLink>
+              <MenuLink href="https://www.facebook.com/uwaterloowics/">
+                <StyledLogo src={fb_logo} size="tiny"></StyledLogo>
+              </MenuLink>
             </StyledColumn>
             <StyledColumn>
-              Old Website <StyledLogo src={insta_logo} size="tiny" />
+              <MenuLink href="http://wics.uwaterloo.ca/">Old Website</MenuLink>
+              <MenuLink href="https://www.instagram.com/uwaterloowics/?hl=en">
+                <StyledLogo src={insta_logo} size="tiny" />
+              </MenuLink>
             </StyledColumn>
             <StyledColumn>
-              Our Policies <StyledLogo src={twitter_logo} size="tiny" />
+              <MenuLink href="http://wics.uwaterloo.ca/policies/">
+                Our Policies
+              </MenuLink>
+              <MenuLink href="https://discord.com/invite/f76G6AW">
+                <StyledLogo src={discord_logo} size="tiny" />
+              </MenuLink>
             </StyledColumn>
             <StyledColumn>
-              Land Acknowledgement <StyledLogo src={github_logo} size="tiny" />
+              <MenuLink href="https://cs.uwaterloo.ca/sites/ca.computer-science/files/uploads/files/report_-_wics_task_force.pdf">
+                WiCS Task Force Report
+              </MenuLink>
+              <MenuLink href="https://github.com/wics-uw">
+                <StyledLogo src={github_logo} size="tiny" />
+              </MenuLink>
             </StyledColumn>
           </StyledRow>
         </StyledColumnWrapper>

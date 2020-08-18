@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Button, Image, Menu} from "semantic-ui-react";
+import { Button, Image, Menu } from "semantic-ui-react";
 
 export const StyledNavbarWrapper = styled(Menu)`
   &&& {
@@ -30,7 +30,7 @@ export const StyledLogo = styled(Image)`
 
 export const StyledContactUsButton = styled(Button)`
   &&& {
-    background-color: #4A607B;
+    background-color: #4a607b;
     color: #ffffff;
     border: none;
     width: 118px;
