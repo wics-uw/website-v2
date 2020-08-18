@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Button, Grid, GridColumn, Image, ImageGroup} from "semantic-ui-react";
+import {Button, Grid, GridColumn, Icon, Image, ImageGroup} from "semantic-ui-react";
 
 // Styles for landing page wrapper
 export const StyledGridWrapper = styled(Grid)`
@@ -95,7 +95,7 @@ export const StyledMailingButton = styled(Button)`
 // Styles for right column
 export const StyledGridRightColumn = styled(GridColumn)`
   &&& {
-    padding: 140px 202.9px 0px 80px !important;
+    padding: 150px 202.9px 0px 80px !important;
     // Laptop(L+)+
     @media (min-width: 1700px) {
         padding: 0px 202.9px 0px 80px !important;
@@ -111,4 +111,32 @@ export const StyledLandingImage = styled(Image)`
     border-radius: 37.7682px;
   }
 `;
+
+// Styles for learn more wrapper
+export const StyledLearnMoreWrapper = styled.div`
+  &&& {
+    margin-top: 42px;
+    text-align: center;
+  }
+`;
+
+// Styles for learn more text
+export const StyledLearnMoreText = styled.div`
+  &&& {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Karla;
+  }
+`;
+
+// Styles for chevron down icon
+export const StyledChevronDown = styled(Icon)`
+  &&& {
+    color: rgba(0, 0, 0, 0.1) !important;
+  }
+`;
+
 

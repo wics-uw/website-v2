@@ -11,7 +11,8 @@ const strings = {
     uwaterloo: 'University of Waterloo',
     wics: 'Women in Computer Science',
     undergrad: 'Undergraduate Committee',
-    mailing: 'Join the mailing list'
+    mailing: 'Join the mailing list',
+    learnMore: 'Learn More'
   }
 };
 

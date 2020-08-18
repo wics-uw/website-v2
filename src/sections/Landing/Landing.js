@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
 import {
+  StyledChevronDown,
   StyledGridLeftColumn,
   StyledGridRightColumn,
   StyledGridWrapper,
   StyledLandingImage,
+  StyledLearnMoreText,
+  StyledLearnMoreWrapper,
   StyledMailingButton,
   StyledSchoolName,
   StyledSocial,
@@ -21,33 +24,45 @@ import linkedin from "../../res/images/linkedin.svg";
 class Landing extends Component {
   render() {
     return (
-      <StyledGridWrapper columns={2}>
-        {/*Left column*/}
-        <StyledGridLeftColumn width={8} verticalAlign='middle'>
-          <StyledSchoolName>
-            {strings.landing.uwaterloo}
-          </StyledSchoolName>
-          <StyledWics>
-            {strings.landing.wics}
-          </StyledWics>
-          <StyledUndergrad>
-            {strings.landing.undergrad}
-          </StyledUndergrad>
-          <StyledSocialWrapper>
-            <StyledSocial src={facebook}/>
-            <StyledSocial src={instagram}/>
-            <StyledSocial src={linkedin}/>
-          </StyledSocialWrapper>
-          <StyledMailingButton>
-            {strings.landing.mailing}
-          </StyledMailingButton>
-        </StyledGridLeftColumn>
+      <div>
+        <StyledGridWrapper columns={2}>
+          {/*Left column - Text*/}
+          <StyledGridLeftColumn width={8} verticalAlign='middle'>
+            <StyledSchoolName>
+              {strings.landing.uwaterloo}
+            </StyledSchoolName>
+            <StyledWics>
+              {strings.landing.wics}
+            </StyledWics>
+            <StyledUndergrad>
+              {strings.landing.undergrad}
+            </StyledUndergrad>
+            <StyledSocialWrapper>
+              <StyledSocial src={facebook}/>
+              <StyledSocial src={instagram}/>
+              <StyledSocial src={linkedin}/>
+            </StyledSocialWrapper>
+            <StyledMailingButton>
+              {strings.landing.mailing}
+            </StyledMailingButton>
+          </StyledGridLeftColumn>
 
-        {/*Right column*/}
-        <StyledGridRightColumn width={8} verticalAlign='middle'>
-          <StyledLandingImage src={placeholder}/>
-        </StyledGridRightColumn>
-      </StyledGridWrapper>
+          {/*Right column - Image*/}
+          <StyledGridRightColumn width={8} verticalAlign='middle'>
+            <StyledLandingImage src={placeholder}/>
+          </StyledGridRightColumn>
+        </StyledGridWrapper>
+
+        {/*Learn more*/}
+        <StyledLearnMoreWrapper>
+          <StyledLearnMoreText>
+            {strings.landing.learnMore}
+          </StyledLearnMoreText>
+          <StyledChevronDown
+            name='chevron down'
+            size='big'/>
+        </StyledLearnMoreWrapper>
+      </div>
     )
   }
 }
