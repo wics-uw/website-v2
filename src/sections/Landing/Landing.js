@@ -17,6 +17,7 @@ import facebook from "../../res/images/fb.svg";
 import instagram from "../../res/images/ig.svg";
 import linkedin from "../../res/images/linkedin.svg";
 
+// Landing page component
 class Landing extends Component {
   render() {
     return (

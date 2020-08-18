@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {Button, Grid, GridColumn, Image, ImageGroup} from "semantic-ui-react";
 
+// Styles for landing page wrapper
 export const StyledGridWrapper = styled(Grid)`
   &&& {
     height: 100vh;
@@ -8,6 +9,7 @@ export const StyledGridWrapper = styled(Grid)`
   }
 `;
 
+// Styles for left column
 export const StyledGridLeftColumn = styled(GridColumn)`
   &&& {
     padding: 204px 0px 0px 137px !important;
@@ -18,6 +20,7 @@ export const StyledGridLeftColumn = styled(GridColumn)`
   }
 `;
 
+// Styles for University of Waterloo text
 export const StyledSchoolName = styled.body`
   &&& {
     font-family: Karla;
@@ -30,6 +33,7 @@ export const StyledSchoolName = styled.body`
   }
 `;
 
+// Styles for WICS text
 export const StyledWics = styled.h1`
   &&& {
     font-family: "Karla Bold";
@@ -43,6 +47,7 @@ export const StyledWics = styled.h1`
   }
 `;
 
+// Styles for undergrad committee text
 export const StyledUndergrad = styled.body`
   &&& {
     font-family: Karla;
@@ -55,18 +60,21 @@ export const StyledUndergrad = styled.body`
   }
 `;
 
+// Styles for social icon wrapper
 export const StyledSocialWrapper = styled(ImageGroup)`
   &&& {
     margin-top: 29px;
   }
 `;
 
+// Styles for social icon
 export const StyledSocial = styled(Image)`
   &&& {
     padding-right: 18px;
   }
 `;
 
+// Styles for mailing list button
 export const StyledMailingButton = styled(Button)`
   &&& {
     margin-top: 35px;
@@ -84,6 +92,7 @@ export const StyledMailingButton = styled(Button)`
   }
 `;
 
+// Styles for right column
 export const StyledGridRightColumn = styled(GridColumn)`
   &&& {
     padding: 140px 202.9px 0px 80px !important;
@@ -94,6 +103,7 @@ export const StyledGridRightColumn = styled(GridColumn)`
   }
 `;
 
+// Styles for landing page image
 export const StyledLandingImage = styled(Image)`
   &&& {
     width: 472.1px;
