@@ -13,7 +13,8 @@ const strings = {
     undergrad: 'Undergraduate Committee',
     mailing: 'Join the mailing list',
     learnMore: 'Learn More'
-  }
+  },
+  about: 'About',
 };
 
 export default strings;
