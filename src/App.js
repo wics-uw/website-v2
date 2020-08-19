@@ -15,6 +15,18 @@ function App() {
           {strings.about}
         </StyledSectionText>
         <Mission/>
+        <StyledSectionText>
+          {strings.getInvolved}
+        </StyledSectionText>
+        <StyledSectionText>
+          {strings.resources}
+        </StyledSectionText>
+        <StyledSectionText>
+          {strings.committee}
+        </StyledSectionText>
+        <StyledSectionText>
+          {strings.industry}
+        </StyledSectionText>
       </StyledBodyWrapper>
     </div>
   );
