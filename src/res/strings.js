@@ -15,6 +15,12 @@ const strings = {
     learnMore: 'Learn More'
   },
   about: 'About',
+  getInvolved: 'Get Involved',
+  resources: 'Resources',
+  committee:' The undergraduate Committee',
+  industry: 'Industry',
+
+
 };
 
 export default strings;
