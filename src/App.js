@@ -11,20 +11,20 @@ function App() {
       <Navbar/>
       <Landing/>
       <StyledBodyWrapper>
-        <StyledSectionText>
+        <StyledSectionText id="about">
           {strings.about}
         </StyledSectionText>
         <Mission/>
-        <StyledSectionText>
+        <StyledSectionText id="getInvolved">
           {strings.getInvolved}
         </StyledSectionText>
-        <StyledSectionText>
+        <StyledSectionText id="resources">
           {strings.resources}
         </StyledSectionText>
-        <StyledSectionText>
+        <StyledSectionText id="committee">
           {strings.committee}
         </StyledSectionText>
-        <StyledSectionText>
+        <StyledSectionText id="sponsors">
           {strings.industry}
         </StyledSectionText>
       </StyledBodyWrapper>
