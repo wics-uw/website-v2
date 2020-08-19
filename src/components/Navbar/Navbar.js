@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyledContactUsButton, StyledLogo, StyledLogoWrapper, StyledNavbarWrapper, StyledNavItemsWrapper} from "./styles";
+import {StyledLogo, StyledLogoWrapper, StyledNavbarWrapper, StyledNavItemsWrapper} from "./styles";
 import NavItem from "./NavItem/NavItem";
 import strings from "../../res/strings";
 import wics_logo from "../../res/images/wics_logo.png"
@@ -24,10 +24,8 @@ class Navbar extends Component {
           <NavItem link={'resources'} item={strings.navbar.resources}/>
           <NavItem link={'committee'} item={strings.navbar.committee}/>
           <NavItem link={'sponsors'} item={strings.navbar.sponsors}/>
+          <NavItem link={'contact'} item={strings.navbar.contactUs}/>
         </StyledNavItemsWrapper>
-        <StyledContactUsButton>
-          {strings.navbar.contactUs}
-        </StyledContactUsButton>
       </StyledNavbarWrapper>
     )
   }

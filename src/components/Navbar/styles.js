@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Button, Image, Menu} from "semantic-ui-react";
+import {Image, Menu} from "semantic-ui-react";
 
 // Styles for the Navbar wrapper
 export const StyledNavbarWrapper = styled(Menu)`
@@ -36,25 +36,5 @@ export const StyledNavItemsWrapper = styled.div`
   &&& {
     display: flex;
     justify-content: flex-end;
-  }
-`;
-
-// Styles for the "Contact Us" button
-export const StyledContactUsButton = styled(Button)`
-  &&& {
-    background-color: #4A607B;
-    color: #ffffff;
-    border: none;
-    width: 118px;
-    height: 42px;
-    padding: 0px;
-    border-radius: 42px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: normal;
-    font-family: Karla;
-    font-style: normal;
-    font-weight: normal;
-    margin-right: 71px;
   }
 `;

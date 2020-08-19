@@ -78,7 +78,7 @@ export const StyledSocial = styled(Image)`
 export const StyledMailingButton = styled(Button)`
   &&& {
     margin-top: 35px;
-    padding: 0;
+    text-align: center;
     background: #49657F;
     border-radius: 42px;
     width: 212px;

@@ -38,11 +38,22 @@ class Landing extends Component {
               {strings.landing.undergrad}
             </StyledUndergrad>
             <StyledSocialWrapper>
-              <StyledSocial src={facebook}/>
-              <StyledSocial src={instagram}/>
-              <StyledSocial src={linkedin}/>
+              <StyledSocial
+                src={facebook}
+                href='https://www.facebook.com/uwaterloowics'
+                target='_blank'/>
+              <StyledSocial
+                src={instagram}
+                href='https://www.instagram.com/uwaterloowics/'
+                target='_blank'/>
+              <StyledSocial
+                src={linkedin}
+                href='https://www.linkedin.com/company/waterloo-women-in-computer-science/'
+                target='_blank'/>
             </StyledSocialWrapper>
-            <StyledMailingButton>
+            <StyledMailingButton
+              href='https://lists.uwaterloo.ca/mailman/listinfo/wics-ugrad?fbclid=IwAR2JUJ4pF6b9E2F-U3gjlY3i7J232x5yQcS50skYtYI6Qafk1CjSUUMxrOE'
+              target='_blank'>
               {strings.landing.mailing}
             </StyledMailingButton>
           </StyledGridLeftColumn>
