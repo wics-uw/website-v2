@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from "./components/Navbar/Navbar";
 import Landing from "./sections/Landing/Landing";
 import Mission from "./sections/Mission/Mission";
-import {StyledBodyWrapper, StyledSectionWrapper} from "./res/globalStyles";
+import {StyledBodyWrapper, StyledSectionText} from "./res/globalStyles";
 import strings from "./res/strings";
 
 function App() {
@@ -11,9 +11,9 @@ function App() {
       <Navbar/>
       <Landing/>
       <StyledBodyWrapper>
-        <StyledSectionWrapper>
+        <StyledSectionText>
           {strings.about}
-        </StyledSectionWrapper>
+        </StyledSectionText>
         <Mission/>
       </StyledBodyWrapper>
     </div>
