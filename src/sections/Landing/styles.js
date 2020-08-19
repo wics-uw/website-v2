@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Button, Grid, GridColumn, Icon, Image, ImageGroup} from "semantic-ui-react";
+import {Button, Grid, GridColumn, Image, ImageGroup} from "semantic-ui-react";
 
 // Styles for landing page wrapper
 export const StyledGridWrapper = styled(Grid)`
@@ -116,6 +116,8 @@ export const StyledLandingImage = styled(Image)`
 export const StyledLearnMoreWrapper = styled.div`
   &&& {
     margin-top: 42px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
   }
 `;
@@ -133,9 +135,9 @@ export const StyledLearnMoreText = styled.div`
 `;
 
 // Styles for chevron down icon
-export const StyledChevronDown = styled(Icon)`
+export const StyledChevronDown = styled(Image)`
   &&& {
-    color: rgba(0, 0, 0, 0.1) !important;
+    margin-top: 9px;
   }
 `;
 

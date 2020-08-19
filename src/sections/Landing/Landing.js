@@ -15,10 +15,11 @@ import {
   StyledWics
 } from "./styles";
 import strings from "../../res/strings";
-import placeholder from "../../res/images/placeholder.png";
+import placeholder from "../../res/images/placeholder.svg";
 import facebook from "../../res/images/fb.svg";
 import instagram from "../../res/images/ig.svg";
 import linkedin from "../../res/images/linkedin.svg";
+import chevron_down from "../../res/images/chevron_down.svg"
 
 // Landing page component
 class Landing extends Component {
@@ -69,9 +70,7 @@ class Landing extends Component {
           <StyledLearnMoreText>
             {strings.landing.learnMore}
           </StyledLearnMoreText>
-          <StyledChevronDown
-            name='chevron down'
-            size='big'/>
+          <StyledChevronDown src={chevron_down}/>
         </StyledLearnMoreWrapper>
       </div>
     )
