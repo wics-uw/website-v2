@@ -1,22 +1,20 @@
 import styled from "styled-components";
-import {Button} from "semantic-ui-react";
+import {Link} from "react-scroll";
 
 // Styles for NavItem
-export const StyledNavItem = styled(Button)`
+export const StyledNavItem = styled(Link)`
   &&& {
     color: #000000 !important;
     background: transparent;
     text-align: center;
     cursor: pointer;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 2.5;
+    width: 118px;
+    height: 42px;
     font-family: Karla;
     font-style: normal;
     font-weight: normal;
-    width: 118px;
-    height: 42px;
-    padding: 0px;
-    margin: 0px;
     border-radius: 42px;
     &:last-child {
       margin-right: 71px;
@@ -24,7 +22,6 @@ export const StyledNavItem = styled(Button)`
     &:hover {
       background-color: #4A607B;
       color: #ffffff !important;
-      line-height: 57.2%;
     }
   }
 `;
