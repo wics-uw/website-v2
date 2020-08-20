@@ -25,6 +25,7 @@ function App() {
         </StyledSectionText>
         <StyledSectionText id="sponsors">{strings.industry}</StyledSectionText>
       </StyledBodyWrapper>
+      <Footer></Footer>
     </div>
   );
 }
