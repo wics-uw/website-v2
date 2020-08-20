@@ -53,7 +53,7 @@ class Landing extends Component {
                 target='_blank'/>
             </StyledSocialWrapper>
             <StyledMailingButton
-              href='https://lists.uwaterloo.ca/mailman/listinfo/wics-ugrad?fbclid=IwAR2JUJ4pF6b9E2F-U3gjlY3i7J232x5yQcS50skYtYI6Qafk1CjSUUMxrOE'
+              href='https://lists.uwaterloo.ca/mailman/listinfo/wics-ugrad'
               target='_blank'>
               {strings.landing.mailing}
             </StyledMailingButton>
