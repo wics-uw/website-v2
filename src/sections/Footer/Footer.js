@@ -64,7 +64,6 @@ class Footer extends Component {
                 />
               </Grid.Column>
               <Grid.Column>
-                {" "}
                 <StyledSocial
                   src={insta_logo}
                   href="https://www.instagram.com/uwaterloowics/?hl=en"
@@ -72,7 +71,6 @@ class Footer extends Component {
                 />
               </Grid.Column>
               <Grid.Column>
-                {" "}
                 <StyledSocial
                   src={discord_logo}
                   href="https://discord.com/invite/f76G6AW"
@@ -80,7 +78,6 @@ class Footer extends Component {
                 />
               </Grid.Column>
               <Grid.Column>
-                {" "}
                 <StyledSocial
                   src={github_logo}
                   href="https://github.com/wics-uw"
