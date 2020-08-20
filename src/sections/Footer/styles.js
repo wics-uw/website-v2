@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Image, Container, Grid } from "semantic-ui-react";
+import { Image, Grid } from "semantic-ui-react";
 
 export const StyledText = styled.div`
   &&& {
@@ -23,10 +23,10 @@ export const StyledFooterWrapper = styled.div`
 
 export const StyledEmail = styled.div`
   &&& {
-    margin: 0px;
+    margin: 10px;
     font-size: 26px;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     font-family: Karla;
   }
 `;
@@ -34,53 +34,42 @@ export const StyledEmail = styled.div`
 export const StyledCopyright = styled.div`
   &&& {
     margin: 20px;
-    font-size: 16px;
+    font-size: 20px;
     font-family: Karla;
   }
 `;
 
 export const StyledLink = styled.a`
   &&& {
-    font-size: 16px;
+    font-size: 18px;
     color: white;
     text-decoration: none !important;
     font-family: Karla;
   }
 `;
 
-// Styles for social icon
+// styling the clickable icons
 export const StyledSocial = styled(Image)`
   &&& {
     width: 75px;
     padding-left: 0px;
     padding-right: 0px;
-    padding-top: 0px;
+    padding-top: 20px;
     padding-bottom: 60px;
   }
 `;
 
-// Styles for social icon
-export const StyledContainer = styled(Container)`
-  &&& {
-    max-width: 50%;
-    display: block;
-  }
-`;
-
+// styling the grid for the clickable icons
 export const StyledGridPic = styled(Grid)`
   &&& {
-    @media (min-width: 1700px) {
-      padding: 0px 350px 0px !important;
-    }
+    margin: 0px 340px;
   }
 `;
 
+// styling the grid for the linked sites
 export const StyledGridWord = styled(Grid)`
   &&& {
-    margin: 20px;
-    @media (min-width: 1700px) {
-      padding: 0px 135px 0px !important;
-    }
+    margin: 0px 100px;
   }
 `;
 
