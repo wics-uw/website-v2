@@ -4,6 +4,7 @@ import Landing from "./sections/Landing/Landing";
 import Mission from "./sections/Mission/Mission";
 import {StyledBodyWrapper, StyledSectionText} from "./res/globalStyles";
 import strings from "./res/strings";
+import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 
 function App() {
   return (
@@ -11,22 +12,29 @@ function App() {
       <Navbar/>
       <Landing/>
       <StyledBodyWrapper>
+
         <StyledSectionText id="about">
           {strings.about}
         </StyledSectionText>
         <Mission/>
+
         <StyledSectionText id="getInvolved">
           {strings.getInvolved}
         </StyledSectionText>
+
         <StyledSectionText id="resources">
           {strings.resources}
         </StyledSectionText>
+
         <StyledSectionText id="committee">
           {strings.committee}
         </StyledSectionText>
+        <CurrentCommittee/>
+
         <StyledSectionText id="sponsors">
           {strings.industry}
         </StyledSectionText>
+
       </StyledBodyWrapper>
     </div>
   );
