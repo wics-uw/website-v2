@@ -4,7 +4,6 @@ import styled from "styled-components";
 export const StyledTitle = styled.h2`
   &&& {
     margin-top: 15px;
-    width: 185px;
     font-family: "Karla Bold";
     font-style: normal;
     font-weight: bold;
