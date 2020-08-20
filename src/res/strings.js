@@ -38,8 +38,6 @@ const strings = {
   resources: 'Resources',
   committee:' The undergraduate Committee',
   industry: 'Industry',
-
-
 };
 
 export default strings;
