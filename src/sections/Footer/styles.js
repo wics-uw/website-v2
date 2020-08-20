@@ -1,19 +1,11 @@
 import styled from "styled-components";
-import { Image, ImageGroup } from "semantic-ui-react";
-
-export const StyledLogo = styled(Image)`
-  &&& {
-    width: 30px;
-    margin: 10px 20px 20px 100px;
-    // margin: 25px 120px 300px 100px;
-    border: 95px;
-  }
-`;
+import { Image, Container, Grid, GridColumn, GridRow } from "semantic-ui-react";
 
 export const StyledText = styled.div`
   &&& {
     margin: 30px;
     font-size: 16px;
+    font-family: Karla;
   }
 `;
 
@@ -21,10 +13,11 @@ export const StyledFooterWrapper = styled.div`
   &&& {
     flex-shrink: 0;
     text-align: center;
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 50px;
+    padding: 60px;
     color: white;
-    background-color: #4a607b;
+    background-color: #49657f;
+    font-family: Karla;
   }
 `;
 
@@ -33,37 +26,74 @@ export const StyledEmail = styled.div`
     margin: 0px;
     font-size: 26px;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    font-family: Karla;
   }
 `;
 
 export const StyledCopyright = styled.div`
   &&& {
     margin: 20px;
-    font-size: 12px;
+    font-size: 16px;
+    font-family: Karla;
   }
 `;
 
 export const StyledLink = styled.a`
   &&& {
-    margin: 200x;
     font-size: 16px;
     color: white;
     text-decoration: none !important;
-  }
-`;
-
-// Styles for social icon wrapper
-export const StyledSocialWrapper = styled(ImageGroup)`
-  &&& {
-    margin-top: 29px;
+    font-family: Karla;
   }
 `;
 
 // Styles for social icon
 export const StyledSocial = styled(Image)`
   &&& {
-    width: 15%;
-    padding-bottom: 20px;
+    width: 75px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+`;
+
+// Styles for social icon
+export const StyledContainer = styled(Container)`
+  &&& {
+    max-width: 50%;
+    display: block;
+  }
+`;
+
+export const StyledGridPic = styled(Grid)`
+  &&& {
+    @media (min-width: 1700px) {
+      padding: 0px 350px 0px !important;
+    }
+  }
+`;
+
+export const StyledGridWord = styled(Grid)`
+  &&& {
+    margin: 20px;
+    @media (min-width: 1700px) {
+      padding: 0px 135px 0px !important;
+    }
+  }
+`;
+
+export const StyledColumn = styled(Grid.Column)`
+  &&& {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+`;
+
+export const StyledRow = styled(Grid.Row)`
+  &&& {
+    margin: 0px !important;
+    padding: 0px !important;
   }
 `;
