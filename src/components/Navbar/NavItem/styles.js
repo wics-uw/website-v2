@@ -1,13 +1,30 @@
 import styled from "styled-components";
-import {Menu} from "semantic-ui-react";
+import {Button} from "semantic-ui-react";
 
 // Styles for NavItem
-export const StyledNavItem = styled(Menu.Item)`
+export const StyledNavItem = styled(Button)`
   &&& {
-    color: #000000;
+    color: #000000 !important;
+    background: transparent;
     text-align: center;
     cursor: pointer;
     font-size: 16px;
-    margin: 0px 43px 0px 0px;
+    line-height: 19px;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    width: 118px;
+    height: 42px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 42px;
+    &:last-child {
+      margin-right: 71px;
+    }
+    &:hover {
+      background-color: #4A607B;
+      color: #ffffff !important;
+      line-height: 57.2%;
+    }
   }
 `;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Button, Image, Menu} from "semantic-ui-react";
+import {Image, Menu} from "semantic-ui-react";
 
 // Styles for the Navbar wrapper
 export const StyledNavbarWrapper = styled(Menu)`
@@ -14,12 +14,12 @@ export const StyledNavbarWrapper = styled(Menu)`
   }
 `;
 
-// Styles for the NavItem wrapper
-export const StyledNavItemsWrapper = styled.div`
+// Styles for the logo wrapper
+export const StyledLogoWrapper = styled.div`
   &&& {
+    flex: 1;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: flex-start;
   }
 `;
 
@@ -31,17 +31,10 @@ export const StyledLogo = styled(Image)`
   }
 `;
 
-// Styles for the "Contact Us" button
-export const StyledContactUsButton = styled(Button)`
+// Styles for the NavItem wrapper
+export const StyledNavItemsWrapper = styled.div`
   &&& {
-    background-color: #4A607B;
-    color: #ffffff;
-    border: none;
-    width: 118px;
-    height: 42px;
-    border-radius: 42px;
-    margin: 0px 43px 0px 0px;
-    cursor: pointer;
-    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
   }
 `;
