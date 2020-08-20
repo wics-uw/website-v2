@@ -5,6 +5,8 @@ import MissionCard from "../../components/MissionCard/MissionCard";
 import SectionTitleDescription from "../../components/SectionTitleDescription/SectionTitleDescription";
 import {StyledMissionCardsWrapper} from "./styles";
 import community from "../../res/images/mission_community.svg";
+import mentorship from "../../res/images/mission_mentorship.svg";
+import empowerment from "../../res/images/mission_empowerment.svg";
 
 // Component for mission section
 class Mission extends Component {
@@ -22,6 +24,18 @@ class Mission extends Component {
               image={community}
               title={missionStrings.community.title}
               description={missionStrings.community.description}/>
+          </GridColumn>
+          <GridColumn>
+            <MissionCard
+              image={mentorship}
+              title={missionStrings.mentorship.title}
+              description={missionStrings.mentorship.description}/>
+          </GridColumn>
+          <GridColumn>
+            <MissionCard
+              image={empowerment}
+              title={missionStrings.empowerment.title}
+              description={missionStrings.empowerment.description}/>
           </GridColumn>
         </StyledMissionCardsWrapper>
       </div>
