@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Landing from "./sections/Landing/Landing";
 import Mission from "./sections/Mission/Mission";
 import Numbers from "./sections/Numbers/Numbers";
+import Footer from "./sections/Footer/Footer";
 import {StyledBodyWrapper, StyledSectionText} from "./res/globalStyles";
 import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
@@ -37,6 +38,7 @@ function App() {
         </StyledSectionText>
 
       </StyledBodyWrapper>
+      <Footer/>
     </div>
   );
 }
