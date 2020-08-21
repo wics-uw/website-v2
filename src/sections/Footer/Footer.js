@@ -1,15 +1,14 @@
-import React, { Component } from "react";
-import { Grid, Container } from "semantic-ui-react";
+import React, {Component} from "react";
 import {
-  StyledFooterWrapper,
+  StyledColumn,
   StyledCopyright,
   StyledEmail,
-  StyledText,
-  StyledSocial,
+  StyledFooterWrapper,
+  StyledGridLinks,
+  StyledGridSocial,
   StyledLink,
-  StyledGridPic,
-  StyledGridWord,
-  StyledRow,
+  StyledSocial,
+  StyledText,
 } from "./styles";
 
 import fb_logo from "../../res/images/fb_logo.png";
@@ -22,74 +21,64 @@ class Footer extends Component {
   render() {
     return (
       <StyledFooterWrapper>
-        <Container>
           <StyledText>{strings.footer.footerText}</StyledText>
           <StyledEmail>{strings.footer.ugradEmail}</StyledEmail>
-          <StyledGridWord columns="four">
-            <StyledRow>
-              <Grid.Column>
+          <StyledGridLinks columns={4}>
+              <StyledColumn>
                 <StyledLink href={"https://cs.uwaterloo.ca/wics"}>
                   {strings.footer.bigWicsSite}
                 </StyledLink>
-              </Grid.Column>
-              <Grid.Column>
+              </StyledColumn>
+              <StyledColumn>
                 <StyledLink href={"http://wics.uwaterloo.ca/"}>
                   {strings.footer.oldSite}
                 </StyledLink>
-              </Grid.Column>
-              <Grid.Column>
+              </StyledColumn>
+              <StyledColumn>
                 <StyledLink href={"http://wics.uwaterloo.ca/policies/"}>
                   {strings.footer.policies}
                 </StyledLink>
-              </Grid.Column>
-              <Grid.Column>
-                <StyledLink
-                  href={
-                    "https://uwaterloo.ca/human-rights-equity-inclusion/indigenousinitiatives/territorial-acknowledgement"
-                  }
-                >
+              </StyledColumn>
+              <StyledColumn>
+                <StyledLink href={"https://uwaterloo.ca/human-rights-equity-inclusion/indigenousinitiatives/territorial-acknowledgement"}>
                   {strings.footer.landAcknowledgement}
                 </StyledLink>
-              </Grid.Column>
-            </StyledRow>
-          </StyledGridWord>
+              </StyledColumn>
+          </StyledGridLinks>
 
-          <StyledGridPic columns="four">
-            <Grid.Row>
-              <Grid.Column>
+          <StyledGridSocial columns={4}>
+              <StyledColumn>
                 <StyledSocial
                   src={fb_logo}
                   href="https://www.facebook.com/uwaterloowics"
                   target="_blank"
                 />
-              </Grid.Column>
-              <Grid.Column>
+              </StyledColumn>
+              <StyledColumn>
                 <StyledSocial
                   src={insta_logo}
                   href="https://www.instagram.com/uwaterloowics/?hl=en"
                   target="_blank"
                 />
-              </Grid.Column>
-              <Grid.Column>
+              </StyledColumn>
+              <StyledColumn>
                 <StyledSocial
                   src={discord_logo}
                   href="https://discord.com/invite/f76G6AW"
                   target="_blank"
                 />
-              </Grid.Column>
-              <Grid.Column>
+              </StyledColumn>
+              <StyledColumn>
                 <StyledSocial
                   src={github_logo}
                   href="https://github.com/wics-uw"
                   target="_blank"
                 />
-              </Grid.Column>
-            </Grid.Row>
-          </StyledGridPic>
+              </StyledColumn>
+          </StyledGridSocial>
           <StyledCopyright>
-            &copy; WATERLOO WOMEN IN COMPUTER SCIENCE {new Date().getFullYear()}{" "}
+            &copy; {strings.footer.copyright} {new Date().getFullYear()}{" "}
           </StyledCopyright>
-        </Container>
       </StyledFooterWrapper>
     );
   }
