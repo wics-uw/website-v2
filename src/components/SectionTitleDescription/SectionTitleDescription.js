@@ -11,6 +11,7 @@ class SectionTitleDescription extends Component {
         </StyledTitle>
         <StyledDescription>
           {this.props.description}
+          <a href={this.props.link} target='_blank' rel="noopener noreferrer">{this.props.linkName}</a>
         </StyledDescription>
       </div>
     )
