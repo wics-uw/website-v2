@@ -25,22 +25,30 @@ class Footer extends Component {
           <StyledEmail>{strings.footer.ugradEmail}</StyledEmail>
           <StyledGridLinks columns={4}>
               <StyledColumn>
-                <StyledLink href={"https://cs.uwaterloo.ca/wics"}>
+                <StyledLink
+                  href={"https://cs.uwaterloo.ca/wics"}
+                  target="_blank">
                   {strings.footer.bigWicsSite}
                 </StyledLink>
               </StyledColumn>
               <StyledColumn>
-                <StyledLink href={"http://wics.uwaterloo.ca/"}>
+                <StyledLink
+                  href={"http://wics.uwaterloo.ca/"}
+                  target="_blank">
                   {strings.footer.oldSite}
                 </StyledLink>
               </StyledColumn>
               <StyledColumn>
-                <StyledLink href={"http://wics.uwaterloo.ca/policies/"}>
+                <StyledLink
+                  href={"http://wics.uwaterloo.ca/policies/"}
+                  target="_blank">
                   {strings.footer.policies}
                 </StyledLink>
               </StyledColumn>
               <StyledColumn>
-                <StyledLink href={"https://uwaterloo.ca/human-rights-equity-inclusion/indigenousinitiatives/territorial-acknowledgement"}>
+                <StyledLink
+                  href={"https://uwaterloo.ca/human-rights-equity-inclusion/indigenousinitiatives/territorial-acknowledgement"}
+                  target="_blank">
                   {strings.footer.landAcknowledgement}
                 </StyledLink>
               </StyledColumn>
