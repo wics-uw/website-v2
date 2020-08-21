@@ -12,8 +12,8 @@ const CalendarCard = ({ source }) => {
         <div align="center">
           <iframe
             src={src}
-            width="800"
-            height="600"
+            width="1023"
+            height="752"
             frameborder="0"
             scrolling="no"
           ></iframe>
