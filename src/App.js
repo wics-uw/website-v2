@@ -22,7 +22,7 @@ function App() {
         <Numbers/>
         <StyledSectionText id="getInvolved">
           {strings.getInvolved}
-          {/* <Calendar></Calendar> */}
+         <Calendar />
         </StyledSectionText>
 
         <StyledSectionText id="resources">

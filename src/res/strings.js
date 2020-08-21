@@ -19,9 +19,6 @@ const strings = {
   resources: "Resources",
   committee: " The undergraduate Committee",
   industry: "Industry",
-  // Calendar
-  calendarTitle: "Upcoming Events",
-
 };
 
 export default strings;
