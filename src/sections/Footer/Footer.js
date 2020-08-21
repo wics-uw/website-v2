@@ -11,10 +11,10 @@ import {
   StyledText,
 } from "./styles";
 
-import fb_logo from "../../res/images/fb_logo.png";
-import github_logo from "../../res/images/github_logo.png";
-import insta_logo from "../../res/images/insta_logo.png";
-import discord_logo from "../../res/images/discord_logo.png";
+import fb_logo from "../../res/images/footer_fb_logo.svg";
+import github_logo from "../../res/images/footer_github_logo.svg";
+import insta_logo from "../../res/images/footer_insta_logo.svg";
+import discord_logo from "../../res/images/footer_linkedin_logo.svg";
 import strings from "../../res/strings";
 
 class Footer extends Component {
@@ -64,7 +64,7 @@ class Footer extends Component {
               <StyledColumn>
                 <StyledSocial
                   src={discord_logo}
-                  href="https://discord.com/invite/f76G6AW"
+                  href="https://www.linkedin.com/company/waterloo-women-in-computer-science/"
                   target="_blank"
                 />
               </StyledColumn>
