@@ -4,7 +4,7 @@ import {Grid} from "semantic-ui-react";
 // Styles for cards wrapper
 export const StyledNumberCardsWrapper = styled(Grid)`
   &&& {
-    margin-top: 60px;
+    margin-top: 50px;
   }
 `;
 
