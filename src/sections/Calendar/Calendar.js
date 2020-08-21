@@ -10,6 +10,7 @@ class Calendar extends Component {
         <SectionTitleDescription
           title={CalendarStrings.calendarTitle}
         ></SectionTitleDescription>
+        <div class="ui hidden divider"></div>
         <div className="Calendar">
           <CalendarCard source={CalendarStrings.link} />
         </div>
