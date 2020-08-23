@@ -8,6 +8,9 @@ import {StyledBodyWrapper, StyledSectionText} from "./res/globalStyles";
 import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
+import Sponsors from './sections/Sponsors/Sponsors';
+import illustration from '../src/res/images/sponsors/illustration.svg';
+import {Illustration} from '../src/sections/Sponsors/styles';
 
 function App() {
   return (
@@ -35,10 +38,13 @@ function App() {
         <CurrentCommittee/>
         <PastCommittee/>
 
+
+        <Illustration src={illustration} alt=''/>
         <StyledSectionText id="sponsors">
           {strings.industry}
         </StyledSectionText>
 
+        <Sponsors/>
       </StyledBodyWrapper>
       <Footer/>
     </div>
