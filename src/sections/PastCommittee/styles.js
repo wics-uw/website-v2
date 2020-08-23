@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Grid, Icon} from "semantic-ui-react";
+import {GridColumn, Icon} from "semantic-ui-react";
 
 export const StyledPastExecsSectionWrapper = styled.div`
   &&& {
@@ -23,8 +23,33 @@ export const StyledImageWrapper = styled.div`
   }
 `;
 
-export const StyledExecsWrapper = styled(Grid)`
+export const StyledPastExecsTableWrapper = styled.div`
   &&& {
-    margin-top: 38px;
+    margin: 0 15px;
+  }
+`;
+
+export const StyledTermWrapper = styled.div`
+  &&& {
+    margin-top: 60px;
+  }
+`;
+
+export const StyledTermText = styled.h3`
+  &&& {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+`;
+
+export const StyledExecColumnWrapper = styled(GridColumn)`
+  &&& {
+    padding-top: 1rem !important;
+    padding-bottom: 0 !important;
   }
 `;

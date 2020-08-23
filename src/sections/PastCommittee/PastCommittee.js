@@ -1,7 +1,14 @@
 import React, {Component} from 'react';
 import pastExecStrings from "../../res/PastExecStrings";
-import {StyledChevronIcon, StyledExecsWrapper, StyledImageWrapper, StyledPastExecsSectionWrapper} from "./styles";
-import {Accordion, AccordionContent, AccordionTitle, GridColumn, Image} from "semantic-ui-react";
+import {
+  StyledChevronIcon,
+  StyledExecColumnWrapper,
+  StyledImageWrapper,
+  StyledPastExecsSectionWrapper, StyledPastExecsTableWrapper,
+  StyledTermText,
+  StyledTermWrapper
+} from "./styles";
+import {Accordion, AccordionContent, AccordionTitle, Grid, Image} from "semantic-ui-react";
 import {StyledDescription, StyledTitle} from "../../components/SectionTitleDescription/styles";
 import past_executives from '../../res/images/past_execustives_section.svg';
 import PastCommitteeCard from "../../components/PastCommitteeCard/PastCommitteeCard";
@@ -18,12 +25,11 @@ class PastCommittee extends Component {
     })
   };
 
-  renderCard = (name, position, term) => {
+  renderCard = (name, position) => {
     return (
       <PastCommitteeCard
         name={name}
-        position={position}
-        term={term}/>
+        position={position}/>
     )
   };
 
@@ -50,15 +56,23 @@ class PastCommittee extends Component {
             <StyledImageWrapper>
               <Image src={past_executives}/>
             </StyledImageWrapper>
-            <StyledExecsWrapper columns={6}>
-              {Object.entries(pastExecStrings.pastExecs).map(([term, execs]) => (
-                Object.entries(execs).map(([exec, execName]) => (
-                  <GridColumn>
-                    {this.renderCard(execName, `${exec === "exec1" ? "Chair" : "Executive"}`, term)}
-                  </GridColumn>
-                ))
-              ))}
-            </StyledExecsWrapper>
+            <StyledPastExecsTableWrapper>
+            {Object.entries(pastExecStrings.pastExecs).map(([term, execs]) => (
+              <StyledTermWrapper>
+                <StyledTermText>
+                  {term}
+                </StyledTermText>
+                <Grid columns={6}>
+                  {Object.entries(execs).map(([exec, execName]) => (
+                    <StyledExecColumnWrapper>
+                      {this.renderCard(execName, `${exec === "exec1" ? "Chair" : "Executive"}`)}
+                    </StyledExecColumnWrapper>
+                  ))
+                  }
+                </Grid>
+              </StyledTermWrapper>
+            ))}
+            </StyledPastExecsTableWrapper>
           </AccordionContent>
         </Accordion>
       </StyledPastExecsSectionWrapper>

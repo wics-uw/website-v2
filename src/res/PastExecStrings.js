@@ -10,7 +10,7 @@ const pastExecStrings = {
     // }
   // exec1 must be the chair of the corresponding term
   pastExecs: {
-    S20: {
+    "Spring 2020": {
       exec1: "Iris C.",
       exec2: "Jasmine B.",
       exec3: "Areena A.",
@@ -19,7 +19,7 @@ const pastExecStrings = {
       exec6: "Linda Y.",
       exec7: "Angela Z."
     },
-    W20: {
+    "Winter 2020": {
       exec1: "Caroline C.",
       exec2: "Sakina M.",
       exec3: "Jenny Y.",
@@ -27,7 +27,7 @@ const pastExecStrings = {
       exec5: "Areena A.",
       exec6: "Sophia L.",
     },
-    F19: {
+    "Fall 2019": {
       exec1: "Angelina J.",
       exec2: "Celine L.",
       exec3: "Aurora D.",
@@ -37,7 +37,7 @@ const pastExecStrings = {
       exec7: "Iris C.",
       exec8: "Raina D.",
     },
-    S19: {
+    "Spring 2019": {
       exec1: "Falah S.",
       exec2: "Sakina M.",
       exec3: "Kriti R.",
@@ -46,7 +46,7 @@ const pastExecStrings = {
       exec6: "Sophia L.",
       exec7: "Sakina M.",
     },
-    W19: {
+    "Winter 2019": {
       exec1: "Bonnie X.",
       exec2: "Helen Z.",
       exec3: "Caroline C.",
@@ -55,7 +55,7 @@ const pastExecStrings = {
       exec6: "Jacqueline L.",
       exec7: "Iris C.",
     },
-    F18: {
+    "Fall 2018": {
       exec1: "Qinrui (Ray) L.",
       exec2: "Sakina M.",
       exec3: "Angelina J.",

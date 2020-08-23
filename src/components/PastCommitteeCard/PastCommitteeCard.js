@@ -10,7 +10,7 @@ class PastCommitteeCard extends Component {
           {this.props.name}
         </StyledPastExecName>
         <StyledPastExecPositionTerm>
-          {this.props.position} | {this.props.term}
+          {this.props.position}
         </StyledPastExecPositionTerm>
       </div>
 
