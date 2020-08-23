@@ -9348,6 +9348,11 @@ resolve@^1.10.0, resolve@^1.12.0, resolve@^1.13.1, resolve@^1.15.1, resolve@^1.3
   dependencies:
     path-parse "^1.0.6"
 
+responsive@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/responsive/-/responsive-2.0.0.tgz#8acc69f928e5fa73b716ea08bb6ee46d5cc7a33e"
+  integrity sha512-pFpYb/RBAMJ43BR1T2/hnkRcOq5Iib4hIDvPrYIqdMm9BmZ2RAHLzQrirFTxpO2ndGcAAuheJoI+ZYRpfN2v3Q==
+
 restore-cursor@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/restore-cursor/-/restore-cursor-3.1.0.tgz#39f67c54b3a7a58cea5236d95cf0034239631f7e"
