@@ -1,8 +1,9 @@
 import React from "react";
+import calendarStrings from "../../res/calendarStrings";
 
 const CalendarCard = ({ source }) => {
   if (!source) {
-    return <div>Loading...</div>;
+    return <div>{calendarStrings.loadingText}</div>;
   }
 
   const src = source;
@@ -11,12 +12,13 @@ const CalendarCard = ({ source }) => {
       <div className="emdeb-responsive">
         <div align="center">
           <iframe
+            title={calendarStrings.calendarTitle}
             src={src}
             width="1023"
             height="752"
             frameborder="0"
             scrolling="no"
-          ></iframe>
+          />
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CalendarStrings from "../../res/CalendarStrings";
+import calendarStrings from "../../res/calendarStrings";
 import SectionTitleDescription from "../../components/SectionTitleDescription/SectionTitleDescription";
 import CalendarCard from "../../components/CalendarIframe/CalendarCard";
 
@@ -7,12 +7,10 @@ class Calendar extends Component {
   render() {
     return (
       <div>
-        <SectionTitleDescription
-          title={CalendarStrings.calendarTitle}
-        ></SectionTitleDescription>
-        <div class="ui hidden divider"></div>
+        <SectionTitleDescription title={calendarStrings.calendarTitle} />
+        <div class="ui hidden divider" />
         <div className="Calendar">
-          <CalendarCard source={CalendarStrings.link} />
+          <CalendarCard source={calendarStrings.link} />
         </div>
       </div>
     );
@@ -20,4 +18,3 @@ class Calendar extends Component {
 }
 
 export default Calendar;
-
