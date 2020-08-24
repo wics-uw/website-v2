@@ -8,6 +8,7 @@ import {StyledBodyWrapper, StyledSectionText} from "./res/globalStyles";
 import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
+import FacultyEvents from './sections/FacultyEvents/FacultyEvents';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
         <StyledSectionText id="getInvolved">
           {strings.getInvolved}
         </StyledSectionText>
-
+        <FacultyEvents/>
         <StyledSectionText id="resources">
           {strings.resources}
         </StyledSectionText>
