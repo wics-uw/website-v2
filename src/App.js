@@ -5,6 +5,7 @@ import Mission from "./sections/Mission/Mission";
 import {StyledBodyWrapper, StyledSectionText} from "./res/globalStyles";
 import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
+import StudentLed from './sections/StudentLed/StudentLed'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <StyledSectionText id="getInvolved">
           {strings.getInvolved}
         </StyledSectionText>
+        <StudentLed/>
 
         <StyledSectionText id="resources">
           {strings.resources}
