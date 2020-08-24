@@ -18,40 +18,40 @@ class CurrentCommittee extends Component {
   };
 
   render() {
-    // Change executives' images, names, and positions here
+    // Change current executives' images, names, and positions here
     // Picture width: 170px, height: 170px
     const executives = {
-      iris: {
+      exec1: {
         pic: committee,
         name: "Iris Chen",
         position: "Chair"
       },
-      vivian: {
+      exec2: {
         pic: committee,
         name: "Vivian Liu",
         position: "Executive"
       },
-      audrey: {
+      exec3: {
         pic: committee,
         name: "Audrey Ho",
         position: "Executive"
       },
-      areena: {
+      exec4: {
         pic: committee,
         name: "Areena Akhter",
         position: "Executive"
       },
-      jasmine: {
+      exec5: {
         pic: committee,
         name: "Jasmine Bal",
         position: "Executive"
       },
-      linda: {
+      exec6: {
         pic: committee,
         name: "Linda Yang",
         position: "Executive"
       },
-      angela: {
+      exec7: {
         pic: committee,
         name: "Angela Zhang",
         position: "Executive"
