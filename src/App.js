@@ -38,13 +38,12 @@ function App() {
         <CurrentCommittee/>
         <PastCommittee/>
 
-
         <Illustration src={illustration} alt=''/>
         <StyledSectionText id="sponsors">
           {strings.industry}
         </StyledSectionText>
-
         <Sponsors/>
+
       </StyledBodyWrapper>
       <Footer/>
     </div>
