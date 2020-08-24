@@ -4,7 +4,7 @@ import { withResizeDetector } from "react-resize-detector";
 
 const CalendarCard = ({ data, source, width }) => {
   const src = source;
-  const W = Math.min(parseInt(width, 10) - 220, 1023);
+  const W = Math.min(parseInt(width, 10), 1023);
   const H = Math.min(W*0.7351, 1023);
   return (
     <div className="col-md-12">
