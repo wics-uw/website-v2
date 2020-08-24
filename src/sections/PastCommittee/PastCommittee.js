@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import pastExecStrings from "../../res/PastExecStrings";
+import pastExecStrings from "../../res/pastExecStrings";
 import {
   StyledChevronIcon,
   StyledExecColumnWrapper,
