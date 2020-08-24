@@ -19,6 +19,16 @@ const strings = {
   resources: 'Resources',
   committee:' The undergraduate Committee',
   industry: 'Industry',
+  footer: {
+    footerText:
+      "Please feel free to reach out if you have any questions or feedback!",
+    ugradEmail: "wics-ugrad@lists.uwaterloo.ca",
+    bigWicsSite: "Faculty WiCS Site",
+    oldSite: "Old Website",
+    policies: "Our Policies",
+    landAcknowledgement: "Land Acknowledgement",
+    copyright: "WATERLOO WOMEN IN COMPUTER SCIENCE",
+  },
 };
 
 export default strings;

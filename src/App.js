@@ -3,12 +3,17 @@ import Navbar from "./components/Navbar/Navbar";
 import Landing from "./sections/Landing/Landing";
 import Mission from "./sections/Mission/Mission";
 import Numbers from "./sections/Numbers/Numbers";
+import Footer from "./sections/Footer/Footer";
 import {StyledBodyWrapper, StyledSectionText} from "./res/globalStyles";
 import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
+<<<<<<< HEAD
 import Sponsors from './sections/Sponsors/Sponsors';
 import illustration from '../src/res/images/sponsors/illustration.svg';
 import {Illustration} from '../src/sections/Sponsors/styles';
+=======
+import PastCommittee from "./sections/PastCommittee/PastCommittee";
+>>>>>>> master
 
 function App() {
   return (
@@ -34,14 +39,20 @@ function App() {
           {strings.committee}
         </StyledSectionText>
         <CurrentCommittee/>
+<<<<<<< HEAD
         
         <Illustration src={illustration} alt=''/>
+=======
+        <PastCommittee/>
+
+>>>>>>> master
         <StyledSectionText id="sponsors">
           {strings.industry}
         </StyledSectionText>
         
         <Sponsors/>
       </StyledBodyWrapper>
+      <Footer/>
     </div>
   );
 }

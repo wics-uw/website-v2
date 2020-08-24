@@ -1,4 +1,4 @@
-const strings = {
+const numberStrings = {
     title: 'Our Numbers',
     description: `In the Cheriton School of Computer Science,
      female-identifying individuals represent:  `,
@@ -18,4 +18,4 @@ const strings = {
     }
   };
 
-export default strings;
+export default numberStrings;
