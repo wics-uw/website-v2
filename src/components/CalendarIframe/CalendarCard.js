@@ -4,8 +4,9 @@ import { withResizeDetector } from "react-resize-detector";
 
 const CalendarCard = ({ data, source, width }) => {
   const src = source;
-  const W = Math.min(parseInt(width, 10), 1023);
-  const H = W*0.7351;
+  var W = Math.min(parseInt(width, 10), 1023) + 180;
+  W = W < 180 ? 180 : W;
+  const H = W * 0.7351;
   return (
     <div className="col-md-12">
       <div className="emdeb-responsive">
@@ -13,8 +14,8 @@ const CalendarCard = ({ data, source, width }) => {
           <iframe
             title={calendarStrings.calendarTitle}
             src={src}
-            width={W} 
-            height={H} 
+            width={W}
+            height={H}
             frameborder="0"
             scrolling="yes"
           />
