@@ -1,6 +1,7 @@
 const strings = {
   navbar: {
     about: "About",
+    calendar: "Calendar",
     getInvolved: "Get Involved",
     resources: "Resources",
     committee: "Committee",

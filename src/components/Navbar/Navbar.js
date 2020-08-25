@@ -20,6 +20,7 @@ class Navbar extends Component {
         {/*Nav items*/}
         <StyledNavItemsWrapper>
           <NavItem link={'about'} item={strings.navbar.about}/>
+          <NavItem link={'calendar'} item={strings.navbar.calendar}/>
           <NavItem link={'getInvolved'} item={strings.navbar.getInvolved}/>
           <NavItem link={'resources'} item={strings.navbar.resources}/>
           <NavItem link={'committee'} item={strings.navbar.committee}/>
