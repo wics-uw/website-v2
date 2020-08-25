@@ -20,7 +20,7 @@ export const StyledExecImage = styled(Image)`
 // Styles for the executive's name
 export const StyledExecName = styled.body`
   &&& {
-    font-family: Karla;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -33,7 +33,8 @@ export const StyledExecName = styled.body`
 // Styles for the executive's position
 export const StyledExecPosition = styled.body`
   &&& {
-    font-family: Karla;
+    margin-top: 4px;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: 12px;

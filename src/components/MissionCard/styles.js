@@ -35,7 +35,7 @@ export const StyledCardTitle = styled.body`
 export const StyledCardDescription = styled.body`
   &&& {
     margin-top: 7px;
-    font-family: Karla;
+    font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
