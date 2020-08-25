@@ -15,6 +15,7 @@ const strings = {
     learnMore: "Learn More",
   },
   about: 'About',
+  calendar: 'Calendar',
   getInvolved: 'Get Involved',
   resources: 'Resources',
   committee:' The undergraduate Committee',

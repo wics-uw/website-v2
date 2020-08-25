@@ -22,9 +22,14 @@ function App() {
         </StyledSectionText>
         <Mission/>
         <Numbers/>
+
+        <StyledSectionText id="calendar">
+          {strings.calendar}
+        </StyledSectionText>
+        <Calendar/>
+
         <StyledSectionText id="getInvolved">
           {strings.getInvolved}
-         <Calendar />
         </StyledSectionText>
 
         <StyledSectionText id="resources">

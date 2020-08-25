@@ -4,19 +4,19 @@ import { withResizeDetector } from "react-resize-detector";
 
 const CalendarCard = ({ data, source, width }) => {
   const src = source;
-  var W = Math.min(parseInt(width, 10), 1023);
+  let W = Math.min(parseInt(width, 10), 1023);
   W = W < 300 ? 300 : W;
   const H = W * 0.7351;
   return (
     <div className="col-md-12">
-      <div className="emdeb-responsive">
+      <div className="embed-responsive">
         <div align="center">
           <iframe
             title={calendarStrings.calendarTitle}
             src={src}
             width={W}
             height={H}
-            frameborder="0"
+            frameBorder="0"
             scrolling="yes"
           />
         </div>
@@ -25,4 +25,3 @@ const CalendarCard = ({ data, source, width }) => {
   );
 };
 export default withResizeDetector(CalendarCard);
-// Todo: 4. Run `yarn add react-resize-detector`.
