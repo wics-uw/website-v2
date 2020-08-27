@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from "./components/Navbar/Navbar";
 import Landing from "./sections/Landing/Landing";
 import Mission from "./sections/Mission/Mission";
+import Calendar from "./sections/Calendar/Calendar";
 import Numbers from "./sections/Numbers/Numbers";
 import Footer from "./sections/Footer/Footer";
 import {StyledBodyWrapper, StyledSectionText} from "./res/globalStyles";
@@ -22,6 +23,12 @@ function App() {
         </StyledSectionText>
         <Mission/>
         <Numbers/>
+
+        <StyledSectionText id="calendar">
+          {strings.calendar}
+        </StyledSectionText>
+        <Calendar/>
+
         <StyledSectionText id="getInvolved">
           {strings.getInvolved}
         </StyledSectionText>

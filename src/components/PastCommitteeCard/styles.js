@@ -7,6 +7,7 @@ export const StyledPastExecName = styled.body`
     font-size: 24px;
     line-height: 28px;
     color: #000000;
+    font-family: "Roboto";
   }
 `;
 
@@ -18,6 +19,7 @@ export const StyledPastExecPositionTerm = styled.body`
     font-size: 20px;
     line-height: 23px;
     color: #000000;
+    font-family: "Roboto";
   }
 `;
 

@@ -14,27 +14,10 @@ export const StyledNavbarWrapper = styled(Menu)`
   }
 `;
 
-// Styles for the logo wrapper
-export const StyledLogoWrapper = styled.div`
-  &&& {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-  }
-`;
-
 // Styles for the logo
 export const StyledLogo = styled(Image)`
   &&& {
     width: 100px;
     margin: 0px 0px 0px 100px;
-  }
-`;
-
-// Styles for the NavItem wrapper
-export const StyledNavItemsWrapper = styled.div`
-  &&& {
-    display: flex;
-    justify-content: flex-end;
   }
 `;

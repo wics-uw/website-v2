@@ -130,7 +130,7 @@ export const StyledLearnMoreText = styled.div`
     font-size: 16px;
     line-height: 20px;
     color: rgba(0, 0, 0, 0.5);
-    font-family: Karla;
+    font-family: "Source Sans Pro";
   }
 `;
 
