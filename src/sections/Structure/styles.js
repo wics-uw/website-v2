@@ -17,7 +17,7 @@ export const StyledTitle = styled.h2`
 
 export const StyledText = styled.body`
   &&& {
-    margin: 8px 33px 37px 33px;
+    margin: 8px 60px 37px 60px;
     font-size: 16px;
     font-family: "Source Sans Pro";
     font-style: normal;
