@@ -5,7 +5,7 @@ export const StyledFooterWrapper = styled.div`
     text-align: center;
     margin-top: 50px;
     height: 427px;
-    padding: 79px 382px 63px 210px;
+    padding: 79px 210px 63px 210px;
     background-color: #aab4c0;
     font-family: Karla;
   }
