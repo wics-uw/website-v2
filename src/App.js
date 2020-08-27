@@ -9,6 +9,7 @@ import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
 
+
 function App() {
   return (
     <div>
