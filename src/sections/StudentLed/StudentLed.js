@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import SectionTitleDescription from '../../components/SectionTitleDescription/SectionTitleDescription';
 import studentStrings from '../../res/studentStrings';
-import {StudentImgL, StudentImgR, OfficeHour, StudentTextWrapperR, StudentTextWrapperL, StudentCard, StudentTextWrapper } from './styles';
+import {StudentImgL, StudentImgR, OfficeHour,OfficeHourWrapper, StudentTextWrapperOH, StudentTextWrapperCM, StudentTextWrapperCB, StudentCard, StudentTextWrapper } from './styles';
 import StudentText from '../../components/StudentText/StudentText';
 import officeHour from '../../res/images/student_officeHour.svg';
 import careerMentor from '../../res/images/student_careerMentor.svg';
@@ -19,41 +19,40 @@ class StudentLed extends Component {
                 <StudentCard>
                     <StudentImgL src={officeHour} />
                     <StudentTextWrapper>
-                        <StudentTextWrapperR>
+                        <StudentTextWrapperOH>
                         
                             <StudentText
                                 title={studentStrings.officeHours.title}
                                 description={studentStrings.officeHours.description}/>
-                            <OfficeHour>MON: {studentStrings.officeHours.mon}</OfficeHour>
-                            <OfficeHour>TUES: {studentStrings.officeHours.tues}</OfficeHour>
-                            <OfficeHour>WED: {studentStrings.officeHours.wed}</OfficeHour>
-                            <OfficeHour>THURS: {studentStrings.officeHours.thurs}</OfficeHour>
-                            <OfficeHour>FRI: {studentStrings.officeHours.fri}</OfficeHour>
+                            <OfficeHourWrapper>MONDAY: <OfficeHour>{studentStrings.officeHours.mon}</OfficeHour></OfficeHourWrapper>
+                            <OfficeHourWrapper>TUESDAY: <OfficeHour>{studentStrings.officeHours.tues}</OfficeHour></OfficeHourWrapper>
+                            <OfficeHourWrapper>WEDNESDAY: <OfficeHour>{studentStrings.officeHours.wed}</OfficeHour></OfficeHourWrapper>
+                            <OfficeHourWrapper>THURSDAY: <OfficeHour>{studentStrings.officeHours.thurs}</OfficeHour></OfficeHourWrapper>
+                            <OfficeHourWrapper>FRIDAY: <OfficeHour>{studentStrings.officeHours.fri}</OfficeHour></OfficeHourWrapper>
                         
-                        </StudentTextWrapperR>
+                        </StudentTextWrapperOH>
                     </StudentTextWrapper>
                 </StudentCard>
                 <StudentCard>
                     <StudentImgR src={careerMentor} />
                     <StudentTextWrapper>
-                        <StudentTextWrapperL>
+                        <StudentTextWrapperCM>
                             <StudentText
                                 title={studentStrings.careerMentorship.title}
                                 description={studentStrings.careerMentorship.description}/>
-                        </StudentTextWrapperL>
+                        </StudentTextWrapperCM>
                     </StudentTextWrapper>
                 </StudentCard>
                 <StudentCard>
                 <StudentImgL src={community} />
                 <StudentTextWrapper>
-                    <StudentTextWrapperR>
+                    <StudentTextWrapperCB>
                         <StudentText
                             title={studentStrings.community.title}
                             description={studentStrings.community.description}/>
-                    </StudentTextWrapperR>
+                    </StudentTextWrapperCB>
                 </StudentTextWrapper>
                 </StudentCard>
-                <StudentCard></StudentCard>
             </div>
         )
     }

@@ -4,51 +4,71 @@ import {Image} from 'semantic-ui-react';
 export const StudentImgL = styled(Image)`
 &&& {
     float: left;
-    margin-right: 50px;
+    margin-right: 47.3px;
 }
 `;
 
 export const StudentImgR = styled(Image)`
 &&& {
     float: right;
-    margin-left: 50px;
+    margin-left: 100px;
 }
 `;
 
-export const OfficeHour = styled.body`
+export const OfficeHourWrapper = styled.div`
 &&&{
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;    
+    width: 539px;
+}
+`;
+
+
+export const OfficeHour = styled.div`
+&&&{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;  
+    float: right;  
+    display: inline;
+    width: 400px;
 }
 `;
 
 export const StudentTextWrapper = styled.div`
 &&&{
-    display: flex;
-    flex-direction: column;
+
 }`;
 
-export const StudentTextWrapperR = styled.div`
+export const StudentTextWrapperOH = styled.div`
 &&&{
-    width: 539px;    
+    width: 672px;    
     float: right;
-    display: flex;
-    flex-direction: column;
-    vertical-align: middle;
+    
+    margin-top: 10px;
 }
 `;
 
 
-export const StudentTextWrapperL = styled.div`
+export const StudentTextWrapperCB = styled.div`
 &&&{
-    width: 539px;    
+    width: 672px;    
+    float: right;
+    margin-top: 60px;
+}
+`;
+
+
+export const StudentTextWrapperCM = styled.div`
+&&&{
+    width: 672px;    
     float: left;
-    display: flex;
-    flex-direction: column;
-    vertical-align: middle;
+    margin-top: 60px
 }
 `;
 

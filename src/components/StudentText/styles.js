@@ -18,7 +18,7 @@ export const StyledDescription = styled.body`
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     line-height: 20px;
-    width: 539px;
+    width: 672px;
     margin-bottom: 10px;
 }
 `;

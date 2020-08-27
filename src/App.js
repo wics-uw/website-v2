@@ -8,7 +8,8 @@ import Footer from "./sections/Footer/Footer";
 import {StyledBodyWrapper, StyledSectionText} from "./res/globalStyles";
 import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
-import StudentLed from './sections/StudentLed/StudentLed'
+import StudentLed from './sections/StudentLed/StudentLed';
+import PastCommittee from './sections/PastCommittee/PastCommittee';
 
 function App() {
   return (
