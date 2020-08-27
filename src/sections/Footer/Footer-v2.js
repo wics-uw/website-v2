@@ -17,7 +17,7 @@ class FooterV2 extends Component {
       <StyledFooterWrapper>
         <Grid>
           <Grid.Row>
-            <Grid.Column width={9}>
+            <Grid.Column width={8}>
               <StyledTitleLeft>{footerStrings.title.la}</StyledTitleLeft>
               <StyledTextLeft>{footerStrings.description.la}</StyledTextLeft>
             </Grid.Column>
