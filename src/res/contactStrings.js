@@ -11,9 +11,9 @@ const contactStrings = {
   ro: {
     title: "Reach Out",
     d1:
-      "Please feel free to reach out if you have any questions or feedback! We are always looking for new ways to grow. Email us at ",
-      d2:  "Email us at ",
-    email: "wics-ugrad@lists.uwaterloo.ca",
+      "Please feel free to reach out if you have any questions or feedback! We are always looking for new ways to grow. ",
+    d2: "Email us at ",
+      email: "wics-ugrad@lists.uwaterloo.ca",
   },
   desc: "Find us on",
   social: {

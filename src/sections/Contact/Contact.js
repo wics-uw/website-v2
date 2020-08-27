@@ -21,7 +21,7 @@ class Contact extends Component {
     return (
       <div>
         <Grid>
-          <Grid.Column width={9}>
+          <Grid.Column width={8}>
             <StyledTitle>{contactStrings.faq.title}</StyledTitle>
             <div>
               <StyledText>
@@ -43,9 +43,14 @@ class Contact extends Component {
               <StyledTitle>{contactStrings.ro.title}</StyledTitle>
               <StyledText>
                 {contactStrings.ro.d1}
-                <a style={{ fontWeight: "bold", color: "#000000" }}>
+                <div>
+                <StyledText>
+                  {contactStrings.ro.d2}
+                  <a style={{ fontWeight: "bold", color: "#000000" }}>
                   {contactStrings.ro.email}
                 </a>
+                  </StyledText>
+                  </div>
               </StyledText>
               <StyledTitle2>{contactStrings.desc}</StyledTitle2>
               <StyledGridSocial columns={4}>
@@ -81,8 +86,8 @@ class Contact extends Component {
             </div>
           </Grid.Column>
           <Grid.Column width={2}></Grid.Column>
-          <Grid.Column width={4}>
-            <Image src={woman} size="huge" />
+          <Grid.Column width={5}>
+            <Image src={woman} size="large" />
           </Grid.Column>
         </Grid>
       </div>
