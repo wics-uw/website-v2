@@ -10,6 +10,7 @@ import {StyledBodyWrapper, StyledSectionText} from "./res/globalStyles";
 import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
+import Contact from "./sections/Contact/Contact";
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
           {strings.industry}
         </StyledSectionText>
        
+       <Contact />
       </StyledBodyWrapper>
       <FooterV2/>
     </div>
