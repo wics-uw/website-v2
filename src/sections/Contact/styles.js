@@ -21,7 +21,7 @@ export const StyledGridSocial = styled(Grid)`
 // Styles for section title
 export const StyledTitle = styled.h2`
   &&& {
-    margin-top: 15px;
+    margin-top: 30px;
     margin-bottom: 4px;
     font-family: "Karla Bold";
     font-style: normal;
