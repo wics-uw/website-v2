@@ -13,6 +13,7 @@ import footerStrings from "../../res/footerStrings";
 class FooterV2 extends Component {
   render() {
     return (
+      <div>
       <StyledFooterWrapper>
         <Grid>
           <Grid.Row>
@@ -21,7 +22,7 @@ class FooterV2 extends Component {
               <StyledTextLeft>{footerStrings.description.la}</StyledTextLeft>
             </Grid.Column>
             <Grid.Column width={2}></Grid.Column>
-            <Grid.Column width={5}>
+            <Grid.Column width={3}>
               <StyledTitleRight>{footerStrings.title.lk}</StyledTitleRight>
               <ul style={{ listStyleType: "none", textAlign: "left", paddingLeft: "0px"}}>
                 <li>
@@ -50,8 +51,9 @@ class FooterV2 extends Component {
         </Grid>
         <StyledCopyright>
           &copy; {footerStrings.copyright} {new Date().getFullYear()}{" "}
-        </StyledCopyright>
+      </StyledCopyright>
       </StyledFooterWrapper>
+      </div>
     );
   }
 }

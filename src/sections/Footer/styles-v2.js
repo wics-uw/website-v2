@@ -1,12 +1,11 @@
 import styled from "styled-components";
-import { Image, Grid } from "semantic-ui-react";
 
 export const StyledFooterWrapper = styled.div`
   &&& {
     text-align: center;
     margin-top: 50px;
     height: 427px;
-    padding: 85px 370px 97px 370px;
+    padding: 79px 382px 173px 210px;
     background-color: #aab4c0;
     font-family: Karla;
   }
@@ -25,9 +24,10 @@ export const StyledCopyright = styled.h3`
   }
 `;
 
+// land acknowledgement
 export const StyledTitleLeft = styled.h2`
   &&& {
-    // padding-left: 159px;
+    margin-left: 0px;
     font-size: 20px;
     font-family: Source Sans Pro;
     font-style: normal;
@@ -38,6 +38,7 @@ export const StyledTitleLeft = styled.h2`
   }
 `;
 
+// additional links
 export const StyledTitleRight = styled.h2`
   &&& {
     font-size: 20px;
@@ -50,6 +51,7 @@ export const StyledTitleRight = styled.h2`
   }
 `;
 
+// land acknowledgement
 export const StyledTextLeft = styled.body`
   &&& {
     font-size: 16px;
