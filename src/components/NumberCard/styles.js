@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {Image} from "semantic-ui-react";
 
 // Styles for the wrapper of the card
 export const StyledCardWrapper = styled.div`
@@ -9,24 +8,18 @@ export const StyledCardWrapper = styled.div`
   }
 `;
 
-// Styles for the card image
-export const StyledCardImage = styled(Image)`
+// Styles for the card Number
+export const StyledNumber = styled.body`
   &&& {
-    border-radius: 20px;
-  }
-`;
-
-// Styles for the card title
-export const StyledCardTitle = styled.body`
-  &&& {
-    margin-top: 29px;
-    font-family: "Karla Bold";
+    width: 116px;
+    height: 75px;
+    font-family: Karla;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 64px;
+    line-height: 75px;
     text-align: center;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
     color: #000000;
   }
 `;
@@ -34,7 +27,7 @@ export const StyledCardTitle = styled.body`
 // Styles for the card description
 export const StyledCardDescription = styled.body`
   &&& {
-    margin-top: 7px;
+    width: 206px;
     font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: normal;

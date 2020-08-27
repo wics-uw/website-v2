@@ -16,9 +16,9 @@ import {
 } from "./styles";
 import strings from "../../res/strings";
 import placeholder from "../../res/images/placeholder.svg";
-import facebook from "../../res/images/fb.svg";
-import instagram from "../../res/images/ig.svg";
-import linkedin from "../../res/images/linkedin.svg";
+import facebook from "../../res/images/landing_fb_logo.svg";
+import instagram from "../../res/images/landing_insta_logo.svg";
+import linkedin from "../../res/images/landing_linkedin_logo.svg";
 import chevron_down from "../../res/images/chevron_down.svg"
 
 // Landing page component
