@@ -8,7 +8,7 @@ const contactStrings = {
       "Students of the undergraduate WiCS committee in computer science related programs",
   },
   big: {
-    title: "Little WiCS",
+    title: "Big WiCS",
     description:
       "Faculty,  graduates and staff of the school who work with our industry sponsors",
   },

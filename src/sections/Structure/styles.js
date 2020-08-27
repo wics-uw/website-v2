@@ -3,6 +3,7 @@ import { Segment } from "semantic-ui-react";
 
 export const StyledTitle = styled.h2`
   &&& {
+    margin-top: 37px;
     font-size: 24px;
     font-family: Karla;
     font-style: normal;
@@ -16,7 +17,7 @@ export const StyledTitle = styled.h2`
 
 export const StyledText = styled.body`
   &&& {
-    margin-bottom: 0px;
+    margin: 8px 33px 37px 33px;
     font-size: 16px;
     font-family: "Source Sans Pro";
     font-style: normal;
@@ -31,10 +32,10 @@ export const StyledText = styled.body`
 `;
 
 export const StyledSegment = styled(Segment)`
-&&& {
+  &&& {
     margin: 2px;
-    background-color:  #F8F3EF;
+    background-color: #f8f3ef;
     border: none;
-    shadow : none;
+    shadow: none;
   }
 `;
