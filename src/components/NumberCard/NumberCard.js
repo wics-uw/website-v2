@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyledCardDescription, StyledNumber, StyledCardWrapper} from "./styles";
+import {StyledCardDescription, StyledNumber, StyledCardWrapper, StyledApprox} from "./styles";
 
 // Number card component
 class NumberCard extends Component {
@@ -15,6 +15,9 @@ class NumberCard extends Component {
           <StyledCardDescription>
             {this.props.description}
           </StyledCardDescription>
+          <StyledApprox>
+            {this.props.approx}
+          </StyledApprox>
         </StyledCardWrapper>
       )
     }

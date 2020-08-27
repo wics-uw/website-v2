@@ -39,3 +39,18 @@ export const StyledCardDescription = styled.body`
     color: #000000;
   }
 `;
+
+// Styles for the approx text
+export const StyledApprox = styled.body`
+  &&& {
+    width: 206px;
+    font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.6);
+  }
+`;

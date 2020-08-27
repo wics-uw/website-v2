@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import SectionTitleDescription from "../../components/SectionTitleDescription/SectionTitleDescription";
-import strings from "../../res/numberStrings";
+import NumbersTitleDescription from "../../components/NumbersTitleDescription/NumbersTitleDescription";
+import numberStrings from "../../res/numberStrings";
 import {GridColumn} from "semantic-ui-react";
 import {StyledNumberCardsWrapper, NumbersWrapper} from "./styles"; 
 import NumberCard from "../../components/NumberCard/NumberCard";
@@ -11,30 +11,34 @@ class Numbers extends Component {
         return (
             <NumbersWrapper>
                 {/*Section title & description*/}
-                <SectionTitleDescription
-                title={strings.title}
-                description={strings.description}
-                link={strings.href}
-                linkName={strings.linkName}/>
+                <NumbersTitleDescription
+                title={numberStrings.title}
+                description={numberStrings.description}
+                link={numberStrings.href}
+                linkName={numberStrings.linkName}
+                updated={numberStrings.updated}/>
                 {/*Number cards*/}
                 <StyledNumberCardsWrapper columns={3}>
                     <GridColumn>
                         {/* Number Card 1*/}
                         <NumberCard
-                            number={strings.firstCard.number}
-                            description={strings.firstCard.description}/>
+                            number={numberStrings.firstCard.number}
+                            description={numberStrings.firstCard.description}
+                            approx={numberStrings.firstCard.approx}/>
                     </GridColumn>
                     <GridColumn>
                         {/* Number Card 2*/}
                         <NumberCard
-                            number={strings.secondCard.number}
-                            description={strings.secondCard.description}/>
+                            number={numberStrings.secondCard.number}
+                            description={numberStrings.secondCard.description}
+                            approx={numberStrings.secondCard.approx}/>
                     </GridColumn>
                     <GridColumn>
                         {/* Number Card 3*/}
                         <NumberCard
-                            number={strings.thirdCard.number}
-                            description={strings.thirdCard.description}/>
+                            number={numberStrings.thirdCard.number}
+                            description={numberStrings.thirdCard.description}
+                            approx={numberStrings.thirdCard.approx}/>
                     </GridColumn>
                 </StyledNumberCardsWrapper>
                 

@@ -1,21 +1,25 @@
-const strings = {
+const numberStrings = {
     title: 'Our Numbers',
     description: `In the Cheriton School of Computer Science,
      female-identifying individuals represent:  `,
     linkName: 'Sources',
     href: 'https://cs.uwaterloo.ca/wics/resources-and-information',
+    updated: '2020',
     firstCard:{
       number:'27%',
-      description: 'undergrad enrolment'
+      description: 'undergrad students',
+      approx: 'approx. 3 in 10'
     },
     secondCard:{
       number:'28.3%',
-      description: 'first-year admits (2018)'
+      description: 'first-years (2018)',
+      approx: 'approx. 3 in 10'
     },
     thirdCard:{
-      number:'16.5%',
-      description: 'female-identifying faculty'
+      number:'20%',
+      description: 'graduate students',
+      approx: 'approx. 1 in 5'
     }
   };
 
-export default strings;
+export default numberStrings;

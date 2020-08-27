@@ -5,12 +5,14 @@ import {Grid} from "semantic-ui-react";
 export const StyledNumberCardsWrapper = styled(Grid)`
   &&& {
     margin-top: 50px;
+    clear: both;
   }
 `;
 
 export const NumbersWrapper = styled.div`
   &&&{
     margin-top: 100px;
-    margin-bottom: 237px;
+    margin-bottom: 108px;
+    
   }
 `;
