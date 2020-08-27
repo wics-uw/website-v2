@@ -5,12 +5,12 @@ const contactStrings = {
   little: {
     title: "Little WiCS",
     description:
-      "Students of the undergraduate WiCS committee in computer science related programs",
+      "Students of the WiCS Undergraduate Committee studying a computer science related program. A subcommittee of the at-large WiCS committee at the University of Waterloo.",
   },
   big: {
     title: "Big WiCS",
     description:
-      "Faculty,  graduates and staff of the school who work with our industry sponsors",
+      "Faculty and staff of the at-large WiCS committee working with industry sponsors.  The standing committee of the David R. Cheriton School of Computer Science.",
   },
 };
 export default contactStrings;
