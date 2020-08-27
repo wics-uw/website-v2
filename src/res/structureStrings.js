@@ -1,7 +1,7 @@
 const contactStrings = {
   title: "Our Structure",
   description:
-    "University of Waterloo WiCS is made up of two groups that work together to unite women in CS at UWaterloo:",
+    "WiCS is made up of two groups that aim to promote gender equity in computing, warmly known as:",
   little: {
     title: "Little WiCS",
     description:

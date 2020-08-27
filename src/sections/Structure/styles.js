@@ -33,7 +33,7 @@ export const StyledText = styled.body`
 
 export const StyledSegment = styled(Segment)`
   &&& {
-    margin: 2px;
+    margin-top: 15px;
     background-color: #f8f3ef;
     border: none;
     shadow: none;
