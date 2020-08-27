@@ -5,7 +5,7 @@ export const StyledFooterWrapper = styled.div`
     text-align: center;
     margin-top: 50px;
     height: 427px;
-    padding: 79px 382px 173px 210px;
+    padding: 79px 382px 63px 210px;
     background-color: #aab4c0;
     font-family: Karla;
   }
@@ -13,7 +13,8 @@ export const StyledFooterWrapper = styled.div`
 
 export const StyledCopyright = styled.h3`
   &&& {
-    margin-top: 72px;
+    margin-top: 87px;
+    margin-bottom: 0px;
     font-size: 20px;
     font-family: Karla;
     font-style: normal;
@@ -54,6 +55,7 @@ export const StyledTitleRight = styled.h2`
 // land acknowledgement
 export const StyledTextLeft = styled.body`
   &&& {
+    margin-bottom: 0px;
     font-size: 16px;
     font-family: "Source Sans Pro";
     font-style: normal;
@@ -69,6 +71,7 @@ export const StyledTextLeft = styled.body`
 
 export const StyledLinkRight = styled.a`
   &&& {
+    margin-bottom: 0px;
     font-size: 16px;
     font-family: "Source Sans Pro";
     font-style: normal;
@@ -79,9 +82,9 @@ export const StyledLinkRight = styled.a`
     background: transparent;
     text-align: left;
     color: #0d0c35;
-	:hover {
-		color: #49657F;
-		cursor: pointer;
+    :hover {
+      color: #49657f;
+      cursor: pointer;
     }
   }
 `;
