@@ -8,9 +8,17 @@ export const StyledBodyWrapper = styled.div`
   }
 `;
 
+// Styles for wrapper of section
+export const StyledSectionWrapper = styled.div`
+  &&& {
+    scroll-margin: 100px;
+  }
+`;
+
 // Styles for title text of each large section / topic
 export const StyledSectionText = styled.h3`
   &&& {
+    scroll-margin: 100px;
     margin-top: 115px;
     font-family: Karla;
     font-style: normal;
