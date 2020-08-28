@@ -5,7 +5,7 @@ import Mission from "./sections/Mission/Mission";
 import Calendar from "./sections/Calendar/Calendar";
 import Numbers from "./sections/Numbers/Numbers";
 import Footer from "./sections/Footer/Footer";
-import {StyledSectionText, StyledSectionWrapper} from "./res/globalStyles";
+import {StyledGradientBackground, StyledSectionText, StyledSectionWrapper} from "./res/globalStyles";
 import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
@@ -68,10 +68,12 @@ class App extends Component {
           <Landing/>
         </div>
         <StyledSectionWrapper ref={this.about}>
-          <Container style={{width: '1040px'}}>
-            <StyledSectionText>{strings.about}</StyledSectionText>
-          </Container>
-          <Mission/>
+          <StyledGradientBackground>
+            <Container style={{width: '1040px'}}>
+              <StyledSectionText>{strings.about}</StyledSectionText>
+            </Container>
+            <Mission/>
+          </StyledGradientBackground>
           <Numbers/>
         </StyledSectionWrapper>
 

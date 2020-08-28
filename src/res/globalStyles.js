@@ -23,3 +23,10 @@ export const StyledSectionText = styled.h3`
     opacity: 0.8;
   }
 `;
+
+export const StyledGradientBackground = styled.div`
+  &&& {
+    padding-top: 56px;
+    background: linear-gradient(180deg, rgba(231, 213, 208, 0.55) 0%, rgba(231, 190, 178, 0) 62.65%);
+  }
+`;
