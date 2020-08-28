@@ -5,10 +5,11 @@ import Mission from "./sections/Mission/Mission";
 import Calendar from "./sections/Calendar/Calendar";
 import Numbers from "./sections/Numbers/Numbers";
 import Footer from "./sections/Footer/Footer";
-import {StyledBodyWrapper, StyledSectionText, StyledSectionWrapper} from "./res/globalStyles";
+import {StyledSectionText, StyledSectionWrapper} from "./res/globalStyles";
 import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
+import {Container} from "semantic-ui-react";
 
 class App extends Component {
   constructor(props) {
@@ -66,41 +67,40 @@ class App extends Component {
         <div ref={this.landing}>
           <Landing/>
         </div>
-        <StyledBodyWrapper>
-          <StyledSectionWrapper ref={this.about}>
+        <StyledSectionWrapper ref={this.about}>
+          <Container style={{width: '1040px'}}>
             <StyledSectionText>{strings.about}</StyledSectionText>
-            <Mission/>
-            <Numbers/>
-          </StyledSectionWrapper>
+          </Container>
+          <Mission/>
+          <Numbers/>
+        </StyledSectionWrapper>
 
-          <StyledSectionWrapper ref={this.calendar}>
-            <StyledSectionText>{strings.calendar}</StyledSectionText>
-            <Calendar/>
-          </StyledSectionWrapper>
+        <StyledSectionWrapper ref={this.calendar}>
+          <StyledSectionText>{strings.calendar}</StyledSectionText>
+          <Calendar/>
+        </StyledSectionWrapper>
 
-          <StyledSectionWrapper ref={this.getInvolved}>
-            <StyledSectionText>{strings.getInvolved}</StyledSectionText>
-          </StyledSectionWrapper>
+        <StyledSectionWrapper ref={this.getInvolved}>
+          <StyledSectionText>{strings.getInvolved}</StyledSectionText>
+        </StyledSectionWrapper>
 
-          <StyledSectionWrapper ref={this.resources}>
-            <StyledSectionText>{strings.resources}</StyledSectionText>
-          </StyledSectionWrapper>
+        <StyledSectionWrapper ref={this.resources}>
+          <StyledSectionText>{strings.resources}</StyledSectionText>
+        </StyledSectionWrapper>
 
-          <StyledSectionWrapper ref={this.sponsors}>
-            <StyledSectionText>{strings.industry}</StyledSectionText>
-          </StyledSectionWrapper>
+        <StyledSectionWrapper ref={this.sponsors}>
+          <StyledSectionText>{strings.industry}</StyledSectionText>
+        </StyledSectionWrapper>
 
-          <StyledSectionWrapper ref={this.committee}>
-            <StyledSectionText>{strings.committee}</StyledSectionText>
-            <CurrentCommittee/>
-            <PastCommittee/>
-          </StyledSectionWrapper>
+        <StyledSectionWrapper ref={this.committee}>
+          <StyledSectionText>{strings.committee}</StyledSectionText>
+          <CurrentCommittee/>
+          <PastCommittee/>
+        </StyledSectionWrapper>
 
-          <StyledSectionWrapper ref={this.contactUs}>
-            <StyledSectionText>{strings.contactUs}</StyledSectionText>
-          </StyledSectionWrapper>
-
-        </StyledBodyWrapper>
+        <StyledSectionWrapper ref={this.contactUs}>
+          <StyledSectionText>{strings.contactUs}</StyledSectionText>
+        </StyledSectionWrapper>
         <Footer/>
       </div>
     );

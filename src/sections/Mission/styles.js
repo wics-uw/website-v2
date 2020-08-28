@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import {Grid} from "semantic-ui-react";
+import {Container, Grid} from "semantic-ui-react";
 
 // Styles for cards wrapper
-export const StyledMissionCardsWrapper = styled(Grid)`
+export const StyledMissionSectionWrapper = styled(Container)`
   &&& {
-    margin-top: 60px;
+    margin-bottom: 80px;
+    width: 1040px;
   }
 `;
