@@ -85,25 +85,35 @@ class App extends Component {
         </StyledSectionWrapper>
 
         <StyledSectionWrapper ref={this.getInvolved}>
-          <StyledSectionText>{strings.getInvolved}</StyledSectionText>
+          <Container style={{width: '1060px'}}>
+            <StyledSectionText>{strings.getInvolved}</StyledSectionText>
+          </Container>
         </StyledSectionWrapper>
 
         <StyledSectionWrapper ref={this.resources}>
-          <StyledSectionText>{strings.resources}</StyledSectionText>
+          <Container style={{width: '1060px'}}>
+            <StyledSectionText>{strings.resources}</StyledSectionText>
+          </Container>
         </StyledSectionWrapper>
 
         <StyledSectionWrapper ref={this.sponsors}>
-          <StyledSectionText>{strings.industry}</StyledSectionText>
+          <Container style={{width: '1060px'}}>
+            <StyledSectionText>{strings.industry}</StyledSectionText>
+          </Container>
         </StyledSectionWrapper>
 
         <StyledSectionWrapper ref={this.committee}>
-          <StyledSectionText>{strings.committee}</StyledSectionText>
+          <Container style={{width: '1060px'}}>
+            <StyledSectionText>{strings.committee}</StyledSectionText>
+          </Container>
           <CurrentCommittee/>
           <PastCommittee/>
         </StyledSectionWrapper>
 
         <StyledSectionWrapper ref={this.contactUs}>
-          <StyledSectionText>{strings.contactUs}</StyledSectionText>
+          <Container style={{width: '1060px'}}>
+            <StyledSectionText>{strings.contactUs}</StyledSectionText>
+          </Container>
         </StyledSectionWrapper>
         <Footer/>
       </div>
