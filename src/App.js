@@ -78,7 +78,9 @@ class App extends Component {
         </StyledSectionWrapper>
 
         <StyledSectionWrapper ref={this.calendar}>
-          <StyledSectionText>{strings.calendar}</StyledSectionText>
+          <Container style={{width: '1042px'}}>
+            <StyledSectionText>{strings.calendar}</StyledSectionText>
+          </Container>
           <Calendar/>
         </StyledSectionWrapper>
 

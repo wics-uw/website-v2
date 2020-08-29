@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import {Container} from "semantic-ui-react";
 
-export const StyledCalendarWrapper = styled.div`
+export const StyledCalendarSectionWrapper = styled(Container)`
   &&& {
-    margin: 30px 0;
+    width: 1042px;
   }
 `;
