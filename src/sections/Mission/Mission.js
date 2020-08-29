@@ -6,13 +6,13 @@ import SectionTitleDescription from "../../components/SectionTitleDescription/Se
 import community from "../../res/images/mission_community.svg";
 import mentorship from "../../res/images/mission_mentorship.svg";
 import empowerment from "../../res/images/mission_empowerment.svg";
-import {StyledMissionSectionWrapper} from "./styles";
+import {StyledMissionSectionContainer} from "./styles";
 
 // Component for mission section
 class Mission extends Component {
   render() {
     return (
-      <StyledMissionSectionWrapper>
+      <StyledMissionSectionContainer>
         {/*Section title & description*/}
         <SectionTitleDescription
           title={missionStrings.ourMission}
@@ -38,7 +38,7 @@ class Mission extends Component {
               description={missionStrings.empowerment.description}/>
           </GridColumn>
         </Grid>
-      </StyledMissionSectionWrapper>
+      </StyledMissionSectionContainer>
     )
   }
 }
