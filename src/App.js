@@ -5,11 +5,10 @@ import Mission from "./sections/Mission/Mission";
 import Calendar from "./sections/Calendar/Calendar";
 import Numbers from "./sections/Numbers/Numbers";
 import Footer from "./sections/Footer/Footer";
-import {StyledGradientBackground, StyledSectionText, StyledSectionWrapper} from "./res/globalStyles";
+import {StyledBodyContainer, StyledGradientBackground, StyledSectionText, StyledLargeSectionWrapper} from "./res/globalStyles";
 import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
-import {Container} from "semantic-ui-react";
 
 class App extends Component {
   constructor(props) {
@@ -67,54 +66,46 @@ class App extends Component {
         <div ref={this.landing}>
           <Landing/>
         </div>
-        <StyledSectionWrapper ref={this.about}>
+        <StyledLargeSectionWrapper ref={this.about}>
           <StyledGradientBackground>
-            <Container style={{width: '1040px'}}>
+            <StyledBodyContainer>
               <StyledSectionText>{strings.about}</StyledSectionText>
-            </Container>
-            <Mission/>
+              <Mission/>
+            </StyledBodyContainer>
           </StyledGradientBackground>
-          <Numbers/>
-        </StyledSectionWrapper>
+          <StyledBodyContainer>
+            <Numbers/>
+          </StyledBodyContainer>
+        </StyledLargeSectionWrapper>
 
-        <StyledSectionWrapper ref={this.calendar}>
-          <Container style={{width: '1042px'}}>
+        <StyledBodyContainer>
+          <StyledLargeSectionWrapper ref={this.calendar}>
             <StyledSectionText>{strings.calendar}</StyledSectionText>
-          </Container>
-          <Calendar/>
-        </StyledSectionWrapper>
+            <Calendar/>
+          </StyledLargeSectionWrapper>
 
-        <StyledSectionWrapper ref={this.getInvolved}>
-          <Container style={{width: '1060px'}}>
+          <StyledLargeSectionWrapper ref={this.getInvolved}>
             <StyledSectionText>{strings.getInvolved}</StyledSectionText>
-          </Container>
-        </StyledSectionWrapper>
+          </StyledLargeSectionWrapper>
 
-        <StyledSectionWrapper ref={this.resources}>
-          <Container style={{width: '1060px'}}>
+          <StyledLargeSectionWrapper ref={this.resources}>
             <StyledSectionText>{strings.resources}</StyledSectionText>
-          </Container>
-        </StyledSectionWrapper>
+          </StyledLargeSectionWrapper>
 
-        <StyledSectionWrapper ref={this.sponsors}>
-          <Container style={{width: '1060px'}}>
+          <StyledLargeSectionWrapper ref={this.sponsors}>
             <StyledSectionText>{strings.industry}</StyledSectionText>
-          </Container>
-        </StyledSectionWrapper>
+          </StyledLargeSectionWrapper>
 
-        <StyledSectionWrapper ref={this.committee}>
-          <Container style={{width: '1060px'}}>
+          <StyledLargeSectionWrapper ref={this.committee}>
             <StyledSectionText>{strings.committee}</StyledSectionText>
-          </Container>
-          <CurrentCommittee/>
-          <PastCommittee/>
-        </StyledSectionWrapper>
+            <CurrentCommittee/>
+            <PastCommittee/>
+          </StyledLargeSectionWrapper>
 
-        <StyledSectionWrapper ref={this.contactUs}>
-          <Container style={{width: '1060px'}}>
+          <StyledLargeSectionWrapper ref={this.contactUs}>
             <StyledSectionText>{strings.contactUs}</StyledSectionText>
-          </Container>
-        </StyledSectionWrapper>
+          </StyledLargeSectionWrapper>
+        </StyledBodyContainer>
         <Footer/>
       </div>
     );
