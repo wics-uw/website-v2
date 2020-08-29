@@ -5,6 +5,7 @@ import {Container, Grid} from "semantic-ui-react";
 export const StyledCommitteeSectionContainer = styled(Container)`
   &&& {
     width: 1060px;
+    margin-bottom: 80px;
   }
 `;
 
