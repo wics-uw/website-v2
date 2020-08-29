@@ -3,27 +3,22 @@ import {Card} from 'semantic-ui-react';
 
 export const CardWrapper = styled(Card)`
 &&&{
-    height: 298px;
-    width: 291px;
+    height: 223px;
+    width: 259px;
+    : hover {
+		transform: translate(0,-3px);
+	}
 }
 `;
 
 export const ImageWrapper = styled.div`
 &&& {
-    position: relative;
-    display: inline-block;
+    margin-left: 24px;
+    margin-top: 24px;
+    margin-bottom: 12px;
 }
 `;
 
-export const TextWrapper = styled.div`
-&&& {
-    position: absolute;
-    z-index: 999;
-    margin: 0 auto;
-    left: 15px;
-    bottom: 15px;
-}
-`;
 
 export const EventTitle = styled.label`
 &&& {
@@ -32,6 +27,8 @@ export const EventTitle = styled.label`
     font-weight: 600;
     font-size: 18px;
     line-height: 23px;
+    margin-left: 24px;
+    margin-bottom: 8px;
 }
 `;
 
@@ -43,17 +40,12 @@ export const EventDescription = styled.body`
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    min-width: 260px;
-    padding: 0 0;
+    min-width: 215px;
+    width: 215px;
+    margin-left: 24px;
     
 }
 `;
 
 
-export const DescriptionWrapper = styled.div`
-&&&{
-    margin: 5%;
-    border = "thick solid #000000";
-}
-`;
 
