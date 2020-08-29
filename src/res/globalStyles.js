@@ -1,11 +1,21 @@
 // This file is for the styles for some components that are being used globally
 import styled from "styled-components";
+import {Container} from "semantic-ui-react";
 
-// Styles for wrapper of section
-export const StyledSectionWrapper = styled.div`
+// Styles for wrapper of each large section
+// Example: About, Calendar, Get Involved, Resources, Sponsor, ...
+export const StyledLargeSectionWrapper = styled.div`
   &&& {
     scroll-margin: 100px;
     margin-bottom: 104px;
+  }
+`;
+
+// Styles for wrapper of each small section
+// Example: Our Mission, Our Numbers, ....
+export const StyledSmallSectionWrapper = styled.div`
+  &&& {
+    margin-bottom: 80px;
   }
 `;
 
@@ -21,6 +31,12 @@ export const StyledSectionText = styled.h3`
     text-transform: uppercase;
     color: #0D0C35;
     opacity: 0.8;
+  }
+`;
+
+export const StyledBodyContainer = styled(Container)`
+  &&& {
+    width: 1060px;
   }
 `;
 
