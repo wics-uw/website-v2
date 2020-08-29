@@ -1,11 +1,5 @@
 import styled from "styled-components";
-import {Accordion, AccordionContent, AccordionTitle, Container, Grid, GridColumn, Image} from "semantic-ui-react";
-
-export const StyledPastExecsSectionContainer = styled(Container)`
-  &&& {
-    width: 1060px;
-  }
-`;
+import {Accordion, AccordionContent, AccordionTitle, Grid, GridColumn, Image} from "semantic-ui-react";
 
 export const StyledImageWrapper = styled.div`
   &&& {
@@ -31,7 +25,7 @@ export const StyledAccordion = styled(Accordion)`
 
 export const StyledAccordionTitle = styled(AccordionTitle)`
   &&& {
-    padding: 16px 30px 16px 26px !important;
+    padding: 16px !important;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -63,7 +57,7 @@ export const StyledAccordionContent = styled(AccordionContent)`
 
 export const StyledPastExecsTableWrapper = styled.div`
   &&& {
-    margin: 0 25px;
+    margin: 0 24px;
   }
 `;
 

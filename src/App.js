@@ -5,7 +5,7 @@ import Mission from "./sections/Mission/Mission";
 import Calendar from "./sections/Calendar/Calendar";
 import Numbers from "./sections/Numbers/Numbers";
 import Footer from "./sections/Footer/Footer";
-import {StyledBodyContainer, StyledGradientBackground, StyledSectionText, StyledLargeSectionWrapper} from "./res/globalStyles";
+import {StyledBodyContainer, StyledGradientBackground, StyledSectionText, StyledSectionWrapper} from "./res/globalStyles";
 import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
@@ -66,7 +66,7 @@ class App extends Component {
         <div ref={this.landing}>
           <Landing/>
         </div>
-        <StyledLargeSectionWrapper ref={this.about}>
+        <StyledSectionWrapper ref={this.about}>
           <StyledGradientBackground>
             <StyledBodyContainer>
               <StyledSectionText>{strings.about}</StyledSectionText>
@@ -76,35 +76,35 @@ class App extends Component {
           <StyledBodyContainer>
             <Numbers/>
           </StyledBodyContainer>
-        </StyledLargeSectionWrapper>
+        </StyledSectionWrapper>
 
         <StyledBodyContainer>
-          <StyledLargeSectionWrapper ref={this.calendar}>
+          <StyledSectionWrapper ref={this.calendar}>
             <StyledSectionText>{strings.calendar}</StyledSectionText>
             <Calendar/>
-          </StyledLargeSectionWrapper>
+          </StyledSectionWrapper>
 
-          <StyledLargeSectionWrapper ref={this.getInvolved}>
+          <StyledSectionWrapper ref={this.getInvolved}>
             <StyledSectionText>{strings.getInvolved}</StyledSectionText>
-          </StyledLargeSectionWrapper>
+          </StyledSectionWrapper>
 
-          <StyledLargeSectionWrapper ref={this.resources}>
+          <StyledSectionWrapper ref={this.resources}>
             <StyledSectionText>{strings.resources}</StyledSectionText>
-          </StyledLargeSectionWrapper>
+          </StyledSectionWrapper>
 
-          <StyledLargeSectionWrapper ref={this.sponsors}>
+          <StyledSectionWrapper ref={this.sponsors}>
             <StyledSectionText>{strings.industry}</StyledSectionText>
-          </StyledLargeSectionWrapper>
+          </StyledSectionWrapper>
 
-          <StyledLargeSectionWrapper ref={this.committee}>
+          <StyledSectionWrapper ref={this.committee}>
             <StyledSectionText>{strings.committee}</StyledSectionText>
             <CurrentCommittee/>
             <PastCommittee/>
-          </StyledLargeSectionWrapper>
+          </StyledSectionWrapper>
 
-          <StyledLargeSectionWrapper ref={this.contactUs}>
+          <StyledSectionWrapper ref={this.contactUs}>
             <StyledSectionText>{strings.contactUs}</StyledSectionText>
-          </StyledLargeSectionWrapper>
+          </StyledSectionWrapper>
         </StyledBodyContainer>
         <Footer/>
       </div>

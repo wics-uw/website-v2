@@ -20,6 +20,7 @@ import PastCommitteeCard from "../../components/PastCommitteeCard/PastCommitteeC
 import SectionTitleDescription from "../../components/SectionTitleDescription/SectionTitleDescription";
 import chevron_down from "../../res/images/past_execs_chevron_down.svg";
 import chevron_right from "../../res/images/past_execs_chevron_right.svg";
+import {StyledSubSectionWrapper} from "../../res/globalStyles";
 
 // Component for past committee section
 class PastCommittee extends Component {
@@ -44,7 +45,7 @@ class PastCommittee extends Component {
   render() {
     const {active} = this.state;
     return (
-      <StyledPastExecsSectionContainer>
+      <StyledSubSectionWrapper>
         <SectionTitleDescription
           title={pastExecStrings.title}
           description={pastExecStrings.description}/>
@@ -83,7 +84,7 @@ class PastCommittee extends Component {
             </StyledPastExecsTableWrapper>
           </StyledAccordionContent>
         </StyledAccordion>
-      </StyledPastExecsSectionContainer>
+      </StyledSubSectionWrapper>
     )
   }
 }
