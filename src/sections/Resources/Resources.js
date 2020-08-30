@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import SectionTitleDescription from '../../components/SectionTitleDescription/SectionTitleDescription';
 import resourcesStrings from '../../res/resourcesStrings';
 import {Accordion, AccordionTitle, Icon, Menu} from 'semantic-ui-react';
-import {StyledATitle, AccordionWrapper, StyledIcon, LinksWrapper, LinkName, Illustration, Clear} from './styles';
+import {StyledATitle, AccordionWrapper, StyledIcon, LinksWrapper, LinkName, StyledAccordion, StyledAccordionContent, StyledAccordionContentR, Clear} from './styles';
 import resourceImg from '../../res/images/resource.svg';
 
 export default class Resources extends Component {
@@ -25,7 +25,7 @@ export default class Resources extends Component {
                 
                 
                 <AccordionWrapper>
-                <Accordion fluid as={Menu} vertical>
+                <StyledAccordion fluid styled>
                     <Menu.Item>
                         <AccordionTitle active={activeIndex === 0}
                             index={0}
@@ -36,17 +36,17 @@ export default class Resources extends Component {
                         </StyledATitle>
                         {activeIndex === 0? <StyledIcon name='chevron down'/> : <StyledIcon name='chevron right'/> }
                         </div></AccordionTitle>
-                        <Accordion.Content active={activeIndex === 0}>
+                        <StyledAccordionContent active={activeIndex === 0}>
                         {Object.entries(resourcesStrings.campusLinks).map(([number, resource]) => (
                             <LinksWrapper>
-                                <a href={resource.link}>
+                                <a href={resource.link} target='_blank'>
                                 <Icon name='chain' color='black'/>
                                 <LinkName>{resource.name}</LinkName>
                                 </a>
                             </LinksWrapper>
                         ))
                         }
-                        </Accordion.Content>
+                        </StyledAccordionContent>
                     </Menu.Item>
                     <Menu.Item>
                         
@@ -59,17 +59,17 @@ export default class Resources extends Component {
                         </StyledATitle>
                         {activeIndex === 1? <StyledIcon name='chevron down'/> : <StyledIcon name='chevron right'/> }
                         </div></AccordionTitle>
-                        <Accordion.Content active={activeIndex === 1}>
+                        <StyledAccordionContent active={activeIndex === 1}>
                         {Object.entries(resourcesStrings.financeLinks).map(([number, resource]) => (
                             <LinksWrapper>
-                                <a href={resource.link}>
+                                <a href={resource.link} target='_blank'>
                                 <Icon name='chain' color='black'/>
                                 <LinkName>{resource.name}</LinkName>
                                 </a>
                             </LinksWrapper>
                         ))
                         }
-                        </Accordion.Content>
+                        </StyledAccordionContent>
                     </Menu.Item>
                     <Menu.Item>
                         <AccordionTitle active={activeIndex === 2}
@@ -80,20 +80,20 @@ export default class Resources extends Component {
                         </StyledATitle>
                         {activeIndex === 2? <StyledIcon name='chevron down'/> : <StyledIcon name='chevron right'/> }
                         </AccordionTitle>
-                        <Accordion.Content active={activeIndex === 2}>
+                        <StyledAccordionContentR active={activeIndex === 2}>
                         {Object.entries(resourcesStrings.additionLinks).map(([number, resource]) => (
                             <LinksWrapper>
-                                <a href={resource.link}>
+                                <a href={resource.link} target='_blank'>
                                 <Icon name='chain' color='black'/>
                                 <LinkName>{resource.name}</LinkName>
                                 </a>
                             </LinksWrapper>
                         ))
                         }
-                        </Accordion.Content>
+                        </StyledAccordionContentR>
                     </Menu.Item>
                     
-                </Accordion>
+                </StyledAccordion>
                 </AccordionWrapper>
 
                 <Clear></Clear>

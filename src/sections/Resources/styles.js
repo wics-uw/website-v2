@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Accordion, Icon, Image} from 'semantic-ui-react';
+import { Accordion, AccordionContent, Icon, Image} from 'semantic-ui-react';
 
 export const StyledATitle = styled.h4`
 &&& {
@@ -38,8 +38,8 @@ export const StyledIcon = styled(Icon)`
 export const LinksWrapper = styled.div`
 &&& {
     margin-left: 16px;
-    margin-bottom: 4px;
-    margin-top: 4px;
+    padding-top: 4px;
+    padding-bottom: 2px;
 }
 `;
 
@@ -52,6 +52,7 @@ export const LinkName = styled.body`
     font-size: 16px;
     line-height: 20px;
     display: inline;
+    background-color: transparent;
 }
 `;
 
@@ -75,4 +76,34 @@ export const Clear = styled.div`
 &&& {
     clear: both;
 }
+`;
+
+export const StyledAccordion = styled(Accordion)`
+    &&&{
+        border-radius: 15px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+`;
+
+export const StyledAccordionContentR = styled(AccordionContent)`
+  &&& {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-left: 3px solid #E7BEB2;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(231,190,178, 0.15);
+    border-radius: 0 0 15px 15px;
+  }
+`;
+
+
+export const StyledAccordionContent = styled(AccordionContent)`
+  &&& {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-left: 3px solid #E7BEB2;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(231,190,178, 0.15);
+  }
 `;
