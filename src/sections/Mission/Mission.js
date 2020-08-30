@@ -1,24 +1,24 @@
 import React, {Component} from 'react';
 import missionStrings from "../../res/missionStrings";
-import {GridColumn} from "semantic-ui-react";
+import {Grid, GridColumn} from "semantic-ui-react";
 import MissionCard from "../../components/MissionCard/MissionCard";
 import SectionTitleDescription from "../../components/SectionTitleDescription/SectionTitleDescription";
-import {StyledMissionCardsWrapper} from "./styles";
 import community from "../../res/images/mission_community.svg";
 import mentorship from "../../res/images/mission_mentorship.svg";
 import empowerment from "../../res/images/mission_empowerment.svg";
+import {StyledSmallSectionWrapper} from "../../res/globalStyles";
 
 // Component for mission section
 class Mission extends Component {
   render() {
     return (
-      <div>
+      <StyledSmallSectionWrapper>
         {/*Section title & description*/}
         <SectionTitleDescription
           title={missionStrings.ourMission}
           description={missionStrings.missionDescription}/>
-          {/*Mission cards*/}
-        <StyledMissionCardsWrapper columns={3}>
+        {/*Mission cards*/}
+        <Grid columns={3}>
           <GridColumn>
             <MissionCard
               image={community}
@@ -37,8 +37,8 @@ class Mission extends Component {
               title={missionStrings.empowerment.title}
               description={missionStrings.empowerment.description}/>
           </GridColumn>
-        </StyledMissionCardsWrapper>
-      </div>
+        </Grid>
+      </StyledSmallSectionWrapper>
     )
   }
 }

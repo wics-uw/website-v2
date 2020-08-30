@@ -13,13 +13,14 @@ export const StyledCardWrapper = styled.div`
 export const StyledCardImage = styled(Image)`
   &&& {
     border-radius: 20px;
+    margin-bottom: 29px;
   }
 `;
 
 // Styles for the card title
-export const StyledCardTitle = styled.body`
+export const StyledCardTitle = styled.p`
   &&& {
-    margin-top: 29px;
+    margin-bottom: 7px;
     font-family: "Karla Bold";
     font-style: normal;
     font-weight: bold;
@@ -32,9 +33,9 @@ export const StyledCardTitle = styled.body`
 `;
 
 // Styles for the card description
-export const StyledCardDescription = styled.body`
+export const StyledCardDescription = styled.p`
   &&& {
-    margin-top: 7px;
+    margin: 0;
     font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: normal;
