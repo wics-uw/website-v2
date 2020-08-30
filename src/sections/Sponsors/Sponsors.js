@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import SectionTitleDescription from '../../components/SectionTitleDescription/SectionTitleDescription';
 import sponsorStrings from '../../res/sponsorsStrings';
-import {StyledChevronIcon, StyledAccordion, StyledTitle, SponsorType, SponsorTypeLink, SponsorImg, ImgWrapper, SponsorsWrapper, ColorLine, BackColor, StyledLink, MoreWrapper, Interested, LearnMore} from './styles';
+import {StyledAccordionTitle, StyledGrid, StyledGridColumn, StyledChevronIcon, StyledAccordion, StyledTitle, SponsorType, SponsorTypeLink, SponsorImg, ImgWrapper, SponsorsWrapper, StyledAccordionContent, StyledLink, MoreWrapper, Interested, LearnMore} from './styles';
 import google from '../../res/images/sponsors/google.svg';
 import wish from '../../res/images/sponsors/wish.svg';
 import amazon from '../../res/images/sponsors/amazon.svg';
@@ -133,12 +133,12 @@ class Sponsors extends Component {
                 {/* Picutures of Platinum Sponsors*/}
                 <Grid columns={4}>
                 {Object.entries(platinumSponsors).map(([key, name]) => (
-                    <GridColumn>
+                    <StyledGridColumn>
                     {name.link === ''? <ImgWrapper><SponsorImg src={name.name} alt=''/> </ImgWrapper>: 
                     (<a href = {name.link} target ='_blank'> 
                     <ImgWrapper><SponsorImg src={name.name} alt=''/> </ImgWrapper>
                     </a>)}
-                    </GridColumn>
+                    </StyledGridColumn>
                 ))}
                 </Grid>
                 
@@ -147,20 +147,20 @@ class Sponsors extends Component {
                     {sponsorStrings.gold}
                 </SponsorType>
                 {/* Picutures of Gold Sponsors*/}
-                <Grid columns={4}>
+                <StyledGrid columns={4}>
                 {Object.entries(goldSponsors).map(([key, name]) => (
-                    <GridColumn>
+                    <StyledGridColumn>
                     {name.link === ''? <ImgWrapper><SponsorImg src={name.name} alt=''/> </ImgWrapper>: 
                     (<a href = {name.link} target ='_blank'> 
                     <ImgWrapper><SponsorImg src={name.name} alt=''/> </ImgWrapper>
                     </a>)}
-                    </GridColumn>
+                    </StyledGridColumn>
                 ))}
-                </Grid>
+                </StyledGrid>
 
                 {/* Accordian for sponsors*/}
-                <StyledAccordion styled>
-                <AccordionTitle
+                <StyledAccordion fluid styled>
+                <StyledAccordionTitle
                     active={active}
                     onClick={this.handleClick}>
                     <StyledTitle>
@@ -169,36 +169,31 @@ class Sponsors extends Component {
                         ? <StyledChevronIcon size='small' name='chevron down'/>
                         : <StyledChevronIcon size='small' name='chevron right'/>}
                     </StyledTitle>
-                </AccordionTitle>
-                <AccordionContent active={active}>
-                    <div>
-                        <ColorLine></ColorLine>
-                    <BackColor>
+                </StyledAccordionTitle>
+                <StyledAccordionContent active={active}>
                    
                     <SponsorTypeLink>
                         Silver
                     </SponsorTypeLink>
-                    <Grid columns={6}>
+                    <StyledGrid columns={6}>
                     {Object.entries(silverSponsors).map(([number, name]) => (
                         <GridColumn>
                         <a href={name.link} target='_blank'><StyledLink>{name.name}</StyledLink></a>
                         </GridColumn>
                     ))}
-                    </Grid>
+                    </StyledGrid>
 
-                    <SponsorTypeLink>
-                        Local
-                    </SponsorTypeLink>
-                    <Grid columns={6}>
-                    {Object.entries(localSponsors).map(([number, name]) => (
-                        <GridColumn>
-                        <StyledLink href={name.link} target='_blank'>{name.name}</StyledLink>
-                        </GridColumn>
-                    ))}
-                    </Grid>
-                    </BackColor>
-                    </div>
-             </AccordionContent>
+                        <SponsorTypeLink>
+                            Local
+                        </SponsorTypeLink>
+                        <StyledGrid columns={6}>
+                        {Object.entries(localSponsors).map(([number, name]) => (
+                            <GridColumn>
+                            <StyledLink href={name.link} target='_blank'>{name.name}</StyledLink>
+                            </GridColumn>
+                        ))}
+                    </StyledGrid>
+                </StyledAccordionContent>
                 </StyledAccordion>
                 
 

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Button, Icon, Accordion} from "semantic-ui-react";
+import {Button, Icon, Accordion, AccordionContent, AccordionTitle, Grid, GridColumn} from "semantic-ui-react";
 
 //styles for the "interested in..." text
 export const InterestedLine = styled.body`
@@ -40,7 +40,7 @@ export const SponsorType = styled.body`
     /* identical to box height */
     
     letter-spacing: -0.02em;
-    
+    background-color: transparent;
     color: #000000;
 
   }
@@ -59,6 +59,7 @@ export const SponsorTypeLink = styled.body`
     margin-top: 16px;
     letter-spacing: -0.02em;
     color: #000000;
+    background-color: transparent;
 
   }
 `;
@@ -128,6 +129,8 @@ export const StyledTitle = styled.h4`
     font-size: 24px;
     line-height: 28px;
     letter-spacing: -0.02em;
+    color: #000000;
+    margin: 0;
     
   }
 `;
@@ -135,8 +138,9 @@ export const StyledTitle = styled.h4`
 export const StyledAccordion = styled(Accordion)`
   &&& {
     margin-top: 32px;
-    width: 1060px;
-    
+    border-radius: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   }
 `;
 
@@ -177,5 +181,45 @@ export const StyledLink = styled.a`
     color: black;
     padding: 0px 0px 0px 0px;
     margin-bottom: 8px;
+    background-color: transparent;
   }
 `;
+
+
+export const StyledAccordionTitle = styled(AccordionTitle)`
+  &&& {
+    padding: 16px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+`;
+
+export const StyledAccordionContent = styled(AccordionContent)`
+  &&& {
+    border-left: 3px solid #E7BEB2;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(231,190,178, 0.15);
+    border-radius: 0 0 15px 15px;
+    padding-left: 24px;
+  }
+`;
+
+
+export const StyledGrid= styled(Grid)`
+  &&& {
+    margin-top: 16px;
+    margin-bottom: 0;
+    padding: 0 0 0 0;
+  }
+`;
+
+
+export const StyledGridColumn= styled(GridColumn)`
+  &&& {
+    padding-top: 0;
+    padding-bottom:0;
+    margin: 0 0 0 0;
+  }
+`;
+
