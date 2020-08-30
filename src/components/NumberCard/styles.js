@@ -13,7 +13,6 @@ export const StyledNumber = styled.body`
   &&& {
     width: 116px;
     height: 75px;
-
     font-family: Karla;
     font-style: normal;
     font-weight: bold;
@@ -21,7 +20,6 @@ export const StyledNumber = styled.body`
     line-height: 75px;
     text-align: center;
     letter-spacing: -0.03em;
-
     color: #000000;
   }
 `;
@@ -30,7 +28,7 @@ export const StyledNumber = styled.body`
 export const StyledCardDescription = styled.body`
   &&& {
     width: 206px;
-    font-family: Karla;
+    font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

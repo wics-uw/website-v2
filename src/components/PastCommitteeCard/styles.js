@@ -1,22 +1,24 @@
 import styled from "styled-components";
 
-export const StyledPastExecName = styled.body`
+export const StyledPastExecName = styled.label`
   &&& {
+    font-family: "Source Sans Pro";
     font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
     color: #000000;
+    margin: 0;
   }
 `;
 
-export const StyledPastExecPositionTerm = styled.body`
+export const StyledPastExecPositionTerm = styled.p`
   &&& {
-    margin-top: 8px;
+    font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 12px;
+    line-height: 15px;
     color: #000000;
   }
 `;
