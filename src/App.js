@@ -8,6 +8,9 @@ import {StyledBodyWrapper, StyledSectionText} from "./res/globalStyles";
 import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
+import Resources from './sections/Resources/Resources';
+import resourceImg from './res/images/resource.svg';
+import {Illustration} from './sections/Resources/styles';
 
 function App() {
   return (
@@ -25,9 +28,11 @@ function App() {
           {strings.getInvolved}
         </StyledSectionText>
 
+        <Illustration src ={resourceImg}/>
         <StyledSectionText id="resources">
           {strings.resources}
         </StyledSectionText>
+        <Resources/>
 
         <StyledSectionText id="committee">
           {strings.committee}
