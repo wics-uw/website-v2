@@ -9,8 +9,7 @@ import {StyledBodyWrapper, StyledSectionText} from "./res/globalStyles";
 import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import Sponsors from './sections/Sponsors/Sponsors';
-import illustration from '../src/res/images/sponsors/illustration.svg';
-import {Illustration} from '../src/sections/Sponsors/styles';
+
 
 
 function App() {
@@ -44,7 +43,6 @@ function App() {
         </StyledSectionText>
         <CurrentCommittee/>
         
-        <Illustration src={illustration} alt=''/>
         <StyledSectionText id="sponsors">
           {strings.industry}
         </StyledSectionText>
