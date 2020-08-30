@@ -4,7 +4,7 @@ import {Container} from "semantic-ui-react";
 
 // Styles for wrapper of each large section
 // Example: About, Calendar, Get Involved, Resources, Sponsor, ...
-export const StyledLargeSectionWrapper = styled.div`
+export const StyledSectionWrapper = styled.div`
   &&& {
     scroll-margin: 100px;
     margin-bottom: 104px;
@@ -13,7 +13,7 @@ export const StyledLargeSectionWrapper = styled.div`
 
 // Styles for wrapper of each small section
 // Example: Our Mission, Our Numbers, ....
-export const StyledSmallSectionWrapper = styled.div`
+export const StyledSubSectionWrapper = styled.div`
   &&& {
     margin-bottom: 80px;
   }

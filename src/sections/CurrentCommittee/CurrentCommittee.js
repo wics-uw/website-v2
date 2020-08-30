@@ -5,7 +5,7 @@ import committee from "../../res/images/committee_placeholder.svg";
 import CurrentCommitteeCard from "../../components/CurrentCommitteeCard/CurrentCommitteeCard";
 import {GridColumn} from "semantic-ui-react";
 import {StyledExecWrapper} from "./styles";
-import {StyledSmallSectionWrapper} from "../../res/globalStyles";
+import {StyledSubSectionWrapper} from "../../res/globalStyles";
 
 // Component for current executives section
 class CurrentCommittee extends Component {
@@ -60,7 +60,7 @@ class CurrentCommittee extends Component {
     };
 
     return (
-      <StyledSmallSectionWrapper>
+      <StyledSubSectionWrapper>
         <SectionTitleDescription
           title={currentExecStrings.title}
           description={currentExecStrings.term}
@@ -73,7 +73,7 @@ class CurrentCommittee extends Component {
             </GridColumn>
           ))}
         </StyledExecWrapper>
-      </StyledSmallSectionWrapper>
+      </StyledSubSectionWrapper>
     )
   }
 }

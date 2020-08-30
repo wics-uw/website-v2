@@ -2,15 +2,15 @@ import React, {Component} from "react";
 import calendarStrings from "../../res/calendarStrings";
 import SectionTitleDescription from "../../components/SectionTitleDescription/SectionTitleDescription";
 import CalendarCard from "../../components/CalendarIframe/CalendarCard";
-import {StyledSmallSectionWrapper} from "../../res/globalStyles";
+import {StyledSubSectionWrapper} from "../../res/globalStyles";
 
 class Calendar extends Component {
   render() {
     return (
-      <StyledSmallSectionWrapper>
+      <StyledSubSectionWrapper>
         <SectionTitleDescription title={calendarStrings.calendarTitle}/>
         <CalendarCard source={calendarStrings.link}/>
-      </StyledSmallSectionWrapper>
+      </StyledSubSectionWrapper>
     );
   }
 }
