@@ -18,27 +18,27 @@ export const StyledExecImage = styled(Image)`
 `;
 
 // Styles for the executive's name
-export const StyledExecName = styled.body`
+export const StyledExecName = styled.label`
   &&& {
-    font-family: "Roboto";
+    font-family: "Source Sans Pro";
     font-style: normal;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 23px;
     text-align: center;
     color: #000000;
+    margin: 0;
   }
 `;
 
 // Styles for the executive's position
-export const StyledExecPosition = styled.body`
+export const StyledExecPosition = styled.p`
   &&& {
-    margin-top: 4px;
-    font-family: "Roboto";
+    font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 15px;
     text-align: center;
     color: #000000;
   }
