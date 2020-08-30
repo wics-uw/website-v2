@@ -18,7 +18,7 @@ export const StyledExecImage = styled(Image)`
 `;
 
 // Styles for the executive's name
-export const StyledExecName = styled.p`
+export const StyledExecName = styled.label`
   &&& {
     font-family: "Source Sans Pro";
     font-style: normal;

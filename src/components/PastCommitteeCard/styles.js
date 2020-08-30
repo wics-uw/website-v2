@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledPastExecName = styled.p`
+export const StyledPastExecName = styled.label`
   &&& {
     font-family: "Source Sans Pro";
     font-style: normal;

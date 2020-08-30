@@ -57,13 +57,16 @@ export const StyledAccordionContent = styled(AccordionContent)`
 
 export const StyledPastExecsTableWrapper = styled.div`
   &&& {
-    margin: 0 24px;
+    padding: 32px 24px;
   }
 `;
 
 export const StyledTermWrapper = styled.div`
   &&& {
-    margin-top: 32px;
+    margin-bottom: 32px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 `;
 
@@ -82,12 +85,14 @@ export const StyledTermText = styled.h3`
 export const StyledGrid = styled(Grid)`
   &&& {
     margin-top: 16px;
+    margin-bottom: 0;
   }
 `;
 
 export const StyledGridColumn = styled(GridColumn)`
   &&& {
     padding-top: 0 !important;
+    padding-bottom: 0 !important;
     padding-right: 0 !important;
   }
 `;

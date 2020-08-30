@@ -33,9 +33,8 @@ export const StyledCardTitle = styled.p`
 `;
 
 // Styles for the card description
-export const StyledCardDescription = styled.p`
+export const StyledCardDescription = styled.body`
   &&& {
-    margin: 0;
     font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: normal;
