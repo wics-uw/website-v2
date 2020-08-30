@@ -9,7 +9,6 @@ import {
   StyledGridColumn,
   StyledImage,
   StyledImageWrapper,
-  StyledPastExecsSectionContainer,
   StyledPastExecsTableWrapper,
   StyledTermText,
   StyledTermWrapper
