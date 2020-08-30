@@ -21,6 +21,7 @@ const strings = {
   resources: 'Resources',
   committee:' The undergraduate Committee',
   industry: 'Industry',
+  contactUs: 'Contact Us',
   footer: {
     footerText:
       "Please feel free to reach out if you have any questions or feedback!",
