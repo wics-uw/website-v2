@@ -87,6 +87,7 @@ class App extends Component {
 
           <StyledSectionWrapper ref={this.getInvolved}>
             <StyledSectionText>{strings.getInvolved}</StyledSectionText>
+            <FacultyEvents/>
           </StyledSectionWrapper>
 
           <StyledSectionWrapper ref={this.resources}>

@@ -8,6 +8,7 @@ import sponsored from '../../res/images/sponsored.svg';
 import outreach from '../../res/images/outreach.svg';
 import techConference from '../../res/images/techconference.svg';
 import { Header, Modal, Icon } from 'semantic-ui-react';
+import Modal1 from '../../components/Modal1/Modal1';
 
 function FacultyEvents() {
     const [open, setOpen] = React.useState(false)
@@ -18,19 +19,8 @@ function FacultyEvents() {
                 description={facultyStrings.description}/>
                 <StyledEventsWrapper columns={3}>
                     <GridColumn>
+                        <Modal1/>
                         
-                        <Modal
-                            open={open}
-                            trigger={<div><FacultyCard title={facultyStrings.sponsored.title} image={sponsored} descriptionShort={facultyStrings.sponsored.description}/></div>}
-                            onClose={() => setOpen(false)}
-                            onOpen={() => setOpen(true)}>
-                            <Header>{facultyStrings.sponsored.title}</Header> 
-                            <Modal.Content>
-                                <p>
-                                {facultyStrings.sponsored.description}
-                                </p>
-                            </Modal.Content>
-                        </Modal>
                     </GridColumn>
                     <GridColumn>
                         <Modal
