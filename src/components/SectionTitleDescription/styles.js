@@ -3,7 +3,7 @@ import styled from "styled-components";
 // Styles for section title
 export const StyledTitle = styled.h2`
   &&& {
-    margin-top: 15px;
+    margin-bottom: 4px;
     font-family: "Karla Bold";
     font-style: normal;
     font-weight: bold;
@@ -17,7 +17,7 @@ export const StyledTitle = styled.h2`
 // Styles for section description
 export const StyledDescription = styled.h4`
   &&& {
-    margin-top: 5px;
+    margin: 0 0 32px 0;
     width: 648px;
     font-family: Karla;
     font-style: normal;

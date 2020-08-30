@@ -1,6 +1,12 @@
 import styled from "styled-components";
 import {Button, Grid, GridColumn, Image, ImageGroup} from "semantic-ui-react";
 
+export const StyledLandingWrapper = styled.div`
+  &&& {
+    margin-bottom: 50px;
+  }
+`;
+
 // Styles for landing page wrapper
 export const StyledGridWrapper = styled(Grid)`
   &&& {
