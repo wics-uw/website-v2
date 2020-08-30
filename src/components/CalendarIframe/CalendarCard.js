@@ -5,7 +5,7 @@ import {StyledCalendarCardWrapper} from "./styles";
 
 const CalendarCard = ({source, width}) => {
   const src = source;
-  let W = Math.min(parseInt(width, 10), 1023);
+  let W = Math.min(parseInt(width, 10), 1058);
   W = W < 300 ? 300 : W;
   const H = W * 0.7351;
 
