@@ -4,7 +4,7 @@ import { Image, Grid } from "semantic-ui-react";
 export const StyledText = styled.body`
   &&& {
     font-size: 16px;
-    font-family: Karla;
+    font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: normal;
     line-height: 20px;
@@ -31,13 +31,12 @@ export const StyledEmail = styled.body`
     margin-top: 16px;
     font-style: normal;
     font-weight: normal;
-    line-height: 30px;
     font-size: 26px;
     text-align: center;
     background: transparent;
     color: #ffffff;
     height: auto;
-    font-family: Karla;
+    font-family: "Source Sans Pro";
   }
 `;
 
@@ -60,7 +59,7 @@ export const StyledLink = styled.a`
     font-size: 16px;
     color: #ffffff;
     text-decoration: none !important;
-    font-family: Karla;
+    font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: normal;
     line-height: 20px;
@@ -78,14 +77,14 @@ export const StyledSocial = styled(Image)`
 // styling the grid for the clickable icons
 export const StyledGridSocial = styled(Grid)`
   &&& {
-    margin: 50px 170px 0px;
+    margin: 38px 170px 0px;
   }
 `;
 
 // styling the grid for the linked sites
 export const StyledGridLinks = styled(Grid)`
   &&& {
-    margin-top: 36px;
+    margin: 33px 10px 0;
   }
 `;
 
