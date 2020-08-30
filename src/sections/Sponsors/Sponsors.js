@@ -176,7 +176,7 @@ class Sponsors extends Component {
                     <BackColor>
                    
                     <SponsorTypeLink>
-                        SILVER
+                        Silver
                     </SponsorTypeLink>
                     <Grid columns={6}>
                     {Object.entries(silverSponsors).map(([number, name]) => (
@@ -187,7 +187,7 @@ class Sponsors extends Component {
                     </Grid>
 
                     <SponsorTypeLink>
-                        LOCAL
+                        Local
                     </SponsorTypeLink>
                     <Grid columns={6}>
                     {Object.entries(localSponsors).map(([number, name]) => (
