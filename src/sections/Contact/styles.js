@@ -39,7 +39,6 @@ export const StyledColumn = styled(Grid.Column)`
   }
 `;
 
-
 export const StyledTitle2 = styled.h3`
   &&& {
     margin-top: 29px;
