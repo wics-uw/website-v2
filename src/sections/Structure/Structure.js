@@ -8,20 +8,19 @@ class Structure extends Component {
   render() {
     return (
       <div>
-        <Divider hidden style={{ height: "80px" }} />
         <SectionTitleDescription
           title={structureStrings.title}
           description={structureStrings.description}
         />
         <SectionTitleDescription />
         <Grid columns={2} padded>
-          <StyledColumn style={{ marginRight: "6px"}}>
-              <StyledTitle>{structureStrings.little.title}</StyledTitle>
-              <StyledText>{structureStrings.little.description}</StyledText>
+          <StyledColumn style={{ marginRight: "6px" }}>
+            <StyledTitle>{structureStrings.little.title}</StyledTitle>
+            <StyledText>{structureStrings.little.description}</StyledText>
           </StyledColumn>
-          <StyledColumn >
-              <StyledTitle>{structureStrings.big.title}</StyledTitle>
-              <StyledText>{structureStrings.big.description}</StyledText>
+          <StyledColumn>
+            <StyledTitle>{structureStrings.big.title}</StyledTitle>
+            <StyledText>{structureStrings.big.description}</StyledText>
           </StyledColumn>
         </Grid>
       </div>

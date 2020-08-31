@@ -3,7 +3,6 @@ import { Grid } from "semantic-ui-react";
 
 export const StyledTitle = styled.h2`
   &&& {
-    padding: 0px;
     margin-top: 18px;
     font-size: 24px;
     font-family: Karla;
@@ -18,7 +17,7 @@ export const StyledTitle = styled.h2`
 
 export const StyledText = styled.body`
   &&& {
-    margin: 8px 16px 18px 16px;
+    margin: 8px 27px 18px 27px;
     font-size: 16px;
     font-family: "Source Sans Pro";
     font-style: normal;
@@ -34,12 +33,10 @@ export const StyledText = styled.body`
 
 export const StyledColumn = styled(Grid.Column)`
   &&& {
-    margin-top: 15px;
     background-color: #f8f3ef;
     border-radius: 10px;
-    border: none;
-    shadow: none;
     height: 170px !important;
+    // calculated as (1-6/1056)/2 (must round down)
     width: 49.7% !important;
   }
 `;
