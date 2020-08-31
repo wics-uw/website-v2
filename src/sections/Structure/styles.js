@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import { Segment } from "semantic-ui-react";
+import { Segment, Grid, Column } from "semantic-ui-react";
 
 export const StyledTitle = styled.h2`
   &&& {
-    margin-top: 37px;
+    padding: 0px;
+    margin-top: 18px;
     font-size: 24px;
     font-family: Karla;
     font-style: normal;
@@ -17,7 +18,7 @@ export const StyledTitle = styled.h2`
 
 export const StyledText = styled.body`
   &&& {
-    margin: 8px 60px 37px 60px;
+    margin: 8px 16px 18px 16px;
     font-size: 16px;
     font-family: "Source Sans Pro";
     font-style: normal;
@@ -31,11 +32,14 @@ export const StyledText = styled.body`
   }
 `;
 
-export const StyledSegment = styled(Segment)`
+export const StyledColumn = styled(Grid.Column)`
   &&& {
     margin-top: 15px;
     background-color: #f8f3ef;
+    border-radius: 10px;
     border: none;
     shadow: none;
+    height: 170px !important;
+    width: 48% !important;
   }
 `;

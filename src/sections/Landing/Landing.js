@@ -4,7 +4,7 @@ import {
   StyledGridLeftColumn,
   StyledGridRightColumn,
   StyledGridWrapper,
-  StyledLandingImage,
+  StyledLandingImage, StyledLandingWrapper,
   StyledLearnMoreText,
   StyledLearnMoreWrapper,
   StyledMailingButton,
@@ -25,7 +25,7 @@ import chevron_down from "../../res/images/chevron_down.svg"
 class Landing extends Component {
   render() {
     return (
-      <div>
+      <StyledLandingWrapper>
         <StyledGridWrapper columns={2}>
           {/*Left column - Text*/}
           <StyledGridLeftColumn width={8} verticalAlign='middle'>
@@ -72,7 +72,7 @@ class Landing extends Component {
           </StyledLearnMoreText>
           <StyledChevronDown src={chevron_down}/>
         </StyledLearnMoreWrapper>
-      </div>
+      </StyledLandingWrapper>
     )
   }
 }
