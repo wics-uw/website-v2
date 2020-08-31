@@ -3,24 +3,24 @@ import {StyledDescription, StyledTitle, TextWrapper, StyledLink, StyledUpdate, S
 
 
 class NumbersTitleDescription extends Component {
-    render () {
-        return (
-            <div>
-                <TextWrapper>
-                <StyledTitle>
-                {this.props.title}
-                </StyledTitle>
-                <StyledDescription>
-                {this.props.description}
-                </StyledDescription>
-                </TextWrapper>
-                <SourceWrapper>
-                <a href={this.props.link} target='_blank' rel="noopener noreferrer"><StyledLink>{this.props.linkName}</StyledLink></a>
-                <StyledUpdate>Updated: {this.props.updated}</StyledUpdate>
-                </SourceWrapper>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <TextWrapper>
+          <StyledTitle>
+            {this.props.title}
+          </StyledTitle>
+          <StyledDescription>
+            {this.props.description}
+          </StyledDescription>
+        </TextWrapper>
+        <SourceWrapper>
+          <a href={this.props.link} target='_blank' rel="noopener noreferrer"><StyledLink>{this.props.linkName}</StyledLink></a>
+          <StyledUpdate>Updated: {this.props.updated}</StyledUpdate>
+        </SourceWrapper>
+      </div>
+    )
+  }
 
 }
 
