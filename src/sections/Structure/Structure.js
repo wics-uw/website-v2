@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import SectionTitleDescription from "../../components/SectionTitleDescription/SectionTitleDescription";
 import structureStrings from "../../res/structureStrings";
 import { Grid, Divider } from "semantic-ui-react";
-import { StyledTitle, StyledText, StyledSegment, StyledColumn } from "./styles";
+import { StyledTitle, StyledText, StyledColumn } from "./styles";
 
 class Structure extends Component {
   render() {

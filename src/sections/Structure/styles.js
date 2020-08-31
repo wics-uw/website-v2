@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Segment, Grid, Column } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 
 export const StyledTitle = styled.h2`
   &&& {
@@ -40,6 +40,6 @@ export const StyledColumn = styled(Grid.Column)`
     border: none;
     shadow: none;
     height: 170px !important;
-    width: 48% !important;
+    width: 49.7% !important;
   }
 `;
