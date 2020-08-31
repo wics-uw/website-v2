@@ -28,15 +28,13 @@ class Contact extends Component {
                 {contactStrings.faq.d1}
                 <a
                   href={contactStrings.faq.faqlink}
-                  style={{ textDecorationLine: "underline", color: "#000000" }}
-                >
+                  style={{ textDecorationLine: "underline", color: "#000000" }}>
                   {contactStrings.faq.faqtext}
                 </a>
                 {contactStrings.faq.d2}
                 <a
                   href={contactStrings.faq.policylink}
-                  style={{ textDecorationLine: "underline", color: "#000000" }}
-                >
+                  style={{ textDecorationLine: "underline", color: "#000000" }}>
                   {contactStrings.faq.policytext}
                 </a>
               </StyledText>
@@ -58,29 +56,25 @@ class Contact extends Component {
                   <StyledSocial
                     src={linkedin_logo}
                     href={contactStrings.social.lin}
-                    target="_blank"
-                  />
+                    target="_blank"/>
                 </StyledColumn>
                 <StyledColumn>
                   <StyledSocial
                     src={fb_logo}
                     href={contactStrings.social.fb}
-                    target="_blank"
-                  />
+                    target="_blank"/>
                 </StyledColumn>
                 <StyledColumn>
                   <StyledSocial
                     src={insta_logo}
                     href={contactStrings.social.insta}
-                    target="_blank"
-                  />
+                    target="_blank"/>
                 </StyledColumn>
                 <StyledColumn>
                   <StyledSocial
                     src={discord_logo}
                     href={contactStrings.social.disc}
-                    target="_blank"
-                  />
+                    target="_blank"/>
                 </StyledColumn>
               </StyledGridSocial>
             </div>
