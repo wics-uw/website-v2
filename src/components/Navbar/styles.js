@@ -1,23 +1,39 @@
 import styled from "styled-components";
-import {Image, Menu} from "semantic-ui-react";
+import {Button, Image, Menu} from "semantic-ui-react";
 
-// Styles for the Navbar wrapper
 export const StyledNavbarWrapper = styled(Menu)`
   &&& {
+    padding: 0 71px 0 110px;
     background-color: #ffffff;
     height: 74px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    cursor: pointer;
   }
 `;
 
-// Styles for the logo
 export const StyledLogo = styled(Image)`
   &&& {
     width: 100px;
-    margin: 0px 0px 0px 100px;
+  }
+`;
+
+export const StyledNavItem = styled(Button)`
+  &&& {
+    margin: -5px !important;
+    color: #000000;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: Karla;
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    border-radius: 42px;
+    &:hover {
+      background-color: #4A607B;
+      color: #ffffff;
+    }
   }
 `;
