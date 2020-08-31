@@ -49,6 +49,7 @@ export const StyledTitle2 = styled.h3`
     font-size: 24px;
     line-height: 28px;
     color: #000000;
+    text-transform: none;
   }
 `;
 
@@ -61,7 +62,7 @@ export const StyledText = styled.p`
     font-size: 24px;
     line-height: 28px;
     letter-spacing: -0.02em;
-    text-transform: none;
     color: #000000;
+    text-transform: none;
   }
 `;

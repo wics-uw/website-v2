@@ -86,8 +86,8 @@ class Contact extends Component {
             </div>
           </Grid.Column>
           <Grid.Column width={2}></Grid.Column>
-          <Grid.Column width={5}>
-            <Image src={woman} size="large" />
+          <Grid.Column width={6}>
+            <Image src={woman} size="huge" />
           </Grid.Column>
         </Grid>
       </div>
