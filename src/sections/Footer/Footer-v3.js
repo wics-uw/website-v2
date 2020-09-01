@@ -24,7 +24,7 @@ class FooterV3 extends Component {
       <StyledFooterWrapper>
         <Grid>
           <Grid.Row columns={4}>
-            <Grid.Column width={3}>
+            <Grid.Column width={3} style={{marginRight: "40px"}}>
               {/* width={3}> */}
               <div>
                 <StyledTitle>{footerStrings.title.addr}</StyledTitle>
@@ -75,13 +75,11 @@ class FooterV3 extends Component {
                 </ul>
               </div>
             </Grid.Column>
-            <Grid.Column width={6}>
-              {/* width={5}> */}
+            <Grid.Column width={6} style={{marginRight: "40px"}}>
               <StyledTitle>{footerStrings.title.la} </StyledTitle>
               <StyledText>{footerStrings.description.la}</StyledText>
             </Grid.Column>
-            <Grid.Column width={2}>
-              {/* width={2}> */}
+            <Grid.Column width={3}>
               <StyledTitle>{footerStrings.title.pol}</StyledTitle>
               <ul
                 style={{
@@ -113,7 +111,6 @@ class FooterV3 extends Component {
               </ul>
             </Grid.Column>
             <Grid.Column width={2}>
-              {/* width={2}> */}
               <StyledTitle>{footerStrings.title.lk}</StyledTitle>
               <ul
                 style={{
