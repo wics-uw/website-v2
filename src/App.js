@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Landing from "./sections/Landing/Landing";
 import Mission from "./sections/Mission/Mission";
 import Calendar from "./sections/Calendar/Calendar";
 import Numbers from "./sections/Numbers/Numbers";
-import FooterV2 from "./sections/Footer/Footer-v2";
-import {StyledBodyWrapper, StyledSectionText} from "./res/globalStyles";
+import FooterV3 from "./sections/Footer/Footer-v3";
+import { StyledBodyWrapper, StyledSectionText } from "./res/globalStyles";
 import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
@@ -13,20 +13,15 @@ import PastCommittee from "./sections/PastCommittee/PastCommittee";
 function App() {
   return (
     <div>
-      <Navbar/>
-      <Landing/>
+      <Navbar />
+      <Landing />
       <StyledBodyWrapper>
+        <StyledSectionText id="about">{strings.about}</StyledSectionText>
+        <Mission />
+        <Numbers />
 
-        <StyledSectionText id="about">
-          {strings.about}
-        </StyledSectionText>
-        <Mission/>
-        <Numbers/>
-
-        <StyledSectionText id="calendar">
-          {strings.calendar}
-        </StyledSectionText>
-        <Calendar/>
+        <StyledSectionText id="calendar">{strings.calendar}</StyledSectionText>
+        <Calendar />
 
         <StyledSectionText id="getInvolved">
           {strings.getInvolved}
@@ -39,16 +34,12 @@ function App() {
         <StyledSectionText id="committee">
           {strings.committee}
         </StyledSectionText>
-        <CurrentCommittee/>
-        <PastCommittee/>
+        <CurrentCommittee />
+        <PastCommittee />
 
-        <StyledSectionText id="sponsors">
-          {strings.industry}
-        </StyledSectionText>
-
-       
+        <StyledSectionText id="sponsors">{strings.industry}</StyledSectionText>
       </StyledBodyWrapper>
-      <FooterV2/>
+      <FooterV3 />
     </div>
   );
 }
