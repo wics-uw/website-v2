@@ -3,7 +3,6 @@ const numberStrings = {
     description: `In the Cheriton School of Computer Science,
      female-identifying individuals represent:  `,
     linkName: 'Sources',
-    href: 'https://cs.uwaterloo.ca/wics/resources-and-information',
     updated: '2020',
     firstCard:{
       number:'27%',
