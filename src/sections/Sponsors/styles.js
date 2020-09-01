@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import {Button, Icon, Accordion, AccordionContent, AccordionTitle, Grid, GridColumn} from "semantic-ui-react";
+import {Button, Accordion, AccordionContent, AccordionTitle, Grid, GridColumn} from "semantic-ui-react";
 
 //styles for the "interested in..." text
 export const InterestedLine = styled.body`
   &&& {
     margin-top: 9px;
     width: 648px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -14,18 +14,6 @@ export const InterestedLine = styled.body`
   }
 `;
 
-//styles for the email 
-export const Email = styled.body`
-  &&& {
-    margin-top: 9px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    display: inline;
-  }
-`;
 
 //styles for the sponsor type 
 export const SponsorType = styled.body`
@@ -37,8 +25,6 @@ export const SponsorType = styled.body`
     line-height: 28px;
     margin-top: 57px;
     margin-bottom: 28px;
-    /* identical to box height */
-    
     letter-spacing: -0.02em;
     background-color: transparent;
     color: #000000;
@@ -47,7 +33,7 @@ export const SponsorType = styled.body`
 `;
 
 
-//styles for the sponsor type 
+//styles for the sponsor type for links
 export const SponsorTypeLink = styled.body`
   &&& {
     font-family: Karla;
@@ -55,16 +41,18 @@ export const SponsorTypeLink = styled.body`
     font-weight: normal;
     font-size: 24px;
     line-height: 28px;
-    margin-bottom: 16px;
-    margin-top: 16px;
+    margin-bottom: 0 !important;
+    margin-top: 32px;
     letter-spacing: -0.02em;
     color: #000000;
     background-color: transparent;
+    padding-top: 0 !important;
+    padding-bottom:0 !important;
 
   }
 `;
 
-//styles for the 'interested in becoming a sponsor' text 
+//styles for the 'want to get involved' text 
 export const Interested = styled.body`
   &&& {
     margin-top: 57px;
@@ -102,21 +90,6 @@ export const MoreWrapper = styled.div`
 export const SponsorImg = styled.img`
   &&& {
     vertical-align: middle;
-  }
-`;
-
-
-//styles for the wrapper of the sponsor image 
-export const ImgWrapper = styled.span`
-  &&& {
-  
-  }
-`;
-
-
-export const StyledChevronIcon = styled(Icon)`
-  &&& {
-    margin-left: 842px;
   }
 `;
 
@@ -208,7 +181,7 @@ export const StyledAccordionContent = styled(AccordionContent)`
 
 export const StyledGrid= styled(Grid)`
   &&& {
-    margin-top: 16px;
+    margin-top: 0;
     margin-bottom: 0;
     padding: 0 0 0 0;
   }
@@ -217,9 +190,17 @@ export const StyledGrid= styled(Grid)`
 
 export const StyledGridColumn= styled(GridColumn)`
   &&& {
-    padding-top: 0;
-    padding-bottom:0;
+    padding-top: 16px !important;
+    padding-bottom:0 !important;
     margin: 0 0 0 0;
+    text-align: center;
   }
 `;
 
+export const StyledGridColumnL = styled(GridColumn)`
+  &&& {
+    padding-top: 16px !important;
+    padding-bottom:0 !important;
+    margin: 0 0 0 0;
+  }
+`;

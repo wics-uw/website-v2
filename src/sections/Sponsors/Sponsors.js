@@ -1,18 +1,18 @@
 import React, {Component} from 'react';
 import SectionTitleDescription from '../../components/SectionTitleDescription/SectionTitleDescription';
 import sponsorStrings from '../../res/sponsorsStrings';
-import {StyledAccordionTitle, StyledGrid, StyledGridColumn, StyledChevronIcon, StyledAccordion, StyledTitle, SponsorType, SponsorTypeLink, SponsorImg, ImgWrapper, SponsorsWrapper, StyledAccordionContent, StyledLink, MoreWrapper, Interested, LearnMore} from './styles';
+import {StyledAccordionTitle, StyledGrid, StyledGridColumn, StyledGridColumnL, StyledAccordion, StyledTitle, SponsorType, SponsorTypeLink, SponsorImg, SponsorsWrapper, StyledAccordionContent, StyledLink, MoreWrapper, Interested, LearnMore} from './styles';
 import google from '../../res/images/sponsors/google.svg';
 import wish from '../../res/images/sponsors/wish.svg';
 import amazon from '../../res/images/sponsors/amazon.svg';
 import facebook from '../../res/images/sponsors/facebook.svg';
-import mef from '../../res/images/sponsors/mef.svg';
-import sap from '../../res/images/sponsors/sap.svg';
 import zynga from '../../res/images/sponsors/zynga.svg';
 import splunk from '../../res/images/sponsors/splunk.svg';
 import yelp from '../../res/images/sponsors/yelp.svg';
-import loblaws from '../../res/images/sponsors/loblaws.png';
-import {Accordion, AccordionContent, AccordionTitle, Grid, Image, GridColumn} from "semantic-ui-react";
+import loblaws from '../../res/images/sponsors/loblaws.svg';
+import chevron_down from "../../res/images/past_execs_chevron_down.svg";
+import chevron_right from "../../res/images/past_execs_chevron_right.svg";
+import { Grid, Image} from "semantic-ui-react";
 //import illustration from '../../res/images/sponsors/illustration.svg';
 
 
@@ -134,9 +134,9 @@ class Sponsors extends Component {
                 <Grid columns={4}>
                 {Object.entries(platinumSponsors).map(([key, name]) => (
                     <StyledGridColumn>
-                    {name.link === ''? <ImgWrapper><SponsorImg src={name.name} alt=''/> </ImgWrapper>: 
-                    (<a href = {name.link} target ='_blank'> 
-                    <ImgWrapper><SponsorImg src={name.name} alt=''/> </ImgWrapper>
+                    {name.link === ''? <SponsorImg src={name.name} alt=''/>: 
+                    (<a href = {name.link} target ='_blank' rel="noopener noreferrer"> 
+                    <SponsorImg src={name.name} alt=''/>
                     </a>)}
                     </StyledGridColumn>
                 ))}
@@ -150,9 +150,9 @@ class Sponsors extends Component {
                 <StyledGrid columns={4}>
                 {Object.entries(goldSponsors).map(([key, name]) => (
                     <StyledGridColumn>
-                    {name.link === ''? <ImgWrapper><SponsorImg src={name.name} alt=''/> </ImgWrapper>: 
-                    (<a href = {name.link} target ='_blank'> 
-                    <ImgWrapper><SponsorImg src={name.name} alt=''/> </ImgWrapper>
+                    {name.link === ''? <SponsorImg src={name.name} alt=''/>: 
+                    (<a href = {name.link} target ='_blank' rel="noopener noreferrer"> 
+                    <SponsorImg src={name.name} alt=''/> 
                     </a>)}
                     </StyledGridColumn>
                 ))}
@@ -164,11 +164,12 @@ class Sponsors extends Component {
                     active={active}
                     onClick={this.handleClick}>
                     <StyledTitle>
-                    More Sponsors
+                    More Sponsors</StyledTitle>
                     {active
-                        ? <StyledChevronIcon size='small' name='chevron down'/>
-                        : <StyledChevronIcon size='small' name='chevron right'/>}
-                    </StyledTitle>
+                    ? <Image src={chevron_down}/>
+                    : <Image src={chevron_right}/>
+                    }
+                    
                 </StyledAccordionTitle>
                 <StyledAccordionContent active={active}>
                    
@@ -177,9 +178,9 @@ class Sponsors extends Component {
                     </SponsorTypeLink>
                     <StyledGrid columns={6}>
                     {Object.entries(silverSponsors).map(([number, name]) => (
-                        <GridColumn>
-                        <a href={name.link} target='_blank'><StyledLink>{name.name}</StyledLink></a>
-                        </GridColumn>
+                        <StyledGridColumnL>
+                        <a href={name.link} target='_blank' rel="noopener noreferrer"><StyledLink>{name.name}</StyledLink></a>
+                        </StyledGridColumnL>
                     ))}
                     </StyledGrid>
 
@@ -188,9 +189,9 @@ class Sponsors extends Component {
                         </SponsorTypeLink>
                         <StyledGrid columns={6}>
                         {Object.entries(localSponsors).map(([number, name]) => (
-                            <GridColumn>
-                            <StyledLink href={name.link} target='_blank'>{name.name}</StyledLink>
-                            </GridColumn>
+                            <StyledGridColumnL>
+                            <StyledLink href={name.link} target='_blank' rel="noopener noreferrer">{name.name}</StyledLink>
+                            </StyledGridColumnL>
                         ))}
                     </StyledGrid>
                 </StyledAccordionContent>
