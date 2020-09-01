@@ -3,7 +3,7 @@ import styled from "styled-components";
 // Styles for section title
 export const StyledTitle = styled.h2`
   &&& {
-    margin-top: 15px;
+    margin-bottom: 4px;
     font-family: "Karla Bold";
     font-style: normal;
     font-weight: bold;
@@ -11,15 +11,14 @@ export const StyledTitle = styled.h2`
     line-height: 37px;
     text-transform: capitalize;
     color: #000000;
-   
   }
 `;
 
 // Styles for section description
 export const StyledDescription = styled.h4`
   &&& {
-    margin-top: 5px;
-    width: 648px;
+    margin: 0;
+    width: 500px;
     font-family: Karla;
     font-style: normal;
     font-weight: normal;
@@ -27,38 +26,29 @@ export const StyledDescription = styled.h4`
     line-height: 28px;
     letter-spacing: -0.02em;
     color: #000000;
-    
   }
 `;
 
 // Styles for section description
-export const TextWrapper = styled.div`
+export const DescriptionWrapper = styled.div`
   &&& {
-    float: left;
-  }
-`;
-
-// Styles for section description
-export const SourceWrapper = styled.div`
-  &&& {
-    float: right;
-     margin-top: 87px;
-     min-width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 0 32px 0;
   }
 `;
 
 // Styles for section description
 export const StyledLink = styled.body`
   &&& {
-    
-    font-family:  'Source Sans Pro', sans-serif;
+    font-family:  'Source Sans Pro';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     color: #333333;
     opacity: 0.6;
-    width: 100px;
     text-align: right;
   }
 `;
@@ -66,20 +56,16 @@ export const StyledLink = styled.body`
 // Styles for section description
 export const StyledUpdate = styled.body`
   &&& {
-    
-    font-family:  'Source Sans Pro', sans-serif;
+    font-family:  'Source Sans Pro';
     font-style: italic;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
-    width: 100px;
     color: #333333;
     padding-right: 2px;
     opacity: 0.6;
-
   }
 `;
-
 
 

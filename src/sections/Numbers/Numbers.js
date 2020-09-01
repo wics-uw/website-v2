@@ -2,14 +2,15 @@ import React, {Component} from 'react';
 import NumbersTitleDescription from "../../components/NumbersTitleDescription/NumbersTitleDescription";
 import numberStrings from "../../res/numberStrings";
 import {GridColumn} from "semantic-ui-react";
-import {StyledNumberCardsWrapper, NumbersWrapper} from "./styles"; 
+import {StyledNumberCardsWrapper} from "./styles"; 
 import NumberCard from "../../components/NumberCard/NumberCard";
+import {StyledSubSectionWrapper} from "../../res/globalStyles";
 
 
 class Numbers extends Component {
     render (){
         return (
-            <NumbersWrapper>
+            <StyledSubSectionWrapper>
                 {/*Section title & description*/}
                 <NumbersTitleDescription
                 title={numberStrings.title}
@@ -42,7 +43,7 @@ class Numbers extends Component {
                     </GridColumn>
                 </StyledNumberCardsWrapper>
                 
-            </NumbersWrapper>
+            </StyledSubSectionWrapper>
             
         )
     }

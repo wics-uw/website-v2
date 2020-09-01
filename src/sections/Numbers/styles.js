@@ -8,11 +8,3 @@ export const StyledNumberCardsWrapper = styled(Grid)`
     clear: both;
   }
 `;
-
-export const NumbersWrapper = styled.div`
-  &&&{
-    margin-top: 100px;
-    margin-bottom: 108px;
-    
-  }
-`;

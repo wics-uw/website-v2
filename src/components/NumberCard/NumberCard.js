@@ -14,10 +14,11 @@ class NumberCard extends Component {
           {/*Number description*/}
           <StyledCardDescription>
             {this.props.description}
-          </StyledCardDescription>
+            {/*Number approximation*/}
           <StyledApprox>
             {this.props.approx}
           </StyledApprox>
+          </StyledCardDescription>
         </StyledCardWrapper>
       )
     }
