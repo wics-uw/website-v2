@@ -31,6 +31,7 @@ const footerStrings = {
     p3: "http://wics.uwaterloo.ca/office-policy/", // Office policy
     p4: "http://wics.uwaterloo.ca/photography-policy/", // Photography policy
 
+    la: "https://uwaterloo.ca/faculty-association/about/territorial-acknowledgement", // Land acknowledgement
     // Relevant links
     lk1: "http://wics.uwaterloo.ca/", // Big Wics
     lk2: "https://github.com/wics-uw", // Github

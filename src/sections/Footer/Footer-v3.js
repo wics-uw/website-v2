@@ -24,7 +24,7 @@ class FooterV3 extends Component {
       <StyledFooterWrapper>
         <Grid>
           <Grid.Row columns={4}>
-            <Grid.Column width={3} style={{marginRight: "40px"}}>
+            <Grid.Column width={3} style={{ marginRight: "40px" }}>
               {/* width={3}> */}
               <div>
                 <StyledTitle>{footerStrings.title.addr}</StyledTitle>
@@ -75,12 +75,26 @@ class FooterV3 extends Component {
                 </ul>
               </div>
             </Grid.Column>
-            <Grid.Column width={6} style={{marginRight: "40px"}}>
-              <StyledTitle>{footerStrings.title.la} </StyledTitle>
+            <Grid.Column width={6} style={{ marginRight: "40px" }}>
+              <StyledTitle>
+                <a
+                  href={footerStrings.links.pol}
+                  style={{ textDecorationLine: "underline", color: "#000000" }}
+                >
+                  {footerStrings.title.la}
+                </a>
+              </StyledTitle>
               <StyledText>{footerStrings.description.la}</StyledText>
             </Grid.Column>
             <Grid.Column width={3}>
-              <StyledTitle>{footerStrings.title.pol}</StyledTitle>
+              <StyledTitle>
+                <a
+                  href={footerStrings.links.pol}
+                  style={{ textDecorationLine: "underline", color: "#000000" }}
+                >
+                  {footerStrings.title.pol}
+                </a>
+              </StyledTitle>
               <ul
                 style={{
                   listStyleType: "none",
