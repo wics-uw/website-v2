@@ -5,7 +5,6 @@ import {GridColumn} from "semantic-ui-react";
 import {StyledNumberCardsWrapper} from "./styles"; 
 import NumberCard from "../../components/NumberCard/NumberCard";
 import {StyledSubSectionWrapper} from "../../res/globalStyles";
-import sourcePDF from '../../res/sources2019.pdf';
 
 // Numbers section Component
 class Numbers extends Component {
@@ -16,7 +15,7 @@ class Numbers extends Component {
                 <NumbersTitleDescription
                 title={numberStrings.title}
                 description={numberStrings.description}
-                link={sourcePDF}
+                link={numberStrings.href}
                 linkName={numberStrings.linkName}
                 updated={numberStrings.updated}/>
                 {/*Number cards*/}

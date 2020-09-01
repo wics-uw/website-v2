@@ -3,20 +3,21 @@ const numberStrings = {
     description: `In the Cheriton School of Computer Science,
      female-identifying individuals represent:  `,
     linkName: 'Sources',
+    href: 'https://cs.uwaterloo.ca/wics/resources-and-information',
     updated: '2020',
     firstCard:{
-      number:'27%',
-      description: 'undergrad students',
-      approx: 'approx. 3 in 10'
+      number:'24.26%',
+      description: 'first-year enrollment',
+      approx: 'approx. 1 in 4'
     },
     secondCard:{
-      number:'28.3%',
-      description: 'first-years (2018)',
+      number:'24.24%',
+      description: 'undergrad enrollment',
       approx: 'approx. 3 in 10'
     },
     thirdCard:{
-      number:'20%',
-      description: 'graduate students',
+      number:'18.93%',
+      description: 'graduate enrollment',
       approx: 'approx. 1 in 5'
     }
   };
