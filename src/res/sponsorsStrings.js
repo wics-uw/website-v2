@@ -5,6 +5,8 @@ const sponsorStrings = {
     email: 'wics@uwaterloo.ca',
     platinum: 'Platinum',
     gold: 'Gold',
+    silver: 'Silver',
+    local: 'local',
     interested: 'Want to get involved?',
     learnMore: 'Learn More'
 };

@@ -93,7 +93,7 @@ export const SponsorImg = styled.img`
   }
 `;
 
-
+//styles for the Accordian Title
 export const StyledTitle = styled.h4`
   &&& {
     font-family: Karla;
@@ -108,6 +108,7 @@ export const StyledTitle = styled.h4`
   }
 `;
 
+//styles for accordion shape
 export const StyledAccordion = styled(Accordion)`
   &&& {
     margin-top: 32px;
@@ -117,33 +118,7 @@ export const StyledAccordion = styled(Accordion)`
   }
 `;
 
-
-export const SponsorsWrapper = styled.div`
-  &&& {
-    width: 1060px;
-    
-  }
-`;
-
-
-export const ColorLine = styled.div`
-  &&& {
-    width: 3px;
-    background: #E7BEB2;
-    display: inline;
-  }
-`;
-
-
-export const BackColor = styled.div`
-  &&& {
-    width: 1057px;
-    background: #E7BEB2;
-    opacity: 0.15;
-    display: inline;
-  }
-`;
-
+// styles for the text of hyperlinks in other sponsors
 export const StyledLink = styled.a`
   &&& {
     font-family: 'Source Sans Pro', sans-serif;
@@ -153,12 +128,11 @@ export const StyledLink = styled.a`
     line-height: 23px;
     color: black;
     padding: 0px 0px 0px 0px;
-    margin-bottom: 8px;
     background-color: transparent;
   }
 `;
 
-
+// styles for the accordion title
 export const StyledAccordionTitle = styled(AccordionTitle)`
   &&& {
     padding: 16px !important;
@@ -168,6 +142,7 @@ export const StyledAccordionTitle = styled(AccordionTitle)`
   }
 `;
 
+//styles for the accordion content
 export const StyledAccordionContent = styled(AccordionContent)`
   &&& {
     border-left: 3px solid #E7BEB2;
@@ -178,7 +153,7 @@ export const StyledAccordionContent = styled(AccordionContent)`
   }
 `;
 
-
+//styles for the grid
 export const StyledGrid= styled(Grid)`
   &&& {
     margin-top: 0;
@@ -187,7 +162,7 @@ export const StyledGrid= styled(Grid)`
   }
 `;
 
-
+//styles for grid columns
 export const StyledGridColumn= styled(GridColumn)`
   &&& {
     padding-top: 16px !important;
@@ -197,6 +172,7 @@ export const StyledGridColumn= styled(GridColumn)`
   }
 `;
 
+//styles for grid columns for hyperlinks
 export const StyledGridColumnL = styled(GridColumn)`
   &&& {
     padding-top: 16px !important;

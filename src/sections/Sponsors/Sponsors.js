@@ -13,12 +13,15 @@ import loblaws from '../../res/images/sponsors/loblaws.svg';
 import chevron_down from "../../res/images/past_execs_chevron_down.svg";
 import chevron_right from "../../res/images/past_execs_chevron_right.svg";
 import { Grid, Image} from "semantic-ui-react";
+import {StyledSubSectionWrapper} from "../../res/globalStyles";
+
 //import illustration from '../../res/images/sponsors/illustration.svg';
 
 
 //import SponsorImg from '../../components/'
 
 class Sponsors extends Component {
+    //Functions to control state of accordion
     state = {
         active: false
       };
@@ -30,9 +33,10 @@ class Sponsors extends Component {
       };
 
     render (){
-
+        
         const {active} = this.state;
 
+        //dictionary of platinum sponsors and their pictures and links
         const platinumSponsors ={
             s1: {
                 name: google,
@@ -48,6 +52,7 @@ class Sponsors extends Component {
             },
         };
 
+        //dictionary of gold sponsors and their pictures and links
         const goldSponsors = {
             s1: {
                 name: amazon,
@@ -71,6 +76,7 @@ class Sponsors extends Component {
             }
         };
 
+        //dictionary of silver sponsors and their links
         const silverSponsors = {
             s1: {
                 name: 'A Thinking Ape',
@@ -110,6 +116,7 @@ class Sponsors extends Component {
             },
         };
 
+        //dictionary of local sponsors and their links
         const localSponsors = {
             s1: {
                 name: 'Arctic Wolf',
@@ -121,7 +128,7 @@ class Sponsors extends Component {
             },
         };
         return (
-            <SponsorsWrapper>
+            <StyledSubSectionWrapper>
                 {/* Sponsors title and Description*/}
                 <SectionTitleDescription
                 title={sponsorStrings.title}
@@ -130,7 +137,7 @@ class Sponsors extends Component {
                 <SponsorType>
                     {sponsorStrings.platinum}
                 </SponsorType>
-                {/* Picutures of Platinum Sponsors*/}
+                {/* Pictures of Platinum Sponsors*/}
                 <Grid columns={4}>
                 {Object.entries(platinumSponsors).map(([key, name]) => (
                     <StyledGridColumn>
@@ -146,7 +153,7 @@ class Sponsors extends Component {
                 <SponsorType>
                     {sponsorStrings.gold}
                 </SponsorType>
-                {/* Picutures of Gold Sponsors*/}
+                {/* Pictures of Gold Sponsors*/}
                 <StyledGrid columns={4}>
                 {Object.entries(goldSponsors).map(([key, name]) => (
                     <StyledGridColumn>
@@ -172,9 +179,10 @@ class Sponsors extends Component {
                     
                 </StyledAccordionTitle>
                 <StyledAccordionContent active={active}>
-                   
+
+                   {/* Links of silver Sponsors*/}
                     <SponsorTypeLink>
-                        Silver
+                    {sponsorStrings.silver}
                     </SponsorTypeLink>
                     <StyledGrid columns={6}>
                     {Object.entries(silverSponsors).map(([number, name]) => (
@@ -183,9 +191,9 @@ class Sponsors extends Component {
                         </StyledGridColumnL>
                     ))}
                     </StyledGrid>
-
+                        {/* Links of local Sponsors*/}
                         <SponsorTypeLink>
-                            Local
+                            {sponsorStrings.local}
                         </SponsorTypeLink>
                         <StyledGrid columns={6}>
                         {Object.entries(localSponsors).map(([number, name]) => (
@@ -208,7 +216,7 @@ class Sponsors extends Component {
                          {sponsorStrings.learnMore}</LearnMore>
                 </MoreWrapper>
                 
-            </SponsorsWrapper>
+            </StyledSubSectionWrapper>
         )
     }
 }
