@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {StyledDescription, StyledTitle, DescriptionWrapper, StyledLink, StyledUpdate} from "./styles";
 
-
+// NumberTitleDescription Component
 class NumbersTitleDescription extends Component {
     render () {
         return (

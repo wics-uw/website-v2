@@ -6,7 +6,7 @@ import {StyledNumberCardsWrapper} from "./styles";
 import NumberCard from "../../components/NumberCard/NumberCard";
 import {StyledSubSectionWrapper} from "../../res/globalStyles";
 
-
+// Numbers section Component
 class Numbers extends Component {
     render (){
         return (
