@@ -31,6 +31,7 @@ export const StyledIcon = styled(Icon)`
     display: inline;
     float: right;
     margin-top: 8px;
+    color: black;
 }
 `;
 
@@ -38,8 +39,7 @@ export const StyledIcon = styled(Icon)`
 export const LinksWrapper = styled.div`
 &&& {
     margin-left: 16px;
-    padding-top: 4px;
-    padding-bottom: 2px;
+    padding-top: 8px;
 }
 `;
 
@@ -100,8 +100,8 @@ export const StyledAccordionContentR = styled(AccordionContent)`
 
 export const StyledAccordionContent = styled(AccordionContent)`
   &&& {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 8px !important;
+    padding-bottom: 16px !important;
     border-left: 3px solid #E7BEB2;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     background-color: rgba(231,190,178, 0.15);

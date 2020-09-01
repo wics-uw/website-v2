@@ -26,20 +26,20 @@ export default class Resources extends Component {
                 
                 <AccordionWrapper>
                 <StyledAccordion fluid styled>
-                    <Menu.Item>
+                    
                         <AccordionTitle active={activeIndex === 0}
                             index={0}
                             onClick={this.handleClick}>
                                 <div>
                         <StyledATitle>
-                            {resourcesStrings.campusTitle}
+                            {resourcesStrings.wicsTitle}
                         </StyledATitle>
                         {activeIndex === 0? <StyledIcon name='chevron down'/> : <StyledIcon name='chevron right'/> }
                         </div></AccordionTitle>
                         <StyledAccordionContent active={activeIndex === 0}>
-                        {Object.entries(resourcesStrings.campusLinks).map(([number, resource]) => (
+                        {Object.entries(resourcesStrings.wicsLinks).map(([number, resource]) => (
                             <LinksWrapper>
-                                <a href={resource.link} target='_blank'>
+                                <a href={resource.link} target='_blank' rel="noopener noreferrer">
                                 <Icon name='chain' color='black'/>
                                 <LinkName>{resource.name}</LinkName>
                                 </a>
@@ -47,22 +47,22 @@ export default class Resources extends Component {
                         ))
                         }
                         </StyledAccordionContent>
-                    </Menu.Item>
-                    <Menu.Item>
+                    
+                    
                         
                         <AccordionTitle active={activeIndex === 1}
                             index={1}
                             onClick={this.handleClick}>
                                 <div>
                         <StyledATitle>
-                            {resourcesStrings.finaceTitle}
+                            {resourcesStrings.conferenceTitle}
                         </StyledATitle>
                         {activeIndex === 1? <StyledIcon name='chevron down'/> : <StyledIcon name='chevron right'/> }
                         </div></AccordionTitle>
                         <StyledAccordionContent active={activeIndex === 1}>
-                        {Object.entries(resourcesStrings.financeLinks).map(([number, resource]) => (
+                        {Object.entries(resourcesStrings.conferenceLinks).map(([number, resource]) => (
                             <LinksWrapper>
-                                <a href={resource.link} target='_blank'>
+                                <a href={resource.link} target='_blank' rel="noopener noreferrer">
                                 <Icon name='chain' color='black'/>
                                 <LinkName>{resource.name}</LinkName>
                                 </a>
@@ -70,8 +70,7 @@ export default class Resources extends Component {
                         ))
                         }
                         </StyledAccordionContent>
-                    </Menu.Item>
-                    <Menu.Item>
+                    
                         <AccordionTitle active={activeIndex === 2}
                             index={2}
                             onClick={this.handleClick}>
@@ -80,10 +79,30 @@ export default class Resources extends Component {
                         </StyledATitle>
                         {activeIndex === 2? <StyledIcon name='chevron down'/> : <StyledIcon name='chevron right'/> }
                         </AccordionTitle>
-                        <StyledAccordionContentR active={activeIndex === 2}>
+                        <StyledAccordionContent active={activeIndex === 2}>
                         {Object.entries(resourcesStrings.additionLinks).map(([number, resource]) => (
                             <LinksWrapper>
-                                <a href={resource.link} target='_blank'>
+                                <a href={resource.link} target='_blank' rel="noopener noreferrer">
+                                <Icon name='chain' color='black'/>
+                                <LinkName>{resource.name}</LinkName>
+                                </a>
+                            </LinksWrapper>
+                        ))
+                        }
+                        </StyledAccordionContent>
+                    
+                        <AccordionTitle active={activeIndex === 3}
+                            index={3}
+                            onClick={this.handleClick}>
+                        <StyledATitle>
+                            {resourcesStrings.womenTitle}
+                        </StyledATitle>
+                        {activeIndex === 3? <StyledIcon name='chevron down'/> : <StyledIcon name='chevron right'/> }
+                        </AccordionTitle>
+                        <StyledAccordionContentR active={activeIndex === 3}>
+                        {Object.entries(resourcesStrings.womenLinks).map(([number, resource]) => (
+                            <LinksWrapper>
+                                <a href={resource.link} target='_blank' rel="noopener noreferrer">
                                 <Icon name='chain' color='black'/>
                                 <LinkName>{resource.name}</LinkName>
                                 </a>
@@ -91,7 +110,6 @@ export default class Resources extends Component {
                         ))
                         }
                         </StyledAccordionContentR>
-                    </Menu.Item>
                     
                 </StyledAccordion>
                 </AccordionWrapper>
