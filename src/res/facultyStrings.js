@@ -72,7 +72,7 @@ const facultyStrings = {
         s2List: {
             l1: 'Know Your Worth with Splunk',
         },
-        section3: 'Girls Mean Business',
+        section3: '(Coming Soon!) Girls Mean Business',
         s3Link: '',
         s3List: {
             l1: 'a series of hands-on programs for girls in grades 6 through 12 that guide the girls through the lifecycle of becoming a technology entrepreneur. Topics include ideation, user interface design, coding a mobile application, cybersecurity, e-commerce, digital media marketing, and business planning.',
