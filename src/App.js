@@ -10,6 +10,8 @@ import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
 import BigWiCS from './sections/BigWiCS/BigWiCS';
+import Contact from "./sections/Contact/Contact";
+import Structure from "./sections/Structure/Structure";
 
 class App extends Component {
   constructor(props) {
@@ -75,6 +77,7 @@ class App extends Component {
             </StyledBodyContainer>
           </StyledGradientBackground>
           <StyledBodyContainer>
+            <Structure/>
             <Numbers/>
           </StyledBodyContainer>
         </StyledSectionWrapper>
@@ -105,9 +108,10 @@ class App extends Component {
           </StyledSectionWrapper>
 
           <StyledSectionWrapper ref={this.contactUs}>
-            <StyledSectionText>{strings.contactUs}</StyledSectionText>
+            <Contact/>
           </StyledSectionWrapper>
         </StyledBodyContainer>
+
         <Footer/>
       </div>
     );
