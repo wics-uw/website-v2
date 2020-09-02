@@ -11,8 +11,6 @@ export const StyledCardWrapper = styled.div`
 // Styles for the card Number
 export const StyledNumber = styled.body`
   &&& {
-    width: 116px;
-    height: 75px;
     font-family: Karla;
     font-style: normal;
     font-weight: bold;
@@ -25,15 +23,29 @@ export const StyledNumber = styled.body`
 `;
 
 // Styles for the card description
-export const StyledCardDescription = styled.body`
+export const StyledCardDescription = styled.h4`
   &&& {
-    width: 206px;
-    font-family: "Source Sans Pro";
+    margin: 0 0 8px 0;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #000000;
+  }
+`;
+
+// Styles for the approx text
+export const StyledApprox = styled.body`
+  &&& {
+    font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.6);
   }
 `;
