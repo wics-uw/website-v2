@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import SectionTitleDescription from '../../components/SectionTitleDescription/SectionTitleDescription';
 import studentStrings from '../../res/littleWicsStrings';
-import { StudentCardGrid, ImageColumn, OfficeHour, OfficeHourWrapper, TextColumnR, AllOfficeHourWrapper, TextColumnL } from './styles';
+import {StudentCardGrid, ImageColumn, OfficeHour, OfficeHourWrapper, TextColumnR, AllOfficeHourWrapper, TextColumnL} from './styles';
 import LittleWicsText from '../../components/LittleWicsText/LittleWicsText';
 import officeHour from '../../res/images/student_officeHour.svg';
 import careerMentor from '../../res/images/student_careerMentor.svg';
 import community from '../../res/images/student_community.svg';
-import { StyledSubSectionWrapper } from '../../res/globalStyles';
-import { Image } from 'semantic-ui-react';
+import {StyledSubSectionWrapper} from '../../res/globalStyles';
+import {Image} from 'semantic-ui-react';
 
 
 //LittleWics Events Component
@@ -18,17 +18,17 @@ class LittleWics extends Component {
         {/* Title and Description*/}
         <SectionTitleDescription
           title={studentStrings.title}
-          description={studentStrings.description} />
+          description={studentStrings.description}/>
         <StudentCardGrid>
           {/* 1st Card Image*/}
           <ImageColumn width={5}>
-            <Image src={officeHour} />
+            <Image src={officeHour}/>
           </ImageColumn>
           <TextColumnR width={11}>
             {/* 1st Text*/}
             <LittleWicsText
               title={studentStrings.officeHours.title}
-              description={studentStrings.officeHours.description} />
+              description={studentStrings.officeHours.description}/>
             <AllOfficeHourWrapper>
               <OfficeHourWrapper>MONDAY <OfficeHour>{studentStrings.officeHours.mon}</OfficeHour></OfficeHourWrapper>
               <OfficeHourWrapper>TUESDAY <OfficeHour>{studentStrings.officeHours.tues}</OfficeHour></OfficeHourWrapper>
@@ -45,11 +45,11 @@ class LittleWics extends Component {
             {/* 2nd Card Text*/}
             <LittleWicsText
               title={studentStrings.careerMentorship.title}
-              description={studentStrings.careerMentorship.description} />
+              description={studentStrings.careerMentorship.description}/>
           </TextColumnL>
           {/* 2nd Card Image*/}
           <ImageColumn width={5}>
-            <Image src={careerMentor} />
+            <Image src={careerMentor}/>
           </ImageColumn>
         </StudentCardGrid>
 
@@ -57,19 +57,19 @@ class LittleWics extends Component {
         <StudentCardGrid>
           {/* 3rd Card Image*/}
           <ImageColumn width={5}>
-            <Image src={community} />
+            <Image src={community}/>
           </ImageColumn>
           {/* 3rd Card Text*/}
           <TextColumnR width={11}>
             <LittleWicsText
               title={studentStrings.community.title}
-              description={studentStrings.community.description} />
+              description={studentStrings.community.description}/>
           </TextColumnR>
         </StudentCardGrid>
       </StyledSubSectionWrapper>
     )
   }
-};
+}
 
 export default LittleWics;
 

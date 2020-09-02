@@ -9,7 +9,6 @@ export const StyledTitle = styled.p`
     font-size: 24px;
     line-height: 28px;
     letter-spacing: -0.02em;
-    margin-bottom: 13px;
     color: #000000;
     margin: 0;
 }
@@ -19,7 +18,10 @@ export const StyledTitle = styled.p`
 export const StyledDescription = styled.body`
 &&& {
     font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: normal;
     font-size: 16px;
     line-height: 20px;
+    color: #000000;
 }
 `;
