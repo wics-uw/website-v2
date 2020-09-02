@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-import { Accordion, AccordionContent, Icon, Image} from 'semantic-ui-react';
+import { Accordion, AccordionContent, Icon, Image } from 'semantic-ui-react';
 
+//stles for the text in the Accordion title
 export const StyledATitle = styled.h4`
 &&& {
     font-family: Karla;
@@ -14,6 +15,7 @@ export const StyledATitle = styled.h4`
 }
 `;
 
+//styles for accordion wrapper
 export const AccordionWrapper = styled.div`
 &&& {
     width: 437px;
@@ -25,7 +27,7 @@ export const AccordionWrapper = styled.div`
 }
 `;
 
-
+//styles for chevron icon
 export const StyledIcon = styled(Icon)`
 &&& {
     display: inline;
@@ -35,7 +37,7 @@ export const StyledIcon = styled(Icon)`
 }
 `;
 
-
+//styles around the link
 export const LinksWrapper = styled.div`
 &&& {
     margin-left: 16px;
@@ -43,7 +45,7 @@ export const LinksWrapper = styled.div`
 }
 `;
 
-
+//styles for the link name
 export const LinkName = styled.body`
 &&& {
     font-family: 'Source Sans Pro', sans-serif;
@@ -56,6 +58,7 @@ export const LinkName = styled.body`
 }
 `;
 
+//styles for the image
 export const Illustration = styled(Image)`
 &&& {
     float: right;
@@ -63,21 +66,21 @@ export const Illustration = styled(Image)`
 }
 `;
 
-
+//styles for the content wrapper
 export const ContentWrapper = styled.div`
 &&& {
-    
     margin-bottom: 40px;
 }
 `;
 
-
+//clear to break the floats above
 export const Clear = styled.div`
 &&& {
     clear: both;
 }
 `;
 
+//styles for the acoordion
 export const StyledAccordion = styled(Accordion)`
     &&&{
         border-radius: 15px;
@@ -86,10 +89,11 @@ export const StyledAccordion = styled(Accordion)`
     }
 `;
 
+//styles for the accordion content
 export const StyledAccordionContentR = styled(AccordionContent)`
   &&& {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 8px !important;
+    padding-bottom: 16px !important;
     border-left: 3px solid #E7BEB2;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     background-color: rgba(231,190,178, 0.15);
@@ -97,7 +101,7 @@ export const StyledAccordionContentR = styled(AccordionContent)`
   }
 `;
 
-
+//styles for the accordion content
 export const StyledAccordionContent = styled(AccordionContent)`
   &&& {
     padding-top: 8px !important;
