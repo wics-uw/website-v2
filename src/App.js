@@ -10,6 +10,7 @@ import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
 import Contact from "./sections/Contact/Contact";
+import Structure from "./sections/Structure/Structure";
 
 class App extends Component {
   constructor(props) {
@@ -77,7 +78,7 @@ class App extends Component {
           <StyledBodyContainer>
             <Structure/>
             <Numbers/>
-        </StyledBodyContainer>
+          </StyledBodyContainer>
         </StyledSectionWrapper>
 
         <StyledBodyContainer>
@@ -108,7 +109,7 @@ class App extends Component {
             <Contact/>
           </StyledSectionWrapper>
         </StyledBodyContainer>
-    
+
         <Footer/>
       </div>
     );
