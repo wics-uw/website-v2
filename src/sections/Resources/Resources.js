@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import SectionTitleDescription from '../../components/SectionTitleDescription/SectionTitleDescription';
 import resourcesStrings from '../../res/resourcesStrings';
-import {Accordion, AccordionTitle, Icon, Menu} from 'semantic-ui-react';
+import {AccordionTitle, Icon} from 'semantic-ui-react';
 import {StyledATitle, AccordionWrapper, StyledIcon, LinksWrapper, LinkName, StyledAccordion, StyledAccordionContent, StyledAccordionContentR, Clear} from './styles';
-import resourceImg from '../../res/images/resource.svg';
 
+//
 export default class Resources extends Component {
     state = { activeIndex: -1 }
 
