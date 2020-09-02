@@ -9,6 +9,7 @@ import {StyledBodyContainer, StyledGradientBackground, StyledSectionText, Styled
 import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
+import StudentLed from "./sections/StudentLed/StudentLed"
 
 class App extends Component {
   constructor(props) {
@@ -86,6 +87,7 @@ class App extends Component {
 
           <StyledSectionWrapper ref={this.getInvolved}>
             <StyledSectionText>{strings.getInvolved}</StyledSectionText>
+            <StudentLed/>
           </StyledSectionWrapper>
 
           <StyledSectionWrapper ref={this.resources}>

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+//styles for title
 export const StyledTitle = styled.body`
 &&& {
     font-family: Karla;
@@ -12,7 +13,7 @@ export const StyledTitle = styled.body`
 }
 `;
 
-
+//Styles for description
 export const StyledDescription = styled.body`
 &&& {
     font-family: 'Source Sans Pro', sans-serif;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import {Image} from 'semantic-ui-react';
+import { Image } from 'semantic-ui-react';
 
+//styles for image on left
 export const StudentImgL = styled(Image)`
 &&& {
     float: left;
@@ -8,13 +9,15 @@ export const StudentImgL = styled(Image)`
 }
 `;
 
+//styles for image on eight
 export const StudentImgR = styled(Image)`
 &&& {
     float: right;
-    margin-left: 100px;
+    margin-left: 47.3px;
 }
 `;
 
+//styles for wrapper around office hours 
 export const OfficeHourWrapper = styled.div`
 &&&{
     font-family: 'Source Sans Pro', sans-serif;
@@ -26,7 +29,7 @@ export const OfficeHourWrapper = styled.div`
 }
 `;
 
-
+//styles for office hour
 export const OfficeHour = styled.div`
 &&&{
     font-family: 'Source Sans Pro', sans-serif;
@@ -40,39 +43,36 @@ export const OfficeHour = styled.div`
 }
 `;
 
-export const StudentTextWrapper = styled.div`
-&&&{
-
-}`;
-
+//styles for text wrapper for the first card
 export const StudentTextWrapperOH = styled.div`
 &&&{
     width: 672px;    
     float: right;
-    
     margin-top: 10px;
 }
 `;
 
+//styles for text wrapper for the second card
+export const StudentTextWrapperCM = styled.div`
+&&&{
+    width: 672px;    
+    float: left;
+    margin-top: 60px;
+    display: inline;
+}
+`;
 
+//styles for text wrapper for the third card
 export const StudentTextWrapperCB = styled.div`
 &&&{
     width: 672px;    
     float: right;
     margin-top: 60px;
+    display: inline;
 }
 `;
 
-
-export const StudentTextWrapperCM = styled.div`
-&&&{
-    width: 672px;    
-    float: left;
-    margin-top: 60px
-}
-`;
-
-
+//styles for image and text
 export const StudentCard = styled.div`
 &&&{
     margin-top: 40px;
