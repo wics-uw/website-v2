@@ -10,7 +10,7 @@ const footerStrings = {
     a2: "Undergraduate Committee",
     a3: "MC Building Room 3029",
     a4: "University of Waterloo",
-    a5: "200 University Ave.",
+    a5: "200 University Ave. W",
     a6: "Waterloo, ON, Canada",
     a7: "N2L 3G1",
     la:
