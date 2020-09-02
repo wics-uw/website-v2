@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { StyledTitle, StyledDescription } from './styles';
+import React, {Component} from 'react';
+import {StyledTitle, StyledDescription} from './styles';
 
 class StudentText extends Component {
   render() {

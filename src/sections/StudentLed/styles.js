@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Image } from 'semantic-ui-react';
+import {Image} from 'semantic-ui-react';
 
 //styles for image on left
 export const StudentImgL = styled(Image)`
