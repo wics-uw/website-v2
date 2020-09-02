@@ -1,6 +1,7 @@
 const pastExecStrings = {
   title: 'Past Executives',
   description: 'Thank you to the previous committee executives & alumnae for building the community we have today!',
+  accordionTitle: 'View Past Executives',
   // ADD PAST EXECUTIVES HERE
   // Add term and all of the executives of the term in the following format:
     // term: {
