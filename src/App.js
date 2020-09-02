@@ -9,6 +9,7 @@ import {StyledBodyContainer, StyledGradientBackground, StyledSectionText, Styled
 import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
+import Contact from "./sections/Contact/Contact";
 
 class App extends Component {
   constructor(props) {
@@ -103,9 +104,10 @@ class App extends Component {
           </StyledSectionWrapper>
 
           <StyledSectionWrapper ref={this.contactUs}>
-            <StyledSectionText>{strings.contactUs}</StyledSectionText>
+            <Contact/>
           </StyledSectionWrapper>
         </StyledBodyContainer>
+    
         <Footer/>
       </div>
     );
