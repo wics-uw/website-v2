@@ -11,7 +11,7 @@ import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
 import Contact from "./sections/Contact/Contact";
 import Structure from "./sections/Structure/Structure";
-import StudentLed from "./sections/StudentLed/StudentLed"
+import LittleWics from "./sections/LittleWics/LittleWics"
 
 class App extends Component {
   constructor(props) {
@@ -90,7 +90,7 @@ class App extends Component {
 
           <StyledSectionWrapper ref={this.getInvolved}>
             <StyledSectionText>{strings.getInvolved}</StyledSectionText>
-            <StudentLed/>
+            <LittleWics/>
           </StyledSectionWrapper>
 
           <StyledSectionWrapper ref={this.resources}>

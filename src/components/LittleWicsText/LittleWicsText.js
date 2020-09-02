@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {StyledTitle, StyledDescription} from './styles';
 
-class StudentText extends Component {
+class LittleWicsText extends Component {
   render() {
     return (
       <div>
@@ -12,4 +12,4 @@ class StudentText extends Component {
   }
 }
 
-export default StudentText;
+export default LittleWicsText;

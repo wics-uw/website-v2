@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import SectionTitleDescription from '../../components/SectionTitleDescription/SectionTitleDescription';
-import studentStrings from '../../res/studentStrings';
+import studentStrings from '../../res/littleWicsStrings';
 import {
   StudentImgL,
   StudentImgR,
@@ -11,15 +11,15 @@ import {
   StudentTextWrapperCB,
   StudentCard
 } from './styles';
-import StudentText from '../../components/StudentText/StudentText';
+import LittleWicsText from '../../components/LittleWicsText/LittleWicsText';
 import officeHour from '../../res/images/student_officeHour.svg';
 import careerMentor from '../../res/images/student_careerMentor.svg';
 import community from '../../res/images/student_community.svg';
 import {StyledSubSectionWrapper} from '../../res/globalStyles';
 
 
-//StudentLed Events Component
-class StudentLed extends Component {
+//LittleWics Events Component
+class LittleWics extends Component {
   render() {
     return (
       <StyledSubSectionWrapper>
@@ -33,7 +33,7 @@ class StudentLed extends Component {
           <StudentImgL src={officeHour}/>
           <StudentTextWrapperOH>
             {/* 1st Text*/}
-            <StudentText
+            <LittleWicsText
               title={studentStrings.officeHours.title}
               description={studentStrings.officeHours.description}/>
             <OfficeHourWrapper>MONDAY: <OfficeHour>{studentStrings.officeHours.mon}</OfficeHour></OfficeHourWrapper>
@@ -48,7 +48,7 @@ class StudentLed extends Component {
         <StudentCard>
           <StudentTextWrapperCM>
             {/* 2nd Card Text*/}
-            <StudentText
+            <LittleWicsText
               title={studentStrings.careerMentorship.title}
               description={studentStrings.careerMentorship.description}/>
           </StudentTextWrapperCM>
@@ -62,7 +62,7 @@ class StudentLed extends Component {
           <StudentImgL src={community}/>
           {/* 3rd Card Text*/}
           <StudentTextWrapperCB>
-            <StudentText
+            <LittleWicsText
               title={studentStrings.community.title}
               description={studentStrings.community.description}/>
           </StudentTextWrapperCB>
@@ -72,5 +72,5 @@ class StudentLed extends Component {
   }
 };
 
-export default StudentLed;
+export default LittleWics;
 
