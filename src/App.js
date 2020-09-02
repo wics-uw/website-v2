@@ -104,8 +104,7 @@ class App extends Component {
           </StyledSectionWrapper>
 
           <StyledSectionWrapper ref={this.contactUs}>
-            <StyledSectionText>{strings.contactUs}
-            <Contact /></StyledSectionText>
+            <Contact/>
           </StyledSectionWrapper>
         </StyledBodyContainer>
     

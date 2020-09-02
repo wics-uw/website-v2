@@ -1,28 +1,22 @@
 import styled from "styled-components";
 import { Image, Grid } from "semantic-ui-react";
 
-// styling the clickable icons
-export const StyledSocial = styled(Image)`
+export const StyledSubContactSectionWrapper = styled.div`
   &&& {
-    width: 65px;
+    margin-bottom: 40px;
   }
 `;
 
-// styling the grid for the clickable icons
-export const StyledGridSocial = styled(Grid)`
+export const StyledSubContactSectionWrapper2 = styled.div`
   &&& {
-    width: 309px;
-    margin-left: 0px;
-    margin-top: 14px;
-    margin-bottom: 130px;
+    margin-bottom: 24px;
   }
 `;
 
 // Styles for section title
 export const StyledTitle = styled.h2`
   &&& {
-    margin-top: 29px;
-    margin-bottom: 4px;
+    margin: 0 0 8px 0;
     font-family: "Karla Bold";
     font-style: normal;
     font-weight: bold;
@@ -33,28 +27,24 @@ export const StyledTitle = styled.h2`
   }
 `;
 
-export const StyledColumn = styled(Grid.Column)`
+export const StyledTitle2 = styled.p`
   &&& {
-    padding: 0 !important;
-  }
-`;
-
-export const StyledTitle2 = styled.h3`
-  &&& {
-    margin-top: 29px;
+    margin-bottom: 16px;
     font-family: "Karla Bold";
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
     color: #000000;
+    letter-spacing: -0.02em;
     text-transform: none;
   }
 `;
 
-export const StyledText = styled.p`
+export const StyledText = styled.h4`
   &&& {
-    margin-top: 0px;
+    width: 600px;
+    margin: 0;
     font-family: "Karla";
     font-style: normal;
     font-weight: normal;
@@ -63,5 +53,27 @@ export const StyledText = styled.p`
     letter-spacing: -0.02em;
     color: #000000;
     text-transform: none;
+  }
+`;
+
+export const StyledFaqLink = styled.a`
+  &&& {
+    text-decoration-line: underline;
+    color: #000000;
+  }
+`;
+
+export const StyledReachOutLink = styled.a`
+  &&& {
+    font-weight: bold;
+    color: #000000;
+  }
+`;
+
+// styling the clickable icons
+export const StyledSocial = styled(Image)`
+  &&& {
+    margin: 0;
+    padding-right: 16px;
   }
 `;

@@ -13,7 +13,7 @@ const contactStrings = {
     d1:
       "Please feel free to reach out if you have any questions or feedback! We are always looking for new ways to grow. ",
     d2: "Email us at ",
-      email: "wics-ugrad@lists.uwaterloo.ca",
+    email: "wics-ugrad@lists.uwaterloo.ca",
   },
   desc: "Find us on",
   social: {
