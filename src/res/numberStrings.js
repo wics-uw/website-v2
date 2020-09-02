@@ -4,17 +4,21 @@ const numberStrings = {
      female-identifying individuals represent:  `,
     linkName: 'Sources',
     href: 'https://cs.uwaterloo.ca/wics/resources-and-information',
+    updated: '2020',
     firstCard:{
-      number:'27%',
-      description: 'undergrad enrolment'
+      number:'24.26%',
+      description: 'first-year enrollment',
+      approx: 'approx. 1 in 4'
     },
     secondCard:{
-      number:'28.3%',
-      description: 'first-year admits (2018)'
+      number:'24.24%',
+      description: 'undergrad enrollment',
+      approx: 'approx. 3 in 10'
     },
     thirdCard:{
-      number:'16.5%',
-      description: 'female-identifying faculty'
+      number:'18.93%',
+      description: 'graduate enrollment',
+      approx: 'approx. 1 in 5'
     }
   };
 
