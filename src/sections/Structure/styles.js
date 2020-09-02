@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { Grid } from "semantic-ui-react";
 
-export const StyledTitle = styled.h2`
+export const StyledTitle = styled.p`
   &&& {
-    margin-top: 18px;
+    margin-bottom: 8px;
     font-size: 24px;
     font-family: Karla;
     font-style: normal;
@@ -17,14 +17,12 @@ export const StyledTitle = styled.h2`
 
 export const StyledText = styled.body`
   &&& {
-    margin: 8px 27px 18px 27px;
+    margin-bottom: 8px;
     font-size: 16px;
     font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
     line-height: 20px;
-    height: auto;
     background: transparent;
     text-align: center;
     color: #000000;
@@ -34,6 +32,7 @@ export const StyledText = styled.body`
 export const StyledColumn = styled(Grid.Column)`
   &&& {
     background-color: #f8f3ef;
+    padding: 36px !important;
     border-radius: 10px;
     height: 170px !important;
     // calculated as (1-6/1056)/2 (must round down)

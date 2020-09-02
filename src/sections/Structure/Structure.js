@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 import SectionTitleDescription from "../../components/SectionTitleDescription/SectionTitleDescription";
 import structureStrings from "../../res/structureStrings";
-import { Grid, Divider } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 import { StyledTitle, StyledText, StyledColumn } from "./styles";
+import { StyledSubSectionWrapper } from "../../res/globalStyles";
 
 class Structure extends Component {
   render() {
     return (
-      <div>
+      <StyledSubSectionWrapper>
         <SectionTitleDescription
           title={structureStrings.title}
           description={structureStrings.description}
         />
-        <SectionTitleDescription />
         <Grid columns={2} padded>
           <StyledColumn style={{ marginRight: "6px" }}>
             <StyledTitle>{structureStrings.little.title}</StyledTitle>
@@ -23,7 +23,7 @@ class Structure extends Component {
             <StyledText>{structureStrings.big.description}</StyledText>
           </StyledColumn>
         </Grid>
-      </div>
+      </StyledSubSectionWrapper>
     );
   }
 }

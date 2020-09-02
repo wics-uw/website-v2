@@ -75,11 +75,9 @@ class App extends Component {
             </StyledBodyContainer>
           </StyledGradientBackground>
           <StyledBodyContainer>
-          <Structure/>
-          </StyledBodyContainer>
-          <StyledBodyContainer>
+            <Structure/>
             <Numbers/>
-          </StyledBodyContainer>
+        </StyledBodyContainer>
         </StyledSectionWrapper>
 
         <StyledBodyContainer>
