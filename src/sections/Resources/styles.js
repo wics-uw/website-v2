@@ -20,7 +20,7 @@ export const AccordionWrapper = styled.div`
 &&& {
     width: 437px;
     margin-top: 32px;
-    z-index: 1000;
+   
     position: absolute;
     float: left;
     margin-bottom: 0px;
@@ -63,6 +63,7 @@ export const Illustration = styled(Image)`
 &&& {
     float: right;
     margin-left: 20px;
+    z-index: -1;
 }
 `;
 
