@@ -90,6 +90,7 @@ export const MoreWrapper = styled.div`
 export const SponsorImg = styled.img`
   &&& {
     vertical-align: middle;
+    margin-right: 16px;
   }
 `;
 

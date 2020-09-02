@@ -138,32 +138,30 @@ class Sponsors extends Component {
                     {sponsorStrings.platinum}
                 </SponsorType>
                 {/* Pictures of Platinum Sponsors*/}
-                <Grid columns={4}>
+                
                 {Object.entries(platinumSponsors).map(([key, name]) => (
-                    <StyledGridColumn>
-                    {name.link === ''? <SponsorImg src={name.name} alt=''/>: 
+                    name.link === ''? <SponsorImg src={name.name} alt=''/>: 
                     (<a href = {name.link} target ='_blank' rel="noopener noreferrer"> 
                     <SponsorImg src={name.name} alt=''/>
-                    </a>)}
-                    </StyledGridColumn>
+                    </a>)
                 ))}
-                </Grid>
+                
                 
                  {/* Gold Heading */}
                 <SponsorType>
                     {sponsorStrings.gold}
                 </SponsorType>
                 {/* Pictures of Gold Sponsors*/}
-                <StyledGrid columns={4}>
+                
                 {Object.entries(goldSponsors).map(([key, name]) => (
-                    <StyledGridColumn>
-                    {name.link === ''? <SponsorImg src={name.name} alt=''/>: 
+                    
+                    name.link === ''? <SponsorImg src={name.name} alt=''/>: 
                     (<a href = {name.link} target ='_blank' rel="noopener noreferrer"> 
                     <SponsorImg src={name.name} alt=''/> 
-                    </a>)}
-                    </StyledGridColumn>
+                    </a>)
+                    
                 ))}
-                </StyledGrid>
+                
 
                 {/* Accordian for sponsors*/}
                 <StyledAccordion fluid styled>
