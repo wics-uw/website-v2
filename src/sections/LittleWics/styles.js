@@ -1,26 +1,38 @@
 import styled from "styled-components";
-import {Image} from 'semantic-ui-react';
+import { GridColumn, Grid } from 'semantic-ui-react';
 
-//styles for image on left
-export const StudentImgL = styled(Image)`
+//styles for TextColumnR
+export const TextColumnR = styled(GridColumn)`
 &&& {
-    float: left;
-    margin-right: 47.3px;
+    padding-left: 48px !important;
 }
 `;
 
-//styles for image on eight
-export const StudentImgR = styled(Image)`
+//styles for TextColumnL
+export const TextColumnL = styled(GridColumn)`
 &&& {
-    float: right;
-    margin-left: 47.3px;
+    padding-right: 48px !important;
+}
+`;
+
+//styles for ImageColumn
+export const ImageColumn = styled(GridColumn)`
+&&& {
+    padding: 0 !important;
+}
+`;
+
+//styles for Wrapper around office hours
+export const AllOfficeHourWrapper = styled.div`
+&&&{
+    margin-top: 16px;
 }
 `;
 
 //styles for wrapper around office hours 
 export const OfficeHourWrapper = styled.div`
 &&&{
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -32,7 +44,7 @@ export const OfficeHourWrapper = styled.div`
 //styles for office hour
 export const OfficeHour = styled.div`
 &&&{
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -43,42 +55,24 @@ export const OfficeHour = styled.div`
 }
 `;
 
-//styles for text wrapper for the first card
-export const StudentTextWrapperOH = styled.div`
-&&&{
-    width: 672px;    
-    float: right;
-    margin-top: 10px;
-}
-`;
-
-//styles for text wrapper for the second card
-export const StudentTextWrapperCM = styled.div`
-&&&{
-    width: 672px;    
-    float: left;
-    margin-top: 60px;
-    display: inline;
-}
-`;
-
-//styles for text wrapper for the third card
-export const StudentTextWrapperCB = styled.div`
-&&&{
-    width: 672px;    
-    float: right;
-    margin-top: 60px;
-    display: inline;
-}
-`;
 
 //styles for image and text
 export const StudentCard = styled.div`
 &&&{
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 0 0 8px 0;
     clear: both;
     height: 238px;
+    display: flex;
+    align-items: center;
+}
+`;
+
+//styles for image and text
+export const StudentCardGrid = styled(Grid)`
+&&&{
+    margin: 0 0 8px 0;
+    display: flex;
+    align-items: center;
 }
 `;
 

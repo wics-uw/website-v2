@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 //styles for title
-export const StyledTitle = styled.body`
+export const StyledTitle = styled.p`
 &&& {
     font-family: Karla;
     font-style: normal;
@@ -10,16 +10,16 @@ export const StyledTitle = styled.body`
     line-height: 28px;
     letter-spacing: -0.02em;
     margin-bottom: 13px;
+    color: #000000;
+    margin: 0;
 }
 `;
 
 //Styles for description
 export const StyledDescription = styled.body`
 &&& {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro';
     font-size: 16px;
     line-height: 20px;
-    width: 672px;
-    margin-bottom: 10px;
 }
 `;

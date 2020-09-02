@@ -1,21 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import SectionTitleDescription from '../../components/SectionTitleDescription/SectionTitleDescription';
 import studentStrings from '../../res/littleWicsStrings';
-import {
-  StudentImgL,
-  StudentImgR,
-  OfficeHour,
-  OfficeHourWrapper,
-  StudentTextWrapperOH,
-  StudentTextWrapperCM,
-  StudentTextWrapperCB,
-  StudentCard
-} from './styles';
+import { StudentCardGrid, ImageColumn, OfficeHour, OfficeHourWrapper, TextColumnR, AllOfficeHourWrapper, TextColumnL } from './styles';
 import LittleWicsText from '../../components/LittleWicsText/LittleWicsText';
 import officeHour from '../../res/images/student_officeHour.svg';
 import careerMentor from '../../res/images/student_careerMentor.svg';
 import community from '../../res/images/student_community.svg';
-import {StyledSubSectionWrapper} from '../../res/globalStyles';
+import { StyledSubSectionWrapper } from '../../res/globalStyles';
+import { Image } from 'semantic-ui-react';
 
 
 //LittleWics Events Component
@@ -26,47 +18,54 @@ class LittleWics extends Component {
         {/* Title and Description*/}
         <SectionTitleDescription
           title={studentStrings.title}
-          description={studentStrings.description}/>
-        {/* 1st Card*/}
-        <StudentCard>
+          description={studentStrings.description} />
+        <StudentCardGrid>
           {/* 1st Card Image*/}
-          <StudentImgL src={officeHour}/>
-          <StudentTextWrapperOH>
+          <ImageColumn width={5}>
+            <Image src={officeHour} />
+          </ImageColumn>
+          <TextColumnR width={11}>
             {/* 1st Text*/}
             <LittleWicsText
               title={studentStrings.officeHours.title}
-              description={studentStrings.officeHours.description}/>
-            <OfficeHourWrapper>MONDAY: <OfficeHour>{studentStrings.officeHours.mon}</OfficeHour></OfficeHourWrapper>
-            <OfficeHourWrapper>TUESDAY: <OfficeHour>{studentStrings.officeHours.tues}</OfficeHour></OfficeHourWrapper>
-            <OfficeHourWrapper>WEDNESDAY: <OfficeHour>{studentStrings.officeHours.wed}</OfficeHour></OfficeHourWrapper>
-            <OfficeHourWrapper>THURSDAY: <OfficeHour>{studentStrings.officeHours.thurs}</OfficeHour></OfficeHourWrapper>
-            <OfficeHourWrapper>FRIDAY: <OfficeHour>{studentStrings.officeHours.fri}</OfficeHour></OfficeHourWrapper>
-          </StudentTextWrapperOH>
-        </StudentCard>
+              description={studentStrings.officeHours.description} />
+            <AllOfficeHourWrapper>
+              <OfficeHourWrapper>MONDAY <OfficeHour>{studentStrings.officeHours.mon}</OfficeHour></OfficeHourWrapper>
+              <OfficeHourWrapper>TUESDAY <OfficeHour>{studentStrings.officeHours.tues}</OfficeHour></OfficeHourWrapper>
+              <OfficeHourWrapper>WEDNESDAY <OfficeHour>{studentStrings.officeHours.wed}</OfficeHour></OfficeHourWrapper>
+              <OfficeHourWrapper>THURSDAY <OfficeHour>{studentStrings.officeHours.thurs}</OfficeHour></OfficeHourWrapper>
+              <OfficeHourWrapper>FRIDAY <OfficeHour>{studentStrings.officeHours.fri}</OfficeHour></OfficeHourWrapper>
+            </AllOfficeHourWrapper>
+          </TextColumnR>
+        </StudentCardGrid>
 
         {/* 2nd Card*/}
-        <StudentCard>
-          <StudentTextWrapperCM>
+        <StudentCardGrid>
+          <TextColumnL width={11}>
             {/* 2nd Card Text*/}
             <LittleWicsText
               title={studentStrings.careerMentorship.title}
-              description={studentStrings.careerMentorship.description}/>
-          </StudentTextWrapperCM>
+              description={studentStrings.careerMentorship.description} />
+          </TextColumnL>
           {/* 2nd Card Image*/}
-          <StudentImgR src={careerMentor}/>
-        </StudentCard>
+          <ImageColumn width={5}>
+            <Image src={careerMentor} />
+          </ImageColumn>
+        </StudentCardGrid>
 
         {/* 3rd Card */}
-        <StudentCard>
+        <StudentCardGrid>
           {/* 3rd Card Image*/}
-          <StudentImgL src={community}/>
+          <ImageColumn width={5}>
+            <Image src={community} />
+          </ImageColumn>
           {/* 3rd Card Text*/}
-          <StudentTextWrapperCB>
+          <TextColumnR width={11}>
             <LittleWicsText
               title={studentStrings.community.title}
-              description={studentStrings.community.description}/>
-          </StudentTextWrapperCB>
-        </StudentCard>
+              description={studentStrings.community.description} />
+          </TextColumnR>
+        </StudentCardGrid>
       </StyledSubSectionWrapper>
     )
   }

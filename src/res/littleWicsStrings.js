@@ -1,4 +1,4 @@
-const strings = {
+const littleWiCSStrings = {
   title: 'Little WiCS Events',
   description: 'Events and opportunities run by the students in the WiCS Undergraduate Committee.',
   officeHours: {
@@ -20,4 +20,4 @@ const strings = {
   }
 };
 
-export default strings;
+export default littleWiCSStrings;
