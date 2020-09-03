@@ -9,7 +9,6 @@ import {
   StyledSocialContainer,
   StyledSocialGrid,
   StyledText,
-  StyledTextColumn,
   StyledTextGrid,
   StyledTextItalic,
   StyledTitle,
@@ -69,7 +68,7 @@ class Footer extends Component {
 
             <GridColumn width={7}>
               <StyledTitle>
-                <StyledTitleLink href={footerStrings.links.pol}>
+                <StyledTitleLink href={footerStrings.links.pol} target='_blank'>
                   {footerStrings.title.la}
                 </StyledTitleLink>
               </StyledTitle>
@@ -78,28 +77,28 @@ class Footer extends Component {
 
             <GridColumn width={2}>
               <StyledTitle>
-                <StyledTitleLink href={footerStrings.links.pol}>
+                <StyledTitleLink href={footerStrings.links.pol} target='_blank'>
                   {footerStrings.title.pol}
                 </StyledTitleLink>
               </StyledTitle>
               <StyledList>
                 <li>
-                  <StyledLink href={footerStrings.links.p1}>
+                  <StyledLink href={footerStrings.links.p1} target='_blank'>
                     {footerStrings.description.p1}
                   </StyledLink>
                 </li>
                 <li>
-                  <StyledLink href={footerStrings.links.p2}>
+                  <StyledLink href={footerStrings.links.p2} target='_blank'>
                     {footerStrings.description.p2}
                   </StyledLink>
                 </li>
                 <li>
-                  <StyledLink href={footerStrings.links.p3}>
+                  <StyledLink href={footerStrings.links.p3} target='_blank'>
                     {footerStrings.description.p3}
                   </StyledLink>
                 </li>
                 <li>
-                  <StyledLink href={footerStrings.links.p4}>
+                  <StyledLink href={footerStrings.links.p4} target='_blank'>
                     {footerStrings.description.p4}
                   </StyledLink>
                 </li>
@@ -110,17 +109,17 @@ class Footer extends Component {
               <StyledTitle>{footerStrings.title.lk}</StyledTitle>
               <StyledList>
                 <li>
-                  <StyledLink href={footerStrings.links.lk1}>
+                  <StyledLink href={footerStrings.links.lk1} target='_blank'>
                     {footerStrings.description.lk1}
                   </StyledLink>
                 </li>
                 <li>
-                  <StyledLink href={footerStrings.links.lk2}>
+                  <StyledLink href={footerStrings.links.lk2} target='_blank'>
                     {footerStrings.description.lk2}
                   </StyledLink>
                 </li>
                 <li>
-                  <StyledLink href={footerStrings.links.lk3}>
+                  <StyledLink href={footerStrings.links.lk3} target='_blank'>
                     {footerStrings.description.lk3}
                   </StyledLink>
                 </li>

@@ -32,11 +32,11 @@ class Contact extends Component {
               <StyledTitle>{contactStrings.faq.title}</StyledTitle>
               <StyledText>
                 {contactStrings.faq.d1}
-                <StyledFaqLink href={contactStrings.faq.faqlink}>
+                <StyledFaqLink href={contactStrings.faq.faqlink} target='_blank'>
                   {contactStrings.faq.faqtext}
                 </StyledFaqLink>
                 {contactStrings.faq.d2}
-                <StyledFaqLink href={contactStrings.faq.policylink}>
+                <StyledFaqLink href={contactStrings.faq.policylink} target='_blank'>
                   {contactStrings.faq.policytext}
                 </StyledFaqLink>
               </StyledText>

@@ -13,8 +13,7 @@ const footerStrings = {
     a5: "200 University Ave. W",
     a6: "Waterloo, ON, Canada",
     a7: "N2L 3G1",
-    la:
-      "We would like to acknowledge that we are on the traditional territory of the Neutral, Anishnawbe and Haudenosaunee peoples. The University of Waterloo is situated on the Haldimand Tract, the land promised to the Six Nations that includes six miles on each side of the Grand River.",
+    la: "We would like to acknowledge that we are on the traditional territory of the Neutral, Anishnawbe and Haudenosaunee peoples. The University of Waterloo is situated on the Haldimand Tract, the land promised to the Six Nations that includes six miles on each side of the Grand River.",
     p1: "Code of Conduct",
     p2: "Constitution",
     p3: "Office Policy",
@@ -33,12 +32,11 @@ const footerStrings = {
 
     la: "https://uwaterloo.ca/faculty-association/about/territorial-acknowledgement", // Land acknowledgement
     // Relevant links
-    lk1: "http://wics.uwaterloo.ca/", // Big Wics
+    lk1: "https://cs.uwaterloo.ca/wics", // Big Wics
     lk2: "https://github.com/wics-uw", // Github
     lk3: "http://wics.uwaterloo.ca/faq/", // FAQ
     social: {
-      lin:
-        "https://www.linkedin.com/company/waterloo-women-in-computer-science/",
+      lin: "https://www.linkedin.com/company/waterloo-women-in-computer-science/",
       fb: "https://www.facebook.com/uwaterloowics",
       insta: "https://www.instagram.com/uwaterloowics/?hl=en",
       disc: "https://discord.gg/UZXjJpG",
