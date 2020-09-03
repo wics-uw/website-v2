@@ -8,6 +8,7 @@ import {StyledBodyContainer, StyledGradientBackground, StyledSectionText, Styled
 import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
+import Sponsors from './sections/Sponsors/Sponsors';
 import Contact from "./sections/Contact/Contact";
 import Structure from "./sections/Structure/Structure";
 import LittleWics from "./sections/LittleWics/LittleWics"
@@ -99,6 +100,7 @@ class App extends Component {
 
           <StyledSectionWrapper ref={this.sponsors}>
             <StyledSectionText>{strings.industry}</StyledSectionText>
+            <Sponsors/>
           </StyledSectionWrapper>
 
           <StyledSectionWrapper ref={this.committee}>
