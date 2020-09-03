@@ -22,6 +22,8 @@ import linkedin_logo from "../../res/images/footer_linkedin_logo.svg";
 import insta_logo from "../../res/images/footer_insta_logo.svg";
 import discord_logo from "../../res/images/footer_discord_logo.svg";
 import email from "../../res/images/footer_email.svg";
+import strings from "../../res/strings/strings";
+import {StyledSocial} from "../Landing/styles";
 
 class Footer extends Component {
   render() {
@@ -139,28 +141,28 @@ class Footer extends Component {
               <StyledSocialColumn>
                 <Image
                   src={linkedin_logo}
-                  href={footerStrings.links.social.lin}
+                  href={strings.social.linkedin}
                   target="_blank"
                 />
               </StyledSocialColumn>
               <StyledSocialColumn>
                 <Image
                   src={fb_logo}
-                  href={footerStrings.links.social.fb}
+                  href={strings.social.facebook}
                   target="_blank"
                 />
               </StyledSocialColumn>
               <StyledSocialColumn>
                 <Image
                   src={insta_logo}
-                  href={footerStrings.links.social.insta}
+                  href={strings.social.instagram}
                   target="_blank"
                 />
               </StyledSocialColumn>
               <StyledSocialColumn>
                 <Image
                   src={discord_logo}
-                  href={footerStrings.links.social.disc}
+                  href={strings.social.discord}
                   target="_blank"
                 />
               </StyledSocialColumn>

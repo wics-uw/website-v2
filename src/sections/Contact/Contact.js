@@ -55,19 +55,19 @@ class Contact extends Component {
             <ImageGroup>
               <StyledSocial
                 src={linkedin_logo}
-                href={contactStrings.social.lin}
+                href={strings.social.linkedin}
                 target="_blank"/>
               <StyledSocial
                 src={fb_logo}
-                href={contactStrings.social.fb}
+                href={strings.social.facebook}
                 target="_blank"/>
               <StyledSocial
                 src={insta_logo}
-                href={contactStrings.social.insta}
+                href={strings.social.instagram}
                 target="_blank"/>
               <StyledSocial
                 src={discord_logo}
-                href={contactStrings.social.disc}
+                href={strings.social.discord}
                 target="_blank"/>
             </ImageGroup>
           </Grid.Column>

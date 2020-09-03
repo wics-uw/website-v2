@@ -8,13 +8,6 @@ const strings = {
     sponsors: "Sponsors",
     contactUs: "Contact Us",
   },
-  landing: {
-    uwaterloo: "University of Waterloo",
-    wics: "Women in Computer Science",
-    undergrad: "Undergraduate Committee",
-    mailing: "Join the mailing list",
-    learnMore: "Learn More",
-  },
   about: 'About',
   calendar: 'Calendar',
   getInvolved: 'Get Involved',
@@ -22,6 +15,12 @@ const strings = {
   committee:' The undergraduate Committee',
   industry: 'Industry',
   contactUs: 'Contact Us',
+  social: {
+    linkedin: "https://www.linkedin.com/company/waterloo-women-in-computer-science/",
+    facebook: "https://www.facebook.com/uwaterloowics",
+    instagram: "https://www.instagram.com/uwaterloowics/",
+    discord: "https://discord.gg/UZXjJpG",
+  },
 };
 
 export default strings;
