@@ -2,19 +2,22 @@ import React, {Component} from 'react';
 import SectionTitleDescription from '../../components/SectionTitleDescription/SectionTitleDescription';
 import sponsorStrings from '../../res/sponsorsStrings';
 import {
+  Interested,
+  LearnMore,
+  MoreWrapper,
+  SponsorImg,
+  SponsorTierWrapper,
+  SponsorType,
+  SponsorTypeLink,
+  StyledAccordion,
+  StyledAccordionContent,
   StyledAccordionTitle,
   StyledGrid,
   StyledGridColumnL,
-  StyledAccordion,
-  StyledTitle,
-  SponsorType,
-  SponsorTypeLink,
-  SponsorImg,
-  StyledAccordionContent,
   StyledLink,
-  MoreWrapper,
-  Interested,
-  LearnMore
+  StyledSponsorsTableWrapper,
+  StyledSponsorLinkTypeWrapper,
+  StyledTitle
 } from './styles';
 import google from '../../res/images/sponsors/google.svg';
 import wish from '../../res/images/sponsors/wish.svg';
@@ -142,80 +145,84 @@ class Sponsors extends Component {
         <SectionTitleDescription
           title={sponsorStrings.title}
           description={sponsorStrings.description}/>
-        {/* Platinum Heading */}
-        <SponsorType>
-          {sponsorStrings.platinum}
-        </SponsorType>
-        {/* Pictures of Platinum Sponsors*/}
+        <SponsorTierWrapper>
+          {/* Platinum Heading */}
+          <SponsorType>
+            {sponsorStrings.platinum}
+          </SponsorType>
 
-        {Object.entries(platinumSponsors).map(([key, name]) => (
-          name.link === '' ? <SponsorImg src={name.name} alt=''/> :
-            (<a href={name.link} target='_blank' rel="noopener noreferrer">
-              <SponsorImg src={name.name} alt=''/>
-            </a>)
-        ))}
+          {/* Pictures of Platinum Sponsors*/}
+          {Object.entries(platinumSponsors).map(([key, name]) => (
+            name.link === '' ? <SponsorImg src={name.name} alt=''/> :
+              (<a href={name.link} target='_blank' rel="noopener noreferrer">
+                <SponsorImg src={name.name} alt=''/>
+              </a>)
+          ))}
+        </SponsorTierWrapper>
 
+        <SponsorTierWrapper>
+          {/* Gold Heading */}
+          <SponsorType>
+            {sponsorStrings.gold}
+          </SponsorType>
 
-        {/* Gold Heading */}
-        <SponsorType>
-          {sponsorStrings.gold}
-        </SponsorType>
-        {/* Pictures of Gold Sponsors*/}
+          {/* Pictures of Gold Sponsors*/}
+          {Object.entries(goldSponsors).map(([key, name]) => (
+            name.link === '' ? <SponsorImg src={name.name} alt=''/> :
+              (<a href={name.link} target='_blank' rel="noopener noreferrer">
+                <SponsorImg src={name.name} alt=''/>
+              </a>)
 
-        {Object.entries(goldSponsors).map(([key, name]) => (
+          ))}
+        </SponsorTierWrapper>
 
-          name.link === '' ? <SponsorImg src={name.name} alt=''/> :
-            (<a href={name.link} target='_blank' rel="noopener noreferrer">
-              <SponsorImg src={name.name} alt=''/>
-            </a>)
-
-        ))}
-
-
-        {/* Accordian for sponsors*/}
+        {/* Accordion for sponsors*/}
         <StyledAccordion fluid styled>
           <StyledAccordionTitle
             active={active}
             onClick={this.handleClick}>
-            <StyledTitle>
-              More Sponsors</StyledTitle>
+            <StyledTitle>{sponsorStrings.more}</StyledTitle>
             {active
               ? <Image src={chevron_down}/>
               : <Image src={chevron_right}/>
             }
-
           </StyledAccordionTitle>
-          <StyledAccordionContent active={active}>
 
-            {/* Links of silver Sponsors*/}
-            <SponsorTypeLink>
-              {sponsorStrings.silver}
-            </SponsorTypeLink>
-            <StyledGrid columns={6}>
-              {Object.entries(silverSponsors).map(([number, name]) => (
-                <StyledGridColumnL>
-                  <a href={name.link} target='_blank' rel="noopener noreferrer"><StyledLink>{name.name}</StyledLink></a>
-                </StyledGridColumnL>
-              ))}
-            </StyledGrid>
-            {/* Links of local Sponsors*/}
-            <SponsorTypeLink>
-              {sponsorStrings.local}
-            </SponsorTypeLink>
-            <StyledGrid columns={6}>
-              {Object.entries(localSponsors).map(([number, name]) => (
-                <StyledGridColumnL>
-                  <StyledLink href={name.link} target='_blank' rel="noopener noreferrer">{name.name}</StyledLink>
-                </StyledGridColumnL>
-              ))}
-            </StyledGrid>
+          <StyledAccordionContent active={active}>
+            <StyledSponsorsTableWrapper>
+              <StyledSponsorLinkTypeWrapper>
+                {/* Links of silver Sponsors*/}
+                <SponsorTypeLink>
+                  {sponsorStrings.silver}
+                </SponsorTypeLink>
+                <StyledGrid columns={6}>
+                  {Object.entries(silverSponsors).map(([number, name]) => (
+                    <StyledGridColumnL>
+                      <a href={name.link} target='_blank' rel="noopener noreferrer"><StyledLink>{name.name}</StyledLink></a>
+                    </StyledGridColumnL>
+                  ))}
+                </StyledGrid>
+              </StyledSponsorLinkTypeWrapper>
+
+              <StyledSponsorLinkTypeWrapper>
+                {/* Links of local Sponsors*/}
+                <SponsorTypeLink>
+                  {sponsorStrings.local}
+                </SponsorTypeLink>
+                <StyledGrid columns={6}>
+                  {Object.entries(localSponsors).map(([number, name]) => (
+                    <StyledGridColumnL>
+                      <StyledLink href={name.link} target='_blank' rel="noopener noreferrer">{name.name}</StyledLink>
+                    </StyledGridColumnL>
+                  ))}
+                </StyledGrid>
+              </StyledSponsorLinkTypeWrapper>
+            </StyledSponsorsTableWrapper>
           </StyledAccordionContent>
         </StyledAccordion>
 
-
         {/* Call to action button */}
         <MoreWrapper>
-
           <Interested> {sponsorStrings.interested}</Interested>
           <LearnMore href={'https://cs.uwaterloo.ca/wics'} target='_blank'>
             {sponsorStrings.learnMore}</LearnMore>
