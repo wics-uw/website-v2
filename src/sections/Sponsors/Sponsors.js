@@ -1,7 +1,21 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import SectionTitleDescription from '../../components/SectionTitleDescription/SectionTitleDescription';
 import sponsorStrings from '../../res/sponsorsStrings';
-import { StyledAccordionTitle, StyledGrid, StyledGridColumnL, StyledAccordion, StyledTitle, SponsorType, SponsorTypeLink, SponsorImg, StyledAccordionContent, StyledLink, MoreWrapper, Interested, LearnMore } from './styles';
+import {
+  StyledAccordionTitle,
+  StyledGrid,
+  StyledGridColumnL,
+  StyledAccordion,
+  StyledTitle,
+  SponsorType,
+  SponsorTypeLink,
+  SponsorImg,
+  StyledAccordionContent,
+  StyledLink,
+  MoreWrapper,
+  Interested,
+  LearnMore
+} from './styles';
 import google from '../../res/images/sponsors/google.svg';
 import wish from '../../res/images/sponsors/wish.svg';
 import amazon from '../../res/images/sponsors/amazon.svg';
@@ -12,13 +26,8 @@ import yelp from '../../res/images/sponsors/yelp.svg';
 import loblaws from '../../res/images/sponsors/loblaws.svg';
 import chevron_down from "../../res/images/past_execs_chevron_down.svg";
 import chevron_right from "../../res/images/past_execs_chevron_right.svg";
-import { Image } from "semantic-ui-react";
-import { StyledSubSectionWrapper } from "../../res/globalStyles";
-
-//import illustration from '../../res/images/sponsors/illustration.svg';
-
-
-//import SponsorImg from '../../components/'
+import {Image} from "semantic-ui-react";
+import {StyledSubSectionWrapper} from "../../res/globalStyles";
 
 class Sponsors extends Component {
   //Functions to control state of accordion
@@ -34,7 +43,7 @@ class Sponsors extends Component {
 
   render() {
 
-    const { active } = this.state;
+    const {active} = this.state;
 
     //dictionary of platinum sponsors and their pictures and links
     const platinumSponsors = {
@@ -132,7 +141,7 @@ class Sponsors extends Component {
         {/* Sponsors title and Description*/}
         <SectionTitleDescription
           title={sponsorStrings.title}
-          description={sponsorStrings.description} />
+          description={sponsorStrings.description}/>
         {/* Platinum Heading */}
         <SponsorType>
           {sponsorStrings.platinum}
@@ -140,9 +149,9 @@ class Sponsors extends Component {
         {/* Pictures of Platinum Sponsors*/}
 
         {Object.entries(platinumSponsors).map(([key, name]) => (
-          name.link === '' ? <SponsorImg src={name.name} alt='' /> :
+          name.link === '' ? <SponsorImg src={name.name} alt=''/> :
             (<a href={name.link} target='_blank' rel="noopener noreferrer">
-              <SponsorImg src={name.name} alt='' />
+              <SponsorImg src={name.name} alt=''/>
             </a>)
         ))}
 
@@ -155,9 +164,9 @@ class Sponsors extends Component {
 
         {Object.entries(goldSponsors).map(([key, name]) => (
 
-          name.link === '' ? <SponsorImg src={name.name} alt='' /> :
+          name.link === '' ? <SponsorImg src={name.name} alt=''/> :
             (<a href={name.link} target='_blank' rel="noopener noreferrer">
-              <SponsorImg src={name.name} alt='' />
+              <SponsorImg src={name.name} alt=''/>
             </a>)
 
         ))}
@@ -171,8 +180,8 @@ class Sponsors extends Component {
             <StyledTitle>
               More Sponsors</StyledTitle>
             {active
-              ? <Image src={chevron_down} />
-              : <Image src={chevron_right} />
+              ? <Image src={chevron_down}/>
+              : <Image src={chevron_right}/>
             }
 
           </StyledAccordionTitle>
@@ -202,8 +211,6 @@ class Sponsors extends Component {
             </StyledGrid>
           </StyledAccordionContent>
         </StyledAccordion>
-
-
 
 
         {/* Call to action button */}
