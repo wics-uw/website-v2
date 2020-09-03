@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import SectionTitleDescription from "../../components/SectionTitleDescription/SectionTitleDescription";
-import currentExecStrings from "../../res/currentExecStrings";
+import currentExecStrings from "../../res/strings/currentExecStrings";
 import committee from "../../res/images/committee_placeholder.svg";
 import CurrentCommitteeCard from "../../components/CurrentCommitteeCard/CurrentCommitteeCard";
 import {GridColumn} from "semantic-ui-react";

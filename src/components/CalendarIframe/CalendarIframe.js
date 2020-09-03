@@ -1,9 +1,9 @@
 import React from "react";
-import calendarStrings from "../../res/calendarStrings";
+import calendarStrings from "../../res/strings/calendarStrings";
 import {withResizeDetector} from "react-resize-detector";
 import {StyledCalendarCardWrapper} from "./styles";
 
-const CalendarCard = ({source, width}) => {
+const CalendarIframe = ({source, width}) => {
   const src = source;
   let W = Math.min(parseInt(width, 10), 1058);
   W = W < 300 ? 300 : W;
@@ -23,4 +23,4 @@ const CalendarCard = ({source, width}) => {
   );
 };
 
-export default withResizeDetector(CalendarCard);
+export default withResizeDetector(CalendarIframe);

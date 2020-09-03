@@ -5,7 +5,7 @@ export const StyledNavbarWrapper = styled(Menu)`
   &&& {
     padding: 0 71px 0 110px;
     background-color: #ffffff;
-    height: 74px;
+    height: 77px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: row;

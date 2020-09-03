@@ -16,12 +16,6 @@ const contactStrings = {
     email: "wics-ugrad@lists.uwaterloo.ca",
   },
   desc: "Find us on",
-  social: {
-    lin: "https://www.linkedin.com/company/waterloo-women-in-computer-science/",
-    fb: "https://www.facebook.com/uwaterloowics",
-    insta: "https://www.instagram.com/uwaterloowics/?hl=en",
-    disc: "https://discord.gg/UZXjJpG",
-  },
 };
 
 export default contactStrings;
