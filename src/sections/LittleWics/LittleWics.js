@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import SectionTitleDescription from '../../components/SectionTitleDescription/SectionTitleDescription';
 import studentStrings from '../../res/strings/littleWicsStrings';
 import {StudentCardGrid, ImageColumn, OfficeHour, OfficeHourWrapper, TextColumnR, AllOfficeHourWrapper, TextColumnL} from './styles';
-import LittleWicsText from '../../components/LittleWicsText/LittleWicsText';
+import LittleWicsCardText from '../../components/LittleWicsCardText/LittleWicsCardText';
 import officeHour from '../../res/images/student_officeHour.svg';
 import careerMentor from '../../res/images/student_careerMentor.svg';
 import community from '../../res/images/student_community.svg';
@@ -26,7 +26,7 @@ class LittleWics extends Component {
           </ImageColumn>
           <TextColumnR width={11}>
             {/* 1st Text*/}
-            <LittleWicsText
+            <LittleWicsCardText
               title={studentStrings.officeHours.title}
               description={studentStrings.officeHours.description}/>
             <AllOfficeHourWrapper>
@@ -43,7 +43,7 @@ class LittleWics extends Component {
         <StudentCardGrid>
           <TextColumnL width={11}>
             {/* 2nd Card Text*/}
-            <LittleWicsText
+            <LittleWicsCardText
               title={studentStrings.careerMentorship.title}
               description={studentStrings.careerMentorship.description}/>
           </TextColumnL>
@@ -61,7 +61,7 @@ class LittleWics extends Component {
           </ImageColumn>
           {/* 3rd Card Text*/}
           <TextColumnR width={11}>
-            <LittleWicsText
+            <LittleWicsCardText
               title={studentStrings.community.title}
               description={studentStrings.community.description}/>
           </TextColumnR>

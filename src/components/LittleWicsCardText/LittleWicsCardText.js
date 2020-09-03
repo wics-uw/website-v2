@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {StyledTitle, StyledDescription} from './styles';
 
-class LittleWicsText extends Component {
+class LittleWicsCardText extends Component {
   render() {
     return (
       <div>
@@ -12,4 +12,4 @@ class LittleWicsText extends Component {
   }
 }
 
-export default LittleWicsText;
+export default LittleWicsCardText;
