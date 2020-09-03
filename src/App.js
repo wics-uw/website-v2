@@ -8,9 +8,9 @@ import {StyledBodyContainer, StyledGradientBackground, StyledSectionText, Styled
 import strings from "./res/strings/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
+import BigWiCS from './sections/BigWiCS/BigWiCS';
 import Sponsors from './sections/Sponsors/Sponsors';
 import Resources from './sections/Resources/Resources';
-import BigWiCS from './sections/BigWiCS/BigWiCS';
 import Contact from "./sections/Contact/Contact";
 import Structure from "./sections/Structure/Structure";
 import LittleWics from "./sections/LittleWics/LittleWics"

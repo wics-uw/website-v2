@@ -1,8 +1,9 @@
 import React from 'react';
 import FacultyCard from '../BigWiCSCard/BigWiCSCard';
-import facultyStrings from "../../res/facultyStrings";
+import facultyStrings from "../../res/bigWiCSStrings";
 import outreach from '../../res/images/big_wics_outreach.svg';
-import { StyledHeader, HWrapper, StyledTitle, StyledDescription, StyledModal, StyledIcon, PopupHead, SectionWrapper, StyledModalContent, Styledul, Styledli, ListHead } from "./styles";
+import { StyledHeader, Styleda, HWrapper, StyledTitle, StyledDescription, StyledModal, StyledIcon, SectionWrapper, StyledModalContent, Styledul, Styledli, ListHead } from "./styles";
+import close from '../../res/images/close.svg';
 
 
 //Function for Outreach Modal
@@ -23,14 +24,14 @@ export default function ModalIndustry() {
         <StyledHeader>
 
           {/* x in corner*/}
-          <StyledIcon name='close' onClick={() => setOpen(false)} color='black' />
+          <StyledIcon src={close} onClick={() => setOpen(false)} color='black' />
 
 
           {/* Header Text*/}
           <HWrapper>
-            <StyledTitle>
+          <Styleda href={facultyStrings.outreach.popupLink}><StyledTitle>
               {facultyStrings.outreach.title}
-            </StyledTitle>
+            </StyledTitle></Styleda>
             <StyledDescription>
               {facultyStrings.outreach.description}
             </StyledDescription>
@@ -40,17 +41,12 @@ export default function ModalIndustry() {
         {/* Modal Content*/}
         <StyledModalContent>
           {/* Start of Content*/}
-          {facultyStrings.outreach.popupLink === '' ?
-            <PopupHead>
-              {facultyStrings.outreach.popupHead}
-            </PopupHead> :
-            <a href={facultyStrings.outreach.popupLink}><PopupHead>{facultyStrings.outreach.popupHead}</PopupHead></a>}
 
           {/* The various sections*/}
           {Object.entries(facultyStrings.outreach.sections).map(([key, section]) => (
             <SectionWrapper>
               {section.link === '' ? <ListHead> {section.title} </ListHead> :
-                <a href={section.link}><ListHead>{section.title}</ListHead></a>}
+                <Styleda href={section.link}><ListHead>{section.title}</ListHead></Styleda>}
               <Styledul>
                 {Object.entries(section.desc).map(([key, text]) => (
                   <Styledli>

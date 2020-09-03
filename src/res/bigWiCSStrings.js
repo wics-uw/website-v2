@@ -44,8 +44,6 @@ const facultyStrings = {
     empowerment:{
         title: 'Empowerment',
         description: 'Opportunities to connect with those in industry while building skills and your network.',
-        popupHead: 'These Opportunities Include:',
-        popupLink: '',
         sections: {
             s1: {
                 title: 'Grace Hopper Celebration',
@@ -88,7 +86,6 @@ const facultyStrings = {
     outreach: {
         title: 'Outreach',
         description: 'Ways we try to interact with high school students etc technovation etc more words go here',
-        popupHead: 'Outreach',
         popupLink: 'https://cs.uwaterloo.ca/wics/wics-outreach',
         sections: {
             s1: {
