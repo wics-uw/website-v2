@@ -1,6 +1,6 @@
 const calendarStrings = {
     calendarTitle: "Monthly Schedule",
-    link: "https://calendar.google.com/calendar/embed?src=mfj5n653b9d95mvhj1ld9o2d30%40group.calendar.google.com&ctz=America%2FToronto",
+    link: "https://calendar.google.com/calendar/embed?src=0kst6i6n49krq8kp4qbkh23ic8%40group.calendar.google.com&ctz=America%2FToronto",
     loadingText: "Loading...",
   };
   

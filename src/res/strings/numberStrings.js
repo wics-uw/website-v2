@@ -6,17 +6,17 @@ const numberStrings = {
     href: 'https://cs.uwaterloo.ca/wics/resources-and-information',
     updated: '2020',
     firstCard:{
-      number:'24.26%',
+      number:'24%',
       description: 'first-year enrollment',
       approx: 'approx. 1 in 4'
     },
     secondCard:{
-      number:'24.24%',
+      number:'24%',
       description: 'undergrad enrollment',
-      approx: 'approx. 3 in 10'
+      approx: 'approx. 1 in 4'
     },
     thirdCard:{
-      number:'18.93%',
+      number:'19%',
       description: 'graduate enrollment',
       approx: 'approx. 1 in 5'
     }

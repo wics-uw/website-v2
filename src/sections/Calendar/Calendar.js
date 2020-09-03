@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import calendarStrings from "../../res/calendarStrings";
+import calendarStrings from "../../res/strings/calendarStrings";
 import SectionTitleDescription from "../../components/SectionTitleDescription/SectionTitleDescription";
 import CalendarCard from "../../components/CalendarIframe/CalendarCard";
 import {StyledSubSectionWrapper} from "../../res/globalStyles";

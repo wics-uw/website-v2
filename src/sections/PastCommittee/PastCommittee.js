@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import pastExecStrings from "../../res/pastExecStrings";
+import pastExecStrings from "../../res/strings/pastExecStrings";
 import {
   StyledAccordion,
   StyledAccordionContent,
