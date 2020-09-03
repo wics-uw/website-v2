@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Navbar from "./components/Navbar/Navbar";
 import Landing from "./sections/Landing/Landing";
 import Mission from "./sections/Mission/Mission";
 import Calendar from "./sections/Calendar/Calendar";
 import Numbers from "./sections/Numbers/Numbers";
-import Footer from "./sections/Footer/Footer";
-import { StyledBodyContainer, StyledGradientBackground, StyledSectionText, StyledSectionWrapper } from "./res/globalStyles";
+import {StyledBodyContainer, StyledGradientBackground, StyledSectionText, StyledSectionWrapper} from "./res/globalStyles";
 import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
 import Contact from "./sections/Contact/Contact";
 import Structure from "./sections/Structure/Structure";
 import LittleWics from "./sections/LittleWics/LittleWics"
+import Footer from "./sections/Footer/Footer";
 
 class App extends Component {
   constructor(props) {
@@ -65,32 +65,32 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar changeSelection={this.changeSelection} />
+        <Navbar changeSelection={this.changeSelection}/>
         <div ref={this.landing}>
-          <Landing />
+          <Landing/>
         </div>
         <StyledSectionWrapper ref={this.about}>
           <StyledGradientBackground>
             <StyledBodyContainer>
               <StyledSectionText>{strings.about}</StyledSectionText>
-              <Mission />
+              <Mission/>
             </StyledBodyContainer>
           </StyledGradientBackground>
           <StyledBodyContainer>
-            <Structure />
-            <Numbers />
+            <Structure/>
+            <Numbers/>
           </StyledBodyContainer>
         </StyledSectionWrapper>
 
         <StyledBodyContainer>
           <StyledSectionWrapper ref={this.calendar}>
             <StyledSectionText>{strings.calendar}</StyledSectionText>
-            <Calendar />
+            <Calendar/>
           </StyledSectionWrapper>
 
           <StyledSectionWrapper ref={this.getInvolved}>
             <StyledSectionText>{strings.getInvolved}</StyledSectionText>
-            <LittleWics />
+            <LittleWics/>
           </StyledSectionWrapper>
 
           <StyledSectionWrapper ref={this.resources}>
@@ -103,16 +103,16 @@ class App extends Component {
 
           <StyledSectionWrapper ref={this.committee}>
             <StyledSectionText>{strings.committee}</StyledSectionText>
-            <CurrentCommittee />
-            <PastCommittee />
+            <CurrentCommittee/>
+            <PastCommittee/>
           </StyledSectionWrapper>
 
           <StyledSectionWrapper ref={this.contactUs}>
-            <Contact />
+            <Contact/>
           </StyledSectionWrapper>
         </StyledBodyContainer>
 
-        <Footer />
+        <Footer/>
       </div>
     );
   }
