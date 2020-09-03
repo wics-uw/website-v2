@@ -1,5 +1,56 @@
 import styled from "styled-components";
-import { Image, Grid } from "semantic-ui-react";
+import {Grid, Container} from "semantic-ui-react";
+
+export const StyledFooterWrapper = styled.div`
+  &&& {
+    text-align: center;
+    height: 452px;
+    padding: 88px 0;
+    background: #AAB4C0;
+  }
+`;
+
+export const StyledFooterContentContainer = styled(Container)`
+  &&& {
+    width: 926px;
+  }
+`;
+
+export const StyledTextGrid = styled(Grid)`
+  &&& {
+    margin-bottom: 24px;
+  }
+`;
+
+export const StyledTitle = styled.p`
+  &&& {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: left;
+    color: #0D0C35;
+    text-transform: none;
+  }
+`;
+
+export const StyledTitleLink = styled.a`
+  &&& {
+    text-decoration-line: underline;
+    color: #0D0C35;
+  }
+`;
+
+export const StyledList = styled.ul`
+  &&& {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    margin: 0 0 8px 0;
+  }
+`;
 
 export const StyledText = styled.body`
   &&& {
@@ -8,41 +59,67 @@ export const StyledText = styled.body`
     font-style: normal;
     font-weight: normal;
     line-height: 20px;
-    height: auto;
     background: transparent;
-    color: #ffffff;
+    text-align: left;
+    color: #0D0C35;
+    text-transform: none;
   }
 `;
 
-export const StyledFooterWrapper = styled.div`
+export const StyledTextItalic = styled.body`
   &&& {
-    text-align: center;
-    margin-top: 50px;
-    height: 502px;
-    padding: 85px 370px 97px 370px;
-    color: white;
-    background-color: #49657f;
-    font-family: Karla;
+    font-size: 16px;
+    font-family: "Source Sans Pro Italic";
+    font-style: italic;
+    font-weight: normal;
+    line-height: 20px;
+    background: transparent;
+    text-align: left;
+    color: #0D0C35;
+    text-transform: none;
   }
 `;
 
-export const StyledEmail = styled.body`
+export const StyledLink = styled.a`
   &&& {
-    margin-top: 16px;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: normal;
-    font-size: 26px;
-    text-align: center;
+    line-height: 20px;
     background: transparent;
-    color: #ffffff;
-    height: auto;
-    font-family: "Source Sans Pro";
+    text-align: left;
+    color: #0D0C35;
+    :hover {
+      color: #49657f;
+      cursor: pointer;
+    }
+  }
+`;
+
+export const StyledSocialContainer = styled(Container)`
+  &&& {
+    width: 220px;
+    margin-bottom: 32px;
+  }
+`;
+
+export const StyledSocialGrid = styled(Grid)`
+  &&& {
+    margin: 0;
+  }
+`;
+
+export const StyledSocialColumn = styled(Grid.Column)`
+  &&& {
+    padding: 0 !important;
   }
 `;
 
 export const StyledCopyright = styled.h3`
   &&& {
-    margin-top: 72px;
+    margin: 0;
     font-size: 20px;
     font-family: Karla;
     font-style: normal;
@@ -50,46 +127,6 @@ export const StyledCopyright = styled.h3`
     line-height: 23px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
-  }
-`;
-
-export const StyledLink = styled.a`
-  &&& {
-    font-size: 16px;
-    color: #ffffff;
-    text-decoration: none !important;
-    font-family: "Source Sans Pro";
-    font-style: normal;
-    font-weight: normal;
-    line-height: 20px;
-    text-align: center;
-  }
-`;
-
-// styling the clickable icons
-export const StyledSocial = styled(Image)`
-  &&& {
-    width: 70px;
-  }
-`;
-
-// styling the grid for the clickable icons
-export const StyledGridSocial = styled(Grid)`
-  &&& {
-    margin: 38px 170px 0px;
-  }
-`;
-
-// styling the grid for the linked sites
-export const StyledGridLinks = styled(Grid)`
-  &&& {
-    margin: 33px 10px 0;
-  }
-`;
-
-export const StyledColumn = styled(Grid.Column)`
-  &&& {
-    padding: 0 !important;
+    color: #0D0C35;
   }
 `;
