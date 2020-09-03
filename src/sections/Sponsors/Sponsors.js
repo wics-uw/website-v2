@@ -1,19 +1,7 @@
 import React, {Component} from 'react';
 import SectionTitleDescription from '../../components/SectionTitleDescription/SectionTitleDescription';
 import sponsorStrings from '../../res/strings/sponsorsStrings';
-import {
-  Interested,
-  LearnMore,
-  MoreWrapper,
-  SponsorImg,
-  SponsorTierWrapper,
-  SponsorType,
-  SponsorTypeLink,
-  StyledGrid,
-  StyledGridColumnL,
-  StyledLink,
-  StyledSponsorLinkTypeWrapper
-} from './styles';
+import {Interested, LearnMore, MoreWrapper} from './styles';
 import google from '../../res/images/sponsors/google.svg';
 import wish from '../../res/images/sponsors/wish.svg';
 import amazon from '../../res/images/sponsors/amazon.svg';
@@ -25,6 +13,8 @@ import loblaws from '../../res/images/sponsors/loblaws.svg';
 import {StyledSubSectionWrapper} from "../../res/globalStyles";
 import pastExecStrings from "../../res/strings/pastExecStrings";
 import CustomAccordion from "../../components/CustomAccordion/CustomAccordion";
+import SponsorTierCard from "../../components/SponsorTierCard/SponsorTierCard";
+import SponsorLinkCard from "../../components/SponsorLinkCard/SponsorLinkCard";
 
 class Sponsors extends Component {
   render() {
@@ -125,65 +115,21 @@ class Sponsors extends Component {
         <SectionTitleDescription
           title={sponsorStrings.title}
           description={sponsorStrings.description}/>
-        <SponsorTierWrapper>
-          {/* Platinum Heading */}
-          <SponsorType>
-            {sponsorStrings.platinum}
-          </SponsorType>
 
-          {/* Pictures of Platinum Sponsors*/}
-          {Object.entries(platinumSponsors).map(([key, name]) => (
-            name.link === '' ? <SponsorImg src={name.name} alt=''/> :
-              (<a href={name.link} target='_blank' rel="noopener noreferrer">
-                <SponsorImg src={name.name} alt=''/>
-              </a>)
-          ))}
-        </SponsorTierWrapper>
-
-        <SponsorTierWrapper>
-          {/* Gold Heading */}
-          <SponsorType>
-            {sponsorStrings.gold}
-          </SponsorType>
-
-          {/* Pictures of Gold Sponsors*/}
-          {Object.entries(goldSponsors).map(([key, name]) => (
-            name.link === '' ? <SponsorImg src={name.name} alt=''/> :
-              (<a href={name.link} target='_blank' rel="noopener noreferrer">
-                <SponsorImg src={name.name} alt=''/>
-              </a>)
-
-          ))}
-        </SponsorTierWrapper>
+        <SponsorTierCard
+          type={sponsorStrings.platinum}
+          sponsors={platinumSponsors}/>
+        <SponsorTierCard
+          type={sponsorStrings.gold}
+          sponsors={goldSponsors}/>
 
         <CustomAccordion title={pastExecStrings.accordionTitle}>
-          <StyledSponsorLinkTypeWrapper>
-            {/* Links of silver Sponsors*/}
-            <SponsorTypeLink>
-              {sponsorStrings.silver}
-            </SponsorTypeLink>
-            <StyledGrid columns={6}>
-              {Object.entries(silverSponsors).map(([number, name]) => (
-                <StyledGridColumnL>
-                  <a href={name.link} target='_blank' rel="noopener noreferrer"><StyledLink>{name.name}</StyledLink></a>
-                </StyledGridColumnL>
-              ))}
-            </StyledGrid>
-          </StyledSponsorLinkTypeWrapper>
-
-          <StyledSponsorLinkTypeWrapper>
-            {/* Links of local Sponsors*/}
-            <SponsorTypeLink>
-              {sponsorStrings.local}
-            </SponsorTypeLink>
-            <StyledGrid columns={6}>
-              {Object.entries(localSponsors).map(([number, name]) => (
-                <StyledGridColumnL>
-                  <StyledLink href={name.link} target='_blank' rel="noopener noreferrer">{name.name}</StyledLink>
-                </StyledGridColumnL>
-              ))}
-            </StyledGrid>
-          </StyledSponsorLinkTypeWrapper>
+          <SponsorLinkCard
+            type={sponsorStrings.silver}
+            sponsors={silverSponsors}/>
+          <SponsorLinkCard
+            type={sponsorStrings.local}
+            sponsors={localSponsors}/>
         </CustomAccordion>
 
         {/* Call to action button */}
