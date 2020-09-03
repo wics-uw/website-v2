@@ -2,7 +2,8 @@ import React from 'react';
 import FacultyCard from '../BigWiCSCard/BigWiCSCard';
 import facultyStrings from "../../res/facultyStrings";
 import industry from '../../res/images/big_wics_industry.svg';
-import { StyledHeader, HWrapper, StyledTitle, StyledDescription, StyledModal, StyledIcon, PopupHead, SectionWrapper, StyledModalContent, Styledul, Styledli, ListHead } from "./styles";
+import { StyledHeader, HWrapper, StyledTitle, StyledDescription, StyledModal, StyledIcon, SectionWrapper, StyledModalContent, Styledul, Styledli, Styleda, ListHead } from "./styles";
+import close from '../../res/images/close.svg';
 
 
 //Function for Industry Modal
@@ -23,7 +24,7 @@ export default function ModalIndustry() {
         <StyledHeader>
 
           {/* x in corner*/}
-          <StyledIcon name='close' onClick={() => setOpen(false)} color='black' />
+          <StyledIcon src={close} onClick={() => setOpen(false)} color='black' />
 
           {/* Header Text*/}
           <HWrapper>
@@ -40,16 +41,16 @@ export default function ModalIndustry() {
         <StyledModalContent>
           {/* Start of Content*/}
           {facultyStrings.industry.popupLink === '' ?
-            <PopupHead>
+            <StyledDescription>
               {facultyStrings.industry.popupHead}
-            </PopupHead> :
-            <a href={facultyStrings.industry.popupLink}><PopupHead>{facultyStrings.industry.popupHead}</PopupHead></a>}
+            </StyledDescription> :
+            <Styleda href={facultyStrings.industry.popupLink}><StyledDescription>{facultyStrings.industry.popupHead}</StyledDescription></Styleda>}
 
           {/* The various sections*/}
           {Object.entries(facultyStrings.industry.sections).map(([key, section]) => (
             <SectionWrapper>
               {section.link === '' ? <ListHead> {section.title} </ListHead> :
-                <a href={section.link}><ListHead>{section.title}</ListHead></a>}
+                <Styleda href={section.link}><ListHead>{section.title}</ListHead></Styleda>}
               <Styledul>
                 {Object.entries(section.desc).map(([key, text]) => (
                   

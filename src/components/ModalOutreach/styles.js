@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Header, Modal, Icon, ModalContent} from "semantic-ui-react";
+import {Header, Modal, Image, ModalContent} from "semantic-ui-react";
 
 // title styles
 export const StyledTitle = styled.h2`
@@ -11,6 +11,7 @@ export const StyledTitle = styled.h2`
     line-height: 37px;
     text-transform: capitalize;
     margin-bottom: 8px;
+    color: black;
 }
 `;
 
@@ -28,17 +29,20 @@ export const StyledDescription = styled.h4`
 `;
 
 // icon styles
-export const StyledIcon = styled(Icon)`
+export const StyledIcon = styled(Image)`
 &&&{
   : hover {
     cursor: pointer;
   }  
   float: right;
+  height: 33px;
+  width: 33px;
   margin: 0 0 0 0 !important;
-  padding-top: 10px !important;
-  margin-right: 10px !important;
+  margin-top: 16px !important;
+  margin-right: 16px !important;
 }
 `;
+
 
 // header wrapper styles
 export const HWrapper = styled.div`
@@ -126,5 +130,16 @@ export const ListHead = styled.body`
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 8px;
+}
+`;
+
+
+//styles for anchor tag
+export const Styleda = styled.a`
+&&&{
+  : hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+  }
 }
 `;

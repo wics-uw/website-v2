@@ -3,8 +3,11 @@ import {Card} from 'semantic-ui-react';
 
 export const CardWrapper = styled(Card)`
 &&&{
-    height: 223px;
-    width: 259px;
+    height: 200px;
+    width: 348px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     : hover {
 		transform: translate(0,-3px);
 	}
@@ -41,7 +44,7 @@ export const EventDescription = styled.body`
     font-size: 16px;
     line-height: 20px;
     min-width: 215px;
-    width: 215px;
+    width: 300px;
     margin-left: 24px;
     
 }

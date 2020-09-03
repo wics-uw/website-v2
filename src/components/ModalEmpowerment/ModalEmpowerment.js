@@ -2,8 +2,8 @@ import React from 'react';
 import FacultyCard from '../BigWiCSCard/BigWiCSCard';
 import facultyStrings from "../../res/facultyStrings";
 import empowerment from '../../res/images/big_wics_empowerment.svg';
-import { StyledHeader, HWrapper, StyledTitle, StyledDescription, StyledModal, StyledIcon, PopupHead, SectionWrapper, StyledModalContent, Styledul, Styledli, ListHead } from "./styles";
-
+import { StyledHeader, HWrapper, StyledTitle, StyledDescription, StyledModal, StyledIcon, SectionWrapper, StyledModalContent, Styledul, Styledli, ListHead, Styleda } from "./styles";
+import close from '../../res/images/close.svg';
 
 //Function for Empowerment Modal
 export default function ModalIndustry() {
@@ -23,8 +23,7 @@ export default function ModalIndustry() {
         <StyledHeader>
 
           {/* x in corner*/}
-
-          <StyledIcon name='close' onClick={() => setOpen(false)} color='black' />
+          <StyledIcon src={close} onClick={() => setOpen(false)} color='black' />
 
 
           {/* Header Text*/}
@@ -41,17 +40,12 @@ export default function ModalIndustry() {
         {/* Modal Content*/}
         <StyledModalContent>
           {/* Start of Content*/}
-          {facultyStrings.empowerment.popupLink === '' ?
-            <PopupHead>
-              {facultyStrings.empowerment.popupHead}
-            </PopupHead> :
-            <a href={facultyStrings.empowerment.popupLink}><PopupHead>{facultyStrings.empowerment.popupHead}</PopupHead></a>}
 
           {/* The various sections*/}
           {Object.entries(facultyStrings.empowerment.sections).map(([key, section]) => (
             <SectionWrapper>
               {section.link === '' ? <ListHead> {section.title} </ListHead> :
-                <a href={section.link}><ListHead>{section.title}</ListHead></a>}
+                <Styleda href={section.link}><ListHead>{section.title}</ListHead></Styleda>}
               <Styledul>
                 {Object.entries(section.desc).map(([key, text]) => (
                   <Styledli>
