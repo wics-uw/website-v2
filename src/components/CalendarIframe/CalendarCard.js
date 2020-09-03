@@ -1,5 +1,5 @@
 import React from "react";
-import calendarStrings from "../../res/calendarStrings";
+import calendarStrings from "../../res/strings/calendarStrings";
 import {withResizeDetector} from "react-resize-detector";
 import {StyledCalendarCardWrapper} from "./styles";
 

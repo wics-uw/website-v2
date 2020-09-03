@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyledLogo, StyledNavbarWrapper, StyledNavItem} from "./styles";
-import strings from "../../res/strings";
+import strings from "../../res/strings/strings";
 import wics_logo from "../../res/images/wics_logo.png"
 import {MenuItem} from "semantic-ui-react";
 

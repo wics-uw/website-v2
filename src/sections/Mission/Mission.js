@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import missionStrings from "../../res/missionStrings";
+import missionStrings from "../../res/strings/missionStrings";
 import {Grid, GridColumn} from "semantic-ui-react";
 import MissionCard from "../../components/MissionCard/MissionCard";
 import SectionTitleDescription from "../../components/SectionTitleDescription/SectionTitleDescription";

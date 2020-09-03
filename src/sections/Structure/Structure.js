@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import SectionTitleDescription from "../../components/SectionTitleDescription/SectionTitleDescription";
-import structureStrings from "../../res/structureStrings";
+import structureStrings from "../../res/strings/structureStrings";
 import { Grid } from "semantic-ui-react";
 import { StyledTitle, StyledText, StyledColumn } from "./styles";
 import { StyledSubSectionWrapper } from "../../res/globalStyles";

@@ -15,7 +15,7 @@ import {
   StyledTitleLink,
 } from "./styles";
 import {GridColumn, Image} from "semantic-ui-react";
-import footerStrings from "../../res/footerStrings";
+import footerStrings from "../../res/strings/footerStrings";
 
 import fb_logo from "../../res/images/footer_fb_logo.svg";
 import linkedin_logo from "../../res/images/footer_linkedin_logo.svg";

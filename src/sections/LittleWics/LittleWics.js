@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import SectionTitleDescription from '../../components/SectionTitleDescription/SectionTitleDescription';
-import studentStrings from '../../res/littleWicsStrings';
+import studentStrings from '../../res/strings/littleWicsStrings';
 import {StudentCardGrid, ImageColumn, OfficeHour, OfficeHourWrapper, TextColumnR, AllOfficeHourWrapper, TextColumnL} from './styles';
 import LittleWicsText from '../../components/LittleWicsText/LittleWicsText';
 import officeHour from '../../res/images/student_officeHour.svg';

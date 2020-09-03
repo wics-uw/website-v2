@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import SectionTitleDescription from '../../components/SectionTitleDescription/SectionTitleDescription';
-import sponsorStrings from '../../res/sponsorsStrings';
+import sponsorStrings from '../../res/strings/sponsorsStrings';
 import {
   Interested,
   LearnMore,
