@@ -9,6 +9,7 @@ import strings from "./res/strings/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
 import Sponsors from './sections/Sponsors/Sponsors';
+import Resources from './sections/Resources/Resources';
 import Contact from "./sections/Contact/Contact";
 import Structure from "./sections/Structure/Structure";
 import LittleWics from "./sections/LittleWics/LittleWics"
@@ -95,7 +96,7 @@ class App extends Component {
           </StyledSectionWrapper>
 
           <StyledSectionWrapper ref={this.resources}>
-            <StyledSectionText>{strings.resources}</StyledSectionText>
+            <Resources/>
           </StyledSectionWrapper>
 
           <StyledSectionWrapper ref={this.sponsors}>
