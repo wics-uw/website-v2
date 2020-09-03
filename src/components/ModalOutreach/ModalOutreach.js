@@ -1,6 +1,6 @@
 import React from 'react';
 import FacultyCard from '../BigWiCSCard/BigWiCSCard';
-import facultyStrings from "../../res/facultyStrings";
+import facultyStrings from "../../res/bigWiCSStrings";
 import outreach from '../../res/images/big_wics_outreach.svg';
 import { StyledHeader, Styleda, HWrapper, StyledTitle, StyledDescription, StyledModal, StyledIcon, SectionWrapper, StyledModalContent, Styledul, Styledli, ListHead } from "./styles";
 import close from '../../res/images/close.svg';

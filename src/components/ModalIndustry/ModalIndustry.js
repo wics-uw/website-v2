@@ -1,6 +1,6 @@
 import React from 'react';
 import FacultyCard from '../BigWiCSCard/BigWiCSCard';
-import facultyStrings from "../../res/facultyStrings";
+import facultyStrings from "../../res/bigWiCSStrings";
 import industry from '../../res/images/big_wics_industry.svg';
 import { StyledHeader, HWrapper, StyledTitle, StyledDescription, StyledModal, StyledIcon, SectionWrapper, StyledModalContent, Styledul, Styledli, Styleda, ListHead } from "./styles";
 import close from '../../res/images/close.svg';

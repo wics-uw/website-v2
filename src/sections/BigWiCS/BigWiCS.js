@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionTitleDescription from '../../components/SectionTitleDescription/SectionTitleDescription';
-import facultyStrings from '../../res/facultyStrings';
+import facultyStrings from '../../res/bigWiCSStrings';
 import { GridColumn } from 'semantic-ui-react';
 import { StyledEventsWrapper } from './styles';
 import ModalIndustry from '../../components/ModalIndustry/ModalIndustry';

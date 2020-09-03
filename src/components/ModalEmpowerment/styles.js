@@ -34,8 +34,8 @@ export const StyledIcon = styled(Image)`
     cursor: pointer;
   }  
   float: right;
-  height: 33px;
-  width: 33px;
+  height: 33px !important;
+  width: 33px !important;
   margin: 0 0 0 0 !important;
   margin-top: 16px !important;
   margin-right: 16px !important;
@@ -76,7 +76,7 @@ export const StyledModal = styled(Modal)`
 export const StyledModalContent = styled(ModalContent)`
 &&&{
   margin: 0 0 0 0 !important;
-  padding: 32px 40px 32px 40px !important;
+  padding: 8px 40px 32px 40px !important;
 }
 `;
 
