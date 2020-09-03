@@ -1,37 +1,14 @@
 import React, {Component} from 'react';
-import pastExecStrings from "../../res/pastExecStrings";
-import {
-  StyledAccordion,
-  StyledAccordionContent,
-  StyledAccordionTitle,
-  StyledAccordionTitleText,
-  StyledGrid,
-  StyledGridColumn,
-  StyledImage,
-  StyledImageWrapper,
-  StyledPastExecsTableWrapper,
-  StyledTermText,
-  StyledTermWrapper
-} from "./styles";
-import {Image} from "semantic-ui-react";
+import pastExecStrings from "../../res/strings/pastExecStrings";
+import {StyledGrid, StyledGridColumn, StyledImage, StyledImageWrapper, StyledTermText, StyledTermWrapper} from "./styles";
 import past_executives from '../../res/images/past_execs_section.svg';
 import PastCommitteeCard from "../../components/PastCommitteeCard/PastCommitteeCard";
 import SectionTitleDescription from "../../components/SectionTitleDescription/SectionTitleDescription";
-import chevron_down from "../../res/images/past_execs_chevron_down.svg";
-import chevron_right from "../../res/images/past_execs_chevron_right.svg";
 import {StyledSubSectionWrapper} from "../../res/globalStyles";
+import CustomAccordion from "../../components/CustomAccordion/CustomAccordion";
 
 // Component for past committee section
 class PastCommittee extends Component {
-  state = {
-    active: false
-  };
-
-  handleClick = () => {
-    this.setState({
-      active: !this.state.active
-    })
-  };
 
   renderCard = (name, position) => {
     return (
@@ -42,7 +19,6 @@ class PastCommittee extends Component {
   };
 
   render() {
-    const {active} = this.state;
     return (
       <StyledSubSectionWrapper>
         <SectionTitleDescription
@@ -52,37 +28,22 @@ class PastCommittee extends Component {
           <StyledImage src={past_executives}/>
         </StyledImageWrapper>
 
-        <StyledAccordion fluid styled>
-          <StyledAccordionTitle
-            active={active}
-            onClick={this.handleClick}>
-            <StyledAccordionTitleText>
-              {pastExecStrings.accordionTitle}
-            </StyledAccordionTitleText>
-            {active
-              ? <Image src={chevron_down}/>
-              : <Image src={chevron_right}/>
-            }
-          </StyledAccordionTitle>
-          <StyledAccordionContent active={active}>
-            <StyledPastExecsTableWrapper>
-              {Object.entries(pastExecStrings.pastExecs).map(([term, execs]) => (
-                <StyledTermWrapper>
-                  <StyledTermText>
-                    {term}
-                  </StyledTermText>
-                  <StyledGrid columns={8}>
-                    {Object.entries(execs).map(([exec, execName]) => (
-                      <StyledGridColumn>
-                        {this.renderCard(execName, `${exec === "exec1" ? "Chair" : "Executive"}`)}
-                      </StyledGridColumn>
-                    ))}
-                  </StyledGrid>
-                </StyledTermWrapper>
-              ))}
-            </StyledPastExecsTableWrapper>
-          </StyledAccordionContent>
-        </StyledAccordion>
+        <CustomAccordion title={pastExecStrings.accordionTitle}>
+          {Object.entries(pastExecStrings.pastExecs).map(([term, execs]) => (
+            <StyledTermWrapper>
+              <StyledTermText>
+                {term}
+              </StyledTermText>
+              <StyledGrid columns={8}>
+                {Object.entries(execs).map(([exec, execName]) => (
+                  <StyledGridColumn>
+                    {this.renderCard(execName, `${exec === "exec1" ? "Chair" : "Executive"}`)}
+                  </StyledGridColumn>
+                ))}
+              </StyledGrid>
+            </StyledTermWrapper>
+          ))}
+        </CustomAccordion>
       </StyledSubSectionWrapper>
     )
   }

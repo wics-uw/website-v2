@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import NumbersTitleDescription from "../../components/NumbersTitleDescription/NumbersTitleDescription";
-import numberStrings from "../../res/numberStrings";
+import numberStrings from "../../res/strings/numberStrings";
 import {Grid, GridColumn} from "semantic-ui-react";
 import NumberCard from "../../components/NumberCard/NumberCard";
 import {StyledSubSectionWrapper} from "../../res/globalStyles";

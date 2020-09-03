@@ -14,12 +14,12 @@ import {
   StyledUndergrad,
   StyledWics
 } from "./styles";
-import strings from "../../res/strings";
-import placeholder from "../../res/images/placeholder.svg";
+import strings from "../../res/strings/strings";
+import placeholder from "../../res/images/landing_placeholder.svg";
 import facebook from "../../res/images/landing_fb_logo.svg";
 import instagram from "../../res/images/landing_insta_logo.svg";
 import linkedin from "../../res/images/landing_linkedin_logo.svg";
-import chevron_down from "../../res/images/chevron_down.svg"
+import chevron_down from "../../res/images/landing_chevron_down.svg"
 
 // Landing page component
 class Landing extends Component {

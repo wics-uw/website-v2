@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import contactStrings from "../../res/contactStrings";
+import contactStrings from "../../res/strings/contactStrings";
 import {Grid, Image, ImageGroup} from "semantic-ui-react";
 import {
   StyledFaqLink,
@@ -11,14 +11,14 @@ import {
   StyledTitle,
   StyledTitle2,
 } from "./styles";
-import woman from "../../res/images/woman.png";
+import woman from "../../res/images/contact_us_section.png";
 
 import fb_logo from "../../res/images/footer_fb_logo.svg";
 import linkedin_logo from "../../res/images/footer_linkedin_logo.svg";
 import discord_logo from "../../res/images/footer_linkedin_logo.svg";
 import insta_logo from "../../res/images/footer_insta_logo.svg";
 import {StyledSectionText, StyledSubSectionWrapper} from "../../res/globalStyles";
-import strings from "../../res/strings";
+import strings from "../../res/strings/strings";
 
 class Contact extends Component {
   render() {
@@ -32,11 +32,11 @@ class Contact extends Component {
               <StyledTitle>{contactStrings.faq.title}</StyledTitle>
               <StyledText>
                 {contactStrings.faq.d1}
-                <StyledFaqLink href={contactStrings.faq.faqlink}>
+                <StyledFaqLink href={contactStrings.faq.faqlink} target='_blank'>
                   {contactStrings.faq.faqtext}
                 </StyledFaqLink>
                 {contactStrings.faq.d2}
-                <StyledFaqLink href={contactStrings.faq.policylink}>
+                <StyledFaqLink href={contactStrings.faq.policylink} target='_blank'>
                   {contactStrings.faq.policytext}
                 </StyledFaqLink>
               </StyledText>
