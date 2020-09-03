@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import {
   StyledChevronDown,
-  StyledGridLeftColumn,
-  StyledGridRightColumn,
+  StyledColumn,
   StyledGridWrapper,
-  StyledLandingImage, StyledLandingWrapper,
+  StyledLandingContainer,
   StyledLearnMoreText,
   StyledLearnMoreWrapper,
   StyledMailingButton,
@@ -15,21 +14,22 @@ import {
   StyledWics
 } from "./styles";
 import landingStrings from "../../res/strings/landingStrings";
-import placeholder from "../../res/images/landing_placeholder.svg";
+import landing from "../../res/images/landing.svg";
 import facebook from "../../res/images/landing_fb_logo.svg";
 import instagram from "../../res/images/landing_insta_logo.svg";
 import linkedin from "../../res/images/landing_linkedin_logo.svg";
 import chevron_down from "../../res/images/landing_chevron_down.svg"
 import strings from "../../res/strings/strings";
+import {GridColumn, Image} from "semantic-ui-react";
 
 // Landing page component
 class Landing extends Component {
   render() {
     return (
-      <StyledLandingWrapper>
+      <StyledLandingContainer>
         <StyledGridWrapper columns={2}>
           {/*Left column - Text*/}
-          <StyledGridLeftColumn width={8} verticalAlign='middle'>
+          <StyledColumn width={8} verticalAlign='middle'>
             <StyledSchoolName>
               {landingStrings.uwaterloo}
             </StyledSchoolName>
@@ -58,12 +58,12 @@ class Landing extends Component {
               target='_blank'>
               {landingStrings.mailing}
             </StyledMailingButton>
-          </StyledGridLeftColumn>
+          </StyledColumn>
 
           {/*Right column - Image*/}
-          <StyledGridRightColumn width={8} verticalAlign='middle'>
-            <StyledLandingImage src={placeholder}/>
-          </StyledGridRightColumn>
+          <GridColumn width={8} verticalAlign='middle'>
+            <Image src={landing}/>
+          </GridColumn>
         </StyledGridWrapper>
 
         {/*Learn more*/}
@@ -73,7 +73,7 @@ class Landing extends Component {
           </StyledLearnMoreText>
           <StyledChevronDown src={chevron_down}/>
         </StyledLearnMoreWrapper>
-      </StyledLandingWrapper>
+      </StyledLandingContainer>
     )
   }
 }

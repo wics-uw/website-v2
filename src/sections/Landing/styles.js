@@ -1,33 +1,32 @@
 import styled from "styled-components";
-import {Button, Grid, GridColumn, Image, ImageGroup} from "semantic-ui-react";
+import {Button, Container, Grid, GridColumn, Image, ImageGroup} from "semantic-ui-react";
 
-export const StyledLandingWrapper = styled.div`
+export const StyledLandingContainer = styled(Container)`
   &&& {
-    margin-bottom: 50px;
+    height: 100vh;
+    min-height: 724px;
+    width: 1195px;
+    padding-top: 74px;
+    display: flex;
+    align-items: center;
   }
 `;
 
 // Styles for landing page wrapper
 export const StyledGridWrapper = styled(Grid)`
   &&& {
-    height: 100vh;
-    margin-bottom: 0 !important;
+    margin: 0 !important;
   }
 `;
 
-// Styles for left column
-export const StyledGridLeftColumn = styled(GridColumn)`
+export const StyledColumn = styled(GridColumn)`
   &&& {
-    padding: 204px 0px 0px 137px !important;
-    // Laptop(L+)+
-    @media (min-width: 1700px) {
-        padding: 0px 0px 0px 137px !important;
-    }
+    padding: 0 !important;
   }
 `;
 
 // Styles for University of Waterloo text
-export const StyledSchoolName = styled.body`
+export const StyledSchoolName = styled.p`
   &&& {
     font-family: Karla;
     font-style: normal;
@@ -36,11 +35,12 @@ export const StyledSchoolName = styled.body`
     line-height: 38px;
     letter-spacing: -0.02em;
     color: #000000;
+    margin: 0;
   }
 `;
 
 // Styles for WICS text
-export const StyledWics = styled.h1`
+export const StyledWics = styled.p`
   &&& {
     font-family: "Karla Bold";
     font-style: normal;
@@ -49,12 +49,12 @@ export const StyledWics = styled.h1`
     line-height: 87px;
     letter-spacing: -0.05em;
     color: #000000;
-    margin-top: 1px;
+    margin: 0;
   }
 `;
 
 // Styles for undergrad committee text
-export const StyledUndergrad = styled.body`
+export const StyledUndergrad = styled.p`
   &&& {
     font-family: Karla;
     font-style: normal;
@@ -62,28 +62,27 @@ export const StyledUndergrad = styled.body`
     font-size: 24px;
     line-height: 28px;
     color: #000000;
-    margin-top: 16px;
+    margin: 0 0 32px 0;
   }
 `;
 
 // Styles for social icon wrapper
 export const StyledSocialWrapper = styled(ImageGroup)`
   &&& {
-    margin-top: 29px;
+    margin: 0 0 32px 0;
   }
 `;
 
 // Styles for social icon
 export const StyledSocial = styled(Image)`
   &&& {
-    padding-right: 18px;
+    padding-right: 16px;
   }
 `;
 
 // Styles for mailing list button
 export const StyledMailingButton = styled(Button)`
   &&& {
-    margin-top: 35px;
     text-align: center;
     background: #49657F;
     border-radius: 42px;
@@ -98,38 +97,21 @@ export const StyledMailingButton = styled(Button)`
   }
 `;
 
-// Styles for right column
-export const StyledGridRightColumn = styled(GridColumn)`
-  &&& {
-    padding: 150px 202.9px 0px 80px !important;
-    // Laptop(L+)+
-    @media (min-width: 1700px) {
-        padding: 0px 202.9px 0px 80px !important;
-    }
-  }
-`;
-
-// Styles for landing page image
-export const StyledLandingImage = styled(Image)`
-  &&& {
-    width: 472.1px;
-    height: 550px;
-    border-radius: 37.7682px;
-  }
-`;
-
 // Styles for learn more wrapper
 export const StyledLearnMoreWrapper = styled.div`
   &&& {
-    margin-top: 42px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 32px;
+    width: 1195px;
   }
 `;
 
 // Styles for learn more text
-export const StyledLearnMoreText = styled.div`
+export const StyledLearnMoreText = styled.body`
   &&& {
     font-style: normal;
     font-weight: normal;
@@ -143,7 +125,7 @@ export const StyledLearnMoreText = styled.div`
 // Styles for chevron down icon
 export const StyledChevronDown = styled(Image)`
   &&& {
-    margin-top: 9px;
+    margin-top: 8px;
   }
 `;
 
