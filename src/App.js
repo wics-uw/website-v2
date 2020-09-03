@@ -4,7 +4,6 @@ import Landing from "./sections/Landing/Landing";
 import Mission from "./sections/Mission/Mission";
 import Calendar from "./sections/Calendar/Calendar";
 import Numbers from "./sections/Numbers/Numbers";
-import Footer from "./sections/Footer/Footer";
 import {StyledBodyContainer, StyledGradientBackground, StyledSectionText, StyledSectionWrapper} from "./res/globalStyles";
 import strings from "./res/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
@@ -12,6 +11,8 @@ import PastCommittee from "./sections/PastCommittee/PastCommittee";
 import Sponsors from './sections/Sponsors/Sponsors';
 import Contact from "./sections/Contact/Contact";
 import Structure from "./sections/Structure/Structure";
+import LittleWics from "./sections/LittleWics/LittleWics"
+import Footer from "./sections/Footer/Footer";
 
 class App extends Component {
   constructor(props) {
@@ -90,6 +91,7 @@ class App extends Component {
 
           <StyledSectionWrapper ref={this.getInvolved}>
             <StyledSectionText>{strings.getInvolved}</StyledSectionText>
+            <LittleWics/>
           </StyledSectionWrapper>
 
           <StyledSectionWrapper ref={this.resources}>
