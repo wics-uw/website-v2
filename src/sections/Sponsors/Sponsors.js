@@ -9,15 +9,10 @@ import {
   SponsorTierWrapper,
   SponsorType,
   SponsorTypeLink,
-  StyledAccordion,
-  StyledAccordionContent,
-  StyledAccordionTitle,
   StyledGrid,
   StyledGridColumnL,
   StyledLink,
-  StyledSponsorsTableWrapper,
-  StyledSponsorLinkTypeWrapper,
-  StyledTitle
+  StyledSponsorLinkTypeWrapper
 } from './styles';
 import google from '../../res/images/sponsors/google.svg';
 import wish from '../../res/images/sponsors/wish.svg';
@@ -27,27 +22,12 @@ import zynga from '../../res/images/sponsors/zynga.svg';
 import splunk from '../../res/images/sponsors/splunk.svg';
 import yelp from '../../res/images/sponsors/yelp.svg';
 import loblaws from '../../res/images/sponsors/loblaws.svg';
-import chevron_down from "../../res/images/past_execs_chevron_down.svg";
-import chevron_right from "../../res/images/past_execs_chevron_right.svg";
-import {Image} from "semantic-ui-react";
 import {StyledSubSectionWrapper} from "../../res/globalStyles";
+import pastExecStrings from "../../res/strings/pastExecStrings";
+import CustomAccordion from "../../components/CustomAccordion/CustomAccordion";
 
 class Sponsors extends Component {
-  //Functions to control state of accordion
-  state = {
-    active: false
-  };
-
-  handleClick = () => {
-    this.setState({
-      active: !this.state.active
-    })
-  };
-
   render() {
-
-    const {active} = this.state;
-
     //dictionary of platinum sponsors and their pictures and links
     const platinumSponsors = {
       s1: {
@@ -176,50 +156,35 @@ class Sponsors extends Component {
           ))}
         </SponsorTierWrapper>
 
-        {/* Accordion for sponsors*/}
-        <StyledAccordion fluid styled>
-          <StyledAccordionTitle
-            active={active}
-            onClick={this.handleClick}>
-            <StyledTitle>{sponsorStrings.more}</StyledTitle>
-            {active
-              ? <Image src={chevron_down}/>
-              : <Image src={chevron_right}/>
-            }
-          </StyledAccordionTitle>
+        <CustomAccordion title={pastExecStrings.accordionTitle}>
+          <StyledSponsorLinkTypeWrapper>
+            {/* Links of silver Sponsors*/}
+            <SponsorTypeLink>
+              {sponsorStrings.silver}
+            </SponsorTypeLink>
+            <StyledGrid columns={6}>
+              {Object.entries(silverSponsors).map(([number, name]) => (
+                <StyledGridColumnL>
+                  <a href={name.link} target='_blank' rel="noopener noreferrer"><StyledLink>{name.name}</StyledLink></a>
+                </StyledGridColumnL>
+              ))}
+            </StyledGrid>
+          </StyledSponsorLinkTypeWrapper>
 
-          <StyledAccordionContent active={active}>
-            <StyledSponsorsTableWrapper>
-              <StyledSponsorLinkTypeWrapper>
-                {/* Links of silver Sponsors*/}
-                <SponsorTypeLink>
-                  {sponsorStrings.silver}
-                </SponsorTypeLink>
-                <StyledGrid columns={6}>
-                  {Object.entries(silverSponsors).map(([number, name]) => (
-                    <StyledGridColumnL>
-                      <a href={name.link} target='_blank' rel="noopener noreferrer"><StyledLink>{name.name}</StyledLink></a>
-                    </StyledGridColumnL>
-                  ))}
-                </StyledGrid>
-              </StyledSponsorLinkTypeWrapper>
-
-              <StyledSponsorLinkTypeWrapper>
-                {/* Links of local Sponsors*/}
-                <SponsorTypeLink>
-                  {sponsorStrings.local}
-                </SponsorTypeLink>
-                <StyledGrid columns={6}>
-                  {Object.entries(localSponsors).map(([number, name]) => (
-                    <StyledGridColumnL>
-                      <StyledLink href={name.link} target='_blank' rel="noopener noreferrer">{name.name}</StyledLink>
-                    </StyledGridColumnL>
-                  ))}
-                </StyledGrid>
-              </StyledSponsorLinkTypeWrapper>
-            </StyledSponsorsTableWrapper>
-          </StyledAccordionContent>
-        </StyledAccordion>
+          <StyledSponsorLinkTypeWrapper>
+            {/* Links of local Sponsors*/}
+            <SponsorTypeLink>
+              {sponsorStrings.local}
+            </SponsorTypeLink>
+            <StyledGrid columns={6}>
+              {Object.entries(localSponsors).map(([number, name]) => (
+                <StyledGridColumnL>
+                  <StyledLink href={name.link} target='_blank' rel="noopener noreferrer">{name.name}</StyledLink>
+                </StyledGridColumnL>
+              ))}
+            </StyledGrid>
+          </StyledSponsorLinkTypeWrapper>
+        </CustomAccordion>
 
         {/* Call to action button */}
         <MoreWrapper>

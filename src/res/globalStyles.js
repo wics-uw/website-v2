@@ -1,6 +1,6 @@
 // This file is for the styles for some components that are being used globally
 import styled from "styled-components";
-import {Container} from "semantic-ui-react";
+import {Accordion, AccordionContent, AccordionTitle, Container} from "semantic-ui-react";
 
 // Styles for wrapper of each large section
 // Example: About, Calendar, Get Involved, Resources, Sponsor, ...

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Button, Accordion, AccordionContent, AccordionTitle, Grid, GridColumn} from "semantic-ui-react";
+import {Button, Grid, GridColumn} from "semantic-ui-react";
 
 //styles for the sponsor type
 export const SponsorTierWrapper = styled.div`
@@ -28,56 +28,6 @@ export const SponsorImg = styled.img`
   &&& {
     vertical-align: middle;
     margin-right: 16px;
-  }
-`;
-
-//styles for accordion shape
-export const StyledAccordion = styled(Accordion)`
-  &&& {
-    border-radius: 15px;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  }
-`;
-
-// styles for the accordion title
-export const StyledAccordionTitle = styled(AccordionTitle)`
-  &&& {
-    padding: 16px 24px 16px 16px !important;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-`;
-
-//styles for the Accordion Title
-export const StyledTitle = styled.h4`
-  &&& {
-    font-family: Karla;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: -0.02em;
-    color: #000000;
-    margin: 0;
-  }
-`;
-
-//styles for the accordion content
-export const StyledAccordionContent = styled(AccordionContent)`
-  &&& {
-    border-left: 3px solid #E7BEB2;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: rgba(231,190,178, 0.15);
-    border-radius: 0 0 15px 15px;
-    padding: 0 !important;
-  }
-`;
-
-export const StyledSponsorsTableWrapper = styled.div`
-  &&& {
-    padding: 32px 24px;
   }
 `;
 
