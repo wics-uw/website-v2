@@ -10,8 +10,6 @@ import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
 import Sponsors from './sections/Sponsors/Sponsors';
 import Resources from './sections/Resources/Resources';
-import resourceImg from './res/images/resource.svg';
-import {Illustration} from './sections/Resources/styles';
 import Contact from "./sections/Contact/Contact";
 import Structure from "./sections/Structure/Structure";
 import LittleWics from "./sections/LittleWics/LittleWics"
@@ -97,9 +95,7 @@ class App extends Component {
             <LittleWics/>
           </StyledSectionWrapper>
 
-          <Illustration src ={resourceImg}/>
           <StyledSectionWrapper ref={this.resources}>
-            <StyledSectionText>{strings.resources}</StyledSectionText>
             <Resources/>
           </StyledSectionWrapper>
 

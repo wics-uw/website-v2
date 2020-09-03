@@ -43,7 +43,7 @@ export const StyledAccordion = styled(Accordion)`
 // styles for the accordion title
 export const StyledAccordionTitle = styled(AccordionTitle)`
   &&& {
-    padding: 16px !important;
+    padding: 16px 24px 16px 16px !important;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
