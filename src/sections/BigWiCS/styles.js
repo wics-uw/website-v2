@@ -4,7 +4,7 @@ import {Grid, GridColumn} from "semantic-ui-react";
 // Styles for grid
 export const StyledEventsWrapper = styled(Grid)`
   &&& {
-    margin-top: 32px;
+    margin: 0 !important;
   }
 `;
 
@@ -12,7 +12,8 @@ export const StyledEventsWrapper = styled(Grid)`
 // Styles for grid column
 export const StyledGridColumn = styled(GridColumn)`
   &&& {
-    margin: 0 0 0 0 !important;
-    padding: 0 0 0 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
   }
 `;

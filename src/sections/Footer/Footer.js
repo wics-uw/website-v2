@@ -23,7 +23,6 @@ import insta_logo from "../../res/images/footer_insta_logo.svg";
 import discord_logo from "../../res/images/footer_discord_logo.svg";
 import email from "../../res/images/footer_email.svg";
 import strings from "../../res/strings/strings";
-import {StyledSocial} from "../Landing/styles";
 
 class Footer extends Component {
   render() {
