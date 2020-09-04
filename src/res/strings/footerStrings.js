@@ -35,12 +35,6 @@ const footerStrings = {
     lk1: "https://cs.uwaterloo.ca/wics", // Big Wics
     lk2: "https://github.com/wics-uw", // Github
     lk3: "http://wics.uwaterloo.ca/faq/", // FAQ
-    social: {
-      lin: "https://www.linkedin.com/company/waterloo-women-in-computer-science/",
-      fb: "https://www.facebook.com/uwaterloowics",
-      insta: "https://www.instagram.com/uwaterloowics/?hl=en",
-      disc: "https://discord.gg/UZXjJpG",
-    },
   },
   copyright: "UNIVERSITY OF WATERLOO WOMEN IN COMPUTER SCIENCE",
 };

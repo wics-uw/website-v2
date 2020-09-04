@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import {
   StyledChevronDown,
-  StyledGridLeftColumn,
-  StyledGridRightColumn,
+  StyledColumn,
   StyledGridWrapper,
-  StyledLandingImage, StyledLandingWrapper,
+  StyledLandingContainer,
   StyledLearnMoreText,
   StyledLearnMoreWrapper,
   StyledMailingButton,
@@ -14,65 +13,67 @@ import {
   StyledUndergrad,
   StyledWics
 } from "./styles";
-import strings from "../../res/strings/strings";
-import placeholder from "../../res/images/landing_placeholder.svg";
+import landingStrings from "../../res/strings/landingStrings";
+import landing from "../../res/images/landing.svg";
 import facebook from "../../res/images/landing_fb_logo.svg";
 import instagram from "../../res/images/landing_insta_logo.svg";
 import linkedin from "../../res/images/landing_linkedin_logo.svg";
 import chevron_down from "../../res/images/landing_chevron_down.svg"
+import strings from "../../res/strings/strings";
+import {GridColumn, Image} from "semantic-ui-react";
 
 // Landing page component
 class Landing extends Component {
   render() {
     return (
-      <StyledLandingWrapper>
+      <StyledLandingContainer>
         <StyledGridWrapper columns={2}>
           {/*Left column - Text*/}
-          <StyledGridLeftColumn width={8} verticalAlign='middle'>
+          <StyledColumn width={8} verticalAlign='middle'>
             <StyledSchoolName>
-              {strings.landing.uwaterloo}
+              {landingStrings.uwaterloo}
             </StyledSchoolName>
             <StyledWics>
-              {strings.landing.wics}
+              {landingStrings.wics}
             </StyledWics>
             <StyledUndergrad>
-              {strings.landing.undergrad}
+              {landingStrings.undergrad}
             </StyledUndergrad>
             <StyledSocialWrapper>
               <StyledSocial
                 src={facebook}
-                href='https://www.facebook.com/uwaterloowics'
+                href={strings.social.facebook}
                 target='_blank'/>
               <StyledSocial
                 src={instagram}
-                href='https://www.instagram.com/uwaterloowics/'
+                href={strings.social.instagram}
                 target='_blank'/>
               <StyledSocial
                 src={linkedin}
-                href='https://www.linkedin.com/company/waterloo-women-in-computer-science/'
+                href={strings.social.linkedin}
                 target='_blank'/>
             </StyledSocialWrapper>
             <StyledMailingButton
-              href='https://lists.uwaterloo.ca/mailman/listinfo/wics-ugrad'
+              href={landingStrings.mailingLink}
               target='_blank'>
-              {strings.landing.mailing}
+              {landingStrings.mailing}
             </StyledMailingButton>
-          </StyledGridLeftColumn>
+          </StyledColumn>
 
           {/*Right column - Image*/}
-          <StyledGridRightColumn width={8} verticalAlign='middle'>
-            <StyledLandingImage src={placeholder}/>
-          </StyledGridRightColumn>
+          <GridColumn width={8} verticalAlign='middle'>
+            <Image src={landing}/>
+          </GridColumn>
         </StyledGridWrapper>
 
         {/*Learn more*/}
         <StyledLearnMoreWrapper>
           <StyledLearnMoreText>
-            {strings.landing.learnMore}
+            {landingStrings.learnMore}
           </StyledLearnMoreText>
           <StyledChevronDown src={chevron_down}/>
         </StyledLearnMoreWrapper>
-      </StyledLandingWrapper>
+      </StyledLandingContainer>
     )
   }
 }
