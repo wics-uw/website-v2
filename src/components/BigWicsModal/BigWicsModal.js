@@ -46,7 +46,7 @@ export default function BigWicsModal(props) {
           <HeaderWraooer>
             {props.modalTitleLink !== ''
               ? <StyledHeaderTitle>
-                <StyledHeaderTitleLink href={props.modalTitleLink}>
+                <StyledHeaderTitleLink href={props.modalTitleLink} target="_blank">
                   {props.modalTitle}
                 </StyledHeaderTitleLink>
               </StyledHeaderTitle>
@@ -67,7 +67,7 @@ export default function BigWicsModal(props) {
               {section.link === ''
                 ? <ListHeader> {section.title} </ListHeader>
                 : <ListHeader>
-                  <StyledLink href={section.link}>{section.title}</StyledLink>
+                  <StyledLink href={section.link} target="_blank">{section.title}</StyledLink>
                 </ListHeader>}
               <Styledul>
                 {Object.entries(section.desc).map(([key, text]) => (

@@ -136,7 +136,8 @@ class Sponsors extends Component {
         <MoreWrapper>
           <Interested> {sponsorStrings.interested}</Interested>
           <LearnMore href={'https://cs.uwaterloo.ca/wics'} target='_blank'>
-            {sponsorStrings.learnMore}</LearnMore>
+            {sponsorStrings.learnMore}
+          </LearnMore>
         </MoreWrapper>
 
       </StyledSubSectionWrapper>
