@@ -1,8 +1,7 @@
 import React from 'react';
 import SectionTitleDescription from '../../components/SectionTitleDescription/SectionTitleDescription';
 import facultyStrings from '../../res/bigWiCSStrings';
-import { GridColumn } from 'semantic-ui-react';
-import { StyledEventsWrapper } from './styles';
+import { StyledEventsWrapper, StyledGridColumn } from './styles';
 import ModalIndustry from '../../components/ModalIndustry/ModalIndustry';
 import ModalEmpowerment from '../../components/ModalEmpowerment/ModalEmpowerment';
 import ModalOutreach from '../../components/ModalOutreach/ModalOutreach';
@@ -21,19 +20,19 @@ function BigWiCS() {
             {/* Cards Wrapper */}
             <StyledEventsWrapper columns={3}>
                  {/* First Event */}
-                <GridColumn>
+                <StyledGridColumn>
                     <ModalIndustry />
-                </GridColumn>
+                </StyledGridColumn>
 
                  {/* Second Event */}
-                <GridColumn>
+                <StyledGridColumn>
                     <ModalEmpowerment />
-                </GridColumn>
+                </StyledGridColumn>
 
                  {/* Third Event */}
-                <GridColumn>
+                <StyledGridColumn>
                     <ModalOutreach />
-                </GridColumn>
+                </StyledGridColumn>
             </StyledEventsWrapper>
         </StyledSubSectionWrapper>
     )

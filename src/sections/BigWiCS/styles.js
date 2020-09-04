@@ -1,16 +1,18 @@
 import styled from "styled-components";
-import {Grid, Icon} from "semantic-ui-react";
+import {Grid, GridColumn} from "semantic-ui-react";
 
-// Styles for cards wrapper
+// Styles for grid
 export const StyledEventsWrapper = styled(Grid)`
   &&& {
-    margin-top: 20px;
+    margin-top: 32px;
   }
 `;
 
-export const CloseStyled = styled(Icon)`
-  &&&{
-    color: black;
-    transform: translate (-50px, 20px);
+
+// Styles for grid column
+export const StyledGridColumn = styled(GridColumn)`
+  &&& {
+    margin: 0 0 0 0 !important;
+    padding: 0 0 0 0 !important;
   }
 `;
