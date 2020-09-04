@@ -8,6 +8,7 @@ import {StyledBodyContainer, StyledGradientBackground, StyledSectionText, Styled
 import strings from "./res/strings/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
+import BigWiCS from './sections/BigWiCS/BigWiCS';
 import Sponsors from './sections/Sponsors/Sponsors';
 import Resources from './sections/Resources/Resources';
 import Contact from "./sections/Contact/Contact";
@@ -93,6 +94,7 @@ class App extends Component {
           <StyledSectionWrapper ref={this.getInvolved}>
             <StyledSectionText>{strings.getInvolved}</StyledSectionText>
             <LittleWics/>
+            <BigWiCS/>
           </StyledSectionWrapper>
 
           <StyledSectionWrapper ref={this.resources}>

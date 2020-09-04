@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Grid, Container} from "semantic-ui-react";
+import {Container, Grid} from "semantic-ui-react";
 
 export const StyledFooterWrapper = styled.div`
   &&& {

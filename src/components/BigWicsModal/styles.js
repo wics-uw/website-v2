@@ -1,0 +1,155 @@
+import styled from "styled-components";
+import {Header, Image, Modal, ModalContent} from "semantic-ui-react";
+
+//styles for modal
+export const StyledModal = styled(Modal)`
+  &&& {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    max-width: 680px;
+    height: 80vh;
+    min-height: 500px;
+    overflow: auto;
+  }
+`;
+
+//styled header
+export const StyledHeader = styled(Header)`
+  &&& {
+    padding: 0 !important;
+    vertical-align: top;
+  }
+`;
+
+// icon styles
+export const StyledIcon = styled(Image)`
+  &&& {
+    float: right;
+    height: 33px !important;
+    width: 33px !important;
+    margin: 24px 16px 0 0 !important;
+    cursor: pointer;
+    color: #000000;
+  }
+`;
+
+// header wrapper styles
+export const HeaderWraooer = styled.div`
+  &&& {
+    padding: 40px 40px 16px 40px;
+}
+`;
+
+//description styles
+export const StyledHeaderDescription = styled.h4`
+  &&& {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    margin: 0;
+  }
+`;
+
+// title styles
+export const StyledHeaderTitle = styled.h2`
+  &&& {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    text-transform: capitalize;
+    margin: 0 0 8px 0;
+    color: #000000;
+  }
+`;
+
+// title styles
+export const StyledHeaderTitleLink = styled.a`
+  &&& {
+    &:hover {
+      text-decoration: underline;
+    }
+    color: #000000;
+  }
+`;
+
+//styles for modal content
+export const StyledModalContent = styled(ModalContent)`
+  &&&{
+    padding: 16px 40px 40px 40px !important;
+  }
+`;
+
+//description styles
+export const StyledContentDescription = styled.h4`
+  &&& {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    margin: 0 0 12px 0;
+  }
+`;
+
+//styles for the section wrapper
+export const SectionWrapper = styled.div`
+  &&& {
+    margin-bottom: 32px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+`;
+
+//styles for the list text
+export const ListHeader = styled.p`
+  &&& {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 8px;
+  }
+`;
+
+//styles for anchor tag
+export const StyledLink = styled.a`
+  &&& {
+    color: #000000;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`;
+
+//styles for list
+export const Styledul = styled.ul`
+  &&& {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+`;
+
+//styles for each list item
+export const Styledli = styled.body`
+  &&& {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+  }
+`;
