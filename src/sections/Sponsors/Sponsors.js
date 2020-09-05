@@ -11,7 +11,6 @@ import splunk from '../../res/images/sponsors/splunk.svg';
 import yelp from '../../res/images/sponsors/yelp.svg';
 import loblaws from '../../res/images/sponsors/loblaws.svg';
 import {StyledSubSectionWrapper} from "../../res/globalStyles";
-import pastExecStrings from "../../res/strings/pastExecStrings";
 import CustomAccordion from "../../components/CustomAccordion/CustomAccordion";
 import SponsorTierCard from "../../components/SponsorTierCard/SponsorTierCard";
 import SponsorLinkCard from "../../components/SponsorLinkCard/SponsorLinkCard";
@@ -123,7 +122,7 @@ class Sponsors extends Component {
           type={sponsorStrings.gold}
           sponsors={goldSponsors}/>
 
-        <CustomAccordion title={pastExecStrings.accordionTitle}>
+        <CustomAccordion title={sponsorStrings.accordionTitle}>
           <SponsorLinkCard
             type={sponsorStrings.silver}
             sponsors={silverSponsors}/>

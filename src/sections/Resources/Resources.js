@@ -30,13 +30,13 @@ export default class Resources extends Component {
                 content={resourcesStrings.conferenceLinks}/>
               <ResourcesAccordion
                 index={2}
-                title={resourcesStrings.additionalTitle}
-                content={resourcesStrings.additionLinks}/>
+                title={resourcesStrings.womenTitle}
+                content={resourcesStrings.womenLinks}/>
               <ResourcesAccordion
                 index={3}
                 last={true}
-                title={resourcesStrings.womenTitle}
-                content={resourcesStrings.womenLinks}/>
+                title={resourcesStrings.additionalTitle}
+                content={resourcesStrings.additionLinks}/>
             </StyledAccordion>
           </GridColumn>
           <GridColumn width={9}>

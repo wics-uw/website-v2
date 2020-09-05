@@ -3,7 +3,7 @@ const landingStrings = {
   wics: "Women in Computer Science",
   undergrad: "Undergraduate Committee",
   mailing: "Join the mailing list",
-  learnMore: "Learn More",
+  learnMore: "Learn more",
   mailingLink: 'https://lists.uwaterloo.ca/mailman/listinfo/wics-ugrad'
 };
 

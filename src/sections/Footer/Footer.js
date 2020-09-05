@@ -29,7 +29,7 @@ class Footer extends Component {
     return (
       <StyledFooterWrapper>
         <StyledFooterContentContainer>
-          <StyledTextGrid>
+          <StyledTextGrid stackable>
             <GridColumn width={4}>
               <StyledTitle>{footerStrings.title.addr}</StyledTitle>
               <StyledList>
@@ -67,7 +67,7 @@ class Footer extends Component {
               </StyledList>
             </GridColumn>
 
-            <GridColumn width={7}>
+            <GridColumn width={6}>
               <StyledTitle>
                 <StyledTitleLink href={footerStrings.links.pol} target='_blank'>
                   {footerStrings.title.la}
@@ -76,7 +76,7 @@ class Footer extends Component {
               <StyledText>{footerStrings.description.la}</StyledText>
             </GridColumn>
 
-            <GridColumn width={2}>
+            <GridColumn width={3}>
               <StyledTitle>
                 <StyledTitleLink href={footerStrings.links.pol} target='_blank'>
                   {footerStrings.title.pol}

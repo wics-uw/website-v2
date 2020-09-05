@@ -12,11 +12,11 @@ const littleWiCSStrings = {
   },
   careerMentorship: {
     title: 'Career & Mentorship',
-    description: 'Several times a term, we run events for women focused on mentorship and career-building. Some of these include resume critique nights, mock technical interviews, BigCSter mentorship panels and skill-based workshops. Checkout the calendar for the latest events!'
+    description: 'Several times a term, we run events for women focused on mentorship and career-building. Some of these include resume critique nights, mock technical interviews, BigCSter Mentorship and skill-based workshops. Checkout the calendar for the latest events!'
   },
   community: {
     title: 'Community Building',
-    description: 'Throughout the term, we have events aimed at fostering a safe, inclusive and diverse space. This is a great chance to collaborate with other student clubs to promote gender equity and build community. Past events have included beginning of term socials, movie nights, side-project kickoffs and more!'
+    description: 'Throughout the term, we have events aimed at fostering a safe, inclusive and diverse space. This is a great chance to collaborate with other student clubs and organizations to promote gender equity and build community. Past events have included beginning of term socials, movie nights, side-project kickoffs and more!'
   }
 };
 

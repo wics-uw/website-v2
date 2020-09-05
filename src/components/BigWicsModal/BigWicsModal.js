@@ -4,10 +4,10 @@ import {
   HeaderWraooer,
   ListHeader,
   SectionWrapper,
-  StyledContentDescription,
   StyledHeader,
   StyledHeaderDescription,
-  StyledHeaderTitle, StyledHeaderTitleLink,
+  StyledHeaderTitle,
+  StyledHeaderTitleLink,
   StyledIcon,
   Styledli,
   StyledLink,
@@ -59,9 +59,9 @@ export default function BigWicsModal(props) {
           </HeaderWraooer>
         </StyledHeader>
         <StyledModalContent>
-          <StyledContentDescription>
-            {props.contentDescription}
-          </StyledContentDescription>
+          {/*<StyledContentDescription>*/}
+          {/*  {props.contentDescription}*/}
+          {/*</StyledContentDescription>*/}
           {Object.entries(props.sectionContent).map(([key, section]) => (
             <SectionWrapper>
               {section.link === ''

@@ -3,7 +3,7 @@ const bigWicsStrings = {
   description: 'Events and opportunities hosted by faculty and staff of the at-large committee and sponsors.',
   industry: {
     title: 'Industry',
-    description: 'Sponsor events and workshops to build skills and relationships hosted by our industry sponsors.',
+    description: 'Sponsor events and workshops to build skills and relationships hosted by our industry sponsors',
     popupLink: '',
     contentDescription: 'Past Sponsor Events included:',
     sections: {
@@ -43,7 +43,7 @@ const bigWicsStrings = {
   },
   empowerment: {
     title: 'Empowerment',
-    description: 'Opportunities to connect with those in industry while building skills and your network.',
+    description: 'Opportunities to connect with those in industry while building skills and your network',
     popupLink: '',
     contentDescription: 'These opportunities include: ',
     sections: {
@@ -69,25 +69,24 @@ const bigWicsStrings = {
         }
       },
       s4: {
-        title: 'International Women’s Day Networking and Lunch',
-        link: '',
-        desc: {
-          l1: '',
-        }
-      },
-      s5: {
         title: 'Community & Alumnae',
         link: '',
         desc: {
           l1: 'Alumnae, friends and faculty share career advice in areas ranging from soft skills to technical skills, entrepreneurship to leadership, industry to academics and everything in between!',
         }
+      },
+      s5: {
+        title: 'International Women’s Day Networking and Lunch',
+        link: '',
+        desc: {
+          l1: '',
+        }
       }
-
     }
   },
   outreach: {
     title: 'Outreach',
-    description: 'Engaging youth aged 10-18 in technology activities to create a gender equitable future in technology.',
+    description: 'Engaging youth aged 10-18 in technology activities to create a gender equitable future in technology',
     popupLink: 'https://cs.uwaterloo.ca/wics/wics-outreach',
     contentDescription: 'These are great volunteer opportunities that undergraduate students can get involved with!',
     sections: {

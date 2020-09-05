@@ -82,7 +82,7 @@ export const StyledTextItalic = styled.body`
 
 export const StyledLink = styled.a`
   &&& {
-    margin: 0;
+    margin-bottom: 0;
     font-size: 16px;
     font-family: "Source Sans Pro";
     font-style: normal;

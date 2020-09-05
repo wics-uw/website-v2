@@ -3,7 +3,7 @@ const resourcesStrings = {
   wicsTitle: 'WiCS Resources',
   wicsLinks: {
     l1: {
-      name: 'Big WiCS Site',
+      name: 'Big WiCS Website',
       link: 'https://cs.uwaterloo.ca/wics'
     },
     l2: {
@@ -11,7 +11,7 @@ const resourcesStrings = {
       link: 'https://cs.uwaterloo.ca/scholarships-and-bursaries'
     },
     l3: {
-      name: 'Big WiCS Resources & Info',
+      name: 'Big WiCS Resources and Info',
       link: 'https://cs.uwaterloo.ca/wics/resources-and-information'
     },
     l4: {
@@ -37,25 +37,29 @@ const resourcesStrings = {
   additionalTitle: 'Additional Links',
   additionLinks: {
     l1: {
-      name: 'Math Faculty Advisor website',
-      link: 'https://cs.uwaterloo.ca/sites/ca.computer-science/files/uploads/files/ghc-2019-recap.pdf'
+      name: 'MathSoc',
+      link: 'https://mathsoc.uwaterloo.ca/'
     },
     l2: {
+      name: 'Math Faculty Advisor',
+      link: 'https://cs.uwaterloo.ca/sites/ca.computer-science/files/uploads/files/ghc-2019-recap.pdf'
+    },
+    l3: {
       name: 'UW Women’s Center',
       link: ' https://www.can-cwic.ca/'
     },
-    l3: {
+    l4: {
       name: 'UW Academic and Wellness Resources',
       link: 'https://adainitiative.org/'
     },
-    l4: {
+    l5: {
       name: 'Geek Feminist Wiki',
       link: 'https://www.youtube.com/channel/UC96oscoIPbaKtxQwc93DzHQ/featured'
     },
-    l5: {
+    l6: {
       name: 'Ada Initiative',
       link: 'https://adainitiative.org/'
-    }
+    },
   },
   womenTitle: 'Women at UWaterloo',
   womenLinks: {

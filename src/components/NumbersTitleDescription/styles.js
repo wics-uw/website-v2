@@ -18,7 +18,7 @@ export const StyledTitle = styled.h2`
 export const StyledDescription = styled.h4`
   &&& {
     margin: 0;
-    width: 500px;
+    width: 600px;
     font-family: Karla;
     font-style: normal;
     font-weight: normal;

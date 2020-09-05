@@ -82,7 +82,7 @@ export const StyledHeaderTitleLink = styled.a`
 //styles for modal content
 export const StyledModalContent = styled(ModalContent)`
   &&&{
-    padding: 16px 40px 40px 40px !important;
+    padding: 24px 40px 40px 40px !important;
   }
 `;
 

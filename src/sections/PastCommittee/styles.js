@@ -33,12 +33,13 @@ export const StyledTermText = styled.h3`
     line-height: 23px;
     text-transform: uppercase;
     color: #000000;
+    margin-bottom: 4px;
   }
 `;
 
 export const StyledGrid = styled(Grid)`
   &&& {
-    margin-top: 16px;
+    margin-top: 0;
     margin-bottom: 0;
   }
 `;
