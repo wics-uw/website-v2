@@ -5,16 +5,15 @@ const bigWicsStrings = {
     title: 'Industry',
     description: 'Sponsor events and workshops to build skills and relationships hosted by our industry sponsors',
     popupLink: '',
-    contentDescription: 'Past Sponsor Events included:',
     sections: {
       s1: {
         title: 'Workplace Preparation',
         link: '',
         desc: {
-          l1: 'Technical Interview Tips',
-          l2: " Ace Your Technical Interview with Amazon",
-          l3: 'Resume Critiques with Google',
-          l4: 'Mock Interviews',
+          l1: 'Resume Critiques with Google',
+          l2: "Ace Your Technical Interview with Amazon",
+          l3: 'Technical Interview Tips with Yelp',
+          l4: 'Mock Interviews with Wish',
           l5: 'Make the Most of Your Co-op with Flexport'
         }
       },
@@ -25,18 +24,16 @@ const bigWicsStrings = {
           l1: 'Know Your Worth with Splunk',
           l2: 'Unconscious Bias: How to Recognize and Interrupt It',
           l3: 'How to Network for Introverts',
-          l4: 'Sexism Response Workshop'
         }
       },
       s3: {
         title: 'Additional Activities',
         link: '',
         desc: {
-          l1: 'Salesforce Dinners',
-          l2: 'Datadog: Why is Monitoring Important?',
-          l3: 'Shopify Developers Panel',
-          l4: 'Technology Circles with Facebook',
-          l5: 'Facebook Puzzle Hunt'
+          l1: 'Salesforce Dinner',
+          l2: 'Shopify Developers Panel',
+          l3: 'Facebook Puzzle Hunt',
+          l4: 'Datadog: Why is Monitoring Important?',
         }
       }
     }
@@ -45,7 +42,6 @@ const bigWicsStrings = {
     title: 'Empowerment',
     description: 'Opportunities to connect with those in industry while building skills and your network',
     popupLink: '',
-    contentDescription: 'These opportunities include: ',
     sections: {
       s1: {
         title: 'Grace Hopper Celebration',
@@ -88,7 +84,6 @@ const bigWicsStrings = {
     title: 'Outreach',
     description: 'Engaging youth aged 10-18 in technology activities to create a gender equitable future in technology',
     popupLink: 'https://cs.uwaterloo.ca/wics/wics-outreach',
-    contentDescription: 'These are great volunteer opportunities that undergraduate students can get involved with!',
     sections: {
       s1: {
         title: 'GIRLsmarts4tech',

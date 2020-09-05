@@ -8,7 +8,8 @@ const sponsorStrings = {
   silver: 'Silver',
   local: 'Local',
   interested: 'Want to get involved?',
-  learnMore: 'Learn more'
+  learnMore: 'Learn more',
+  learnMoreLink: 'https://cs.uwaterloo.ca/wics'
 };
 
 export default sponsorStrings;

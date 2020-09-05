@@ -27,7 +27,6 @@ export const Interested = styled.h4`
 export const LearnMore = styled(Button)`
   &&& {
     width: 147px;
-    height: 43px;
     font-family: Karla;
     font-style: normal;
     font-weight: normal;

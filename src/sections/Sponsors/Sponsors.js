@@ -134,7 +134,7 @@ class Sponsors extends Component {
         {/* Call to action button */}
         <MoreWrapper>
           <Interested> {sponsorStrings.interested}</Interested>
-          <LearnMore href={'https://cs.uwaterloo.ca/wics'} target='_blank'>
+          <LearnMore href={sponsorStrings.learnMoreLink} target='_blank'>
             {sponsorStrings.learnMore}
           </LearnMore>
         </MoreWrapper>

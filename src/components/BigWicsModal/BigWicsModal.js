@@ -59,9 +59,6 @@ export default function BigWicsModal(props) {
           </HeaderWraooer>
         </StyledHeader>
         <StyledModalContent>
-          {/*<StyledContentDescription>*/}
-          {/*  {props.contentDescription}*/}
-          {/*</StyledContentDescription>*/}
           {Object.entries(props.sectionContent).map(([key, section]) => (
             <SectionWrapper>
               {section.link === ''

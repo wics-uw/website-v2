@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import SectionTitleDescription from "../../components/SectionTitleDescription/SectionTitleDescription";
 import currentExecStrings from "../../res/strings/currentExecStrings";
-import committee from "../../res/images/committee_placeholder.svg";
+import committee from "../../res/images/currentExecs/committee_placeholder.svg";
 import CurrentCommitteeCard from "../../components/CurrentCommitteeCard/CurrentCommitteeCard";
 import {GridColumn} from "semantic-ui-react";
 import {StyledExecWrapper} from "./styles";

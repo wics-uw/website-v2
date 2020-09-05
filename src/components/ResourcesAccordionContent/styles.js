@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Image} from "semantic-ui-react";
 
 export const LinksWrapper = styled.div`
   &&& {
@@ -6,6 +7,13 @@ export const LinksWrapper = styled.div`
     &:last-child {
       padding-bottom: 0;
     }
+  }
+`;
+
+//styles for the chain icon
+export const StyledChain = styled(Image)`
+  &&& {
+    display: inline;
   }
 `;
 
@@ -20,5 +28,6 @@ export const LinkName = styled.body`
     display: inline;
     background-color: transparent;
     color: #000000;
+    margin-left: 8px;
   }
 `;

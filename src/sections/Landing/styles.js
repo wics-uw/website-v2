@@ -87,7 +87,6 @@ export const StyledMailingButton = styled(Button)`
     background: #49657F;
     border-radius: 42px;
     width: 212px;
-    height: 43px;
     color: #FFFFFF;
     font-family: Karla;
     font-style: normal;
@@ -107,6 +106,7 @@ export const StyledLearnMoreWrapper = styled.div`
     bottom: 0;
     margin-bottom: 32px;
     width: 1195px;
+    cursor: pointer;
   }
 `;
 

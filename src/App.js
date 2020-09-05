@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./sections/Navbar/Navbar";
 import Landing from "./sections/Landing/Landing";
 import Mission from "./sections/Mission/Mission";
 import Calendar from "./sections/Calendar/Calendar";
@@ -70,7 +70,7 @@ class App extends Component {
       <div>
         <Navbar changeSelection={this.changeSelection}/>
         <div ref={this.landing}>
-          <Landing/>
+          <Landing changeSelection={this.changeSelection}/>
         </div>
         <StyledSectionWrapper ref={this.about}>
           <StyledGradientBackground>

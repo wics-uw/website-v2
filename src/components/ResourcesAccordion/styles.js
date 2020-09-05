@@ -18,6 +18,7 @@ export const StyledAccordionTitle = styled(AccordionTitle)`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-top: ${props => props.first ? "none" : "auto"} !important;
   }
 `;
 

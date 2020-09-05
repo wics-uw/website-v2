@@ -11,7 +11,7 @@ import {
   StyledTitle,
   StyledTitle2,
 } from "./styles";
-import woman from "../../res/images/contact_us_section.png";
+import illustration from "../../res/images/contact_us_section.svg";
 
 import fb_logo from "../../res/images/footer_fb_logo.svg";
 import linkedin_logo from "../../res/images/footer_linkedin_logo.svg";
@@ -45,9 +45,10 @@ class Contact extends Component {
             <StyledSubContactSectionWrapper2>
               <StyledTitle>{contactStrings.ro.title}</StyledTitle>
               <StyledText>
-                {contactStrings.ro.d1}
+                {contactStrings.ro.d1}<br/>
                 {contactStrings.ro.d2}
-                <StyledReachOutLink>{contactStrings.ro.email}</StyledReachOutLink>
+                <StyledReachOutLink href={"mailto:" + contactStrings.ro.email}
+                                    target="_blank">{contactStrings.ro.email}</StyledReachOutLink>
               </StyledText>
             </StyledSubContactSectionWrapper2>
 
@@ -72,7 +73,7 @@ class Contact extends Component {
             </ImageGroup>
           </Grid.Column>
           <Grid.Column width={6}>
-            <Image src={woman} size="huge"/>
+            <Image src={illustration} size="huge"/>
           </Grid.Column>
         </Grid>
       </StyledSubSectionWrapper>

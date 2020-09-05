@@ -86,20 +86,6 @@ export const StyledModalContent = styled(ModalContent)`
   }
 `;
 
-//description styles
-export const StyledContentDescription = styled.h4`
-  &&& {
-    font-family: Karla;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: -0.02em;
-    color: #000000;
-    margin: 0 0 12px 0;
-  }
-`;
-
 //styles for the section wrapper
 export const SectionWrapper = styled.div`
   &&& {

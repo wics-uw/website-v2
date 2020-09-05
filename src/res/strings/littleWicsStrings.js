@@ -12,7 +12,10 @@ const littleWiCSStrings = {
   },
   careerMentorship: {
     title: 'Career & Mentorship',
-    description: 'Several times a term, we run events for women focused on mentorship and career-building. Some of these include resume critique nights, mock technical interviews, BigCSter Mentorship and skill-based workshops. Checkout the calendar for the latest events!'
+    description1: 'Several times a term, we run events for women focused on mentorship and career-building. Some of these include resume critique nights, mock technical interviews, ',
+    description2: 'BigCSter Mentorship',
+    description3: ' and skill-based workshops. Checkout the calendar for the latest events!',
+    bigCSterLink: 'https://cs.uwaterloo.ca/wics/big-csters-mentorship'
   },
   community: {
     title: 'Community Building',

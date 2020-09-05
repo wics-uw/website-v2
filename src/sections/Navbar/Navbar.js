@@ -30,6 +30,6 @@ const Navbar = props => {
       </MenuItem>
     </StyledNavbarWrapper>
   )
-}
+};
 
 export default Navbar;

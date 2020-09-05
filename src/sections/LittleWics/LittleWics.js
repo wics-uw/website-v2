@@ -1,13 +1,23 @@
 import React, {Component} from 'react';
 import SectionTitleDescription from '../../components/SectionTitleDescription/SectionTitleDescription';
 import studentStrings from '../../res/strings/littleWicsStrings';
-import {StudentCardGrid, ImageColumn, OfficeHour, OfficeHourWrapper, TextColumnR, AllOfficeHourWrapper, TextColumnL} from './styles';
+import {
+  AllOfficeHourWrapper,
+  ImageColumn,
+  ImageContainer,
+  OfficeHour,
+  OfficeHourWrapper,
+  StudentCardGrid,
+  StyledImage,
+  StyledLink,
+  TextColumnL,
+  TextColumnR
+} from './styles';
 import LittleWicsCardText from '../../components/LittleWicsCardText/LittleWicsCardText';
-import officeHour from '../../res/images/student_officeHour.svg';
-import careerMentor from '../../res/images/student_careerMentor.svg';
-import community from '../../res/images/student_community.svg';
+import officeHour from '../../res/images/little_wics_office_hours.png';
+import mentorship from '../../res/images/little_wics_mentorship.png';
+import community from '../../res/images/little_wics_community.png';
 import {StyledSubSectionWrapper} from '../../res/globalStyles';
-import {Image} from 'semantic-ui-react';
 
 
 //LittleWics Events Component
@@ -22,7 +32,9 @@ class LittleWics extends Component {
         <StudentCardGrid>
           {/* 1st Card Image*/}
           <ImageColumn width={5}>
-            <Image src={officeHour}/>
+            <ImageContainer>
+              <StyledImage src={officeHour}/>
+            </ImageContainer>
           </ImageColumn>
           <TextColumnR width={11}>
             {/* 1st Text*/}
@@ -45,11 +57,20 @@ class LittleWics extends Component {
             {/* 2nd Card Text*/}
             <LittleWicsCardText
               title={studentStrings.careerMentorship.title}
-              description={studentStrings.careerMentorship.description}/>
+              description={
+                <>
+                  {studentStrings.careerMentorship.description1}
+                  <StyledLink
+                    href={studentStrings.careerMentorship.bigCSterLink}>{studentStrings.careerMentorship.description2}</StyledLink>
+                  {studentStrings.careerMentorship.description3}
+                </>}
+            />
           </TextColumnL>
           {/* 2nd Card Image*/}
           <ImageColumn width={5}>
-            <Image src={careerMentor}/>
+            <ImageContainer>
+              <StyledImage src={mentorship}/>
+            </ImageContainer>
           </ImageColumn>
         </StudentCardGrid>
 
@@ -57,7 +78,9 @@ class LittleWics extends Component {
         <StudentCardGrid>
           {/* 3rd Card Image*/}
           <ImageColumn width={5}>
-            <Image src={community}/>
+            <ImageContainer>
+              <StyledImage src={community}/>
+            </ImageContainer>
           </ImageColumn>
           {/* 3rd Card Text*/}
           <TextColumnR width={11}>

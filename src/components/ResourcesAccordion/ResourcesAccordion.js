@@ -20,6 +20,7 @@ class ResourcesAccordion extends Component {
     return (
       <div>
         <StyledAccordionTitle
+          first={this.props.first}
           active={activeIndex === this.props.index}
           index={this.props.index}
           onClick={this.handleClick}>

@@ -15,5 +15,8 @@ export const StyledGridColumn = styled(GridColumn)`
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     padding-left: 0 !important;
+    &:last-child {
+      padding-right: 0 !important;
+    }
   }
 `;
