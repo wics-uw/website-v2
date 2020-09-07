@@ -22,12 +22,15 @@ export const LinkName = styled.body`
   &&& {
     font-family: 'Source Sans Pro';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 16px;
     line-height: 20px;
     display: inline;
     background-color: transparent;
     color: #000000;
     margin-left: 8px;
+    &:hover {
+      text-decoration-line: underline;
+    }
   }
 `;

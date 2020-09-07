@@ -50,6 +50,9 @@ export const StyledLink = styled.body`
     color: #333333;
     opacity: 0.6;
     text-align: right;
+    :hover {
+      opacity: 1;
+    }
   }
 `;
 

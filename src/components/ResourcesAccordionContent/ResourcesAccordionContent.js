@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Image} from "semantic-ui-react";
 import {LinkName, LinksWrapper, StyledChain} from "./styles";
 import link from "../../res/images/resource_link.svg"
 

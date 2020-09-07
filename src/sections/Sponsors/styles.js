@@ -26,7 +26,7 @@ export const Interested = styled.h4`
 //styles for the learn More button
 export const LearnMore = styled(Button)`
   &&& {
-    width: 147px;
+    padding: 16px 36px;
     font-family: Karla;
     font-style: normal;
     font-weight: normal;
@@ -36,5 +36,14 @@ export const LearnMore = styled(Button)`
     color: #ffffff;
     background: #49657F;
     border-radius: 42px;
+    &:hover {
+      background: #60809D;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      transform: translate(0,-2px);
+    }
+    &:focus {
+      background: #3F566B;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
   }
 `;

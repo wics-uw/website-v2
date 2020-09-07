@@ -38,8 +38,10 @@ export const StyledTitle = styled.p`
 
 export const StyledTitleLink = styled.a`
   &&& {
-    text-decoration-line: underline;
     color: #0D0C35;
+    &:hover {
+      text-decoration-line: underline;
+    }
   }
 `;
 
@@ -92,28 +94,14 @@ export const StyledLink = styled.a`
     text-align: left;
     color: #0D0C35;
     :hover {
-      color: #49657f;
-      cursor: pointer;
+      text-decoration-line: underline;
     }
   }
 `;
 
 export const StyledSocialContainer = styled(Container)`
   &&& {
-    width: 220px;
     margin-bottom: 32px;
-  }
-`;
-
-export const StyledSocialGrid = styled(Grid)`
-  &&& {
-    margin: 0;
-  }
-`;
-
-export const StyledSocialColumn = styled(Grid.Column)`
-  &&& {
-    padding: 0 !important;
   }
 `;
 

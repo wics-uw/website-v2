@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {GridColumn, Grid, Image, Container} from 'semantic-ui-react';
+import {Grid, GridColumn, Image} from 'semantic-ui-react';
 
 //styles for TextColumnR
 export const TextColumnR = styled(GridColumn)`
@@ -23,18 +23,9 @@ export const ImageColumn = styled(GridColumn)`
 `;
 
 // styles for image
-export const ImageContainer = styled(Container)`
-  &&& {
-    border-radius: 27px;
-    background-color: rgba(231, 190, 178, 0.35);
-  }
-`;
-
-// styles for image
 export const StyledImage = styled(Image)`
   &&& {
     border-radius: 27px;
-    mix-blend-mode: lighten;
   }
 `;
 
@@ -42,7 +33,10 @@ export const StyledImage = styled(Image)`
 export const StyledLink = styled.a`
   &&& {
     text-decoration-line: underline;
-    color: #000000;
+    color: #49657F;
+    &:hover {
+      color: #60809D;
+    }
   }
 `;
 

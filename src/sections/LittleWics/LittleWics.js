@@ -4,7 +4,6 @@ import studentStrings from '../../res/strings/littleWicsStrings';
 import {
   AllOfficeHourWrapper,
   ImageColumn,
-  ImageContainer,
   OfficeHour,
   OfficeHourWrapper,
   StudentCardGrid,
@@ -32,9 +31,7 @@ class LittleWics extends Component {
         <StudentCardGrid>
           {/* 1st Card Image*/}
           <ImageColumn width={5}>
-            <ImageContainer>
-              <StyledImage src={officeHour}/>
-            </ImageContainer>
+            <StyledImage src={officeHour}/>
           </ImageColumn>
           <TextColumnR width={11}>
             {/* 1st Text*/}
@@ -68,9 +65,7 @@ class LittleWics extends Component {
           </TextColumnL>
           {/* 2nd Card Image*/}
           <ImageColumn width={5}>
-            <ImageContainer>
-              <StyledImage src={mentorship}/>
-            </ImageContainer>
+            <StyledImage src={mentorship}/>
           </ImageColumn>
         </StudentCardGrid>
 
@@ -78,9 +73,7 @@ class LittleWics extends Component {
         <StudentCardGrid>
           {/* 3rd Card Image*/}
           <ImageColumn width={5}>
-            <ImageContainer>
-              <StyledImage src={community}/>
-            </ImageContainer>
+            <StyledImage src={community}/>
           </ImageColumn>
           {/* 3rd Card Text*/}
           <TextColumnR width={11}>
