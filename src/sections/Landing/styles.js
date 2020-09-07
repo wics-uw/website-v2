@@ -121,6 +121,9 @@ export const StyledLearnMoreText = styled.body`
     line-height: 20px;
     color: rgba(0, 0, 0, 0.5);
     font-family: "Source Sans Pro";
+    &:hover { 
+      color: #333333;
+    }
   }
 `;
 
