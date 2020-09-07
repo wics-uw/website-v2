@@ -46,3 +46,12 @@ export const StyledGradientBackground = styled.div`
     background: linear-gradient(180deg, rgba(231, 213, 208, 0.55) 0%, rgba(231, 190, 178, 0) 62.65%);
   }
 `;
+
+// Styles for social icon
+export const StyledSocial = styled.img`
+  &&& {
+    padding-right: 16px;
+    margin: 0;
+    cursor: pointer;
+  }
+`;

@@ -52,5 +52,8 @@ export const StyledLink = styled.a`
     color: #000000;
     padding: 0;
     background-color: transparent;
+    &:hover {
+      text-decoration-line: underline;
+    }
   }
 `;

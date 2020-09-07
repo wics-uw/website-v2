@@ -5,24 +5,28 @@ import {
   StyledFooterWrapper,
   StyledLink,
   StyledList,
-  StyledSocialColumn,
   StyledSocialContainer,
-  StyledSocialGrid,
   StyledText,
   StyledTextGrid,
   StyledTextItalic,
   StyledTitle,
   StyledTitleLink,
 } from "./styles";
-import {GridColumn, Image} from "semantic-ui-react";
+import {GridColumn, ImageGroup} from "semantic-ui-react";
 import footerStrings from "../../res/strings/footerStrings";
 
-import fb_logo from "../../res/images/footer_fb_logo.svg";
-import linkedin_logo from "../../res/images/footer_linkedin_logo.svg";
-import insta_logo from "../../res/images/footer_insta_logo.svg";
-import discord_logo from "../../res/images/footer_discord_logo.svg";
-import email from "../../res/images/footer_email.svg";
+import linkedin from "../../res/images/socials/inactive/linkedin-dark.svg";
+import facebook from "../../res/images/socials/inactive/facebook-dark.svg";
+import slack from "../../res/images/socials/inactive/slack-dark.svg";
+import instagram from "../../res/images/socials/inactive/ig-dark.svg";
+import email from "../../res/images/socials/inactive/email-dark.svg";
+import linkedin_hover from "../../res/images/socials/hover/linkedin-dark.svg";
+import facebook_hover from "../../res/images/socials/hover/facebook-dark.svg";
+import slack_hover from "../../res/images/socials/hover/slack-dark.svg";
+import instagram_hover from "../../res/images/socials/hover/ig-dark.svg";
+import email_hover from "../../res/images/socials/hover/email-dark.svg";
 import strings from "../../res/strings/strings";
+import {StyledSocial} from "../../res/globalStyles";
 
 class Footer extends Component {
   render() {
@@ -30,6 +34,7 @@ class Footer extends Component {
       <StyledFooterWrapper>
         <StyledFooterContentContainer>
           <StyledTextGrid stackable>
+            {/*Address*/}
             <GridColumn width={4}>
               <StyledTitle>{footerStrings.title.addr}</StyledTitle>
               <StyledList>
@@ -67,6 +72,7 @@ class Footer extends Component {
               </StyledList>
             </GridColumn>
 
+            {/*Land Acknowledgement*/}
             <GridColumn width={6}>
               <StyledTitle>
                 <StyledTitleLink href={footerStrings.links.pol} target='_blank'>
@@ -76,6 +82,7 @@ class Footer extends Component {
               <StyledText>{footerStrings.description.la}</StyledText>
             </GridColumn>
 
+            {/*Our Policies*/}
             <GridColumn width={3}>
               <StyledTitle>
                 <StyledTitleLink href={footerStrings.links.pol} target='_blank'>
@@ -106,6 +113,7 @@ class Footer extends Component {
               </StyledList>
             </GridColumn>
 
+            {/*Relevant links*/}
             <GridColumn width={3}>
               <StyledTitle>{footerStrings.title.lk}</StyledTitle>
               <StyledList>
@@ -129,43 +137,43 @@ class Footer extends Component {
           </StyledTextGrid>
 
           <StyledSocialContainer>
-            <StyledSocialGrid columns={5}>
-              <StyledSocialColumn>
-                <Image
-                  src={email}
-                  href="mailto:wics.uw.ugrad@gmail.com"
-                  target="_blank"
-                />
-              </StyledSocialColumn>
-              <StyledSocialColumn>
-                <Image
-                  src={linkedin_logo}
-                  href={strings.social.linkedin}
-                  target="_blank"
-                />
-              </StyledSocialColumn>
-              <StyledSocialColumn>
-                <Image
-                  src={fb_logo}
-                  href={strings.social.facebook}
-                  target="_blank"
-                />
-              </StyledSocialColumn>
-              <StyledSocialColumn>
-                <Image
-                  src={insta_logo}
-                  href={strings.social.instagram}
-                  target="_blank"
-                />
-              </StyledSocialColumn>
-              <StyledSocialColumn>
-                <Image
-                  src={discord_logo}
-                  href={strings.social.discord}
-                  target="_blank"
-                />
-              </StyledSocialColumn>
-            </StyledSocialGrid>
+            <ImageGroup>
+              <StyledSocial
+                src={linkedin}
+                onMouseOver={e => (e.currentTarget.src = linkedin_hover)}
+                onMouseOut={e => (e.currentTarget.src = linkedin)}
+                href={strings.social.linkedin}
+                target="_blank"
+              />
+              <StyledSocial
+                src={facebook}
+                onMouseOver={e => (e.currentTarget.src = facebook_hover)}
+                onMouseOut={e => (e.currentTarget.src = facebook)}
+                href={strings.social.facebook}
+                target="_blank"
+              />
+              <StyledSocial
+                src={instagram}
+                onMouseOver={e => (e.currentTarget.src = instagram_hover)}
+                onMouseOut={e => (e.currentTarget.src = instagram)}
+                href={strings.social.instagram}
+                target="_blank"
+              />
+              <StyledSocial
+                src={slack}
+                onMouseOver={e => (e.currentTarget.src = slack_hover)}
+                onMouseOut={e => (e.currentTarget.src = slack)}
+                href={strings.social.slack}
+                target="_blank"
+              />
+              <StyledSocial
+                src={email}
+                onMouseOver={e => (e.currentTarget.src = email_hover)}
+                onMouseOut={e => (e.currentTarget.src = email)}
+                href={strings.social.email}
+                target="_blank"
+              />
+            </ImageGroup>
           </StyledSocialContainer>
 
           <StyledCopyright>

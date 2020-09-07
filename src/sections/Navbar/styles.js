@@ -30,10 +30,10 @@ export const StyledNavItem = styled(Button)`
     font-style: normal;
     font-weight: normal;
     text-align: center;
-    border-radius: 42px;
+    border-radius: 40px;
     &:hover {
-      background-color: #4A607B;
-      color: #ffffff;
+      background: rgba(170, 180, 192, 0.1);
+      border-radius: 40px;
     }
   }
 `;

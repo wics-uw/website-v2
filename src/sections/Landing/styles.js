@@ -31,8 +31,8 @@ export const StyledSchoolName = styled.p`
     font-family: Karla;
     font-style: normal;
     font-weight: normal;
-    font-size: 32.57px;
-    line-height: 38px;
+    font-size: 36px;
+    line-height: 42px;
     letter-spacing: -0.02em;
     color: #000000;
     margin: 0;
@@ -45,11 +45,11 @@ export const StyledWics = styled.p`
     font-family: "Karla Bold";
     font-style: normal;
     font-weight: bold;
-    font-size: 74px;
-    line-height: 87px;
+    font-size: 70px;
+    line-height: 85%;
     letter-spacing: -0.05em;
     color: #000000;
-    margin: 0;
+    margin: 0 0 16px 0;
   }
 `;
 
@@ -73,26 +73,28 @@ export const StyledSocialWrapper = styled(ImageGroup)`
   }
 `;
 
-// Styles for social icon
-export const StyledSocial = styled(Image)`
-  &&& {
-    padding-right: 16px;
-  }
-`;
-
 // Styles for mailing list button
 export const StyledMailingButton = styled(Button)`
   &&& {
     text-align: center;
     background: #49657F;
     border-radius: 42px;
-    width: 212px;
     color: #FFFFFF;
     font-family: Karla;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
+    padding: 16px 36px;
+    &:hover {
+      background: #60809D;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      transform: translate(0,-2px);
+    }
+    &:focus {
+      background: #3F566B;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
   }
 `;
 

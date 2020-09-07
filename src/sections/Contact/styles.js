@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {Image} from "semantic-ui-react";
 
 export const StyledSubContactSectionWrapper = styled.div`
   &&& {
@@ -59,21 +58,21 @@ export const StyledText = styled.h4`
 export const StyledFaqLink = styled.a`
   &&& {
     text-decoration-line: underline;
-    color: #000000;
+    font-weight: bold;
+    color: #49657F;
+    &:hover {
+      color: #60809D;
+    }
   }
 `;
 
 export const StyledReachOutLink = styled.a`
   &&& {
+    text-decoration-line: underline;
     font-weight: bold;
-    color: #000000;
-  }
-`;
-
-// styling the clickable icons
-export const StyledSocial = styled(Image)`
-  &&& {
-    margin: 0;
-    padding-right: 16px;
+    color: #49657F;
+    &:hover {
+      color: #60809D;
+    }
   }
 `;
