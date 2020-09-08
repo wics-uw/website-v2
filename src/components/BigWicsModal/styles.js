@@ -129,7 +129,7 @@ export const Styledul = styled.ul`
 `;
 
 //styles for each list item
-export const Styledli = styled.body`
+export const Styledli = styled.p`
   &&& {
     font-family: Source Sans Pro;
     font-style: normal;
@@ -137,5 +137,6 @@ export const Styledli = styled.body`
     font-size: 16px;
     line-height: 20px;
     color: #000000;
+    margin: 0;
   }
 `;

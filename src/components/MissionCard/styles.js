@@ -33,7 +33,7 @@ export const StyledCardTitle = styled.p`
 `;
 
 // Styles for the card description
-export const StyledCardDescription = styled.body`
+export const StyledCardDescription = styled.p`
   &&& {
     font-family: "Source Sans Pro";
     font-style: normal;
@@ -42,5 +42,6 @@ export const StyledCardDescription = styled.body`
     line-height: 20px;
     text-align: center;
     color: #000000;
+    margin: 0;
   }
 `;

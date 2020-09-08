@@ -15,7 +15,7 @@ export const StyledTitle = styled.p`
   }
 `;
 
-export const StyledText = styled.body`
+export const StyledText = styled.p`
   &&& {
     font-size: 16px;
     font-family: "Source Sans Pro";
@@ -25,6 +25,7 @@ export const StyledText = styled.body`
     background: transparent;
     text-align: center;
     color: #000000;
+    margin: 0
   }
 `;
 

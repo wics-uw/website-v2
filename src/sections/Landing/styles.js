@@ -113,8 +113,9 @@ export const StyledLearnMoreWrapper = styled.div`
 `;
 
 // Styles for learn more text
-export const StyledLearnMoreText = styled.body`
+export const StyledLearnMoreText = styled.p`
   &&& {
+    margin: 0;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

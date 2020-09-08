@@ -35,7 +35,7 @@ export const EventTitle = styled.label`
 `;
 
 
-export const EventDescription = styled.body`
+export const EventDescription = styled.p`
   &&& {
     font-family: 'Source Sans Pro';
     font-style: normal;
@@ -44,5 +44,6 @@ export const EventDescription = styled.body`
     line-height: 20px;
     color: #000000;
     min-width: 100%;
+    margin: 0;
   }
 `;

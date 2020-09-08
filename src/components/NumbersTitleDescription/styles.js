@@ -40,7 +40,7 @@ export const DescriptionWrapper = styled.div`
 `;
 
 // Styles for section description
-export const StyledLink = styled.body`
+export const StyledLink = styled.p`
   &&& {
     font-family:  'Source Sans Pro';
     font-style: normal;
@@ -50,6 +50,7 @@ export const StyledLink = styled.body`
     color: #333333;
     opacity: 0.6;
     text-align: right;
+    margin: 0;
     :hover {
       opacity: 1;
     }
@@ -57,7 +58,7 @@ export const StyledLink = styled.body`
 `;
 
 // Styles for section description
-export const StyledUpdate = styled.body`
+export const StyledUpdate = styled.p`
   &&& {
     font-family:  'Source Sans Pro';
     font-style: italic;
@@ -68,6 +69,7 @@ export const StyledUpdate = styled.body`
     color: #333333;
     padding-right: 2px;
     opacity: 0.6;
+    margin: 0;
   }
 `;
 

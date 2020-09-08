@@ -15,7 +15,7 @@ export const StyledTitle = styled.p`
 `;
 
 //Styles for description
-export const StyledDescription = styled.body`
+export const StyledDescription = styled.p`
   &&& {
     font-family: 'Source Sans Pro';
     font-style: normal;
@@ -23,5 +23,6 @@ export const StyledDescription = styled.body`
     font-size: 16px;
     line-height: 20px;
     color: #000000;
+    margin: 0;
   }
 `;

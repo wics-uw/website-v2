@@ -53,5 +53,8 @@ export const StyledSocial = styled.img`
     padding-right: 16px;
     margin: 0;
     cursor: pointer;
+    :last-child {
+      padding-right: 0;
+    }
   }
 `;
