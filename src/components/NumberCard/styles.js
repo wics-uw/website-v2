@@ -42,6 +42,7 @@ export const StyledCardDescription = styled.h4`
     @media only screen and (max-width: 425px) {
       font-size: 14px;
       line-height: 18px;
+      margin: 0;
     }
   }
 `;
@@ -58,8 +59,8 @@ export const StyledApprox = styled.p`
     color: rgba(0, 0, 0, 0.6);
     margin: 0;
     @media only screen and (max-width: 425px) {
-      //font-size: 24px;
-      //line-height: 28px;
+      font-size: 14px;
+      line-height: 18px;
     }
   }
 `;

@@ -33,7 +33,7 @@ export const StyledDescription = styled.h4`
     @media only screen and (max-width: 425px) {
       font-size: 18px;
       line-height: 21px;
-      width: 100%;
+      width: 70%;
     }
   }
 `;
