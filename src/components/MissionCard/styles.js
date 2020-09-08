@@ -14,13 +14,16 @@ export const StyledCardImage = styled(Image)`
   &&& {
     border-radius: 20px;
     margin-bottom: 29px;
+    @media only screen and (max-width: 425px) {
+      margin-bottom: 16px;
+    }
   }
 `;
 
 // Styles for the card title
 export const StyledCardTitle = styled.p`
   &&& {
-    margin-bottom: 7px;
+    margin-bottom: 8px;
     font-family: "Karla Bold";
     font-style: normal;
     font-weight: bold;
@@ -29,6 +32,11 @@ export const StyledCardTitle = styled.p`
     text-align: center;
     letter-spacing: -0.02em;
     color: #000000;
+    @media only screen and (max-width: 425px) {
+      margin-bottom: 4px;
+      font-size: 18px;
+      line-height: 21px;
+    }
   }
 `;
 
@@ -43,5 +51,9 @@ export const StyledCardDescription = styled.p`
     text-align: center;
     color: #000000;
     margin: 0;
+    @media only screen and (max-width: 425px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 `;

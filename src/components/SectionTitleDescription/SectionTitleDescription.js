@@ -1,18 +1,18 @@
 import React, {Component} from 'react';
-import {StyledDescription, StyledTitle} from "./styles";
+import {StyledDescription, StyledTitle, StyledWrapper} from "./styles";
 
 // Component for each section's title + description
 class SectionTitleDescription extends Component {
   render() {
     return (
-      <div>
+      <StyledWrapper>
         <StyledTitle>
           {this.props.title}
         </StyledTitle>
         <StyledDescription>
           {this.props.description}
         </StyledDescription>
-      </div>
+      </StyledWrapper>
     )
   }
 }

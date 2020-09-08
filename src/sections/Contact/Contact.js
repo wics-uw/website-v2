@@ -24,68 +24,95 @@ import slack_hover from "../../res/images/socials/hover/slack-dark.svg";
 import instagram_hover from "../../res/images/socials/hover/ig-dark.svg";
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {screenWidth: null};
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.updateWindowDimensions());
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateWindowDimensions)
+  }
+
+  updateWindowDimensions() {
+    this.setState({screenWidth: window.innerWidth});
+  }
+
+  renderContent() {
+    return <>
+      <StyledSectionText>{strings.contactUs}</StyledSectionText>
+      <StyledSubContactSectionWrapper>
+        <StyledTitle>{contactStrings.faq.title}</StyledTitle>
+        <StyledText>
+          {contactStrings.faq.d1}
+          <StyledFaqLink href={contactStrings.faq.faqlink} target='_blank'>
+            {contactStrings.faq.faqtext}
+          </StyledFaqLink>
+          {contactStrings.faq.d2}
+          <StyledFaqLink href={contactStrings.faq.policylink} target='_blank'>
+            {contactStrings.faq.policytext}
+          </StyledFaqLink>
+        </StyledText>
+      </StyledSubContactSectionWrapper>
+
+      <StyledSubContactSectionWrapper2>
+        <StyledTitle>{contactStrings.ro.title}</StyledTitle>
+        <StyledText>
+          {contactStrings.ro.d1}<br/>
+          {contactStrings.ro.d2}
+          <StyledReachOutLink href={strings.social.emailLink}
+                              target="_blank">{contactStrings.ro.email}</StyledReachOutLink>
+        </StyledText>
+      </StyledSubContactSectionWrapper2>
+
+      <StyledTitle2>{contactStrings.desc}</StyledTitle2>
+      <ImageGroup>
+        <StyledSocial
+          src={linkedin}
+          onMouseOver={e => (e.currentTarget.src = linkedin_hover)}
+          onMouseOut={e => (e.currentTarget.src = linkedin)}
+          href={strings.social.linkedin}
+          target="_blank"/>
+        <StyledSocial
+          src={facebook}
+          onMouseOver={e => (e.currentTarget.src = facebook_hover)}
+          onMouseOut={e => (e.currentTarget.src = facebook)}
+          href={strings.social.facebook}
+          target="_blank"/>
+        <StyledSocial
+          src={instagram}
+          onMouseOver={e => (e.currentTarget.src = instagram_hover)}
+          onMouseOut={e => (e.currentTarget.src = instagram)}
+          href={strings.social.instagram}
+          target="_blank"/>
+        <StyledSocial
+          src={slack}
+          onMouseOver={e => (e.currentTarget.src = slack_hover)}
+          onMouseOut={e => (e.currentTarget.src = slack)}
+          href={strings.social.slack}
+          target="_blank"/>
+      </ImageGroup>
+    </>;
+  }
+
   render() {
+    const {screenWidth} = this.state;
+
     return (
       <StyledSubSectionWrapper>
         <Grid columns={2}>
-          <Grid.Column width={10}>
-            <StyledSectionText>{strings.contactUs}</StyledSectionText>
-
-            <StyledSubContactSectionWrapper>
-              <StyledTitle>{contactStrings.faq.title}</StyledTitle>
-              <StyledText>
-                {contactStrings.faq.d1}
-                <StyledFaqLink href={contactStrings.faq.faqlink} target='_blank'>
-                  {contactStrings.faq.faqtext}
-                </StyledFaqLink>
-                {contactStrings.faq.d2}
-                <StyledFaqLink href={contactStrings.faq.policylink} target='_blank'>
-                  {contactStrings.faq.policytext}
-                </StyledFaqLink>
-              </StyledText>
-            </StyledSubContactSectionWrapper>
-
-            <StyledSubContactSectionWrapper2>
-              <StyledTitle>{contactStrings.ro.title}</StyledTitle>
-              <StyledText>
-                {contactStrings.ro.d1}<br/>
-                {contactStrings.ro.d2}
-                <StyledReachOutLink href={strings.social.emailLink}
-                                    target="_blank">{contactStrings.ro.email}</StyledReachOutLink>
-              </StyledText>
-            </StyledSubContactSectionWrapper2>
-
-            <StyledTitle2>{contactStrings.desc}</StyledTitle2>
-            <ImageGroup>
-              <StyledSocial
-                src={linkedin}
-                onMouseOver={e => (e.currentTarget.src = linkedin_hover)}
-                onMouseOut={e => (e.currentTarget.src = linkedin)}
-                href={strings.social.linkedin}
-                target="_blank"/>
-              <StyledSocial
-                src={facebook}
-                onMouseOver={e => (e.currentTarget.src = facebook_hover)}
-                onMouseOut={e => (e.currentTarget.src = facebook)}
-                href={strings.social.facebook}
-                target="_blank"/>
-              <StyledSocial
-                src={instagram}
-                onMouseOver={e => (e.currentTarget.src = instagram_hover)}
-                onMouseOut={e => (e.currentTarget.src = instagram)}
-                href={strings.social.instagram}
-                target="_blank"/>
-              <StyledSocial
-                src={slack}
-                onMouseOver={e => (e.currentTarget.src = slack_hover)}
-                onMouseOut={e => (e.currentTarget.src = slack)}
-                href={strings.social.slack}
-                target="_blank"/>
-            </ImageGroup>
+          <Grid.Column computer={10} mobile={16}>
+            {this.renderContent()}
           </Grid.Column>
-          <Grid.Column width={6}>
-            <Image src={illustration} size="huge"/>
-          </Grid.Column>
+          {screenWidth <= 425
+            ? <></>
+            : <Grid.Column computer={6}>
+              <Image src={illustration} size="huge"/>
+            </Grid.Column>}
         </Grid>
       </StyledSubSectionWrapper>
     );

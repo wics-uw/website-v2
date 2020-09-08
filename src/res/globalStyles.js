@@ -8,6 +8,9 @@ export const StyledSectionWrapper = styled.div`
   &&& {
     scroll-margin: 100px;
     margin-bottom: 104px;
+    @media only screen and (max-width: 425px) {
+      margin-bottom: 96px;
+    }
   }
 `;
 
@@ -16,6 +19,9 @@ export const StyledSectionWrapper = styled.div`
 export const StyledSubSectionWrapper = styled.div`
   &&& {
     margin-bottom: 80px;
+    @media only screen and (max-width: 425px) {
+      margin-bottom: 64px;
+    }
   }
 `;
 
@@ -31,12 +37,20 @@ export const StyledSectionText = styled.h3`
     text-transform: uppercase;
     color: #0D0C35;
     opacity: 0.8;
+    @media only screen and (max-width: 425px) {
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 8px;
+    }
   }
 `;
 
 export const StyledBodyContainer = styled(Container)`
   &&& {
     width: 1060px;
+     @media only screen and (max-width: 425px) {
+        width: 90%;
+    }
   }
 `;
 
