@@ -30,7 +30,7 @@ export const StyledDescription = styled.h4`
     line-height: 28px;
     letter-spacing: -0.02em;
     color: #000000;
-     @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 425px) {
       font-size: 18px;
       line-height: 21px;
       width: 100%;

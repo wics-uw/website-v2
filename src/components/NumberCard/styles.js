@@ -20,6 +20,10 @@ export const StyledNumber = styled.p`
     letter-spacing: -0.03em;
     color: #000000;
     margin: 0;
+    @media only screen and (max-width: 425px) {
+      font-size: 48px;
+      line-height: 56px;
+    }
   }
 `;
 
@@ -35,6 +39,10 @@ export const StyledCardDescription = styled.h4`
     text-align: center;
     letter-spacing: -0.02em;
     color: #000000;
+    @media only screen and (max-width: 425px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 `;
 
@@ -49,5 +57,9 @@ export const StyledApprox = styled.p`
     text-align: center;
     color: rgba(0, 0, 0, 0.6);
     margin: 0;
+    @media only screen and (max-width: 425px) {
+      //font-size: 24px;
+      //line-height: 28px;
+    }
   }
 `;

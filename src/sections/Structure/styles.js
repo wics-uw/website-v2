@@ -12,6 +12,10 @@ export const StyledTitle = styled.p`
     text-align: center;
     color: #000000;
     letter-spacing: -0.02em;
+    @media only screen and (max-width: 425px) {
+      font-size: 18px;
+      line-height: 21px;
+    }
   }
 `;
 
@@ -25,7 +29,11 @@ export const StyledText = styled.p`
     background: transparent;
     text-align: center;
     color: #000000;
-    margin: 0
+    margin: 0;
+    @media only screen and (max-width: 425px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 `;
 
@@ -37,5 +45,12 @@ export const StyledColumn = styled(Grid.Column)`
     height: 170px !important;
     // calculated as (1-6/1056)/2 (must round down)
     width: 49.7% !important;
+    margin-right: ${props => props.left ? "6px" : "0"};
+    @media only screen and (max-width: 425px) {
+      margin-bottom: ${props => props.left ? "16px" : "0"};
+      margin-right: 0;
+      padding: 24px !important;
+      height: 149px !important;
+    }
   }
 `;

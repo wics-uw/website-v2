@@ -11,6 +11,10 @@ export const StyledTitle = styled.h2`
     line-height: 37px;
     text-transform: capitalize;
     color: #000000;
+    @media only screen and (max-width: 425px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 `;
 
@@ -26,6 +30,11 @@ export const StyledDescription = styled.h4`
     line-height: 28px;
     letter-spacing: -0.02em;
     color: #000000;
+    @media only screen and (max-width: 425px) {
+      font-size: 18px;
+      line-height: 21px;
+      width: 100%;
+    }
   }
 `;
 
@@ -54,6 +63,12 @@ export const StyledLink = styled.p`
     :hover {
       opacity: 1;
     }
+    @media only screen and (max-width: 425px) {
+      font-size: 12px;
+      line-height: 15px;
+      width: 100%;
+      margin-bottom: 4px;
+    }
   }
 `;
 
@@ -70,6 +85,11 @@ export const StyledUpdate = styled.p`
     padding-right: 2px;
     opacity: 0.6;
     margin: 0;
+    @media only screen and (max-width: 425px) {
+      font-size: 12px;
+      line-height: 15px;
+      width: 100%;
+    }
   }
 `;
 
