@@ -2,7 +2,8 @@ import React, {Component} from "react";
 import {
   StyledCopyright,
   StyledFooterContentContainer,
-  StyledFooterWrapper, StyledGridColumn,
+  StyledFooterWrapper,
+  StyledGridColumn,
   StyledLink,
   StyledList,
   StyledSocialContainer,
@@ -12,7 +13,7 @@ import {
   StyledTitle,
   StyledTitleLink,
 } from "./styles";
-import {GridColumn, ImageGroup} from "semantic-ui-react";
+import {ImageGroup} from "semantic-ui-react";
 import footerStrings from "../../res/strings/footerStrings";
 
 import linkedin from "../../res/images/socials/inactive/linkedin-dark.svg";
