@@ -9,6 +9,9 @@ export const StyledAccordionContent = styled(AccordionContent)`
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     background-color: rgba(231,190,178, 0.15);
     border-radius: ${props => props.last ? "0 0 15px 15px" : "none"};
+    @media only screen and (max-width: 425px) {
+      padding: 8px 16px !important;
+    }
   }
 `;
 
@@ -19,6 +22,9 @@ export const StyledAccordionTitle = styled(AccordionTitle)`
     flex-direction: row;
     justify-content: space-between;
     border-top: ${props => props.first ? "none" : "auto"} !important;
+    @media only screen and (max-width: 425px) {
+      padding: 8px 8px 8px 16px !important;
+    }
   }
 `;
 
@@ -33,5 +39,9 @@ export const StyledATitle = styled.h4`
     letter-spacing: -0.02em;
     color: #000000;
     margin: 0;
+    @media only screen and (max-width: 425px) {
+      font-size: 18px;
+      line-height: 21px;
+    }
   }
 `;

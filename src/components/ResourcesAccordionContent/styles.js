@@ -14,6 +14,9 @@ export const LinksWrapper = styled.div`
 export const StyledChain = styled(Image)`
   &&& {
     display: inline;
+    @media only screen and (max-width: 425px) {
+      width: 14px;
+    }
   }
 `;
 
@@ -31,6 +34,12 @@ export const LinkName = styled.p`
     margin: 0 0 0 8px;
     &:hover {
       text-decoration-line: underline;
+    }
+    @media only screen and (max-width: 425px) {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      margin: 0 0 0 4px;
     }
   }
 `;

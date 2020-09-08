@@ -13,12 +13,22 @@ export const CardWrapper = styled(Card)`
     &:hover {
 		  transform: translate(0,-3px);
 	  }
+	  @media only screen and (max-width: 425px) {
+      height: 160px;
+      padding: 24px 16px !important;
+      margin-bottom: 16px;
+    }
   }
 `;
 
 export const ImageWrapper = styled.div`
   &&& {
     margin-bottom: 12px;
+    @media only screen and (max-width: 425px) {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 4px;
+    }
   }
 `;
 
@@ -31,6 +41,11 @@ export const EventTitle = styled.label`
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 8px;
+    @media only screen and (max-width: 425px) {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 4px;
+    }
   }
 `;
 
@@ -45,5 +60,9 @@ export const EventDescription = styled.p`
     color: #000000;
     min-width: 100%;
     margin: 0;
+    @media only screen and (max-width: 425px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 `;

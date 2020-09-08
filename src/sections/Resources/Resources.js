@@ -15,8 +15,11 @@ export default class Resources extends Component {
     return (
       <StyledSubSectionWrapper>
         {/*the accordion */}
-        <Grid columns={2}>
-          <GridColumn width={7}>
+        <Grid columns={2} reversed="computer" only="computer">
+          <GridColumn computer={9} mobile={11}>
+            <Image src={resourceImg}/>
+          </GridColumn>
+          <GridColumn computer={7} mobile={16}>
             <StyledSectionText>{strings.resources}</StyledSectionText>
             <SectionTitleDescription title={resourcesStrings.title} description=''/>
             <StyledAccordion fluid styled>
@@ -39,9 +42,6 @@ export default class Resources extends Component {
                 title={resourcesStrings.additionalTitle}
                 content={resourcesStrings.additionLinks}/>
             </StyledAccordion>
-          </GridColumn>
-          <GridColumn width={9}>
-            <Image src={resourceImg}/>
           </GridColumn>
         </Grid>
       </StyledSubSectionWrapper>
