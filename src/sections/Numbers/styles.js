@@ -16,7 +16,7 @@ export const StyledGridColumn = styled(GridColumn)`
   &&& {
     @media only screen and (max-width: 425px) {
       &:not(:last-child) {
-        margin-bottom: 32px;
+        margin-bottom: 24px;
       }
       &:not(:first-child) {
         padding-top: 0 !important;

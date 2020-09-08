@@ -11,14 +11,30 @@ import ResourcesAccordion from "../../components/ResourcesAccordion/ResourcesAcc
 
 //resources component
 export default class Resources extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {screenWidth: null};
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.updateWindowDimensions());
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateWindowDimensions)
+  }
+
+  updateWindowDimensions() {
+    this.setState({screenWidth: window.innerWidth});
+  }
+
   render() {
+    const {screenWidth} = this.state;
     return (
       <StyledSubSectionWrapper>
         {/*the accordion */}
-        <Grid columns={2} reversed="computer" only="computer">
-          <GridColumn computer={9} mobile={11}>
-            <Image src={resourceImg}/>
-          </GridColumn>
+        <Grid columns={2}>
           <GridColumn computer={7} mobile={16}>
             <StyledSectionText>{strings.resources}</StyledSectionText>
             <SectionTitleDescription title={resourcesStrings.title} description=''/>
@@ -43,6 +59,12 @@ export default class Resources extends Component {
                 content={resourcesStrings.additionLinks}/>
             </StyledAccordion>
           </GridColumn>
+          {screenWidth <= 425
+            ? <></>
+            :
+            <GridColumn computer={9} mobile={11}>
+              <Image src={resourceImg}/>
+            </GridColumn>}
         </Grid>
       </StyledSubSectionWrapper>
     )

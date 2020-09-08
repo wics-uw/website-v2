@@ -4,6 +4,7 @@ const footerStrings = {
     la: "Land Acknowledgement",
     pol: "Our Policies",
     lk: "Relevant Links",
+    polAndLinks: "Polices & Relevant links",
   },
   description: {
     a1: "Women in Computer Science",

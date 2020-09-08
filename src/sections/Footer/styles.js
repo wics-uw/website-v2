@@ -119,6 +119,14 @@ export const StyledTextItalic = styled.p`
   }
 `;
 
+export const StyledLi = styled.li`
+  &&& {
+    @media only screen and (max-width: 425px) {
+      margin-bottom: 4px;
+    }
+  }
+`;
+
 export const StyledLink = styled.a`
   &&& {
     margin-bottom: 0;

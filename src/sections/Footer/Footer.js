@@ -3,7 +3,7 @@ import {
   StyledCopyright,
   StyledFooterContentContainer,
   StyledFooterWrapper,
-  StyledGridColumn,
+  StyledGridColumn, StyledLi,
   StyledLink,
   StyledList,
   StyledSocialContainer,
@@ -195,33 +195,109 @@ class Footer extends Component {
     </>;
   }
 
+  renderPoliciesAndLinksMobile() {
+    return <>
+      <StyledTitle>
+        <StyledTitleLink href={footerStrings.links.pol} target='_blank'>
+          {footerStrings.title.polAndLinks}
+        </StyledTitleLink>
+      </StyledTitle>
+      <StyledList>
+        <StyledLi>
+          <StyledLink href={footerStrings.links.p1} target='_blank'>
+            {footerStrings.description.p1}
+          </StyledLink>
+        </StyledLi>
+        <StyledLi>
+          <StyledLink href={footerStrings.links.p2} target='_blank'>
+            {footerStrings.description.p2}
+          </StyledLink>
+        </StyledLi>
+        <StyledLi>
+          <StyledLink href={footerStrings.links.p3} target='_blank'>
+            {footerStrings.description.p3}
+          </StyledLink>
+        </StyledLi>
+        <StyledLi>
+          <StyledLink href={footerStrings.links.p4} target='_blank'>
+            {footerStrings.description.p4}
+          </StyledLink>
+        </StyledLi>
+        <StyledLi>
+          <StyledLink href={footerStrings.links.lk1} target='_blank'>
+            {footerStrings.description.lk1}
+          </StyledLink>
+        </StyledLi>
+        <StyledLi>
+          <StyledLink href={footerStrings.links.lk2} target='_blank'>
+            {footerStrings.description.lk2}
+          </StyledLink>
+        </StyledLi>
+        <StyledLi>
+          <StyledLink href={footerStrings.links.lk3} target='_blank'>
+            {footerStrings.description.lk3}
+          </StyledLink>
+        </StyledLi>
+      </StyledList>
+    </>;
+  }
+
+  renderMobile() {
+    return (
+      <StyledTextGrid>
+        {/*Address*/}
+        <StyledGridColumn width={16}>
+          {this.renderAddress()}
+        </StyledGridColumn>
+
+        {/*Our Policies & Relevant links*/}
+        <StyledGridColumn width={16}>
+          {this.renderPoliciesAndLinksMobile()}
+        </StyledGridColumn>
+
+        {/*Land Acknowledgement*/}
+        <StyledGridColumn width={16}>
+          {this.renderLandAcknowledgement()}
+        </StyledGridColumn>
+      </StyledTextGrid>
+    )
+  }
+
+  renderComputer() {
+    return (
+      <StyledTextGrid>
+        {/*Address*/}
+        <StyledGridColumn width={4}>
+          {this.renderAddress()}
+        </StyledGridColumn>
+
+        {/*Land Acknowledgement*/}
+        <StyledGridColumn width={6}>
+          {this.renderLandAcknowledgement()}
+        </StyledGridColumn>
+
+        {/*Our Policies*/}
+        <StyledGridColumn width={3}>
+          {this.renderPolicies()}
+        </StyledGridColumn>
+
+        {/*Relevant links*/}
+        <StyledGridColumn width={3}>
+          {this.renderRelevantLinks()}
+        </StyledGridColumn>
+      </StyledTextGrid>
+    )
+  }
+
   render() {
     const {screenWidth} = this.state;
 
     return (
       <StyledFooterWrapper>
         <StyledFooterContentContainer>
-          <StyledTextGrid>
-            {/*Address*/}
-            <StyledGridColumn computer={4} mobile={16}>
-              {this.renderAddress()}
-            </StyledGridColumn>
-
-            {/*Land Acknowledgement*/}
-            <StyledGridColumn computer={6} mobile={16}>
-              {this.renderLandAcknowledgement()}
-            </StyledGridColumn>
-
-            {/*Our Policies*/}
-            <StyledGridColumn computer={3} mobile={16}>
-              {this.renderPolicies()}
-            </StyledGridColumn>
-
-            {/*Relevant links*/}
-            <StyledGridColumn computer={3} mobile={16}>
-              {this.renderRelevantLinks()}
-            </StyledGridColumn>
-          </StyledTextGrid>
+          {screenWidth <= 425
+            ? this.renderMobile()
+            : this.renderComputer()}
 
           {this.renderSocials()}
 
