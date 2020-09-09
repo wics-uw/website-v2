@@ -34,6 +34,10 @@ export const StyledTermText = styled.h3`
     text-transform: uppercase;
     color: #000000;
     margin-bottom: 4px;
+    @media only screen and (max-width: 425px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
   }
 `;
 
@@ -49,5 +53,8 @@ export const StyledGridColumn = styled(GridColumn)`
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     padding-right: 0 !important;
+    @media only screen and (max-width: 425px) {
+      margin-bottom: 8px;
+    }
   }
 `;

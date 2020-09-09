@@ -4,11 +4,31 @@ import currentExecStrings from "../../res/strings/currentExecStrings";
 import committee from "../../res/images/currentExecs/committee_placeholder.svg";
 import CurrentCommitteeCard from "../../components/CurrentCommitteeCard/CurrentCommitteeCard";
 import {GridColumn} from "semantic-ui-react";
-import {StyledExecWrapper} from "./styles";
+import {StyledCurrExecSectionWrapper, StyledExecWrapper, StyledGridColumn, StyledMobileTerm} from "./styles";
 import {StyledSubSectionWrapper} from "../../res/globalStyles";
 
 // Component for current executives section
 class CurrentCommittee extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {screenWidth: null};
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.updateWindowDimensions());
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateWindowDimensions)
+  }
+
+  updateWindowDimensions() {
+    this.setState({screenWidth: window.innerWidth});
+  }
+
+
   renderCard = (picture, name, position) => {
     return (
       <CurrentCommitteeCard
@@ -18,9 +38,34 @@ class CurrentCommittee extends Component {
     )
   };
 
+  renderComputerSize(executives) {
+    return <StyledExecWrapper columns={4}>
+      {Object.entries(executives).map(([key, execInfo]) => (
+        <GridColumn>
+          {this.renderCard(execInfo.pic, execInfo.name, execInfo.position)}
+        </GridColumn>
+      ))}
+    </StyledExecWrapper>;
+  }
+
+  renderMobileSize(executives) {
+    return <div>
+      <StyledMobileTerm>
+        {currentExecStrings.term}
+      </StyledMobileTerm>
+      <StyledExecWrapper columns={2}>
+        {Object.entries(executives).map(([key, execInfo]) => (
+          <StyledGridColumn>
+            {this.renderCard(execInfo.pic, execInfo.name, execInfo.position)}
+          </StyledGridColumn>
+        ))}
+      </StyledExecWrapper>
+    </div>;
+  }
+
   render() {
+    const {screenWidth} = this.state;
     // Change current executives' images, names, and positions here
-    // Picture width: 170px, height: 170px
     const executives = {
       exec1: {
         pic: committee,
@@ -60,22 +105,16 @@ class CurrentCommittee extends Component {
     };
 
     return (
-      <StyledSubSectionWrapper>
+      <StyledCurrExecSectionWrapper>
         <SectionTitleDescription
           title={currentExecStrings.title}
-          description={currentExecStrings.term}
+          description={screenWidth <= 425 ? '' : currentExecStrings.term}
         />
-        {/*Wrapper for display of executives*/}
-        <StyledExecWrapper columns={4}>
-          {Object.entries(executives).map(([key, execInfo]) => (
-            <GridColumn>
-              {this.renderCard(execInfo.pic, execInfo.name, execInfo.position)}
-            </GridColumn>
-          ))}
-        </StyledExecWrapper>
-      </StyledSubSectionWrapper>
+        {screenWidth <= 425 ? this.renderMobileSize(executives) : this.renderComputerSize(executives)}
+      </StyledCurrExecSectionWrapper>
     )
   }
+
 }
 
 export default CurrentCommittee;
