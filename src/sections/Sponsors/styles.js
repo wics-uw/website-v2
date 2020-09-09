@@ -6,6 +6,9 @@ export const MoreWrapper = styled.div`
   &&& {
     text-align: center;
     margin-top: 60px;
+    @media only screen and (max-width: 425px) {
+      margin-top: 32px;
+    }
   }
 `;
 
@@ -20,13 +23,18 @@ export const Interested = styled.h4`
     line-height: 28px;
     letter-spacing: -0.02em;
     color: #000000;
+    @media only screen and (max-width: 425px) {
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 8px;
+    }
   }
 `;
 
 //styles for the learn More button
 export const LearnMore = styled(Button)`
   &&& {
-    padding: 16px 36px;
+    padding: 16px 32px;
     font-family: Karla;
     font-style: normal;
     font-weight: normal;
