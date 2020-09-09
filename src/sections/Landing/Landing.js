@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   StyledChevronDown,
-  StyledColumn,
+  StyledTextColumn,
   StyledGridWrapper,
   StyledLandingContainer,
   StyledLearnMoreText,
@@ -10,7 +10,7 @@ import {
   StyledSchoolName,
   StyledSocialWrapper,
   StyledUndergrad,
-  StyledWics
+  StyledWics, StyledImageColumn
 } from "./styles";
 import landingStrings from "../../res/strings/landingStrings";
 import landing from "../../res/images/landing.svg";
@@ -32,9 +32,15 @@ const Landing = props => {
   const {changeSelection} = props;
   return (
     <StyledLandingContainer>
-      <StyledGridWrapper columns={2}>
+      <StyledGridWrapper columns={2} reversed="computer" only="computer">
+
+        {/*Right column - Image*/}
+        <StyledImageColumn computer={8} mobile={10} verticalAlign='middle'>
+          <Image src={landing}/>
+        </StyledImageColumn>
+
         {/*Left column - Text*/}
-        <StyledColumn computer={8} verticalAlign='middle'>
+        <StyledTextColumn computer={8} mobile={12} verticalAlign='middle'>
           <StyledSchoolName>
             {landingStrings.uwaterloo}
           </StyledSchoolName>
@@ -75,12 +81,7 @@ const Landing = props => {
             target='_blank'>
             {landingStrings.mailing}
           </StyledMailingButton>
-        </StyledColumn>
-
-        {/*Right column - Image*/}
-        <GridColumn computer={8} verticalAlign='middle'>
-          <Image src={landing}/>
-        </GridColumn>
+        </StyledTextColumn>
       </StyledGridWrapper>
 
       {/*Learn more*/}
