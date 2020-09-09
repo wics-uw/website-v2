@@ -39,6 +39,7 @@ export const StyledImageColumn = styled(GridColumn)`
   &&& {
     @media only screen and (max-width: 425px) {
       margin-bottom: 8px;
+      padding: 0 !important;
     }
   }
 `;

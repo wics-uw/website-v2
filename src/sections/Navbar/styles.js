@@ -1,15 +1,31 @@
 import styled from "styled-components";
-import {Button, Image, Menu} from "semantic-ui-react";
+import {Button, Container, Grid, GridRow, Image, Menu} from "semantic-ui-react";
 
 export const StyledNavbarWrapper = styled(Menu)`
   &&& {
-    padding: 0 71px 0 110px;
     background-color: #ffffff;
     height: 77px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: row;
     cursor: pointer;
+    @media only screen and (max-width: 425px) {
+      height: ${props => props.open ? "100%" : "67px"};
+      flex-flow: ${props => props.open ? "row wrap" : "none"};
+      align-content: center;
+    }
+  }
+`;
+
+export const StyledContainer = styled(Container)`
+  &&& {
+    width: 1300px;
+    @media only screen and (max-width: 425px) {
+      height: 67px;
+      padding: 0 16px;
+      position: ${props => props.open ? "absolute" : "auto"};
+      top: ${props => props.open ? "0" : "auto"};
+    }
   }
 `;
 
@@ -34,6 +50,25 @@ export const StyledNavItem = styled(Button)`
     &:hover {
       background: rgba(170, 180, 192, 0.1);
       border-radius: 40px;
+    }
+    @media only screen and (max-width: 425px) {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+`;
+
+export const StyledMobileMenuGrid = styled(Grid)`
+  &&& {
+    justify-content: center;
+  }
+`;
+
+export const StyledMobileMenuGridRow = styled(GridRow)`
+  &&& {
+    padding: 0 !important;
+    &:not(:last-child) {
+      margin-bottom: 32px;
     }
   }
 `;

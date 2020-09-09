@@ -5,7 +5,6 @@ import committee from "../../res/images/currentExecs/committee_placeholder.svg";
 import CurrentCommitteeCard from "../../components/CurrentCommitteeCard/CurrentCommitteeCard";
 import {GridColumn} from "semantic-ui-react";
 import {StyledCurrExecSectionWrapper, StyledExecWrapper, StyledGridColumn, StyledMobileTerm} from "./styles";
-import {StyledSubSectionWrapper} from "../../res/globalStyles";
 
 // Component for current executives section
 class CurrentCommittee extends Component {

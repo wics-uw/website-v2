@@ -1,16 +1,17 @@
 import React from 'react';
 import {
   StyledChevronDown,
-  StyledTextColumn,
   StyledGridWrapper,
+  StyledImageColumn,
   StyledLandingContainer,
   StyledLearnMoreText,
   StyledLearnMoreWrapper,
   StyledMailingButton,
   StyledSchoolName,
   StyledSocialWrapper,
+  StyledTextColumn,
   StyledUndergrad,
-  StyledWics, StyledImageColumn
+  StyledWics
 } from "./styles";
 import landingStrings from "../../res/strings/landingStrings";
 import landing from "../../res/images/landing.svg";
@@ -24,7 +25,7 @@ import linkedin_hover from "../../res/images/socials/hover/linkedin-light.svg";
 import slack_hover from "../../res/images/socials/hover/slack-light.svg";
 import chevron_down from "../../res/images/landing_chevron_down.svg"
 import strings from "../../res/strings/strings";
-import {GridColumn, Image} from "semantic-ui-react";
+import {Image} from "semantic-ui-react";
 import {StyledSocial} from "../../res/globalStyles";
 
 // Landing page component

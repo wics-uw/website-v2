@@ -1,6 +1,5 @@
-//styles for the sponsor image
 import styled from "styled-components";
-import {Grid, GridColumn, GridRow} from "semantic-ui-react";
+import {Grid, GridRow} from "semantic-ui-react";
 
 //styles for the sponsor type
 export const SponsorType = styled.h4`

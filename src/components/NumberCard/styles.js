@@ -40,8 +40,8 @@ export const StyledCardDescription = styled.h4`
     letter-spacing: -0.02em;
     color: #000000;
     @media only screen and (max-width: 425px) {
-      font-size: 14px;
-      line-height: 18px;
+      font-size: 18px;
+      line-height: 21px;
       margin: 0;
     }
   }

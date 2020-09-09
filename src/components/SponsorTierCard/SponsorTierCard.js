@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {SponsorImg, SponsorTierWrapper, SponsorType, StyledGrid, StyledGridRow} from "./styles";
-import {Grid, GridColumn, GridRow} from "semantic-ui-react";
 
 class SponsorTierCard extends Component {
   constructor(props) {
