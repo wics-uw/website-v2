@@ -116,6 +116,10 @@ export const StyledTextItalic = styled.p`
     color: #0D0C35;
     text-transform: none;
     margin: 0;
+    @media only screen and (max-width: 425px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 `;
 

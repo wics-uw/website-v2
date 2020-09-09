@@ -101,41 +101,37 @@ class Footer extends Component {
   renderSocials() {
     return <StyledSocialContainer>
       <ImageGroup>
-        <StyledSocial
-          src={linkedin}
-          onMouseOver={e => (e.currentTarget.src = linkedin_hover)}
-          onMouseOut={e => (e.currentTarget.src = linkedin)}
-          href={strings.social.linkedin}
-          target="_blank"
-        />
-        <StyledSocial
-          src={facebook}
-          onMouseOver={e => (e.currentTarget.src = facebook_hover)}
-          onMouseOut={e => (e.currentTarget.src = facebook)}
-          href={strings.social.facebook}
-          target="_blank"
-        />
-        <StyledSocial
-          src={instagram}
-          onMouseOver={e => (e.currentTarget.src = instagram_hover)}
-          onMouseOut={e => (e.currentTarget.src = instagram)}
-          href={strings.social.instagram}
-          target="_blank"
-        />
-        <StyledSocial
-          src={slack}
-          onMouseOver={e => (e.currentTarget.src = slack_hover)}
-          onMouseOut={e => (e.currentTarget.src = slack)}
-          href={strings.social.slack}
-          target="_blank"
-        />
-        <StyledSocial
-          src={email}
-          onMouseOver={e => (e.currentTarget.src = email_hover)}
-          onMouseOut={e => (e.currentTarget.src = email)}
-          href={strings.social.email}
-          target="_blank"
-        />
+        <a href={strings.social.linkedin} target="_blank" rel="noopener noreferrer">
+          <StyledSocial
+            src={linkedin}
+            onMouseOver={e => (e.currentTarget.src = linkedin_hover)}
+            onMouseOut={e => (e.currentTarget.src = linkedin)}/>
+        </a>
+        <a href={strings.social.facebook} target="_blank" rel="noopener noreferrer">
+          <StyledSocial
+            src={facebook}
+            onMouseOver={e => (e.currentTarget.src = facebook_hover)}
+            onMouseOut={e => (e.currentTarget.src = facebook)}/>
+        </a>
+        <a href={strings.social.instagram} target="_blank" rel="noopener noreferrer">
+          <StyledSocial
+            src={instagram}
+            onMouseOver={e => (e.currentTarget.src = instagram_hover)}
+            onMouseOut={e => (e.currentTarget.src = instagram)}/>
+        </a>
+        <a href={strings.social.slack} target="_blank" rel="noopener noreferrer">
+          <StyledSocial
+            src={slack}
+            onMouseOver={e => (e.currentTarget.src = slack_hover)}
+            onMouseOut={e => (e.currentTarget.src = slack)}/>
+        </a>
+        <a href={strings.social.emailLink} target="_blank" rel="noopener noreferrer">
+          <StyledSocial
+            src={email}
+            onMouseOver={e => (e.currentTarget.src = email_hover)}
+            onMouseOut={e => (e.currentTarget.src = email)}
+          />
+        </a>
       </ImageGroup>
     </StyledSocialContainer>;
   }

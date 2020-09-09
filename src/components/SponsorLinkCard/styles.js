@@ -47,9 +47,15 @@ export const StyledGridColumnL = styled(GridColumn)`
   &&& {
     padding-right: 0 !important;
     padding-top: 0 !important;
-    padding-bottom: 16px !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 16px !important;
     @media only screen and (max-width: 425px) {
-      padding-bottom: 4px !important;
+      &:not(:last-child) {
+        margin-bottom: 4px !important;
+      }
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
     }
   }
 `;

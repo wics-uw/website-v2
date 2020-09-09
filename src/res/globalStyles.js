@@ -64,7 +64,7 @@ export const StyledGradientBackground = styled.div`
 // Styles for social icon
 export const StyledSocial = styled.img`
   &&& {
-    padding-right: 16px;
+    padding-right: 16px !important;
     margin: 0;
     cursor: pointer;
     :last-child {
