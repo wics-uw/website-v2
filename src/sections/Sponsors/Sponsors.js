@@ -16,19 +16,41 @@ import SponsorTierCard from "../../components/SponsorTierCard/SponsorTierCard";
 import SponsorLinkCard from "../../components/SponsorLinkCard/SponsorLinkCard";
 
 class Sponsors extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {screenWidth: null};
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.updateWindowDimensions());
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateWindowDimensions)
+  }
+
+  updateWindowDimensions() {
+    this.setState({screenWidth: window.innerWidth});
+  }
+
   render() {
+    const {screenWidth} = this.state;
     //dictionary of platinum sponsors and their pictures and links
     const platinumSponsors = {
       s1: {
-        name: google,
+        logo: google,
+        name: "Google",
         link: 'https://about.google/'
       },
       s2: {
-        name: loblaws,
+        logo: loblaws,
+        name: "Loblaws",
         link: ''
       },
       s3: {
-        name: wish,
+        logo: wish,
+        name: "Wish",
         link: 'https://www.wish.com/careers?hide_login_modal=true'
       },
     };
@@ -36,23 +58,28 @@ class Sponsors extends Component {
     //dictionary of gold sponsors and their pictures and links
     const goldSponsors = {
       s1: {
-        name: amazon,
+        logo: amazon,
+        name: "Amazon",
         link: 'https://www.aboutamazon.com/'
       },
       s2: {
-        name: facebook,
+        logo: facebook,
+        name: "Facebook",
         link: 'https://about.fb.com/news/'
       },
       s3: {
-        name: splunk,
+        logo: splunk,
+        name: "Splunk",
         link: 'https://www.splunk.com/'
       },
       s4: {
-        name: yelp,
+        logo: yelp,
+        name: "Yelp",
         link: 'https://www.yelp.com/about'
       },
       s5: {
-        name: zynga,
+        logo: zynga,
+        name: "Zynga",
         link: 'https://www.zynga.com/'
       }
     };
@@ -108,6 +135,7 @@ class Sponsors extends Component {
         link: 'https://squareup.com/ca/en'
       },
     };
+
     return (
       <StyledSubSectionWrapper>
         {/* Sponsors title and Description*/}
@@ -118,11 +146,20 @@ class Sponsors extends Component {
         <SponsorTierCard
           type={sponsorStrings.platinum}
           sponsors={platinumSponsors}/>
-        <SponsorTierCard
-          type={sponsorStrings.gold}
-          sponsors={goldSponsors}/>
+        {/*Only show gold on laptop size*/}
+        {screenWidth <= 425
+          ? <></>
+          : <SponsorTierCard
+            type={sponsorStrings.gold}
+            sponsors={goldSponsors}/>}
 
         <CustomAccordion title={sponsorStrings.accordionTitle}>
+          {/*Only show gold here on mobile size*/}
+          {screenWidth <= 425
+            ? <SponsorLinkCard
+              type={sponsorStrings.gold}
+              sponsors={goldSponsors}/>
+            : <></>}
           <SponsorLinkCard
             type={sponsorStrings.silver}
             sponsors={silverSponsors}/>

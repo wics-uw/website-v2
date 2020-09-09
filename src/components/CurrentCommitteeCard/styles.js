@@ -28,6 +28,11 @@ export const StyledExecName = styled.label`
     text-align: center;
     color: #000000;
     margin: 0;
+    @media only screen and (max-width: 425px) {
+      font-size: 16px;
+      line-height: 20px;
+      margin: 0 0 4px 0;
+    }
   }
 `;
 

@@ -5,6 +5,11 @@ import {Grid, GridColumn, Image} from 'semantic-ui-react';
 export const TextColumnR = styled(GridColumn)`
   &&& {
     padding-left: 48px !important;
+    @media only screen and (max-width: 425px) {
+      padding: 0 1em !important;
+      text-align: center;
+      margin-top: 16px;
+    }
   }
 `;
 
@@ -12,6 +17,12 @@ export const TextColumnR = styled(GridColumn)`
 export const TextColumnL = styled(GridColumn)`
   &&& {
     padding-right: 48px !important;
+    padding-left: 0 !important;
+    @media only screen and (max-width: 425px) {
+      padding: 0 1em !important;
+      text-align: center;
+      margin-top: 16px;
+    }
   }
 `;
 
@@ -44,6 +55,13 @@ export const StyledLink = styled.a`
 export const AllOfficeHourWrapper = styled.div`
   &&& {
     margin-top: 16px;
+    @media only screen and (max-width: 425px) {
+      margin-top: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+    }
   }
 `;
 
@@ -56,6 +74,11 @@ export const OfficeHourWrapper = styled.div`
     font-size: 16px;
     line-height: 20px;    
     width: 539px;
+    @media only screen and (max-width: 425px) {
+      font-size: 14px;
+      line-height: 18px;
+      width: 80%;
+    }
   }
 `;
 
@@ -70,6 +93,12 @@ export const OfficeHour = styled.p`
     float: right;  
     display: inline;
     width: 400px;
+    @media only screen and (max-width: 425px) {
+      font-size: 14px;
+      line-height: 18px;
+      width: 75%;
+      text-align: left;
+    }
   }
 `;
 
@@ -79,6 +108,12 @@ export const StudentCardGrid = styled(Grid)`
     margin: 0 0 8px 0;
     display: flex;
     align-items: center;
+    @media only screen and (max-width: 425px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
   }
 `;
 

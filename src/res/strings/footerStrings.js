@@ -4,6 +4,7 @@ const footerStrings = {
     la: "Land Acknowledgement",
     pol: "Our Policies",
     lk: "Relevant Links",
+    polAndLinks: "Polices & Relevant links",
   },
   description: {
     a1: "Women in Computer Science",
@@ -36,6 +37,7 @@ const footerStrings = {
     lk2: "https://github.com/wics-uw", // Github
     lk3: "http://wics.uwaterloo.ca/faq/", // FAQ
   },
-  copyright: "UNIVERSITY OF WATERLOO WOMEN IN COMPUTER SCIENCE",
+  copyright1: "University of Waterloo",
+  copyright2: "Women in Computer Science",
 };
 export default footerStrings;

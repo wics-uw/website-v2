@@ -11,11 +11,15 @@ export const StyledTitle = styled.p`
     letter-spacing: -0.02em;
     color: #000000;
     margin: 0;
+    @media only screen and (max-width: 425px) {
+      font-size: 18px;
+      line-height: 21px;
+    }
   }
 `;
 
 //Styles for description
-export const StyledDescription = styled.body`
+export const StyledDescription = styled.p`
   &&& {
     font-family: 'Source Sans Pro';
     font-style: normal;
@@ -23,5 +27,10 @@ export const StyledDescription = styled.body`
     font-size: 16px;
     line-height: 20px;
     color: #000000;
+    margin: 0;
+    @media only screen and (max-width: 425px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 `;

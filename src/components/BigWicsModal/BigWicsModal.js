@@ -1,7 +1,7 @@
 import React from 'react';
 import BigWicsCard from '../BigWicsCard/BigWicsCard';
 import {
-  HeaderWraooer,
+  HeaderWrapper,
   ListHeader,
   SectionWrapper,
   StyledHeader,
@@ -43,7 +43,7 @@ export default function BigWicsModal(props) {
           {/* x in corner*/}
           <StyledIcon src={close} onClick={() => setOpen(false)}/>
           {/* Header Text*/}
-          <HeaderWraooer>
+          <HeaderWrapper>
             {props.modalTitleLink !== ''
               ? <StyledHeaderTitle>
                 <StyledHeaderTitleLink href={props.modalTitleLink} target="_blank">
@@ -56,7 +56,7 @@ export default function BigWicsModal(props) {
             <StyledHeaderDescription>
               {props.modalDescription}
             </StyledHeaderDescription>
-          </HeaderWraooer>
+          </HeaderWrapper>
         </StyledHeader>
         <StyledModalContent>
           {Object.entries(props.sectionContent).map(([key, section]) => (

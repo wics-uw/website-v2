@@ -12,6 +12,10 @@ export const SponsorTypeLink = styled.h3`
     text-transform: uppercase;
     color: #000000;
     margin: 0;
+    @media only screen and (max-width: 425px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
   }
 `;
 
@@ -20,6 +24,9 @@ export const StyledGrid = styled(Grid)`
   &&& {
     margin-top: 16px;
     margin-bottom: 0;
+    @media only screen and (max-width: 425px) {
+      margin-top: 8px;
+    }
   }
 `;
 
@@ -29,6 +36,9 @@ export const StyledSponsorLinkTypeWrapper = styled.div`
     &:last-child {
       margin-bottom: 0;
     }
+    @media only screen and (max-width: 425px) {
+      margin-bottom: 24px;
+    }
   }
 `;
 
@@ -37,7 +47,16 @@ export const StyledGridColumnL = styled(GridColumn)`
   &&& {
     padding-right: 0 !important;
     padding-top: 0 !important;
-    padding-bottom: 16px !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 16px !important;
+    @media only screen and (max-width: 425px) {
+      &:not(:last-child) {
+        margin-bottom: 4px !important;
+      }
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
   }
 `;
 
@@ -54,6 +73,10 @@ export const StyledLink = styled.a`
     background-color: transparent;
     &:hover {
       text-decoration-line: underline;
+    }
+    @media only screen and (max-width: 425px) {
+      font-size: 16px;
+      line-height: 20px;
     }
   }
 `;

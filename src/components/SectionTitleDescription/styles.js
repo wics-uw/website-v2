@@ -11,13 +11,17 @@ export const StyledTitle = styled.h2`
     line-height: 37px;
     text-transform: capitalize;
     color: #000000;
+    @media only screen and (max-width: 425px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 `;
 
 // Styles for section description
 export const StyledDescription = styled.h4`
   &&& {
-    margin: 0 0 32px 0;
+    margin: 0;
     width: 648px;
     font-family: Karla;
     font-style: normal;
@@ -26,5 +30,16 @@ export const StyledDescription = styled.h4`
     line-height: 28px;
     letter-spacing: -0.02em;
     color: #000000;
+    @media only screen and (max-width: 425px) {
+      font-size: 18px;
+      line-height: 21px;
+      width: 100%;
+    }
+  }
+`;
+
+export const StyledWrapper = styled.div`
+  &&& {
+    margin: 0 0 32px 0;
   }
 `;

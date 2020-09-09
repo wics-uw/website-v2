@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import {StyledDescription, StyledTitle, DescriptionWrapper, StyledLink, StyledUpdate} from "./styles";
+import {DescriptionWrapper, StyledDescription, StyledLink, StyledTitle, StyledUpdate} from "./styles";
 
 // NumberTitleDescription Component
 class NumbersTitleDescription extends Component {
+
   render() {
     return (
       <div>

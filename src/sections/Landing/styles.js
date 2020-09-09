@@ -3,12 +3,17 @@ import {Button, Container, Grid, GridColumn, Image, ImageGroup} from "semantic-u
 
 export const StyledLandingContainer = styled(Container)`
   &&& {
+    justify-content: center;
     height: 100vh;
     min-height: 724px;
     width: 1195px;
     padding-top: 74px;
     display: flex;
     align-items: center;
+    @media only screen and (max-width: 425px) {
+      min-height: 568px;
+      padding-top: 30px;
+    }
   }
 `;
 
@@ -16,12 +21,26 @@ export const StyledLandingContainer = styled(Container)`
 export const StyledGridWrapper = styled(Grid)`
   &&& {
     margin: 0 !important;
+    @media only screen and (max-width: 425px) {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
   }
 `;
 
-export const StyledColumn = styled(GridColumn)`
+export const StyledTextColumn = styled(GridColumn)`
   &&& {
     padding: 0 !important;
+  }
+`;
+
+export const StyledImageColumn = styled(GridColumn)`
+  &&& {
+    @media only screen and (max-width: 425px) {
+      margin-bottom: 8px;
+      padding: 0 !important;
+    }
   }
 `;
 
@@ -36,6 +55,10 @@ export const StyledSchoolName = styled.p`
     letter-spacing: -0.02em;
     color: #000000;
     margin: 0;
+    @media only screen and (max-width: 425px) {
+      font-size: 18px;
+      line-height: 21px;
+    }
   }
 `;
 
@@ -50,6 +73,11 @@ export const StyledWics = styled.p`
     letter-spacing: -0.05em;
     color: #000000;
     margin: 0 0 16px 0;
+    @media only screen and (max-width: 425px) {
+      font-size: 29.8003px;
+      line-height: 102.5%;
+      margin: 0 0 8px 0;
+    }
   }
 `;
 
@@ -63,6 +91,10 @@ export const StyledUndergrad = styled.p`
     line-height: 28px;
     color: #000000;
     margin: 0 0 32px 0;
+    @media only screen and (max-width: 425px) {
+      font-size: 18px;
+      line-height: 21px;
+    }
   }
 `;
 
@@ -85,7 +117,7 @@ export const StyledMailingButton = styled(Button)`
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-    padding: 16px 36px;
+    padding: 16px 32px;
     &:hover {
       background: #60809D;
       box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
@@ -107,14 +139,18 @@ export const StyledLearnMoreWrapper = styled.div`
     position: absolute;
     bottom: 0;
     margin-bottom: 32px;
-    width: 1195px;
     cursor: pointer;
+    @media only screen and (max-width: 425px) {
+      bottom: 0;
+      margin-bottom: 16px;
+    }
   }
 `;
 
 // Styles for learn more text
-export const StyledLearnMoreText = styled.body`
+export const StyledLearnMoreText = styled.p`
   &&& {
+    margin: 0;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

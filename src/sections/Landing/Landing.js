@@ -1,14 +1,15 @@
 import React from 'react';
 import {
   StyledChevronDown,
-  StyledColumn,
   StyledGridWrapper,
+  StyledImageColumn,
   StyledLandingContainer,
   StyledLearnMoreText,
   StyledLearnMoreWrapper,
   StyledMailingButton,
   StyledSchoolName,
   StyledSocialWrapper,
+  StyledTextColumn,
   StyledUndergrad,
   StyledWics
 } from "./styles";
@@ -24,7 +25,7 @@ import linkedin_hover from "../../res/images/socials/hover/linkedin-light.svg";
 import slack_hover from "../../res/images/socials/hover/slack-light.svg";
 import chevron_down from "../../res/images/landing_chevron_down.svg"
 import strings from "../../res/strings/strings";
-import {GridColumn, Image} from "semantic-ui-react";
+import {Image} from "semantic-ui-react";
 import {StyledSocial} from "../../res/globalStyles";
 
 // Landing page component
@@ -32,9 +33,15 @@ const Landing = props => {
   const {changeSelection} = props;
   return (
     <StyledLandingContainer>
-      <StyledGridWrapper columns={2}>
+      <StyledGridWrapper columns={2} reversed="computer" only="computer">
+
+        {/*Right column - Image*/}
+        <StyledImageColumn computer={8} mobile={10} verticalAlign='middle'>
+          <Image src={landing}/>
+        </StyledImageColumn>
+
         {/*Left column - Text*/}
-        <StyledColumn computer={8} verticalAlign='middle'>
+        <StyledTextColumn computer={8} mobile={12} verticalAlign='middle'>
           <StyledSchoolName>
             {landingStrings.uwaterloo}
           </StyledSchoolName>
@@ -45,42 +52,37 @@ const Landing = props => {
             {landingStrings.undergrad}
           </StyledUndergrad>
           <StyledSocialWrapper>
-            <StyledSocial
-              src={linkedin}
-              onMouseOver={e => (e.currentTarget.src = linkedin_hover)}
-              onMouseOut={e => (e.currentTarget.src = linkedin)}
-              href={strings.social.linkedin}
-              target='_blank'/>
-            <StyledSocial
-              src={facebook}
-              onMouseOver={e => (e.currentTarget.src = facebook_hover)}
-              onMouseOut={e => (e.currentTarget.src = facebook)}
-              href={strings.social.facebook}
-              target='_blank'/>
-            <StyledSocial
-              src={instagram}
-              onMouseOver={e => (e.currentTarget.src = instagram_hover)}
-              onMouseOut={e => (e.currentTarget.src = instagram)}
-              href={strings.social.instagram}
-              target='_blank'/>
-            <StyledSocial
-              src={slack}
-              onMouseOver={e => (e.currentTarget.src = slack_hover)}
-              onMouseOut={e => (e.currentTarget.src = slack)}
-              href={strings.social.slack}
-              target='_blank'/>
+            <a href={strings.social.linkedin} target='_blank' rel="noopener noreferrer">
+              <StyledSocial
+                src={linkedin}
+                onMouseOver={e => (e.currentTarget.src = linkedin_hover)}
+                onMouseOut={e => (e.currentTarget.src = linkedin)}/>
+            </a>
+            <a href={strings.social.facebook} target='_blank' rel="noopener noreferrer">
+              <StyledSocial
+                src={facebook}
+                onMouseOver={e => (e.currentTarget.src = facebook_hover)}
+                onMouseOut={e => (e.currentTarget.src = facebook)}/>
+            </a>
+            <a href={strings.social.instagram} target='_blank' rel="noopener noreferrer">
+              <StyledSocial
+                src={instagram}
+                onMouseOver={e => (e.currentTarget.src = instagram_hover)}
+                onMouseOut={e => (e.currentTarget.src = instagram)}/>
+            </a>
+            <a href={strings.social.slack} target='_blank' rel="noopener noreferrer">
+              <StyledSocial
+                src={slack}
+                onMouseOver={e => (e.currentTarget.src = slack_hover)}
+                onMouseOut={e => (e.currentTarget.src = slack)}/>
+            </a>
           </StyledSocialWrapper>
           <StyledMailingButton
             href={landingStrings.mailingLink}
             target='_blank'>
             {landingStrings.mailing}
           </StyledMailingButton>
-        </StyledColumn>
-
-        {/*Right column - Image*/}
-        <GridColumn computer={8} verticalAlign='middle'>
-          <Image src={landing}/>
-        </GridColumn>
+        </StyledTextColumn>
       </StyledGridWrapper>
 
       {/*Learn more*/}

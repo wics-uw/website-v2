@@ -31,13 +31,19 @@ export const StyledIcon = styled(Image)`
     margin: 24px 16px 0 0 !important;
     cursor: pointer;
     color: #000000;
+    @media only screen and (max-width: 425px) {
+      margin: 16px 16px 0 0 !important;
+    }
   }
 `;
 
 // header wrapper styles
-export const HeaderWraooer = styled.div`
+export const HeaderWrapper = styled.div`
   &&& {
     padding: 40px 40px 16px 40px;
+    @media only screen and (max-width: 425px) {
+      padding: 24px 32px 16px 16px;
+    }
 }
 `;
 
@@ -52,6 +58,10 @@ export const StyledHeaderDescription = styled.h4`
     letter-spacing: -0.02em;
     color: #000000;
     margin: 0;
+    @media only screen and (max-width: 425px) {
+      font-size: 18px;
+      line-height: 21px;
+    }
   }
 `;
 
@@ -66,6 +76,10 @@ export const StyledHeaderTitle = styled.h2`
     text-transform: capitalize;
     margin: 0 0 8px 0;
     color: #000000;
+    @media only screen and (max-width: 425px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 `;
 
@@ -83,6 +97,9 @@ export const StyledHeaderTitleLink = styled.a`
 export const StyledModalContent = styled(ModalContent)`
   &&&{
     padding: 24px 40px 40px 40px !important;
+    @media only screen and (max-width: 425px) {
+      padding: 16px 32px 24px 16px !important;
+    }
   }
 `;
 
@@ -92,6 +109,9 @@ export const SectionWrapper = styled.div`
     margin-bottom: 32px;
     &:last-child {
       margin-bottom: 0;
+    }
+    @media only screen and (max-width: 425px) {
+      margin-bottom: 16px;
     }
   }
 `;
@@ -106,6 +126,11 @@ export const ListHeader = styled.p`
     line-height: 20px;
     color: #000000;
     margin-bottom: 8px;
+    @media only screen and (max-width: 425px) {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 4px;
+    }
   }
 `;
 
@@ -129,7 +154,7 @@ export const Styledul = styled.ul`
 `;
 
 //styles for each list item
-export const Styledli = styled.body`
+export const Styledli = styled.p`
   &&& {
     font-family: Source Sans Pro;
     font-style: normal;
@@ -137,5 +162,10 @@ export const Styledli = styled.body`
     font-size: 16px;
     line-height: 20px;
     color: #000000;
+    margin: 0;
+    @media only screen and (max-width: 425px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 `;
