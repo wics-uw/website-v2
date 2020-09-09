@@ -52,18 +52,22 @@ class LittleWics extends Component {
           <ImageColumn computer={5} mobile={10}>
             <StyledImage src={officeHour}/>
           </ImageColumn>
-          <TextColumnR computer={11} mobile={11}>
+          <TextColumnR computer={11} mobile={14}>
             {/* 1st Text*/}
             <LittleWicsCardText
               title={studentStrings.officeHours.title}
-              description={studentStrings.officeHours.description}
-              mobileDescription={studentStrings.officeHours.mobileDescription}/>
+              description={studentStrings.officeHours.description}/>
             <AllOfficeHourWrapper>
-              <OfficeHourWrapper>{screenWidth <= 425 ? "MON" : "MONDAY"} <OfficeHour>{studentStrings.officeHours.mon}</OfficeHour></OfficeHourWrapper>
-              <OfficeHourWrapper>{screenWidth <= 425 ? "TUE" : "TUESDAY"} <OfficeHour>{studentStrings.officeHours.tues}</OfficeHour></OfficeHourWrapper>
-              <OfficeHourWrapper>{screenWidth <= 425 ? "WED" : "WEDNESDAY"} <OfficeHour>{studentStrings.officeHours.wed}</OfficeHour></OfficeHourWrapper>
-              <OfficeHourWrapper>{screenWidth <= 425 ? "THUR" : "THURSDAY"} <OfficeHour>{studentStrings.officeHours.thurs}</OfficeHour></OfficeHourWrapper>
-              <OfficeHourWrapper>{screenWidth <= 425 ? "FRI" : "FRIDAY"} <OfficeHour>{studentStrings.officeHours.fri}</OfficeHour></OfficeHourWrapper>
+              <OfficeHourWrapper>{screenWidth <= 425 ? "MON" : "MONDAY"}
+                <OfficeHour>{studentStrings.officeHours.mon}</OfficeHour></OfficeHourWrapper>
+              <OfficeHourWrapper>{screenWidth <= 425 ? "TUE" : "TUESDAY"}
+                <OfficeHour>{studentStrings.officeHours.tues}</OfficeHour></OfficeHourWrapper>
+              <OfficeHourWrapper>{screenWidth <= 425 ? "WED" : "WEDNESDAY"}
+                <OfficeHour>{studentStrings.officeHours.wed}</OfficeHour></OfficeHourWrapper>
+              <OfficeHourWrapper>{screenWidth <= 425 ? "THUR" : "THURSDAY"}
+                <OfficeHour>{studentStrings.officeHours.thurs}</OfficeHour></OfficeHourWrapper>
+              <OfficeHourWrapper>{screenWidth <= 425 ? "FRI" : "FRIDAY"}
+                <OfficeHour>{studentStrings.officeHours.fri}</OfficeHour></OfficeHourWrapper>
             </AllOfficeHourWrapper>
           </TextColumnR>
         </StudentCardGrid>
@@ -73,7 +77,7 @@ class LittleWics extends Component {
           <ImageColumn computer={5} mobile={10}>
             <StyledImage src={mentorship}/>
           </ImageColumn>
-          <TextColumnL computer={11} mobile={11}>
+          <TextColumnL computer={11} mobile={14}>
             {/* 2nd Card Text*/}
             <LittleWicsCardText
               title={studentStrings.careerMentorship.title}
@@ -84,7 +88,6 @@ class LittleWics extends Component {
                     href={studentStrings.careerMentorship.bigCSterLink}>{studentStrings.careerMentorship.description2}</StyledLink>
                   {studentStrings.careerMentorship.description3}
                 </>}
-              mobileDescription={studentStrings.careerMentorship.mobileDescription}
             />
           </TextColumnL>
           {/* 2nd Card Image*/}
@@ -97,11 +100,10 @@ class LittleWics extends Component {
             <StyledImage src={community}/>
           </ImageColumn>
           {/* 3rd Card Text*/}
-          <TextColumnR computer={11} mobile={11}>
+          <TextColumnR computer={11} mobile={14}>
             <LittleWicsCardText
               title={studentStrings.community.title}
-              description={studentStrings.community.description}
-              mobileDescription={studentStrings.community.mobileDescription}/>
+              description={studentStrings.community.description}/>
           </TextColumnR>
         </StudentCardGrid>
       </StyledSubSectionWrapper>

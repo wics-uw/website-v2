@@ -29,8 +29,8 @@ export const StyledDescription = styled.p`
     color: #000000;
     margin: 0;
     @media only screen and (max-width: 425px) {
-      font-size: 16px;
-      line-height: 20px;
+      font-size: 14px;
+      line-height: 18px;
     }
   }
 `;

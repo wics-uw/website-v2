@@ -77,7 +77,7 @@ export const OfficeHourWrapper = styled.div`
     @media only screen and (max-width: 425px) {
       font-size: 14px;
       line-height: 18px;
-      width: 170px;
+      width: 80%;
     }
   }
 `;
@@ -96,7 +96,7 @@ export const OfficeHour = styled.p`
     @media only screen and (max-width: 425px) {
       font-size: 14px;
       line-height: 18px;
-      width: 122px;
+      width: 75%;
       text-align: left;
     }
   }
