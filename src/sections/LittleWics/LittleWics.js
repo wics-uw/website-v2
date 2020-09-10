@@ -52,11 +52,32 @@ class LittleWics extends Component {
           <ImageColumn computer={5} mobile={10}>
             <StyledImage src={officeHour}/>
           </ImageColumn>
-          <TextColumnR computer={11} mobile={14}>
+          <TextColumnR computer={11} mobile={15}>
             {/* 1st Text*/}
             <LittleWicsCardText
               title={studentStrings.officeHours.title}
-              description={studentStrings.officeHours.description}/>
+              description={<>
+                {studentStrings.officeHours.description1}
+                <StyledLink
+                  href={studentStrings.officeHours.onlineLink}
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  {studentStrings.officeHours.description2}
+                </StyledLink>
+                {studentStrings.officeHours.description3}
+              </>}
+              mobileDescription={<>
+                {studentStrings.officeHours.mobileDescription1}
+                <StyledLink
+                  href={studentStrings.officeHours.onlineLink}
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  {studentStrings.officeHours.mobileDescription2}
+                </StyledLink>
+                {studentStrings.officeHours.mobileDescription3}
+              </>
+              }
+            />
             <AllOfficeHourWrapper>
               <OfficeHourWrapper>{screenWidth <= 425 ? "MON" : "MONDAY"}
                 <OfficeHour>{studentStrings.officeHours.mon}</OfficeHour></OfficeHourWrapper>
@@ -77,17 +98,31 @@ class LittleWics extends Component {
           <ImageColumn computer={5} mobile={10}>
             <StyledImage src={mentorship}/>
           </ImageColumn>
-          <TextColumnL computer={11} mobile={14}>
+          <TextColumnL computer={11} mobile={15}>
             {/* 2nd Card Text*/}
             <LittleWicsCardText
               title={studentStrings.careerMentorship.title}
-              description={
-                <>
-                  {studentStrings.careerMentorship.description1}
-                  <StyledLink
-                    href={studentStrings.careerMentorship.bigCSterLink}>{studentStrings.careerMentorship.description2}</StyledLink>
-                  {studentStrings.careerMentorship.description3}
-                </>}
+              description={<>
+                {studentStrings.careerMentorship.description1}
+                <StyledLink
+                  href={studentStrings.careerMentorship.bigCSterLink}
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  {studentStrings.careerMentorship.description2}
+                </StyledLink>
+                {studentStrings.careerMentorship.description3}
+              </>}
+              mobileDescription={<>
+                {studentStrings.careerMentorship.mobileDescription1}
+                <StyledLink
+                  href={studentStrings.careerMentorship.bigCSterLink}
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  {studentStrings.careerMentorship.mobileDescription2}
+                </StyledLink>
+                {studentStrings.careerMentorship.mobileDescription3}
+              </>
+              }
             />
           </TextColumnL>
           {/* 2nd Card Image*/}
@@ -100,10 +135,11 @@ class LittleWics extends Component {
             <StyledImage src={community}/>
           </ImageColumn>
           {/* 3rd Card Text*/}
-          <TextColumnR computer={11} mobile={14}>
+          <TextColumnR computer={11} mobile={15}>
             <LittleWicsCardText
               title={studentStrings.community.title}
-              description={studentStrings.community.description}/>
+              description={studentStrings.community.description}
+              mobileDescription={studentStrings.community.mobileDescription}/>
           </TextColumnR>
         </StudentCardGrid>
       </StyledSubSectionWrapper>

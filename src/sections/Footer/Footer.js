@@ -3,7 +3,7 @@ import {
   StyledCopyright,
   StyledFooterContentContainer,
   StyledFooterWrapper,
-  StyledGridColumn, StyledLi,
+  StyledGridColumn,
   StyledLink,
   StyledList,
   StyledSocialContainer,
@@ -13,7 +13,7 @@ import {
   StyledTitle,
   StyledTitleLink,
 } from "./styles";
-import {ImageGroup} from "semantic-ui-react";
+import {GridColumn, ImageGroup} from "semantic-ui-react";
 import footerStrings from "../../res/strings/footerStrings";
 
 import linkedin from "../../res/images/socials/inactive/linkedin-dark.svg";
@@ -27,7 +27,7 @@ import slack_hover from "../../res/images/socials/hover/slack-dark.svg";
 import instagram_hover from "../../res/images/socials/hover/ig-dark.svg";
 import email_hover from "../../res/images/socials/hover/email-dark.svg";
 import strings from "../../res/strings/strings";
-import {StyledSocial} from "../../res/globalStyles";
+import {StyledSocialLink} from "../../res/globalStyles";
 
 class Footer extends Component {
   constructor(props) {
@@ -90,7 +90,7 @@ class Footer extends Component {
   renderLandAcknowledgement() {
     return <>
       <StyledTitle>
-        <StyledTitleLink href={footerStrings.links.pol} target='_blank'>
+        <StyledTitleLink href={footerStrings.links.la} target='_blank'>
           {footerStrings.title.la}
         </StyledTitleLink>
       </StyledTitle>
@@ -101,37 +101,42 @@ class Footer extends Component {
   renderSocials() {
     return <StyledSocialContainer>
       <ImageGroup>
-        <a href={strings.social.linkedin} target="_blank" rel="noopener noreferrer">
-          <StyledSocial
+        <StyledSocialLink href={strings.social.linkedin} target="_blank" rel="noopener noreferrer">
+          <img
+            alt=""
             src={linkedin}
             onMouseOver={e => (e.currentTarget.src = linkedin_hover)}
             onMouseOut={e => (e.currentTarget.src = linkedin)}/>
-        </a>
-        <a href={strings.social.facebook} target="_blank" rel="noopener noreferrer">
-          <StyledSocial
+        </StyledSocialLink>
+        <StyledSocialLink href={strings.social.facebook} target="_blank" rel="noopener noreferrer">
+          <img
+            alt=""
             src={facebook}
             onMouseOver={e => (e.currentTarget.src = facebook_hover)}
             onMouseOut={e => (e.currentTarget.src = facebook)}/>
-        </a>
-        <a href={strings.social.instagram} target="_blank" rel="noopener noreferrer">
-          <StyledSocial
+        </StyledSocialLink>
+        <StyledSocialLink href={strings.social.instagram} target="_blank" rel="noopener noreferrer">
+          <img
+            alt=""
             src={instagram}
             onMouseOver={e => (e.currentTarget.src = instagram_hover)}
             onMouseOut={e => (e.currentTarget.src = instagram)}/>
-        </a>
-        <a href={strings.social.slack} target="_blank" rel="noopener noreferrer">
-          <StyledSocial
+        </StyledSocialLink>
+        <StyledSocialLink href={strings.social.slack} target="_blank" rel="noopener noreferrer">
+          <img
+            alt=""
             src={slack}
             onMouseOver={e => (e.currentTarget.src = slack_hover)}
             onMouseOut={e => (e.currentTarget.src = slack)}/>
-        </a>
-        <a href={strings.social.emailLink} target="_blank" rel="noopener noreferrer">
-          <StyledSocial
+        </StyledSocialLink>
+        <StyledSocialLink href={strings.social.emailLink} target="_blank" rel="noopener noreferrer">
+          <img
+            alt=""
             src={email}
             onMouseOver={e => (e.currentTarget.src = email_hover)}
             onMouseOut={e => (e.currentTarget.src = email)}
           />
-        </a>
+        </StyledSocialLink>
       </ImageGroup>
     </StyledSocialContainer>;
   }
@@ -141,18 +146,18 @@ class Footer extends Component {
       <StyledTitle>{footerStrings.title.lk}</StyledTitle>
       <StyledList>
         <li>
-          <StyledLink href={footerStrings.links.lk1} target='_blank'>
-            {footerStrings.description.lk1}
+          <StyledLink href={footerStrings.links.faq} target='_blank'>
+            {footerStrings.description.faq}
           </StyledLink>
         </li>
         <li>
-          <StyledLink href={footerStrings.links.lk2} target='_blank'>
-            {footerStrings.description.lk2}
+          <StyledLink href={footerStrings.links.bigWics} target='_blank'>
+            {footerStrings.description.bigWics}
           </StyledLink>
         </li>
         <li>
-          <StyledLink href={footerStrings.links.lk3} target='_blank'>
-            {footerStrings.description.lk3}
+          <StyledLink href={footerStrings.links.github} target='_blank'>
+            {footerStrings.description.github}
           </StyledLink>
         </li>
       </StyledList>
@@ -168,23 +173,23 @@ class Footer extends Component {
       </StyledTitle>
       <StyledList>
         <li>
-          <StyledLink href={footerStrings.links.p1} target='_blank'>
-            {footerStrings.description.p1}
+          <StyledLink href={footerStrings.links.coc} target='_blank'>
+            {footerStrings.description.coc}
           </StyledLink>
         </li>
         <li>
-          <StyledLink href={footerStrings.links.p2} target='_blank'>
-            {footerStrings.description.p2}
+          <StyledLink href={footerStrings.links.constitution} target='_blank'>
+            {footerStrings.description.constitution}
           </StyledLink>
         </li>
         <li>
-          <StyledLink href={footerStrings.links.p3} target='_blank'>
-            {footerStrings.description.p3}
+          <StyledLink href={footerStrings.links.officePolicy} target='_blank'>
+            {footerStrings.description.officePolicy}
           </StyledLink>
         </li>
         <li>
-          <StyledLink href={footerStrings.links.p4} target='_blank'>
-            {footerStrings.description.p4}
+          <StyledLink href={footerStrings.links.photoPolicy} target='_blank'>
+            {footerStrings.description.photoPolicy}
           </StyledLink>
         </li>
       </StyledList>
@@ -199,41 +204,41 @@ class Footer extends Component {
         </StyledTitleLink>
       </StyledTitle>
       <StyledList>
-        <StyledLi>
-          <StyledLink href={footerStrings.links.p1} target='_blank'>
-            {footerStrings.description.p1}
+        <li>
+          <StyledLink href={footerStrings.links.coc} target='_blank'>
+            {footerStrings.description.coc}
           </StyledLink>
-        </StyledLi>
-        <StyledLi>
-          <StyledLink href={footerStrings.links.p2} target='_blank'>
-            {footerStrings.description.p2}
+        </li>
+        <li>
+          <StyledLink href={footerStrings.links.constitution} target='_blank'>
+            {footerStrings.description.constitution}
           </StyledLink>
-        </StyledLi>
-        <StyledLi>
-          <StyledLink href={footerStrings.links.p3} target='_blank'>
-            {footerStrings.description.p3}
+        </li>
+        <li>
+          <StyledLink href={footerStrings.links.officePolicy} target='_blank'>
+            {footerStrings.description.officePolicy}
           </StyledLink>
-        </StyledLi>
-        <StyledLi>
-          <StyledLink href={footerStrings.links.p4} target='_blank'>
-            {footerStrings.description.p4}
+        </li>
+        <li>
+          <StyledLink href={footerStrings.links.photoPolicy} target='_blank'>
+            {footerStrings.description.photoPolicy}
           </StyledLink>
-        </StyledLi>
-        <StyledLi>
-          <StyledLink href={footerStrings.links.lk1} target='_blank'>
-            {footerStrings.description.lk1}
+        </li>
+        <li>
+          <StyledLink href={footerStrings.links.faq} target='_blank'>
+            {footerStrings.description.faq}
           </StyledLink>
-        </StyledLi>
-        <StyledLi>
-          <StyledLink href={footerStrings.links.lk2} target='_blank'>
-            {footerStrings.description.lk2}
+        </li>
+        <li>
+          <StyledLink href={footerStrings.links.bigWics} target='_blank'>
+            {footerStrings.description.bigWics}
           </StyledLink>
-        </StyledLi>
-        <StyledLi>
-          <StyledLink href={footerStrings.links.lk3} target='_blank'>
-            {footerStrings.description.lk3}
+        </li>
+        <li>
+          <StyledLink href={footerStrings.links.github} target='_blank'>
+            {footerStrings.description.github}
           </StyledLink>
-        </StyledLi>
+        </li>
       </StyledList>
     </>;
   }
@@ -263,24 +268,24 @@ class Footer extends Component {
     return (
       <StyledTextGrid>
         {/*Address*/}
-        <StyledGridColumn width={4}>
+        <GridColumn width={4}>
           {this.renderAddress()}
-        </StyledGridColumn>
+        </GridColumn>
 
         {/*Land Acknowledgement*/}
-        <StyledGridColumn width={6}>
+        <GridColumn width={6}>
           {this.renderLandAcknowledgement()}
-        </StyledGridColumn>
+        </GridColumn>
 
         {/*Our Policies*/}
-        <StyledGridColumn width={3}>
+        <GridColumn width={3}>
           {this.renderPolicies()}
-        </StyledGridColumn>
+        </GridColumn>
 
         {/*Relevant links*/}
-        <StyledGridColumn width={3}>
+        <GridColumn width={3}>
           {this.renderRelevantLinks()}
-        </StyledGridColumn>
+        </GridColumn>
       </StyledTextGrid>
     )
   }

@@ -61,14 +61,14 @@ export const StyledGradientBackground = styled.div`
   }
 `;
 
-// Styles for social icon
-export const StyledSocial = styled.img`
+// Styles for social icon link
+export const StyledSocialLink = styled.a`
   &&& {
     padding-right: 16px !important;
     margin: 0;
     cursor: pointer;
     :last-child {
-      padding-right: 0;
+      padding-right: 0 !important;
     }
   }
 `;

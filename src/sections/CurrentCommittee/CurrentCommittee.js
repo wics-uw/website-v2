@@ -68,12 +68,12 @@ class CurrentCommittee extends Component {
     const executives = {
       exec1: {
         pic: committee,
-        name: "Iris Chen",
+        name: "Celine Lee",
         position: "Chair"
       },
       exec2: {
         pic: committee,
-        name: "Vivian Liu",
+        name: "Angel Li",
         position: "Executive"
       },
       exec3: {
@@ -83,24 +83,29 @@ class CurrentCommittee extends Component {
       },
       exec4: {
         pic: committee,
-        name: "Areena Akhter",
+        name: "Falah Shazib",
         position: "Executive"
       },
       exec5: {
         pic: committee,
-        name: "Jasmine Bal",
+        name: "Kriti Ravindran",
         position: "Executive"
       },
       exec6: {
         pic: committee,
-        name: "Linda Yang",
+        name: "Molly Xu",
         position: "Executive"
       },
       exec7: {
         pic: committee,
-        name: "Angela Zhang",
+        name: "Sakina Mithani",
         position: "Executive"
       },
+      exec8: {
+        pic: committee,
+        name: "Sophia Li",
+        position: "Executive"
+      }
     };
 
     return (
