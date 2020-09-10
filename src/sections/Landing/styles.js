@@ -133,8 +133,8 @@ export const StyledMailingButton = styled(Button)`
 export const StyledLearnMoreWrapper = styled.div`
   &&& {
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    text-align: -webkit-center;
     position: absolute;
     bottom: 0;
     margin-bottom: 32px;

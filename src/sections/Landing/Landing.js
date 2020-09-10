@@ -27,10 +27,10 @@ import chevron_down from "../../res/images/landing_chevron_down.svg"
 import strings from "../../res/strings/strings";
 import {Image} from "semantic-ui-react";
 import {StyledSocialLink} from "../../res/globalStyles";
+import {Link} from "react-scroll";
 
 // Landing page component
 const Landing = props => {
-  const {changeSelection} = props;
   return (
     <StyledLandingContainer>
       <StyledGridWrapper columns={2} reversed="computer" only="computer">
@@ -90,11 +90,17 @@ const Landing = props => {
       </StyledGridWrapper>
 
       {/*Learn more*/}
-      <StyledLearnMoreWrapper onClick={() => changeSelection(1)}>
-        <StyledLearnMoreText>
-          {landingStrings.learnMore}
-        </StyledLearnMoreText>
-        <StyledChevronDown src={chevron_down}/>
+      <StyledLearnMoreWrapper>
+        <Link to={"about"}
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-50}>
+          <StyledLearnMoreText>
+            {landingStrings.learnMore}
+          </StyledLearnMoreText>
+          <StyledChevronDown src={chevron_down}/>
+        </Link>
       </StyledLearnMoreWrapper>
     </StyledLandingContainer>
   )
