@@ -29,7 +29,7 @@ const littleWiCSStrings = {
   community: {
     title: 'Community Building',
     description: 'Throughout the term, we have events aimed at fostering a safe, inclusive and diverse space. This is a great chance to collaborate with other student clubs and organizations to promote gender equity and build community. Past events have included beginning of term socials, movie nights, side-project kickoffs and more!',
-    mobileDescription: "Throughout the term, we host events and collaborate with other student clubs & organizations to promote gender equity in technology and to build an inclusive community. Past events have included beginning of term socials, movie nights, side-project kickoffs & more! "
+    mobileDescription: "Each term, we host events and collaborate with other student clubs & organizations to promote gender equity in computing & build an inclusive community. Past events include beginning of term socials, movie nights, side-project kickoffs & more! "
   }
 };
 
