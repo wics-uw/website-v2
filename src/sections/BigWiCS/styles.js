@@ -18,5 +18,8 @@ export const StyledGridColumn = styled(GridColumn)`
     &:last-child {
       padding-right: 0 !important;
     }
+    @media only screen and (max-width: 425px) {
+      padding-right: 0 !important;
+    }
   }
 `;

@@ -26,7 +26,7 @@ import slack_hover from "../../res/images/socials/hover/slack-light.svg";
 import chevron_down from "../../res/images/landing_chevron_down.svg"
 import strings from "../../res/strings/strings";
 import {Image} from "semantic-ui-react";
-import {StyledSocial} from "../../res/globalStyles";
+import {StyledSocialLink} from "../../res/globalStyles";
 
 // Landing page component
 const Landing = props => {
@@ -52,30 +52,34 @@ const Landing = props => {
             {landingStrings.undergrad}
           </StyledUndergrad>
           <StyledSocialWrapper>
-            <a href={strings.social.linkedin} target='_blank' rel="noopener noreferrer">
-              <StyledSocial
+            <StyledSocialLink href={strings.social.linkedin} target='_blank' rel="noopener noreferrer">
+              <img
+                alt=""
                 src={linkedin}
                 onMouseOver={e => (e.currentTarget.src = linkedin_hover)}
                 onMouseOut={e => (e.currentTarget.src = linkedin)}/>
-            </a>
-            <a href={strings.social.facebook} target='_blank' rel="noopener noreferrer">
-              <StyledSocial
+            </StyledSocialLink>
+            <StyledSocialLink href={strings.social.facebook} target='_blank' rel="noopener noreferrer">
+              <img
+                alt=""
                 src={facebook}
                 onMouseOver={e => (e.currentTarget.src = facebook_hover)}
                 onMouseOut={e => (e.currentTarget.src = facebook)}/>
-            </a>
-            <a href={strings.social.instagram} target='_blank' rel="noopener noreferrer">
-              <StyledSocial
+            </StyledSocialLink>
+            <StyledSocialLink href={strings.social.instagram} target='_blank' rel="noopener noreferrer">
+              <img
+                alt=""
                 src={instagram}
                 onMouseOver={e => (e.currentTarget.src = instagram_hover)}
                 onMouseOut={e => (e.currentTarget.src = instagram)}/>
-            </a>
-            <a href={strings.social.slack} target='_blank' rel="noopener noreferrer">
-              <StyledSocial
+            </StyledSocialLink>
+            <StyledSocialLink href={strings.social.slack} target='_blank' rel="noopener noreferrer">
+              <img
+                alt=""
                 src={slack}
                 onMouseOver={e => (e.currentTarget.src = slack_hover)}
                 onMouseOut={e => (e.currentTarget.src = slack)}/>
-            </a>
+            </StyledSocialLink>
           </StyledSocialWrapper>
           <StyledMailingButton
             href={landingStrings.mailingLink}

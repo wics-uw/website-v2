@@ -18,9 +18,6 @@ export const StyledFooterWrapper = styled.div`
 export const StyledFooterContentContainer = styled(Container)`
   &&& {
     width: 926px;
-    @media only screen and (max-width: 425px) {
-      width: 90% !important;
-    }
   }
 `;
 
@@ -33,7 +30,7 @@ export const StyledTextGrid = styled(Grid)`
 export const StyledGridColumn = styled(GridColumn)`
   &&& {
     @media only screen and (max-width: 425px) {
-      margin-bottom: 32px;
+      margin-bottom: 16px;
       padding-bottom: 0 !important;
       &:not(:first-child) {
         padding-top: 0 !important;
@@ -123,14 +120,6 @@ export const StyledTextItalic = styled.p`
   }
 `;
 
-export const StyledLi = styled.li`
-  &&& {
-    @media only screen and (max-width: 425px) {
-      margin-bottom: 4px;
-    }
-  }
-`;
-
 export const StyledLink = styled.a`
   &&& {
     margin-bottom: 0;
@@ -155,6 +144,9 @@ export const StyledLink = styled.a`
 export const StyledSocialContainer = styled(Container)`
   &&& {
     margin-bottom: 32px;
+    @media only screen and (max-width: 425px) {
+      margin-bottom: 16px;
+    }
   }
 `;
 

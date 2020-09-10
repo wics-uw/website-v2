@@ -16,7 +16,7 @@ import linkedin from "../../res/images/socials/inactive/linkedin-dark.svg";
 import facebook from "../../res/images/socials/inactive/facebook-dark.svg";
 import slack from "../../res/images/socials/inactive/slack-dark.svg";
 import instagram from "../../res/images/socials/inactive/ig-dark.svg";
-import {StyledSectionText, StyledSocial, StyledSubSectionWrapper} from "../../res/globalStyles";
+import {StyledSectionText, StyledSocialLink, StyledSubSectionWrapper} from "../../res/globalStyles";
 import strings from "../../res/strings/strings";
 import linkedin_hover from "../../res/images/socials/hover/linkedin-dark.svg";
 import facebook_hover from "../../res/images/socials/hover/facebook-dark.svg";
@@ -71,31 +71,35 @@ class Contact extends Component {
 
       <StyledTitle2>{contactStrings.desc}</StyledTitle2>
       <ImageGroup>
-        <a href={strings.social.linkedin} target="_blank" rel="noopener noreferrer">
-          <StyledSocial
+        <StyledSocialLink href={strings.social.linkedin} target="_blank" rel="noopener noreferrer">
+          <img
+            alt=""
             src={linkedin}
             onMouseOver={e => (e.currentTarget.src = linkedin_hover)}
             onMouseOut={e => (e.currentTarget.src = linkedin)}/>
-        </a>
-        <a href={strings.social.facebook} target="_blank" rel="noopener noreferrer">
-          <StyledSocial
+        </StyledSocialLink>
+        <StyledSocialLink href={strings.social.facebook} target="_blank" rel="noopener noreferrer">
+          <img
+            alt=""
             src={facebook}
             onMouseOver={e => (e.currentTarget.src = facebook_hover)}
             onMouseOut={e => (e.currentTarget.src = facebook)}
           />
-        </a>
-        <a href={strings.social.instagram} target="_blank" rel="noopener noreferrer">
-          <StyledSocial
+        </StyledSocialLink>
+        <StyledSocialLink href={strings.social.instagram} target="_blank" rel="noopener noreferrer">
+          <img
+            alt=""
             src={instagram}
             onMouseOver={e => (e.currentTarget.src = instagram_hover)}
             onMouseOut={e => (e.currentTarget.src = instagram)}/>
-        </a>
-        <a href={strings.social.slack} target="_blank" rel="noopener noreferrer">
-          <StyledSocial
+        </StyledSocialLink>
+        <StyledSocialLink href={strings.social.slack} target="_blank" rel="noopener noreferrer">
+          <img
+            alt=""
             src={slack}
             onMouseOver={e => (e.currentTarget.src = slack_hover)}
             onMouseOut={e => (e.currentTarget.src = slack)}/>
-        </a>
+        </StyledSocialLink>
       </ImageGroup>
     </>;
   }

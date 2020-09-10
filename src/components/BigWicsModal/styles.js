@@ -90,6 +90,9 @@ export const StyledHeaderTitleLink = styled.a`
       text-decoration: underline;
     }
     color: #000000;
+    @media only screen and (max-width: 425px) {
+      text-decoration: underline;
+    }
   }
 `;
 
