@@ -41,7 +41,7 @@ export const StyledAccordionTitle = styled(AccordionTitle)`
 
 export const StyledAccordionTitleText = styled.h4`
   &&& {
-    font-family: Karla;
+    font-family: "Karla";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;

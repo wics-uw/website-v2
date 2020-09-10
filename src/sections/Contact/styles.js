@@ -24,7 +24,6 @@ export const StyledTitle = styled.h2`
     margin: 0 0 8px 0;
     font-family: "Karla Bold";
     font-style: normal;
-    font-weight: bold;
     font-size: 32px;
     line-height: 37px;
     text-transform: capitalize;
@@ -42,7 +41,6 @@ export const StyledTitle2 = styled.p`
     margin-bottom: 16px;
     font-family: "Karla Bold";
     font-style: normal;
-    font-weight: bold;
     font-size: 24px;
     line-height: 28px;
     color: #000000;
@@ -79,7 +77,7 @@ export const StyledText = styled.h4`
 export const StyledFaqLink = styled.a`
   &&& {
     text-decoration-line: underline;
-    font-weight: bold;
+    font-family: "Karla Bold";
     color: #49657F;
     &:hover {
       color: #60809D;
@@ -90,7 +88,7 @@ export const StyledFaqLink = styled.a`
 export const StyledReachOutLink = styled.a`
   &&& {
     text-decoration-line: underline;
-    font-weight: bold;
+    font-family: "Karla Bold";
     color: #49657F;
     &:hover {
       color: #60809D;

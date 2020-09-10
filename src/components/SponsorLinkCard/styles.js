@@ -4,7 +4,7 @@ import {Grid, GridColumn} from "semantic-ui-react";
 //styles for the sponsor type for links
 export const SponsorTypeLink = styled.h3`
   &&& {
-    font-family: Karla;
+    font-family: "Karla";
     font-style: normal;
     font-weight: normal;
     font-size: 20px;

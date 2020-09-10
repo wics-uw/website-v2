@@ -26,7 +26,7 @@ export const StyledTermWrapper = styled.div`
 
 export const StyledTermText = styled.h3`
   &&& {
-    font-family: Karla;
+    font-family: "Karla";
     font-style: normal;
     font-weight: normal;
     font-size: 20px;

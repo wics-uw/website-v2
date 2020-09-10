@@ -11,9 +11,8 @@ export const StyledCardWrapper = styled.div`
 // Styles for the card Number
 export const StyledNumber = styled.p`
   &&& {
-    font-family: Karla;
+    font-family: "Karla Bold";
     font-style: normal;
-    font-weight: bold;
     font-size: 64px;
     line-height: 75px;
     text-align: center;
@@ -31,7 +30,7 @@ export const StyledNumber = styled.p`
 export const StyledCardDescription = styled.h4`
   &&& {
     margin: 0 0 8px 0;
-    font-family: Karla;
+    font-family: "Karla";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;

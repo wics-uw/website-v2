@@ -33,7 +33,7 @@ export const StyledGridColumn = styled(GridColumn)`
 
 export const StyledMobileTerm = styled.h4`
   &&& {
-    font-family: Karla;
+    font-family: "Karla";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;

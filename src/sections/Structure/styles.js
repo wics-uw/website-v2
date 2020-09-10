@@ -5,9 +5,8 @@ export const StyledTitle = styled.p`
   &&& {
     margin-bottom: 8px;
     font-size: 24px;
-    font-family: Karla;
+    font-family: "Karla Bold";
     font-style: normal;
-    font-weight: bold;
     line-height: 28px;
     text-align: center;
     color: #000000;

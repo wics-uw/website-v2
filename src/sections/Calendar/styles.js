@@ -7,7 +7,7 @@ export const StyledButtonMobile = styled(Button)`
     border-radius: 42px;
     padding: 16px 36px;
     color: #ffffff;
-    font-family: Karla;
+    font-family: "Karla";
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

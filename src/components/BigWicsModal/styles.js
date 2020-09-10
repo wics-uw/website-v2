@@ -50,7 +50,7 @@ export const HeaderWrapper = styled.div`
 //description styles
 export const StyledHeaderDescription = styled.h4`
   &&& {
-    font-family: Karla;
+    font-family: "Karla";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -68,9 +68,8 @@ export const StyledHeaderDescription = styled.h4`
 // title styles
 export const StyledHeaderTitle = styled.h2`
   &&& {
-    font-family: Karla;
+    font-family: "Karla Bold";
     font-style: normal;
-    font-weight: bold;
     font-size: 32px;
     line-height: 37px;
     text-transform: capitalize;
@@ -122,9 +121,8 @@ export const SectionWrapper = styled.div`
 //styles for the list text
 export const ListHeader = styled.p`
   &&& {
-    font-family: "Source Sans Pro";
+    font-family: "Source Sans Pro Bold";
     font-style: normal;
-    font-weight: bold;
     font-size: 16px;
     line-height: 20px;
     color: #000000;

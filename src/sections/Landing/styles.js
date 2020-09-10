@@ -47,7 +47,7 @@ export const StyledImageColumn = styled(GridColumn)`
 // Styles for University of Waterloo text
 export const StyledSchoolName = styled.p`
   &&& {
-    font-family: Karla;
+    font-family: "Karla";
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -67,7 +67,6 @@ export const StyledWics = styled.p`
   &&& {
     font-family: "Karla Bold";
     font-style: normal;
-    font-weight: bold;
     font-size: 70px;
     line-height: 85%;
     letter-spacing: -0.05em;
@@ -84,7 +83,7 @@ export const StyledWics = styled.p`
 // Styles for undergrad committee text
 export const StyledUndergrad = styled.p`
   &&& {
-    font-family: Karla;
+    font-family: "Karla";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -112,7 +111,7 @@ export const StyledMailingButton = styled(Button)`
     background: #49657F;
     border-radius: 42px;
     color: #FFFFFF;
-    font-family: Karla;
+    font-family: "Karla";
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

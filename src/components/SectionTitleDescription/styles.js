@@ -6,7 +6,6 @@ export const StyledTitle = styled.h2`
     margin-bottom: 4px;
     font-family: "Karla Bold";
     font-style: normal;
-    font-weight: bold;
     font-size: 32px;
     line-height: 37px;
     text-transform: capitalize;
@@ -23,7 +22,7 @@ export const StyledDescription = styled.h4`
   &&& {
     margin: 0;
     width: 648px;
-    font-family: Karla;
+    font-family: "Karla";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;

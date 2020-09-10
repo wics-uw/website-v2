@@ -4,7 +4,7 @@ import {Grid, GridRow} from "semantic-ui-react";
 //styles for the sponsor type
 export const SponsorType = styled.h4`
   &&& {
-    font-family: Karla;
+    font-family: "Karla";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;

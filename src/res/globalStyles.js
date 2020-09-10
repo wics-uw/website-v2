@@ -29,7 +29,7 @@ export const StyledSubSectionWrapper = styled.div`
 export const StyledSectionText = styled.h3`
   &&& {
     margin-bottom: 16px;
-    font-family: Karla;
+    font-family: "Karla";
     font-style: normal;
     font-weight: normal;
     font-size: 20px;

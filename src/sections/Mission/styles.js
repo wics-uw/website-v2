@@ -5,8 +5,8 @@ export const StyledGrid = styled(Grid)`
   &&& {
     @media only screen and (max-width: 425px) {
       display: flex;
-      flex-direction: column;
-      align-content: center;
+      flex-direction: row;
+      justify-content: center;
     }
   }
 `;

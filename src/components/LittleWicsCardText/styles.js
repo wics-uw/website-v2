@@ -3,9 +3,8 @@ import styled from "styled-components";
 //styles for title
 export const StyledTitle = styled.p`
   &&& {
-    font-family: Karla;
+    font-family: "Karla Bold";
     font-style: normal;
-    font-weight: bold;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: -0.02em;

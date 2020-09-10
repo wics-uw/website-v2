@@ -41,7 +41,7 @@ export const StyledNavItem = styled(Button)`
     color: #000000;
     background-color: transparent;
     cursor: pointer;
-    font-family: Karla;
+    font-family: "Karla";
     font-size: 16px !important;
     font-style: normal;
     font-weight: normal;

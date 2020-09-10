@@ -105,7 +105,6 @@ export const StyledTextItalic = styled.p`
   &&& {
     font-size: 16px;
     font-family: "Source Sans Pro Italic";
-    font-style: italic;
     font-weight: normal;
     line-height: 20px;
     background: transparent;
@@ -154,7 +153,7 @@ export const StyledCopyright = styled.h3`
   &&& {
     margin: 0;
     font-size: 20px;
-    font-family: Karla;
+    font-family: "Karla";
     font-style: normal;
     font-weight: normal;
     line-height: 23px;

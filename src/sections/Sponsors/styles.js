@@ -16,7 +16,7 @@ export const MoreWrapper = styled.div`
 export const Interested = styled.h4`
   &&& {
     margin-bottom: 16px;
-    font-family: Karla;
+    font-family: "Karla";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -35,7 +35,7 @@ export const Interested = styled.h4`
 export const LearnMore = styled(Button)`
   &&& {
     padding: 16px 32px;
-    font-family: Karla;
+    font-family: "Karla";
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

@@ -26,7 +26,6 @@ export const StyledCardTitle = styled.p`
     margin-bottom: 8px;
     font-family: "Karla Bold";
     font-style: normal;
-    font-weight: bold;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
