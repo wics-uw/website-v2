@@ -50,7 +50,11 @@ class Footer extends Component {
 
   renderAddress() {
     return <>
-      <StyledTitle>{footerStrings.title.addr}</StyledTitle>
+      <StyledTitle>
+        <StyledTitleLink href={footerStrings.links.addr} target='_blank'>
+          {footerStrings.title.addr}
+        </StyledTitleLink>
+      </StyledTitle>
       <StyledList>
         <li>
           <StyledText>{footerStrings.description.a1}</StyledText>

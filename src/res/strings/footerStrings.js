@@ -24,6 +24,8 @@ const footerStrings = {
     faq: "FAQ",
   },
   links: {
+    addr: "https://www.google.com/maps/dir//University+of+Waterloo,+200+University+Ave+W,+Waterloo,+ON+N2L+3G1/@43.4722893,-80.5470463,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x882bf6ad02edccff:0xdd9df23996268e17!2m2!1d-80.5448576!2d43.4722854",
+    
     // Our policies
     pol: "http://wics.uwaterloo.ca/policies/", // Our Policies
     coc: "http://wics.uwaterloo.ca/code-of-conduct/", // Code of conduct
