@@ -17,62 +17,15 @@ import LittleWics from "./sections/LittleWics/LittleWics"
 import Footer from "./sections/Footer/Footer";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      selected: null
-    };
-  }
-
-  //refs
-  landing = React.createRef();
-  about = React.createRef();
-  calendar = React.createRef();
-  getInvolved = React.createRef();
-  resources = React.createRef();
-  sponsors = React.createRef();
-  committee = React.createRef();
-  contactUs = React.createRef();
-
-  changeSelection = index => {
-    this.setState({
-      selected: index
-    });
-  };
-
-  componentDidUpdate = () => {
-    this.scrollToSection(this.state.selected);
-  };
-
-  scrollToSection = index => {
-    let refs = [
-      this.landing,
-      this.about,
-      this.calendar,
-      this.getInvolved,
-      this.resources,
-      this.sponsors,
-      this.committee,
-      this.contactUs
-    ];
-
-    if (refs[index].current) {
-      refs[index].current.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest"
-      });
-    }
-  };
 
   render() {
     return (
       <div>
-        <Navbar changeSelection={this.changeSelection}/>
-        <div ref={this.landing}>
-          <Landing changeSelection={this.changeSelection}/>
+        <Navbar/>
+        <div id={"landing"}>
+          <Landing/>
         </div>
-        <StyledSectionWrapper ref={this.about}>
+        <StyledSectionWrapper id={"about"}>
           <StyledGradientBackground>
             <StyledBodyContainer>
               <StyledSectionText>{strings.about}</StyledSectionText>
@@ -86,33 +39,33 @@ class App extends Component {
         </StyledSectionWrapper>
 
         <StyledBodyContainer>
-          <StyledSectionWrapper ref={this.calendar}>
+          <StyledSectionWrapper id={"calendar"}>
             <StyledSectionText>{strings.calendar}</StyledSectionText>
             <Calendar/>
           </StyledSectionWrapper>
 
-          <StyledSectionWrapper ref={this.getInvolved}>
+          <StyledSectionWrapper id={"get-involved"}>
             <StyledSectionText>{strings.getInvolved}</StyledSectionText>
             <LittleWics/>
             <BigWiCS/>
           </StyledSectionWrapper>
 
-          <StyledSectionWrapper ref={this.resources}>
+          <StyledSectionWrapper id={"resources"}>
             <Resources/>
           </StyledSectionWrapper>
 
-          <StyledSectionWrapper ref={this.sponsors}>
+          <StyledSectionWrapper id={"sponsors"}>
             <StyledSectionText>{strings.industry}</StyledSectionText>
             <Sponsors/>
           </StyledSectionWrapper>
 
-          <StyledSectionWrapper ref={this.committee}>
+          <StyledSectionWrapper id={"committee"}>
             <StyledSectionText>{strings.committee}</StyledSectionText>
             <CurrentCommittee/>
             <PastCommittee/>
           </StyledSectionWrapper>
 
-          <StyledSectionWrapper ref={this.contactUs}>
+          <StyledSectionWrapper id={"contact-us"}>
             <Contact/>
           </StyledSectionWrapper>
         </StyledBodyContainer>

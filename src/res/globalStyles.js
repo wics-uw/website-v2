@@ -6,7 +6,6 @@ import {Container} from "semantic-ui-react";
 // Example: About, Calendar, Get Involved, Resources, Sponsor, ...
 export const StyledSectionWrapper = styled.div`
   &&& {
-    scroll-margin: 100px;
     margin-bottom: 104px;
     @media only screen and (max-width: 425px) {
       margin-bottom: 96px;
