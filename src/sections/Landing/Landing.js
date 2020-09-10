@@ -36,7 +36,7 @@ const Landing = props => {
       <StyledGridWrapper columns={2} reversed="computer" only="computer">
 
         {/*Right column - Image*/}
-        <StyledImageColumn computer={8} mobile={10} verticalAlign='middle'>
+        <StyledImageColumn computer={8} mobile={8} verticalAlign='middle'>
           <Image src={landing}/>
         </StyledImageColumn>
 

@@ -157,7 +157,7 @@ export const Styledul = styled.ul`
 //styles for each list item
 export const Styledli = styled.p`
   &&& {
-    font-family: Source Sans Pro;
+    font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

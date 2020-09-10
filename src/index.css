@@ -42,6 +42,11 @@ code {
 }
 
 @font-face {
+    font-family: "Source Sans Pro SemiBold";
+    src: url("./font/SourceSansPro-SemiBold.ttf");
+}
+
+@font-face {
     font-family: "Source Sans Pro Italic";
     src: url("./font/SourceSansPro-Italic.ttf");
 }

@@ -4,15 +4,17 @@ import {Button, Container, Grid, GridColumn, Image, ImageGroup} from "semantic-u
 export const StyledLandingContainer = styled(Container)`
   &&& {
     justify-content: center;
-    height: 100vh;
+    height: 100vh - 74px;
     min-height: 724px;
     width: 1195px;
     padding-top: 74px;
     display: flex;
     align-items: center;
     @media only screen and (max-width: 425px) {
+      height: calc(100vh - 67px);
       min-height: 568px;
-      padding-top: 30px;
+      margin-top: 32px;
+      align-items: flex-start;
     }
   }
 `;
@@ -93,6 +95,7 @@ export const StyledUndergrad = styled.p`
     @media only screen and (max-width: 425px) {
       font-size: 18px;
       line-height: 21px;
+      margin: 0 0 16px 0;
     }
   }
 `;
@@ -101,6 +104,9 @@ export const StyledUndergrad = styled.p`
 export const StyledSocialWrapper = styled(ImageGroup)`
   &&& {
     margin: 0 0 32px 0;
+    @media only screen and (max-width: 425px) {
+      margin: 0 0 16px 0;
+    }
   }
 `;
 
@@ -136,12 +142,10 @@ export const StyledLearnMoreWrapper = styled.div`
     flex-direction: row;
     text-align: -webkit-center;
     position: absolute;
-    bottom: 0;
-    margin-bottom: 32px;
+    bottom: 32px;
     cursor: pointer;
     @media only screen and (max-width: 425px) {
-      bottom: 0;
-      margin-bottom: 16px;
+      bottom: 16px;
     }
   }
 `;

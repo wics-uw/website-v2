@@ -20,9 +20,8 @@ export const StyledExecImage = styled(Image)`
 // Styles for the executive's name
 export const StyledExecName = styled.label`
   &&& {
-    font-family: "Source Sans Pro";
+    font-family: "Source Sans Pro SemiBold";
     font-style: normal;
-    font-weight: 600;
     font-size: 18px;
     line-height: 23px;
     text-align: center;

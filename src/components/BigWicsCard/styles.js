@@ -35,9 +35,8 @@ export const ImageWrapper = styled.div`
 
 export const EventTitle = styled.label`
   &&& {
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro SemiBold';
     font-style: normal;
-    font-weight: 600;
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 8px;

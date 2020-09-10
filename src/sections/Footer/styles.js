@@ -46,9 +46,8 @@ export const StyledTitle = styled.p`
   &&& {
     margin: 0 0 8px 0;
     font-size: 18px;
-    font-family: "Source Sans Pro";
+    font-family: "Source Sans Pro SemiBold";
     font-style: normal;
-    font-weight: 600;
     line-height: 23px;
     text-align: left;
     color: #0D0C35;

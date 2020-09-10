@@ -135,7 +135,7 @@ class Navbar extends Component {
         {/*Logo*/}
         <StyledContainer open={mobileMenuOpen}>
           <MenuItem position="left">
-            <NavbarLinkItem to={"landing"} duration={500}>
+            <NavbarLinkItem to={"landing"} offset={-32}>
               <StyledLogo
                 onClick={() => {
                   this.setState({mobileMenuOpen: false})

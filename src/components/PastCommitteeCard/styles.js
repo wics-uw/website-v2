@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const StyledPastExecName = styled.label`
   &&& {
-    font-family: "Source Sans Pro";
+    font-family: "Source Sans Pro SemiBold";
     font-style: normal;
-    font-weight: 600;
     font-size: 18px;
     line-height: 23px;
     color: #000000;

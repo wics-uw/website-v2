@@ -23,9 +23,8 @@ export const StyledChain = styled(Image)`
 //styles for the link name
 export const LinkName = styled.p`
   &&& {
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro SemiBold';
     font-style: normal;
-    font-weight: 600;
     font-size: 16px;
     line-height: 20px;
     display: inline;

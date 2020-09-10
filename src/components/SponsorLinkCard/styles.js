@@ -61,11 +61,10 @@ export const StyledGridColumnL = styled(GridColumn)`
 `;
 
 // styles for the text of hyperlinks in more sponsors
-export const StyledLink = styled.a`
+export const StyledLink = styled.label`
   &&& {
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro SemiBold';
     font-style: normal;
-    font-weight: 600;
     font-size: 18px;
     line-height: 23px;
     color: #000000;
