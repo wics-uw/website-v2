@@ -5,7 +5,7 @@ import wics_logo from "../../res/images/wics_logo.png"
 import {Image, MenuItem} from "semantic-ui-react";
 import menu_hamburger from "../../res/images/hamburger_menu.svg"
 import menu_close from "../../res/images/menu_close.svg"
-import {Link} from 'react-scroll'
+import NavbarLinkItem from "../../components/NavbarLinkItem/NavbarLinkItem";
 
 // Navbar component of the website
 class Navbar extends Component {
@@ -38,55 +38,27 @@ class Navbar extends Component {
 
   renderComputerSize() {
     return <>
-      <Link to={"about"}
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-50}>
+      <NavbarLinkItem to={"about"} offset={-50}>
         <StyledNavItem>{strings.navbar.about}</StyledNavItem>
-      </Link>
-      <Link to={"calendar"}
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-100}>
+      </NavbarLinkItem>
+      <NavbarLinkItem to={"calendar"} offset={-100}>
         <StyledNavItem>{strings.navbar.calendar}</StyledNavItem>
-      </Link>
-      <Link to={"get-involved"}
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-100}>
+      </NavbarLinkItem>
+      <NavbarLinkItem to={"get-involved"} offset={-100}>
         <StyledNavItem>{strings.navbar.getInvolved}</StyledNavItem>
-      </Link>
-      <Link to={"resources"}
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-100}>
+      </NavbarLinkItem>
+      <NavbarLinkItem to={"resources"} offset={-100}>
         <StyledNavItem>{strings.navbar.resources}</StyledNavItem>
-      </Link>
-      <Link to={"sponsors"}
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-100}>
+      </NavbarLinkItem>
+      <NavbarLinkItem to={"sponsors"} offset={-100}>
         <StyledNavItem>{strings.navbar.sponsors}</StyledNavItem>
-      </Link>
-      <Link to={"committee"}
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-100}>
+      </NavbarLinkItem>
+      <NavbarLinkItem to={"committee"} offset={-100}>
         <StyledNavItem>{strings.navbar.committee}</StyledNavItem>
-      </Link>
-      <Link to={"contact-us"}
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-100}>
+      </NavbarLinkItem>
+      <NavbarLinkItem to={"contact-us"} offset={-100}>
         <StyledNavItem>{strings.navbar.contactUs}</StyledNavItem>
-      </Link>
+      </NavbarLinkItem>
     </>;
   }
 
@@ -101,81 +73,53 @@ class Navbar extends Component {
   renderMobileMenuOpen() {
     return <StyledMobileMenuGrid>
       <StyledMobileMenuGridRow>
-        <Link to={"about"}
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-50}>
+        <NavbarLinkItem to={"about"} offset={-50}>
           <StyledNavItem onClick={() => {
             this.setState({mobileMenuOpen: false})
           }}>{strings.navbar.about}</StyledNavItem>
-        </Link>
+        </NavbarLinkItem>
       </StyledMobileMenuGridRow>
       <StyledMobileMenuGridRow>
-        <Link to={"calendar"}
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-90}>
+        <NavbarLinkItem to={"calendar"} offset={-90}>
           <StyledNavItem onClick={() => {
             this.setState({mobileMenuOpen: false})
           }}>{strings.navbar.calendar}</StyledNavItem>
-        </Link>
+        </NavbarLinkItem>
       </StyledMobileMenuGridRow>
       <StyledMobileMenuGridRow>
-        <Link to={"get-involved"}
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-90}>
+        <NavbarLinkItem to={"get-involved"} offset={-90}>
           <StyledNavItem onClick={() => {
             this.setState({mobileMenuOpen: false})
           }}>{strings.navbar.getInvolved}</StyledNavItem>
-        </Link>
+        </NavbarLinkItem>
       </StyledMobileMenuGridRow>
       <StyledMobileMenuGridRow>
-        <Link to={"resources"}
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-90}>
+        <NavbarLinkItem to={"resources"} offset={-90}>
           <StyledNavItem onClick={() => {
             this.setState({mobileMenuOpen: false})
           }}>{strings.navbar.resources}</StyledNavItem>
-        </Link>
+        </NavbarLinkItem>
       </StyledMobileMenuGridRow>
       <StyledMobileMenuGridRow>
-        <Link to={"sponsors"}
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-90}>
+        <NavbarLinkItem to={"sponsors"} offset={-90}>
           <StyledNavItem onClick={() => {
             this.setState({mobileMenuOpen: false})
           }}>{strings.navbar.sponsors}</StyledNavItem>
-        </Link>
+        </NavbarLinkItem>
       </StyledMobileMenuGridRow>
       <StyledMobileMenuGridRow>
-        <Link to={"committee"}
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-90}>
+        <NavbarLinkItem to={"committee"} offset={-90}>
           <StyledNavItem onClick={() => {
             this.setState({mobileMenuOpen: false})
           }}>{strings.navbar.committee}</StyledNavItem>
-        </Link>
+        </NavbarLinkItem>
       </StyledMobileMenuGridRow>
       <StyledMobileMenuGridRow>
-        <Link to={"contact-us"}
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-90}>
+        <NavbarLinkItem to={"contact-us"} offset={-90}>
           <StyledNavItem onClick={() => {
             this.setState({mobileMenuOpen: false})
           }}>{strings.navbar.contactUs}</StyledNavItem>
-        </Link>
+        </NavbarLinkItem>
       </StyledMobileMenuGridRow>
     </StyledMobileMenuGrid>;
   }
@@ -191,17 +135,14 @@ class Navbar extends Component {
         {/*Logo*/}
         <StyledContainer open={mobileMenuOpen}>
           <MenuItem position="left">
-            <Link to={"landing"}
-                  spy={true}
-                  smooth={true}
-                  duration={500}>
+            <NavbarLinkItem to={"landing"} duration={500}>
               <StyledLogo
                 onClick={() => {
                   this.setState({mobileMenuOpen: false})
                 }}
                 src={wics_logo}
                 size='tiny'/>
-            </Link>
+            </NavbarLinkItem>
           </MenuItem>
           {/*Nav items*/}
           <MenuItem position="right">

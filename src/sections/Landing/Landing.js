@@ -27,7 +27,7 @@ import chevron_down from "../../res/images/landing_chevron_down.svg"
 import strings from "../../res/strings/strings";
 import {Image} from "semantic-ui-react";
 import {StyledSocialLink} from "../../res/globalStyles";
-import {Link} from "react-scroll";
+import NavbarLinkItem from "../../components/NavbarLinkItem/NavbarLinkItem";
 
 // Landing page component
 const Landing = props => {
@@ -91,16 +91,12 @@ const Landing = props => {
 
       {/*Learn more*/}
       <StyledLearnMoreWrapper>
-        <Link to={"about"}
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-50}>
+        <NavbarLinkItem to={"about"} offset={-50}>
           <StyledLearnMoreText>
             {landingStrings.learnMore}
           </StyledLearnMoreText>
           <StyledChevronDown src={chevron_down}/>
-        </Link>
+        </NavbarLinkItem>
       </StyledLearnMoreWrapper>
     </StyledLandingContainer>
   )
