@@ -4,7 +4,7 @@ import {Button, Container, Grid, GridColumn, Image, ImageGroup} from "semantic-u
 export const StyledLandingContainer = styled(Container)`
   &&& {
     justify-content: center;
-    height: 100vh - 74px;
+    height: 100vh;
     min-height: 724px;
     width: 1195px;
     padding-top: 74px;
