@@ -5,7 +5,6 @@ import {StyledCardDescription, StyledCardImage, StyledCardTitle, StyledCardWrapp
 class MissionCard extends Component {
   render() {
     return (
-      // Wrapper for the card
       <StyledCardWrapper>
         {/*Card image*/}
         <StyledCardImage src={this.props.image}/>

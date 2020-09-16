@@ -29,7 +29,6 @@ class Mission extends Component {
     this.setState({screenWidth: window.innerWidth});
   }
 
-
   renderComputerSize() {
     return <StyledGrid columns={3}>
       <GridColumn>
@@ -78,12 +77,12 @@ class Mission extends Component {
 
   render() {
     const {screenWidth} = this.state;
-
     return (
       <StyledSubSectionWrapper>
         <SectionTitleDescription
           title={missionStrings.ourMission}
-          description={missionStrings.missionDescription}/>
+          description={missionStrings.missionDescription}
+        />
         {screenWidth <= 425
           ? this.renderMobileSize()
           : this.renderComputerSize()}

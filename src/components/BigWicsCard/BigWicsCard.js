@@ -6,7 +6,6 @@ import {Image} from 'semantic-ui-react';
 class BigWicsCard extends Component {
   render() {
     return (
-      // card wrapper
       <CardWrapper>
         {/* Image */}
         <ImageWrapper>

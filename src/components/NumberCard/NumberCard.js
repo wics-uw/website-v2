@@ -5,7 +5,6 @@ import {StyledCardDescription, StyledNumber, StyledCardWrapper, StyledApprox} fr
 class NumberCard extends Component {
   render() {
     return (
-      // Wrapper for the card
       <StyledCardWrapper>
         {/*Number*/}
         <StyledNumber>

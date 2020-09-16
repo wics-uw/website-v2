@@ -41,7 +41,7 @@ export default class Resources extends Component {
             <StyledAccordion fluid styled>
               <ResourcesAccordion
                 index={0}
-                first
+                first="true"
                 title={resourcesStrings.wicsTitle}
                 content={resourcesStrings.wicsLinks}/>
               <ResourcesAccordion
@@ -54,7 +54,7 @@ export default class Resources extends Component {
                 content={resourcesStrings.womenLinks}/>
               <ResourcesAccordion
                 index={3}
-                last
+                last="true"
                 title={resourcesStrings.additionalTitle}
                 content={resourcesStrings.additionLinks}/>
             </StyledAccordion>

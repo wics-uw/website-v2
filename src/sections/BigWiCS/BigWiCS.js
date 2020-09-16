@@ -127,7 +127,6 @@ class BigWiCS extends Component {
     const {screenWidth} = this.state;
     return (
       <StyledSubSectionWrapper>
-        {/* Title and Description */}
         <SectionTitleDescription
           title={bigWicsStrings.title}
           description={bigWicsStrings.description}/>

@@ -26,7 +26,7 @@ class Structure extends Component {
 
   renderMobileSize() {
     return <Grid columns={2} padded>
-      <StyledColumn mobile={16} left={true}>
+      <StyledColumn mobile={16} left="true">
         <StyledTitle>{structureStrings.little.title}</StyledTitle>
         <StyledText>{structureStrings.little.description}</StyledText>
       </StyledColumn>
@@ -39,7 +39,7 @@ class Structure extends Component {
 
   renderComputerSize() {
     return <Grid columns={2} padded>
-      <StyledColumn left={true}>
+      <StyledColumn left="true">
         <StyledTitle>{structureStrings.little.title}</StyledTitle>
         <StyledText>{structureStrings.little.description}</StyledText>
       </StyledColumn>
