@@ -28,9 +28,47 @@ import strings from "../../res/strings/strings";
 import {Image} from "semantic-ui-react";
 import {StyledSocialLink} from "../../res/globalStyles";
 import NavbarLinkItem from "../../components/NavbarLinkItem/NavbarLinkItem";
+import ReactGA from 'react-ga';
 
 // Landing page component
-const Landing = props => {
+function Landing () {
+  const LearnMoreClickHandler = () => {
+    ReactGA.event ({
+      category: 'Landing',
+      action: 'Clicked Learn More Button'
+    })
+  }
+  const MailingListClick = () => {
+    ReactGA.event ({
+      category: 'Landing',
+      action: 'Clicked Mailing List Button'
+    })
+  }
+  const LinkedInClick = () => {
+    ReactGA.event ({
+      category: 'Landing',
+      action: 'Clicked LinkedIn Icon'
+    })
+  }
+  const FacebookClick = () => {
+    ReactGA.event ({
+      category: 'Landing',
+      action: 'Clicked Facebook Icon'
+    })
+  }
+  const InstagramClick = () => {
+    ReactGA.event ({
+      category: 'Landing',
+      action: 'Clicked Instagram Icon'
+    })
+  }
+  const SlackClick = () => {
+    ReactGA.event ({
+      category: 'Landing',
+      action: 'Clicked Slack Icon'
+    })
+  }
+
   return (
     <StyledLandingContainer>
       <StyledGridWrapper columns={2} reversed="computer" only="computer">
@@ -52,28 +90,28 @@ const Landing = props => {
             {landingStrings.undergrad}
           </StyledUndergrad>
           <StyledSocialWrapper>
-            <StyledSocialLink href={strings.social.linkedin} target='_blank' rel="noopener noreferrer">
+            <StyledSocialLink href={strings.social.linkedin} target='_blank' rel="noopener noreferrer" onClick={LinkedInClick}>
               <img
                 alt=""
                 src={linkedin}
                 onMouseOver={e => (e.currentTarget.src = linkedin_hover)}
                 onMouseOut={e => (e.currentTarget.src = linkedin)}/>
             </StyledSocialLink>
-            <StyledSocialLink href={strings.social.facebook} target='_blank' rel="noopener noreferrer">
+            <StyledSocialLink href={strings.social.facebook} target='_blank' rel="noopener noreferrer" onClick={FacebookClick}>
               <img
                 alt=""
                 src={facebook}
                 onMouseOver={e => (e.currentTarget.src = facebook_hover)}
                 onMouseOut={e => (e.currentTarget.src = facebook)}/>
             </StyledSocialLink>
-            <StyledSocialLink href={strings.social.instagram} target='_blank' rel="noopener noreferrer">
+            <StyledSocialLink href={strings.social.instagram} target='_blank' rel="noopener noreferrer" onClick={InstagramClick}>
               <img
                 alt=""
                 src={instagram}
                 onMouseOver={e => (e.currentTarget.src = instagram_hover)}
                 onMouseOut={e => (e.currentTarget.src = instagram)}/>
             </StyledSocialLink>
-            <StyledSocialLink href={strings.social.slack} target='_blank' rel="noopener noreferrer">
+            <StyledSocialLink href={strings.social.slack} target='_blank' rel="noopener noreferrer" onClick={SlackClick}>
               <img
                 alt=""
                 src={slack}
@@ -83,7 +121,7 @@ const Landing = props => {
           </StyledSocialWrapper>
           <StyledMailingButton
             href={landingStrings.mailingLink}
-            target='_blank'>
+            target='_blank' onClick={MailingListClick}>
             {landingStrings.mailing}
           </StyledMailingButton>
         </StyledTextColumn>
@@ -92,10 +130,10 @@ const Landing = props => {
       {/*Learn more*/}
       <StyledLearnMoreWrapper>
         <NavbarLinkItem to={"about"} offset={-50}>
-          <StyledLearnMoreText>
+          <StyledLearnMoreText onClick={LearnMoreClickHandler}>
             {landingStrings.learnMore}
           </StyledLearnMoreText>
-          <StyledChevronDown src={chevron_down}/>
+          <StyledChevronDown src={chevron_down} onClick={LearnMoreClickHandler}/>
         </NavbarLinkItem>
       </StyledLearnMoreWrapper>
     </StyledLandingContainer>

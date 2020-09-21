@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {useEffect} from 'react';
 import Navbar from "./sections/Navbar/Navbar";
 import Landing from "./sections/Landing/Landing";
 import Mission from "./sections/Mission/Mission";
@@ -15,10 +15,19 @@ import Contact from "./sections/Contact/Contact";
 import Structure from "./sections/Structure/Structure";
 import LittleWics from "./sections/LittleWics/LittleWics"
 import Footer from "./sections/Footer/Footer";
+import ReactGA from 'react-ga';
 
-class App extends Component {
 
-  render() {
+
+function App () {
+
+  useEffect(() => {
+    ReactGA.initialize('UA-176275520-1');
+
+    //to report page view 
+    ReactGA.pageview('/')
+  }, )
+  
     return (
       <div>
         <Navbar/>
@@ -73,7 +82,7 @@ class App extends Component {
         <Footer/>
       </div>
     );
-  }
+  
 }
 
 export default App;
