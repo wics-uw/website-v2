@@ -23,6 +23,7 @@ class Sponsors extends Component {
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
 
+  //functions to track click on learn more button
   LearnMoreClickHandler = () => {
     ReactGA.event ({
       category: 'Sponsors',

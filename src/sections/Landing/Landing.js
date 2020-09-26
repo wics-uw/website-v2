@@ -32,6 +32,8 @@ import ReactGA from 'react-ga';
 
 // Landing page component
 function Landing () {
+
+  //Functions to track clicks
   const LearnMoreClickHandler = () => {
     ReactGA.event ({
       category: 'Landing',

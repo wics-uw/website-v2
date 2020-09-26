@@ -20,7 +20,7 @@ import ReactGA from 'react-ga';
 
 
 function App () {
-
+  //to track how many users on the page
   useEffect(() => {
     ReactGA.initialize('UA-176275520-1');
 

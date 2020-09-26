@@ -37,6 +37,7 @@ class Navbar extends Component {
     this.setState({screenWidth: window.innerWidth});
   }
 
+  //Functions to track clicks on a the nav options
   AboutClick = () => {
     ReactGA.event ({
       category: 'NavBar',
