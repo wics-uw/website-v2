@@ -14,12 +14,21 @@ import {StyledSubSectionWrapper} from "../../res/globalStyles";
 import CustomAccordion from "../../components/CustomAccordion/CustomAccordion";
 import SponsorTierCard from "../../components/SponsorTierCard/SponsorTierCard";
 import SponsorLinkCard from "../../components/SponsorLinkCard/SponsorLinkCard";
+import ReactGA from 'react-ga';
 
 class Sponsors extends Component {
   constructor(props) {
     super(props);
     this.state = {screenWidth: null};
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
+
+  //functions to track click on learn more button
+  LearnMoreClickHandler = () => {
+    ReactGA.event ({
+      category: 'Sponsors',
+      action: 'Clicked Sponsor Learn More Button'
+    })
   }
 
   componentDidMount() {
@@ -171,7 +180,7 @@ class Sponsors extends Component {
         {/* Call to action button */}
         <MoreWrapper>
           <Interested> {sponsorStrings.interested}</Interested>
-          <LearnMore href={sponsorStrings.learnMoreLink} target='_blank'>
+          <LearnMore href={sponsorStrings.learnMoreLink} target='_blank' onClick={this.LearnMoreClickHandler}>
             {sponsorStrings.learnMore}
           </LearnMore>
         </MoreWrapper>

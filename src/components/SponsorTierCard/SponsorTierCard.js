@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {SponsorImg, SponsorTierWrapper, SponsorType, StyledGrid, StyledGridRow} from "./styles";
+import ReactGA from 'react-ga';
+
 
 class SponsorTierCard extends Component {
   constructor(props) {
@@ -20,13 +22,20 @@ class SponsorTierCard extends Component {
     this.setState({screenWidth: window.innerWidth});
   }
 
+  HandleSponsorLinkClick() {
+    ReactGA.event ({
+      category: 'Sponsors',
+      action: 'Clicked Photo Sponsor Link'
+    })
+  }
+
   renderComputerSize() {
     return <>
       {Object.entries(this.props.sponsors).map(([key, sponsor]) => (
         sponsor.link === ''
-          ? <SponsorImg src={sponsor.logo} alt=''/>
+          ? <SponsorImg src={sponsor.logo} alt='' onClick={this.HandleSponsorLinkClick}/>
           : (<a href={sponsor.link} target='_blank' rel="noopener noreferrer">
-            <SponsorImg src={sponsor.logo} alt=''/>
+            <SponsorImg src={sponsor.logo} alt=''onClick={this.HandleSponsorLinkClick}/>
           </a>)
       ))}
     </>;

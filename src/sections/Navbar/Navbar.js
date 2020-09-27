@@ -6,6 +6,7 @@ import {Image, MenuItem} from "semantic-ui-react";
 import menu_hamburger from "../../res/images/hamburger_menu.svg"
 import menu_close from "../../res/images/menu_close.svg"
 import NavbarLinkItem from "../../components/NavbarLinkItem/NavbarLinkItem";
+import ReactGA from "react-ga";
 
 // Navbar component of the website
 class Navbar extends Component {
@@ -36,28 +37,72 @@ class Navbar extends Component {
     this.setState({screenWidth: window.innerWidth});
   }
 
+  //Functions to track clicks on a the nav options
+  AboutClick = () => {
+    ReactGA.event ({
+      category: 'NavBar',
+      action: 'Clicked About'
+    })
+  }
+  CalendarClick = () => {
+    ReactGA.event ({
+      category: 'NavBar',
+      action: 'Clicked Calendar'
+    })
+  }
+  GetInvolvedClick = () => {
+    ReactGA.event ({
+      category: 'NavBar',
+      action: 'Clicked Get Involved'
+    })
+  }
+  ResourcesClick = () => {
+    ReactGA.event ({
+      category: 'NavBar',
+      action: 'Clicked Resources'
+    })
+  }
+  SponsorsClick = () => {
+    ReactGA.event ({
+      category: 'NavBar',
+      action: 'Clicked Sponsors'
+    })
+  }
+  CommitteeClick = () => {
+    ReactGA.event ({
+      category: 'NavBar',
+      action: 'Clicked Committee'
+    })
+  }
+  ContactUsClick = () => {
+    ReactGA.event ({
+      category: 'NavBar',
+      action: 'Clicked Contact Us'
+    })
+  }
+
   renderComputerSize() {
     return <>
       <NavbarLinkItem to={"about"} offset={-50}>
-        <StyledNavItem>{strings.navbar.about}</StyledNavItem>
+        <StyledNavItem onClick={this.AboutClick}>{strings.navbar.about}</StyledNavItem>
       </NavbarLinkItem>
       <NavbarLinkItem to={"calendar"} offset={-100}>
-        <StyledNavItem>{strings.navbar.calendar}</StyledNavItem>
+        <StyledNavItem onClick={this.CalendarClick}>{strings.navbar.calendar}</StyledNavItem>
       </NavbarLinkItem>
       <NavbarLinkItem to={"get-involved"} offset={-100}>
-        <StyledNavItem>{strings.navbar.getInvolved}</StyledNavItem>
+        <StyledNavItem onClick={this.GetInvolvedClick}>{strings.navbar.getInvolved}</StyledNavItem>
       </NavbarLinkItem>
       <NavbarLinkItem to={"resources"} offset={-100}>
-        <StyledNavItem>{strings.navbar.resources}</StyledNavItem>
+        <StyledNavItem onClick={this.ResourcesClick}>{strings.navbar.resources}</StyledNavItem>
       </NavbarLinkItem>
       <NavbarLinkItem to={"sponsors"} offset={-100}>
-        <StyledNavItem>{strings.navbar.sponsors}</StyledNavItem>
+        <StyledNavItem onClick={this.SponsorsClick}>{strings.navbar.sponsors}</StyledNavItem>
       </NavbarLinkItem>
       <NavbarLinkItem to={"committee"} offset={-100}>
-        <StyledNavItem>{strings.navbar.committee}</StyledNavItem>
+        <StyledNavItem onClick={this.CommitteeClick}>{strings.navbar.committee}</StyledNavItem>
       </NavbarLinkItem>
       <NavbarLinkItem to={"contact-us"} offset={-100}>
-        <StyledNavItem>{strings.navbar.contactUs}</StyledNavItem>
+        <StyledNavItem onClick={this.ContactUsClick}>{strings.navbar.contactUs}</StyledNavItem>
       </NavbarLinkItem>
     </>;
   }

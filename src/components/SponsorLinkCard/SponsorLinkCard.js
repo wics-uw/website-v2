@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {SponsorTypeLink, StyledGrid, StyledGridColumnL, StyledLink, StyledSponsorLinkTypeWrapper} from "./styles";
+import ReactGA from 'react-ga';
 
 class SponsorLinkCard extends Component {
   constructor(props) {
@@ -24,7 +25,7 @@ class SponsorLinkCard extends Component {
     return <StyledGrid columns={6}>
       {Object.entries(this.props.sponsors).map(([number, name]) => (
         <StyledGridColumnL>
-          <a href={name.link} target='_blank' rel="noopener noreferrer"><StyledLink>{name.name}</StyledLink></a>
+          <a href={name.link} target='_blank' rel="noopener noreferrer"  onClick={this.HandleSponsorLinkClick}><StyledLink>{name.name}</StyledLink></a>
         </StyledGridColumnL>
       ))}
     </StyledGrid>;
@@ -34,10 +35,17 @@ class SponsorLinkCard extends Component {
     return <StyledGrid columns={2}>
       {Object.entries(this.props.sponsors).map(([number, name]) => (
         <StyledGridColumnL>
-          <a href={name.link} target='_blank' rel="noopener noreferrer"><StyledLink>{name.name}</StyledLink></a>
+          <a href={name.link} target='_blank' rel="noopener noreferrer"  onClick={this.HandleSponsorLinkClick}><StyledLink>{name.name}</StyledLink></a>
         </StyledGridColumnL>
       ))}
     </StyledGrid>;
+  }
+
+  HandleSponsorLinkClick() {
+    ReactGA.event ({
+      category: 'Sponsors',
+      action: 'Clicked Text Sponsor Link'
+    })
   }
 
   render() {
