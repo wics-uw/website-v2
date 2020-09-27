@@ -4,9 +4,9 @@ const contactStrings = {
     d1: "Have questions? You can find answers to our ",
     d2: ", or in ",
     faqtext: "frequently asked questions",
-    faqlink: "http://wics.uwaterloo.ca/faq/",
+    faqlink: "http://wics.uwaterloo.ca/deprecated/faq/",
     policytext: "our policies.",
-    policylink: "http://wics.uwaterloo.ca/policies/",
+    policylink: "http://wics.uwaterloo.ca/deprecated/policies/",
   },
   ro: {
     title: "Reach Out",
