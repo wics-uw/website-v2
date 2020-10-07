@@ -9,7 +9,7 @@ const littleWiCSStrings = {
     mobileDescription1: "Several times a week, we hold office hours for WiCS undergrads. Here you can get candid advice on academics, student-life, career & more from the exec committee & peers. All times in EST/EDT. Office hours held ",
     mobileDescription2:  "online",
     mobileDescription3:  "!",
-    onlineLink: "https://discord.gg/rJsH2QF",
+    onlineLink: "https://discord.gg/f76G6AW",
     mon: '4:00-4:30PM & 6:00-7:00PM',
     tues: '6:00-7:00PM',
     wed: '5:00-5:30PM',
