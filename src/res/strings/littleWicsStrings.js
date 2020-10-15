@@ -10,11 +10,10 @@ const littleWiCSStrings = {
     mobileDescription2:  "online",
     mobileDescription3:  "!",
     onlineLink: "https://discord.gg/f76G6AW",
-    mon: '4:00-4:30PM & 6:00-7:00PM',
-    tues: '6:00-7:00PM',
-    wed: '5:00-5:30PM',
-    thurs: '7:00-7:30PM',
-    fri: '3:00-3:30PM & 6:00-7:00PM'
+    mon: '5:00-5:30PM & 6:00-6:30PM',
+    tues: '11:00-11:30PM & 8:00-8:30PM',
+    wed: '12:00-12:30PM',
+    thurs: '11:00-11:30PM'
   },
   careerMentorship: {
     title: 'Career & Mentorship',
