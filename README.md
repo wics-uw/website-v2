@@ -24,16 +24,16 @@ It will prompt you to enter your password immediately.
 ```
 cd ../wics
 ```
-4. In the `wics` folder, `www_backup` is the old website, `www` is the new website that is live on [wics.uwaterloo.ca](http://wics.uwaterloo.ca/), `website-v2` is the project on github. When you've ensured that all the changes are pushed onto Github and merged into the `master` branch, navigate to `website-v2`, pull all the new changes, download all dependencies, and build the project
+4. Change your role to become a `wics` user which gives you persmission to change stuff in the `wics` folder
+```
+become_club wics
+```
+5. In the `wics` folder, `www_backup` is the old website, `www` is the new website that is live on [wics.uwaterloo.ca](http://wics.uwaterloo.ca/), `website-v2` is the project on github. When you've ensured that all the changes are pushed onto Github and merged into the `master` branch, navigate to `website-v2`, pull all the new changes, download all dependencies, and build the project
 ```
 cd website-v2
 git pull
 yarn install
 yarn build
-```
-5. Change your role to become a `wics` user which gives you persmission to change stuff in the `wics` folder
-```
-become_club wics
 ```
 6. You will see a `build` folder by running `ls`. This folder contains all the static files we want to copy into `www` folder. To copy all contents in the `build` folder into the `www` filder, run
 ```
