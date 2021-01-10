@@ -35,9 +35,9 @@ yarn build
 ```
 become_club wics
 ```
-6. You will see a `build` folder by running `ls`. This folder contains all the static files we want to copy into `www` folder. To copy everything in the `build` folder into the `www` filder, run
+6. You will see a `build` folder by running `ls`. This folder contains all the static files we want to copy into `www` folder. To copy all contents in the `build` folder into the `www` filder, run
 ```
-cp -r build ../www
+cp -a build/. ../www
 ```
 7. Navigate to the website [wics.uwaterloo.ca](http://wics.uwaterloo.ca/), all changes should be live! 
 
