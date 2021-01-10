@@ -1,5 +1,7 @@
 ## WiCS Website
 
+**Checkout the live website: [wics.uwaterloo.ca](http://wics.uwaterloo.ca/)**
+
 ### Running project locally
 
 1. Clone the project by running: `git clone https://github.com/wics-uw/website-v2.git`
