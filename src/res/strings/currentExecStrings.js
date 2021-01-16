@@ -1,6 +1,6 @@
 const currentExecStrings = {
   title: 'Current Executives',
-  term: 'FALL 2020'
+  term: 'Winter 2021'
 };
 
 export default currentExecStrings;
