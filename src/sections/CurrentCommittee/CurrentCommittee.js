@@ -2,6 +2,14 @@ import React, {Component} from 'react';
 import SectionTitleDescription from "../../components/SectionTitleDescription/SectionTitleDescription";
 import currentExecStrings from "../../res/strings/currentExecStrings";
 import committee from "../../res/images/currentExecs/committee_placeholder.svg";
+
+// current committee member pictures
+import jacqueline from "../../res/images/currentExecs/jacqueline_li.jpg";
+import maryam from "../../res/images/currentExecs/maryam_afshar.jpg";
+import vivian from "../../res/images/currentExecs/vivian_liu.jpg";
+import nina from "../../res/images/currentExecs/nina_tan.jpg";
+import molly from "../../res/images/currentExecs/molly_xu.jpg";
+
 import CurrentCommitteeCard from "../../components/CurrentCommitteeCard/CurrentCommitteeCard";
 import {GridColumn} from "semantic-ui-react";
 import {StyledCurrExecSectionWrapper, StyledExecWrapper, StyledGridColumn, StyledMobileTerm} from "./styles";
@@ -67,7 +75,7 @@ class CurrentCommittee extends Component {
     // Change current executives' images, names, and positions here
     const executives = {
       exec1: {
-        pic: committee,
+        pic: jacqueline,
         name: "Jacqueline Li",
         position: "Chair"
       },
@@ -82,22 +90,22 @@ class CurrentCommittee extends Component {
         position: "Executive"
       },
       exec4: {
-        pic: committee,
+        pic: maryam,
         name: "Maryam Afshar",
         position: "Executive"
       },
       exec5: {
-        pic: committee,
+        pic: molly,
         name: "Molly Xu",
         position: "Executive"
       },
       exec6: {
-        pic: committee,
+        pic: nina,
         name: "Nina Tan",
         position: "Executive"
       },
       exec7: {
-        pic: committee,
+        pic: vivian,
         name: "Vivian Liu",
         position: "Executive"
       },
