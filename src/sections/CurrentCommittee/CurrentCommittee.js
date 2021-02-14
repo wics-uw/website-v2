@@ -9,6 +9,8 @@ import maryam from "../../res/images/currentExecs/maryam_afshar.jpg";
 import vivian from "../../res/images/currentExecs/vivian_liu.jpg";
 import nina from "../../res/images/currentExecs/nina_tan.jpg";
 import molly from "../../res/images/currentExecs/molly_xu.jpg";
+import iris from "../../res/images/currentExecs/iris_chen.jpg";
+import angel from "../../res/images/currentExecs/angel_li.jpg";
 
 import CurrentCommitteeCard from "../../components/CurrentCommitteeCard/CurrentCommitteeCard";
 import {GridColumn} from "semantic-ui-react";
@@ -80,12 +82,12 @@ class CurrentCommittee extends Component {
         position: "Chair"
       },
       exec2: {
-        pic: committee,
+        pic: angel,
         name: "Angel Li",
         position: "Executive"
       },
       exec3: {
-        pic: committee,
+        pic: iris,
         name: "Iris Chen",
         position: "Executive"
       },
