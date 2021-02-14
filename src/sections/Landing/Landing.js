@@ -19,10 +19,12 @@ import facebook from "../../res/images/socials/inactive/facebook-light.svg";
 import instagram from "../../res/images/socials/inactive/ig-light.svg";
 import linkedin from "../../res/images/socials/inactive/linkedin-light.svg";
 import slack from "../../res/images/socials/inactive/slack-light.svg";
+import discord from "../../res/images/socials/inactive/discord-light.svg";
 import facebook_hover from "../../res/images/socials/hover/facebook-light.svg";
 import instagram_hover from "../../res/images/socials/hover/ig-light.svg";
 import linkedin_hover from "../../res/images/socials/hover/linkedin-light.svg";
 import slack_hover from "../../res/images/socials/hover/slack-light.svg";
+import discord_hover from "../../res/images/socials/hover/discord-light.svg";
 import chevron_down from "../../res/images/landing_chevron_down.svg"
 import strings from "../../res/strings/strings";
 import {Image} from "semantic-ui-react";
@@ -68,6 +70,12 @@ function Landing () {
     ReactGA.event ({
       category: 'Landing',
       action: 'Clicked Slack Icon'
+    })
+  }
+  const DiscordClick = () => {
+    ReactGA.event ({
+      category: 'Landing',
+      action: 'Clicked Discord Icon'
     })
   }
 
@@ -119,6 +127,13 @@ function Landing () {
                 src={slack}
                 onMouseOver={e => (e.currentTarget.src = slack_hover)}
                 onMouseOut={e => (e.currentTarget.src = slack)}/>
+            </StyledSocialLink>
+            <StyledSocialLink href={strings.social.discord} target='_blank' rel="noopener noreferrer" onClick={DiscordClick}>
+              <img
+                alt=""
+                src={discord}
+                onMouseOver={e => (e.currentTarget.src = discord_hover)}
+                onMouseOut={e => (e.currentTarget.src = discord)}/>
             </StyledSocialLink>
           </StyledSocialWrapper>
           <StyledMailingButton

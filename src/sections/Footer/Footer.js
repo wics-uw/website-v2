@@ -21,11 +21,13 @@ import facebook from "../../res/images/socials/inactive/facebook-dark.svg";
 import slack from "../../res/images/socials/inactive/slack-dark.svg";
 import instagram from "../../res/images/socials/inactive/ig-dark.svg";
 import email from "../../res/images/socials/inactive/email-dark.svg";
+import discord from "../../res/images/socials/inactive/discord-dark.svg";
 import linkedin_hover from "../../res/images/socials/hover/linkedin-dark.svg";
 import facebook_hover from "../../res/images/socials/hover/facebook-dark.svg";
 import slack_hover from "../../res/images/socials/hover/slack-dark.svg";
 import instagram_hover from "../../res/images/socials/hover/ig-dark.svg";
 import email_hover from "../../res/images/socials/hover/email-dark.svg";
+import discord_hover from "../../res/images/socials/hover/discord-dark.svg";
 import strings from "../../res/strings/strings";
 import {StyledSocialLink} from "../../res/globalStyles";
 
@@ -139,6 +141,14 @@ class Footer extends Component {
             src={email}
             onMouseOver={e => (e.currentTarget.src = email_hover)}
             onMouseOut={e => (e.currentTarget.src = email)}
+          />
+        </StyledSocialLink>
+        <StyledSocialLink href={strings.social.discord} target="_blank" rel="noopener noreferrer">
+          <img
+            alt=""
+            src={discord}
+            onMouseOver={e => (e.currentTarget.src = discord_hover)}
+            onMouseOut={e => (e.currentTarget.src = discord)}
           />
         </StyledSocialLink>
       </ImageGroup>

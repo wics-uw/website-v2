@@ -21,7 +21,7 @@ const strings = {
     facebook: "https://www.facebook.com/uwaterloowics",
     instagram: "https://www.instagram.com/uwaterloowics/",
     slack: "https://uwwics2020.slack.com/join/shared_invite/zt-giq9sxmq-uVehDrtfekON8CtUHnTIIQ#/",
-    discord: "https://discord.gg/rJsH2QF"
+    discord: "https://discord.gg/nzj7h4VwCt"
   },
 };
 
