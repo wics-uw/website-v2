@@ -3,7 +3,7 @@ const littleWiCSStrings = {
   description: 'Events and opportunities run by the students in the WiCS Undergraduate Committee.',
   officeHours: {
     title: 'Office Hours',
-    description1: "Each term we host weekly office hours for female-identifying undergraduate students to study, hang out and chat with the members of the executive committee and peers about academics, student-life, career advice and more. Visit us ",
+    description1: "Each term we host weekly office hours for women and non-binary individuals undergraduate students to study, hang out and chat with the members of the executive committee and peers about academics, student-life, career advice and more. Visit us ",
     description2: "online",
     description3: "! Eastern Timezone",
     mobileDescription1: "Several times a week, we hold office hours for WiCS undergrads. Here you can get candid advice on academics, student-life, career & more from the exec committee & peers. All times in EST/EDT. Office hours held ",
