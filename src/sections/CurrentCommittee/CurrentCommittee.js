@@ -4,13 +4,13 @@ import currentExecStrings from "../../res/strings/currentExecStrings";
 import committee from "../../res/images/currentExecs/committee_placeholder.svg";
 
 // current committee member pictures
-import jacqueline from "../../res/images/currentExecs/jacqueline_li.jpg";
+import audrey from "../../res/images/currentExecs/audrey_ho.jpg";
 import maryam from "../../res/images/currentExecs/maryam_afshar.jpg";
-import vivian from "../../res/images/currentExecs/vivian_liu.jpg";
+import jaskomal from "../../res/images/currentExecs/jaskomal_natt.png";
 import nina from "../../res/images/currentExecs/nina_tan.jpg";
-import molly from "../../res/images/currentExecs/molly_xu.jpg";
-import iris from "../../res/images/currentExecs/iris_chen.jpg";
-import angel from "../../res/images/currentExecs/angel_li.jpg";
+import richa from "../../res/images/currentExecs/richa_dalal.jpg";
+import angelina from "../../res/images/currentExecs/angelina_jin.jpg";
+import celine from "../../res/images/currentExecs/celine_lee.jpg";
 
 import CurrentCommitteeCard from "../../components/CurrentCommitteeCard/CurrentCommitteeCard";
 import {GridColumn} from "semantic-ui-react";
@@ -77,28 +77,28 @@ class CurrentCommittee extends Component {
     // Change current executives' images, names, and positions here
     const executives = {
       exec1: {
-        pic: jacqueline,
-        name: "Jacqueline Li",
+        pic: audrey,
+        name: "Audrey Ho",
         position: "Chair"
       },
       exec2: {
-        pic: angel,
-        name: "Angel Li",
+        pic: angelina,
+        name: "Angelina Jin",
         position: "Executive"
       },
       exec3: {
-        pic: iris,
-        name: "Iris Chen",
+        pic: celine,
+        name: "Celine Lee",
         position: "Executive"
       },
       exec4: {
-        pic: maryam,
-        name: "Maryam Afshar",
+        pic: jaskomal,
+        name: "Jaskomal Natt",
         position: "Executive"
       },
       exec5: {
-        pic: molly,
-        name: "Molly Xu",
+        pic: maryam,
+        name: "Maryam Afshar",
         position: "Executive"
       },
       exec6: {
@@ -107,8 +107,8 @@ class CurrentCommittee extends Component {
         position: "Executive"
       },
       exec7: {
-        pic: vivian,
-        name: "Vivian Liu",
+        pic: richa,
+        name: "Richa Dalal",
         position: "Executive"
       },
     };
