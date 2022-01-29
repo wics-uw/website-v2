@@ -40,7 +40,7 @@ class PastCommittee extends Component {
     return <StyledGrid columns={8}>
       {Object.entries(execs).map(([exec, execName]) => (
         <StyledGridColumn>
-          {this.renderCard(execName, `${exec === "exec1" ? "Chair" : "Executive"}`)}
+          {this.renderCard(execName, `${exec === "exec1" ? "Chair" : exec === "exec1a" ? "Co-chair" : exec === "exec2a" ? "Co-chair" : "Executive"}`)}
         </StyledGridColumn>
       ))}
     </StyledGrid>;

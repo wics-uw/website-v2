@@ -4,14 +4,14 @@ import currentExecStrings from "../../res/strings/currentExecStrings";
 import committee from "../../res/images/currentExecs/committee_placeholder.svg";
 
 // current committee member pictures
-import molly from "../../res/images/currentExecs/molly_xu.png";
-import khloe from "../../res/images/currentExecs/khloe_ramdhan.jpeg";
-import sakina from "../../res/images/currentExecs/sakina_mithani.jpeg";
-import claudia from "../../res/images/currentExecs/claudia_mccomb.jpeg";
-import angel from "../../res/images/currentExecs/angel_li.jpeg";
-import sophia from "../../res/images/currentExecs/sophia_li.jpeg";
-import angela from "../../res/images/currentExecs/angela_zhang.png";
-import priya from "../../res/images/currentExecs/priya_saha.jpeg";
+import amanda from "../../res/images/currentExecs/amanda_bishop.jpg";
+import angelina from "../../res/images/currentExecs/angelina_jin.jpg";
+import claudia from "../../res/images/currentExecs/claudia_mccomb.jpg";
+import kitty from "../../res/images/currentExecs/kitty_li.jpg";
+import leen from "../../res/images/currentExecs/leen_kamalmaz.JPG";
+import maryam from "../../res/images/currentExecs/maryam_afshar.jpg";
+import melanie from "../../res/images/currentExecs/melanie_foltak.jpg";
+import priya from "../../res/images/currentExecs/priya_saha.jpg";
 
 import CurrentCommitteeCard from "../../components/CurrentCommitteeCard/CurrentCommitteeCard";
 import {GridColumn} from "semantic-ui-react";
@@ -78,44 +78,44 @@ class CurrentCommittee extends Component {
     // Change current executives' images, names, and positions here
     const executives = {
       exec1: {
-        pic: sophia,
-        name: "Sophia Li",
-        position: "Co-Chair"
-      },
-      exec2: {
-        pic: sakina,
-        name: "Sakina Mithani",
-        position: "Co-Chair"
-      },
-      exec3: {
-        pic: angel,
-        name: "Angel Li",
-        position: "Executive"
-      },
-      exec4: {
-        pic: molly,
-        name: "Molly Xu",
-        position: "Executive"
-      },
-      exec5: {
-        pic: khloe,
-        name: "Khloe Ramdhan",
-        position: "Executive"
-      },
-      exec6: {
         pic: priya,
         name: "Priyadarshini Saha",
-        position: "Executive"
+        position: "Chair"
       },
-      exec7: {
+      exec2: {
+        pic: amanda,
+        name: "Amanda Bishop",
+        position: "Systems Administrator"
+      },
+      exec3: {
+        pic: angelina,
+        name: "Angelina Jin",
+        position: "BigCS Director"
+      },
+      exec4: {
         pic: claudia,
         name: "Claudia McComb",
-        position: "Executive"
+        position: "Secretary & Finance Director"
+      },
+      exec5: {
+        pic: kitty,
+        name: "Kitty Li",
+        position: "Director of Publicity"
+      },
+      exec6: {
+        pic: leen,
+        name: "Leen Kamalmaz",
+        position: "First Year Representative"
+      },
+      exec7: {
+        pic: maryam,
+        name: "Maryam Afshar",
+        position: "Director of Outreach"
       },
       exec8: {
-        pic: angela,
-        name: "Angela Zhang",
-        position: "Executive"
+        pic: melanie,
+        name: "Melanie Foltak",
+        position: "First Year Representative"
       },
     };
 
