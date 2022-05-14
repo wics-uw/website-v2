@@ -12,6 +12,16 @@ const pastExecStrings = {
   // exec1 must be the chair of the corresponding term
   // exec1a and exec2a must be the co-chairs of the corresponding term
   pastExecs: {
+    "Winter 2022": {
+      exec1: "Priyadarshini S.",
+      exec2: "Amanda B.",
+      exec3: "Angelina J.",
+      exec4: "Claudia M.",
+      exec5: "Kitty L.",
+      exec6: "Leen K.",
+      exec7: "Maryam A.",
+      exec8: "Melanie F.",
+    },
     "Fall 2021": {
       exec1a: "Sophia L.",
       exec2a: "Sakina M.",

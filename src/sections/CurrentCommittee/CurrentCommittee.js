@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import SectionTitleDescription from "../../components/SectionTitleDescription/SectionTitleDescription";
 import currentExecStrings from "../../res/strings/currentExecStrings";
-import committee from "../../res/images/currentExecs/committee_placeholder.svg";
 
 // current committee member pictures
 import amanda from "../../res/images/currentExecs/amanda_bishop.jpg";
