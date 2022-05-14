@@ -4,13 +4,15 @@ import currentExecStrings from "../../res/strings/currentExecStrings";
 
 // current committee member pictures
 import amanda from "../../res/images/currentExecs/amanda_bishop.jpg";
-import angelina from "../../res/images/currentExecs/angelina_jin.jpg";
-import claudia from "../../res/images/currentExecs/claudia_mccomb.jpg";
 import kitty from "../../res/images/currentExecs/kitty_li.jpg";
+import jaskomal from "../../res/images/currentExecs/angelina_jin.jpg"; //change photo
+import jui from "../../res/images/currentExecs/angelina_jin.jpg"; //change photo
+import layne from "../../res/images/currentExecs/angelina_jin.jpg"; //change photo
 import leen from "../../res/images/currentExecs/leen_kamalmaz.JPG";
-import maryam from "../../res/images/currentExecs/maryam_afshar.jpg";
 import melanie from "../../res/images/currentExecs/melanie_foltak.jpg";
-import priya from "../../res/images/currentExecs/priya_saha.jpg";
+import nina from "../../res/images/currentExecs/angelina_jin.jpg"; //change photo
+import sachi from "../../res/images/currentExecs/angelina_jin.jpg"; //change photo
+import star from "../../res/images/currentExecs/angelina_jin.jpg"; //change photo
 
 import CurrentCommitteeCard from "../../components/CurrentCommitteeCard/CurrentCommitteeCard";
 import {GridColumn} from "semantic-ui-react";
@@ -77,43 +79,53 @@ class CurrentCommittee extends Component {
     // Change current executives' images, names, and positions here
     const executives = {
       exec1: {
-        pic: priya,
-        name: "Priyadarshini Saha",
+        pic: amanda,
+        name: "Amanda Bishop",
         position: "Chair"
       },
       exec2: {
-        pic: amanda,
-        name: "Amanda Bishop",
-        position: "Systems Administrator"
-      },
-      exec3: {
-        pic: angelina,
-        name: "Angelina Jin",
-        position: "BigCS Director"
-      },
-      exec4: {
-        pic: claudia,
-        name: "Claudia McComb",
-        position: "Secretary & Finance Director"
-      },
-      exec5: {
         pic: kitty,
         name: "Kitty Li",
-        position: "Director of Publicity"
+        position: "Chair"
+      },
+      exec3: {
+        pic: jaskomal,
+        name: "Jaskomal Natt",
+        position: "Secretary"
+      },
+      exec4: {
+        pic: jui,
+        name: "Jui Shah",
+        position: "Director of Outreach"
+      },
+      exec5: {
+        pic: layne,
+        name: "Layne Lim",
+        position: "Office Manager"
       },
       exec6: {
         pic: leen,
         name: "Leen Kamalmaz",
-        position: "First Year Representative"
+        position: "Systems Administrator"
       },
       exec7: {
-        pic: maryam,
-        name: "Maryam Afshar",
-        position: "Director of Outreach"
-      },
-      exec8: {
         pic: melanie,
         name: "Melanie Foltak",
+        position: "Director of Publicity"
+      },
+      exec8: {
+        pic: nina,
+        name: "Nina Tan",
+        position: "BigCster Director"
+      },
+      exec9: {
+        pic: sachi,
+        name: "Sachi Shah",
+        position: "Finance Director"
+      },
+      exec10: {
+        pic: star,
+        name: "Star Xie",
         position: "First Year Representative"
       },
     };
