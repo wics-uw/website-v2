@@ -100,7 +100,7 @@ class CurrentCommittee extends Component {
       },
       exec5: {
         pic: layne,
-        name: "Layne Lim",
+        name: "Layne Lim Ah Tock",
         position: "Office Manager"
       },
       exec6: {
