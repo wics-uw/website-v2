@@ -5,14 +5,14 @@ import currentExecStrings from "../../res/strings/currentExecStrings";
 // current committee member pictures
 import amanda from "../../res/images/currentExecs/amanda_bishop.jpg";
 import kitty from "../../res/images/currentExecs/kitty_li.jpg";
-import jaskomal from "../../res/images/currentExecs/angelina_jin.jpg"; //change photo
-import jui from "../../res/images/currentExecs/angelina_jin.jpg"; //change photo
-import layne from "../../res/images/currentExecs/angelina_jin.jpg"; //change photo
-import leen from "../../res/images/currentExecs/leen_kamalmaz.JPG";
+import jaskomal from "../../res/images/currentExecs/jaskomal_natt.png";
+import jui from "../../res/images/currentExecs/jui_shah.JPG";
+import layne from "../../res/images/currentExecs/layne_lim_ah_tock.jpeg";
+import leen from "../../res/images/currentExecs/leen_kamalmaz.jpeg";
 import melanie from "../../res/images/currentExecs/melanie_foltak.jpg";
-import nina from "../../res/images/currentExecs/angelina_jin.jpg"; //change photo
-import sachi from "../../res/images/currentExecs/angelina_jin.jpg"; //change photo
-import star from "../../res/images/currentExecs/angelina_jin.jpg"; //change photo
+import nina from "../../res/images/currentExecs/nina_tan.jpeg";
+import sachi from "../../res/images/currentExecs/sachi_shah.JPG";
+import star from "../../res/images/currentExecs/star_xie.jpg";
 
 import CurrentCommitteeCard from "../../components/CurrentCommitteeCard/CurrentCommitteeCard";
 import {GridColumn} from "semantic-ui-react";
@@ -81,12 +81,12 @@ class CurrentCommittee extends Component {
       exec1: {
         pic: amanda,
         name: "Amanda Bishop",
-        position: "Chair"
+        position: "Co-chair"
       },
       exec2: {
         pic: kitty,
         name: "Kitty Li",
-        position: "Chair"
+        position: "Co-chair"
       },
       exec3: {
         pic: jaskomal,
