@@ -57,6 +57,7 @@ function App () {
           <StyledSectionWrapper id={"get-involved"}>
             <StyledSectionText>{strings.getInvolved}</StyledSectionText>
             <LittleWics/>
+            <Carousel/>
             <BigWiCS/>
           </StyledSectionWrapper>
 
@@ -72,7 +73,6 @@ function App () {
           <StyledSectionWrapper id={"committee"}>
             <StyledSectionText>{strings.committee}</StyledSectionText>
             <CurrentCommittee/>
-            <Carousel/>
             <PastCommittee/>
           </StyledSectionWrapper>
 
