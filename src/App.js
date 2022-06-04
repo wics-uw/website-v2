@@ -7,6 +7,7 @@ import Numbers from "./sections/Numbers/Numbers";
 import {StyledBodyContainer, StyledGradientBackground, StyledSectionText, StyledSectionWrapper} from "./res/globalStyles";
 import strings from "./res/strings/strings";
 import CurrentCommittee from "./sections/CurrentCommittee/CurrentCommittee";
+import Carousel from "./sections/Carousel/Carousel";
 import PastCommittee from "./sections/PastCommittee/PastCommittee";
 import BigWiCS from './sections/BigWiCS/BigWiCS';
 import Sponsors from './sections/Sponsors/Sponsors';
@@ -71,6 +72,7 @@ function App () {
           <StyledSectionWrapper id={"committee"}>
             <StyledSectionText>{strings.committee}</StyledSectionText>
             <CurrentCommittee/>
+            <Carousel/>
             <PastCommittee/>
           </StyledSectionWrapper>
 
