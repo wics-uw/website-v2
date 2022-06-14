@@ -14,6 +14,7 @@ import Resources from './sections/Resources/Resources';
 import Contact from "./sections/Contact/Contact";
 import Structure from "./sections/Structure/Structure";
 import LittleWics from "./sections/LittleWics/LittleWics"
+import PastEvents from "./sections/PastEvents/PastEvents";
 import Footer from "./sections/Footer/Footer";
 import ReactGA from 'react-ga';
 
@@ -57,6 +58,7 @@ function App () {
             <StyledSectionText>{strings.getInvolved}</StyledSectionText>
             <LittleWics/>
             <BigWiCS/>
+            <PastEvents/>
           </StyledSectionWrapper>
 
           <StyledSectionWrapper id={"resources"}>
