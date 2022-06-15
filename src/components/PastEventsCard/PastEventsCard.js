@@ -3,11 +3,10 @@ import { Image } from "semantic-ui-react";
 import React from "react";
 
 import pic1 from "../../res/images/carousel/W20_BOT2.jpg";
-import pic2 from "../../res/images/carousel/W20_BOT.jpg";
-import pic3 from "../../res/images/carousel/Club_Fair.jpg";
-import pic4 from "../../res/images/carousel/Technovation_EOT2.jpg";
-import pic5 from "../../res/images/carousel/Technovation_EOT.jpg";
-import pic6 from "../../res/images/carousel/W22_Exec_Social.jpg";
+import pic2 from "../../res/images/carousel/Club_Fair.jpg";
+import pic3 from "../../res/images/carousel/Technovation_EOT2.jpg";
+import pic4 from "../../res/images/carousel/Technovation_EOT.jpg";
+import pic5 from "../../res/images/carousel/W22_Exec_Social.jpg";
 
 const responsive = {
   desktop: {
@@ -32,7 +31,6 @@ const images = [
   pic3,
   pic4,
   pic5,
-  pic6,
 ];
 
 const PastEventsCard = ({ deviceType }) => {
@@ -44,7 +42,7 @@ const PastEventsCard = ({ deviceType }) => {
       itemClass="image-item"
       responsive={responsive}
     >
-      {images.slice(0, 6).map(image => {
+      {images.slice(0, 5).map(image => {
         return (
           <Image
             draggable={false}
