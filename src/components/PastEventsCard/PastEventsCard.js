@@ -34,8 +34,6 @@ const images = [
   "https://images.unsplash.com/photo-1550064824-8f993041ffd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
 ];
 
-// Because this is an inframe, so the SSR mode doesn't not do well here.
-// It will work on real devices.
 const PastEventsCard = ({ deviceType }) => {
   return (
     <Carousel
@@ -49,7 +47,7 @@ const PastEventsCard = ({ deviceType }) => {
         return (
           <Image
             draggable={false}
-            style={{ width: "100%", height: "100%" }}
+            style={{ width: "100%", height: "100%", borderRadius: "10px"}}
             src={image}
           />
         );
