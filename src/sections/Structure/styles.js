@@ -42,9 +42,15 @@ export const StyledColumn = styled(Grid.Column)`
     padding: 36px !important;
     border-radius: 10px;
     height: 170px !important;
-    // calculated as (1-6/1056)/2 (must round down)
-    width: 49.7% !important;
-    margin-right: ${props => props.left ? "6px" : "0"};
+    // calculated as (1-12/1056)/2 (must round down)
+     width: 49.43% !important;
+    margin-right: ${props => props.left ? "12px" : "0"};
+    @media only screen and (max-width: 1051px) {
+      width: 49.2% !important;
+    }
+    @media only screen and (max-width: 767px) {
+      width: 48.4% !important;
+    }
     @media only screen and (max-width: 425px) {
       margin-bottom: ${props => props.left ? "16px" : "0"};
       margin-right: 0;
