@@ -9,13 +9,15 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-ga": "^3.1.2",
+    "react-multi-carousel": "^2.8.0",
     "react-resize-detector": "^5.0.7",
     "react-responsive-carousel": "^3.2.9",
     "react-scripts": "^3.4.3",
     "react-scroll": "^1.8.1",
     "responsive": "^2.0.0",
     "semantic-ui-css": "^2.4.1",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.1.1",
+    "ua-parser-js": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",

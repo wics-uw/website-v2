@@ -17,9 +17,12 @@ export const StyledImage = styled(Image)`
 
 export const StyledTermWrapper = styled.div`
   &&& {
-    margin-bottom: 32px;
+    margin-bottom: 20px;
     &:last-child {
-      margin-bottom: 0;
+      margin-bottom: -20px;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid #dfdfdf;
     }
   }
 `;
@@ -44,7 +47,7 @@ export const StyledTermText = styled.h3`
 export const StyledGrid = styled(Grid)`
   &&& {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 `;
 
