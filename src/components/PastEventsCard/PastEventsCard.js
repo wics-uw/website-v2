@@ -2,18 +2,20 @@ import Carousel from "react-multi-carousel";
 import { Image } from "semantic-ui-react";
 import React from "react";
 
-import pic1 from "../../res/images/carousel/W20_BOT2.jpg";
-import pic2 from "../../res/images/carousel/Club_Fair.jpg";
-import pic3 from "../../res/images/carousel/Technovation_EOT2.jpg";
-import pic4 from "../../res/images/carousel/Technovation_EOT.jpg";
-import pic5 from "../../res/images/carousel/W22_Exec_Social.jpg";
+import pic1 from "../../res/images/carousel/S22_EOT_Plant_Potting.JPG"
+import pic2 from "../../res/images/carousel/W20_BOT2.jpg";
+import pic3 from "../../res/images/carousel/Club_Fair.jpg";
+import pic4 from "../../res/images/carousel/Technovation_EOT2.jpg";
+import pic5 from "../../res/images/carousel/Technovation_EOT.jpg";
+import pic6 from "../../res/images/carousel/W22_Exec_Social.jpg";
 
 const elements = [
-  [pic1, "Winter 2020 Beginning of Term Event"],
-  [pic2, "WiCS Booth at the Clubs Fair"],
-  [pic3, "Technovation End of Term Celebration"],
+  [pic1, "Spring 2022 End of Term Plant Potting Event"],
+  [pic2, "Winter 2020 Beginning of Term Event"],
+  [pic3, "WiCS Booth at the Clubs Fair"],
   [pic4, "Technovation End of Term Celebration"],
-  [pic5, "Winter 2022 Exec Social"],
+  [pic5, "Technovation End of Term Celebration"],
+  [pic6, "Winter 2022 Exec Social"]
 ];
 
 const responsive = {
