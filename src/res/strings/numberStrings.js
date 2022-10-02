@@ -4,19 +4,19 @@ const numberStrings = {
      female-identifying individuals represent about:  `,
     linkName: 'Sources',
     href: 'https://cs.uwaterloo.ca/wics/resources-and-information',
-    updated: '2020',
+    updated: '2022',
     firstCard:{
-      number:'24%',
+      number:'26.4%',
       description: 'first-year students',
       approx: 'approx. 1 in 4'
     },
     secondCard:{
-      number:'24%',
+      number:'26%',
       description: 'undergrad students',
       approx: 'approx. 1 in 4'
     },
     thirdCard:{
-      number:'19%',
+      number:'22%',
       description: 'graduate students',
       approx: 'approx. 1 in 5'
     }
