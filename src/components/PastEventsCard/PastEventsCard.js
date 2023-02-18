@@ -8,6 +8,8 @@ import pic3 from "../../res/images/carousel/Club_Fair.jpg";
 import pic4 from "../../res/images/carousel/Technovation_EOT2.jpg";
 import pic5 from "../../res/images/carousel/Technovation_EOT.jpg";
 import pic6 from "../../res/images/carousel/W22_Exec_Social.jpg";
+import pic7 from "../../res/images/carousel/academicResearch.jpg"
+import pic8 from "../../res/images/carousel/cookieDec.jpg"
 
 const elements = [
   [pic1, "Spring 2022 End of Term Plant Potting Event"],
@@ -15,7 +17,9 @@ const elements = [
   [pic3, "WiCS Booth at the Clubs Fair"],
   [pic4, "Technovation End of Term Celebration"],
   [pic5, "Technovation End of Term Celebration"],
-  [pic6, "Winter 2022 Exec Social"]
+  [pic6, "Winter 2022 Exec Social"],
+  [pic7, "Fall 2022 Acamdemic Research Panel"],
+  [pic8, "Fall 2022 Cookie Decorating"]
 ];
 
 const responsive = {
