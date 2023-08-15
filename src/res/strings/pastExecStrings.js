@@ -1,17 +1,30 @@
 const pastExecStrings = {
-  title: 'Past Executives',
-  description: 'Thank you to the previous committee executives & alumnae for building the community we have today!',
-  accordionTitle: 'Past Executives',
+  title: "Past Executives",
+  description:
+    "Thank you to the previous committee executives & alumnae for building the community we have today!",
+  accordionTitle: "Past Executives",
   // ADD PAST EXECUTIVES HERE
   // Add term and all of the executives of the term in the following format:
-    // term: {
-    //    exec1: "name",
-    //    exec2: "name",
-    //    ......
-    // }
+  // term: {
+  //    exec1: "name",
+  //    exec2: "name",
+  //    ......
+  // }
   // exec1 must be the chair of the corresponding term
   // exec1a and exec2a must be the co-chairs of the corresponding term
   pastExecs: {
+    "Winter 2023": {
+      exec1a: "Amanda B.",
+      exec2a: "Kitty L.",
+      exec3: "Audrey H.",
+      exec4: "Layne L.",
+      exec5: "Veronika S.",
+      exec6: "Karneet K.",
+      exec7: "Shriya K.",
+      exec8: "Prasanna T.",
+      exec9: "Yani M.",
+      exec10: "Helena X.",
+    },
     "Fall 2022": {
       exec1a: "Priyadarshini S.",
       exec2a: "Molly X.",
@@ -136,8 +149,8 @@ const pastExecStrings = {
       exec4: "Kriti R.",
       exec5: "Sakina M.",
       exec6: "Sophia L.",
-    }
-  }
+    },
+  },
 };
 
 export default pastExecStrings;
