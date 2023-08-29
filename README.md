@@ -28,18 +28,13 @@ cd ../wics
 ```
 become_club wics
 ```
-5. In the `wics` folder, `www_backup` is the old website, `www` is the new website that is live on [wics.uwaterloo.ca](http://wics.uwaterloo.ca/), `website-v2` is the project on github. When you've ensured that all the changes are pushed onto Github and merged into the `master` branch, navigate to `website-v2`, pull all the new changes, download all dependencies, and build the project
+5. In the `wics` folder, `www_backup` is the old website, `www` is the new website that is live on [wics.uwaterloo.ca](http://wics.uwaterloo.ca/), `website-v2` is the project on github. 
+All that needs to be done for the build process is run the script `update-website.sh` once all the changes are pushed onto Github and merged with the master  
 ```
-cd website-v2
-git pull
-yarn install
-yarn build
+./update-website.sh
 ```
-6. You will see a `build` folder by running `ls`. This folder contains all the static files we want to copy into `www` folder. To copy all contents in the `build` folder into the `www` filder, run
-```
-cp -a build/. ../www
-```
-7. Navigate to the website [wics.uwaterloo.ca](http://wics.uwaterloo.ca/), all changes should be live! 
+
+6. Navigate to the website [wics.uwaterloo.ca](http://wics.uwaterloo.ca/), all changes should be live! 
 
 
 ### Development Tips
@@ -52,6 +47,10 @@ cp -a build/. ../www
 
 - Always write a descriptive commit message in the following format: `ticket#: description`
 - Write a detailed, but not overly detailed description of the feature or bug fixes when creating a PR
+
+#### Troubleshooting
+- If you run into this bug while trying to start the website `Error: error:0308010C:digital envelope routines::unsupported` try use this as a fix `export NODE_OPTIONS=--openssl-legacy-provider`
+For more info about this error, refer to the following article: https://www.freecodecamp.org/news/error-error-0308010c-digital-envelope-routines-unsupported-node-error-solved/
 
 #### Other Tips
 
