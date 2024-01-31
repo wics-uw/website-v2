@@ -5,7 +5,7 @@ import {Interested, LearnMore, MoreWrapper} from './styles';
 import wish from '../../res/images/sponsors/wish.svg';
 import zynga from '../../res/images/sponsors/zynga.svg';
 import bam from '../../res/images/sponsors/bam.svg';
-import citadel from '../../res/images/sponsors/citadel.png';
+import citadel from '../../res/images/sponsors/citadel.svg';
 import google from '../../res/images/sponsors/google.svg';
 import opentext from '../../res/images/sponsors/opentext.svg';
 import hrt from '../../res/images/sponsors/hrt.svg';
