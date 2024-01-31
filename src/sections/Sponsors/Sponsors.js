@@ -2,14 +2,15 @@ import React, {Component} from 'react';
 import SectionTitleDescription from '../../components/SectionTitleDescription/SectionTitleDescription';
 import sponsorStrings from '../../res/strings/sponsorsStrings';
 import {Interested, LearnMore, MoreWrapper} from './styles';
-import google from '../../res/images/sponsors/google.svg';
 import wish from '../../res/images/sponsors/wish.svg';
-import amazon from '../../res/images/sponsors/amazon.svg';
-import facebook from '../../res/images/sponsors/facebook.svg';
 import zynga from '../../res/images/sponsors/zynga.svg';
-import splunk from '../../res/images/sponsors/splunk.svg';
-import yelp from '../../res/images/sponsors/yelp.svg';
-import loblaws from '../../res/images/sponsors/loblaws.svg';
+import bam from '../../res/images/sponsors/bam.svg';
+import citadel from '../../res/images/sponsors/citadel.png';
+import google from '../../res/images/sponsors/google.svg';
+import opentext from '../../res/images/sponsors/opentext.svg';
+import hrt from '../../res/images/sponsors/hrt.svg';
+import meta from '../../res/images/sponsors/meta.svg';
+import scotiabank from '../../res/images/sponsors/scotiabank.svg';
 import {StyledSubSectionWrapper} from "../../res/globalStyles";
 import CustomAccordion from "../../components/CustomAccordion/CustomAccordion";
 import SponsorTierCard from "../../components/SponsorTierCard/SponsorTierCard";
@@ -48,16 +49,21 @@ class Sponsors extends Component {
     //dictionary of platinum sponsors and their pictures and links
     const platinumSponsors = {
       s1: {
-        logo: google,
-        name: "Google",
-        link: 'https://about.google/'
+        logo: scotiabank,
+        name: "Scotiabank",
+        link: 'https://www.scotiabank.com/ca/en/personal.html'
       },
       s2: {
-        logo: loblaws,
-        name: "Loblaws",
-        link: ''
+        logo: bam,
+        name: "Balyansy Asset Management",
+        link: 'https://www.bamfunds.com/'
       },
       s3: {
+        logo: citadel,
+        name: "Citadel",
+        link: 'https://www.citadel.com/'
+      },
+      s4: {
         logo: wish,
         name: "Wish",
         link: 'https://www.wish.com/careers?hide_login_modal=true'
@@ -67,83 +73,44 @@ class Sponsors extends Component {
     //dictionary of gold sponsors and their pictures and links
     const goldSponsors = {
       s1: {
-        logo: amazon,
-        name: "Amazon",
-        link: 'https://www.aboutamazon.com/'
+        logo: google,
+        name: "Google",
+        link: 'https://about.google/'
       },
       s2: {
-        logo: facebook,
-        name: "Facebook",
-        link: 'https://about.fb.com/news/'
+        logo: hrt,
+        name: "Hudson River Trading",
+        link: 'https://www.hudsonrivertrading.com/'
       },
       s3: {
-        logo: splunk,
-        name: "Splunk",
-        link: 'https://www.splunk.com/'
+        logo: opentext,
+        name: "Opentext",
+        link: 'https://www.opentext.com/'
       },
       s4: {
-        logo: yelp,
-        name: "Yelp",
-        link: 'https://www.yelp.com/about'
-      },
-      s5: {
         logo: zynga,
         name: "Zynga",
         link: 'https://www.zynga.com/'
-      }
+      },
+      s5: {
+        logo: meta,
+        name: "Meta",
+        link: 'https://about.meta.com/metaverse/'
+      },
     };
 
     //dictionary of silver sponsors and their links
     const silverSponsors = {
       s1: {
-        name: 'A Thinking Ape',
-        link: 'https://www.athinkingape.com/'
+        name: 'Avanade',
+        link: 'https://www.avanade.com/en-ca'
       },
       s2: {
-        name: 'DataDog',
-        link: ' https://www.datadoghq.com/'
-      },
-      s3: {
-        name: 'Flexport',
-        link: 'https://www.flexport.com/'
-      },
-      s4: {
-        name: 'Oracle',
-        link: 'https://www.netsuite.com/portal/home.shtml?noredirect=T'
-      },
-      s5: {
-        name: 'Shopify',
-        link: 'https://www.shopify.ca/'
-      },
-      s6: {
-        name: 'Pinterest',
-        link: 'https://newsroom.pinterest.com/en/company'
-      },
-      s7: {
-        name: 'Sumo Logic',
-        link: 'https://www.sumologic.com/'
-      },
-      s8: {
-        name: 'The Co-operators',
-        link: 'https://www.cooperators.ca/en.aspx'
-      },
-      s9: {
-        name: 'Ubisoft',
-        link: 'https://www.ubisoft.com/en-ca/?isSso=true&refreshStatus=noLoginData'
+        name: 'Microsoft',
+        link: 'https://www.microsoft.com/en-ca'
       },
     };
 
-    //dictionary of local sponsors and their links
-    const localSponsors = {
-      s1: {
-        name: 'Arctic Wolf',
-        link: 'https://arcticwolf.com/'
-      },
-      s2: {
-        name: 'Square',
-        link: 'https://squareup.com/ca/en'
-      },
-    };
 
     return (
       <StyledSubSectionWrapper>
@@ -172,9 +139,6 @@ class Sponsors extends Component {
           <SponsorLinkCard
             type={sponsorStrings.silver}
             sponsors={silverSponsors}/>
-          <SponsorLinkCard
-            type={sponsorStrings.local}
-            sponsors={localSponsors}/>
         </CustomAccordion>
 
         {/* Call to action button */}
