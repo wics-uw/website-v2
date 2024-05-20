@@ -3,18 +3,16 @@ import SectionTitleDescription from "../../components/SectionTitleDescription/Se
 import currentExecStrings from "../../res/strings/currentExecStrings";
 
 // current committee member pictures
-import Valerie from "../../res/images/w24execs/valerie.png";
-import Star from "../../res/images/w24execs/star.png";
-import Caroline from "../../res/images/w24execs/caroline.jpeg";
-import Abirami from "../../res/images/w24execs/abirami.png";
-import Hanya from "../../res/images/w24execs/hanya.png";
-import Helena from "../../res/images/w24execs/helena.png";
-import Madeline from "../../res/images/w24execs/madeline.jpeg";
-import Madison from "../../res/images/w24execs/madison.jpg";
-import Melanie from "../../res/images/w24execs/melanie.jpg";
-import Sherry from "../../res/images/w24execs/sherry.jpg";
-import Leen from "../../res/images/w24execs/leen.jpg";
-import Aarushi from "../../res/images/w24execs/aarushi.png";
+import Layne from "../../res/images/s24execs/Layne.png";
+import Dora from "../../res/images/s24execs/Dora.png";
+import Sachi from "../../res/images/s24execs/Sachi.jpeg";
+import Damilola from "../../res/images/s24execs/Dami.png";
+import Hanya from "../../res/images/s24execs/Hanya.png";
+import Jemima from "../../res/images/s24execs/Jemima.png";
+import Vanshika from "../../res/images/s24execs/Vanshika.jpeg";
+import Neelab from "../../res/images/s24execs/Neelab.jpg";
+import Shriya from "../../res/images/s24execs/Shriya.jpg";
+import Amya from "../../res/images/s24execs/Amya.jpg";
 
 import CurrentCommitteeCard from "../../components/CurrentCommitteeCard/CurrentCommitteeCard";
 import { GridColumn } from "semantic-ui-react";
@@ -83,63 +81,53 @@ class CurrentCommittee extends Component {
     // Change current executives' images, names, and positions here
     const executives = {
       exec1: {
-        pic: Valerie,
-        name: "Valerie Fernandes",
+        pic: Layne,
+        name: "Layne Lim",
         position: "Co-chair",
       },
       exec2: {
-        pic: Star,
-        name: "Star Xie",
+        pic: Dora,
+        name: "Dora Su",
         position: "Co-chair",
       },
       exec3: {
-        pic: Aarushi,
-        name: "Aarushi Jain",
+        pic: Sachi,
+        name: "Sachi Shah",
         position: "Secretary",
       },
       exec4: {
-        pic: Helena,
-        name: "Helena Xu",
+        pic: Damilola,
+        name: "Damilola Adeyemo",
         position: "Systems Administrator",
       },
       exec5: {
-        pic: Melanie,
-        name: "Melanie Foltak",
+        pic: Shriya,
+        name: "Shriya Kaistha",
         position: "Systems Administrator",
       },
       exec6: {
-        pic: Hanya,
-        name: "Hanya Sakr",
-        position: "Director of Internal Affairs",
+        pic: Amya,
+        name: " Amya Singhal",
+        position: "Director of Outreach & Internal Affairs",
       },
       exec7: {
-        pic: Leen,
-        name: "Leen Kamalmaz",
+        pic: Hanya,
+        name: "Hanya Sakr",
         position: "Director of Finance",
       },
       exec8: {
-        pic: Madison,
-        name: "Madison Mussari",
-        position: "Co-Director of Publicity",
+        pic: Jemima,
+        name: "Jemima Vijayasenan",
+        position: "Director of Publicity",
       },
       exec9: {
-        pic: Abirami,
-        name: "Abirami Karthikeyan",
-        position: "Co-Director of Publicity",
-      },
-      exec10: {
-        pic: Caroline,
-        name: "Caroline Huang",
-        position: "Director of Outreach",
-      },
-      exec11: {
-        pic: Madeline,
-        name: "Madeline Pinto",
+        pic: Vanshika,
+        name: "Vanshika Bansal",
         position: "Operations Manager",
       },
-      exec12: {
-        pic: Sherry,
-        name: "Sherry Lin",
+      exec10: {
+        pic: Neelab,
+        name: "Neelab Karimi",
         position: "First Year Representative",
       },
     };
