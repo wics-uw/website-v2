@@ -4,7 +4,7 @@ const landingStrings = {
   undergrad: "Undergraduate Committee",
   mailing: "Join the mailing list",
   learnMore: "Learn more",
-  mailingLink: 'https://lists.uwaterloo.ca/mailman/listinfo/wics-ugrad'
+  mailingLink: 'https://lists.uwaterloo.ca/mailman/listinfo/wics-undergrads'
 };
 
 export default landingStrings;
