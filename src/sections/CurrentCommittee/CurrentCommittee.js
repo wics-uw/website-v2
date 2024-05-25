@@ -3,15 +3,15 @@ import SectionTitleDescription from "../../components/SectionTitleDescription/Se
 import currentExecStrings from "../../res/strings/currentExecStrings";
 
 // current committee member pictures
-import Layne from "../../res/images/s24execs/Layne.png";
+import Layne from "../../res/images/s24execs/Layne.jpg";
 import Dora from "../../res/images/s24execs/Dora.png";
-import Sachi from "../../res/images/s24execs/Sachi.jpeg";
+import Sachi from "../../res/images/s24execs/Sachi.jpg";
 import Damilola from "../../res/images/s24execs/Dami.png";
-import Hanya from "../../res/images/s24execs/Hanya.png";
-import Jemima from "../../res/images/s24execs/Jemima.png";
-import Vanshika from "../../res/images/s24execs/Vanshika.jpeg";
+import Hanya from "../../res/images/s24execs/Hanya.jpg";
+import Jemima from "../../res/images/s24execs/Jemima.jpg";
+import Vanshika from "../../res/images/s24execs/Vanshika.jpg";
 import Neelab from "../../res/images/s24execs/Neelab.jpg";
-import Shriya from "../../res/images/s24execs/Shriya.jpg";
+import Shriya from "../../res/images/s24execs/Shriya.png";
 import Amya from "../../res/images/s24execs/Amya.jpg";
 
 import CurrentCommitteeCard from "../../components/CurrentCommitteeCard/CurrentCommitteeCard";
