@@ -12,7 +12,7 @@ const littleWiCSStrings = {
     onlineLink: "https://discord.gg/mHyPD2mXqv",
     mon: '11:30-12:30PM',
     tues: '2:30-3:30PM',
-    wed: '5-6PM',
+    wed: '5:00-6:00PM',
     thurs: '5:30-6:30PM',
     fri: '1:00-2:00PM',
   },
