@@ -10,8 +10,8 @@ import pic5 from "../../res/images/carousel/Technovation_EOT.jpg";
 import pic6 from "../../res/images/carousel/W22_Exec_Social.jpg";
 import pic7 from "../../res/images/carousel/academicResearch.jpg"
 import pic8 from "../../res/images/carousel/cookieDec.jpg"
-import pic9 from "../../res/images/carousel/S24_Potting_BOT1.jpg"
-import pic10 from "../../res/images/carousel/S24_Potting_BOT2.jpg"
+//import pic9 from "../../res/images/carousel/S24_Potting_BOT1.jpg"
+//import pic10 from "../../res/images/carousel/S24_Potting_BOT2.jpg"
 
 const elements = [
   [pic1, "Spring 2022 End of Term Plant Potting Event"],
@@ -22,8 +22,8 @@ const elements = [
   [pic6, "Winter 2022 Exec Social"],
   [pic7, "Fall 2022 Acamdemic Research Panel"],
   [pic8, "Fall 2022 Cookie Decorating"]
-  [pic9, "Spring 2024 Plant Potting BOT"]
-  [pic10, "Spring 2024 Plant Potting BOT"]
+//  [pic9, "Spring 2024 Plant Potting BOT"]
+//  [pic10, "Spring 2024 Plant Potting BOT"]
 ];
 
 const responsive = {
