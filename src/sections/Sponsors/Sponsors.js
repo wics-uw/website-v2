@@ -5,12 +5,14 @@ import {Interested, LearnMore, MoreWrapper} from './styles';
 import wish from '../../res/images/sponsors/wish.svg';
 import zynga from '../../res/images/sponsors/zynga.svg';
 import bam from '../../res/images/sponsors/bam.svg';
+import balyansy from '../../res/images/sponsors/balyasny.svg';
 import citadel from '../../res/images/sponsors/citadel.svg';
 import google from '../../res/images/sponsors/google.svg';
 import opentext from '../../res/images/sponsors/opentext.svg';
 import hrt from '../../res/images/sponsors/hrt.svg';
-import meta from '../../res/images/sponsors/meta.svg';
+import manulife from '../../res/images/sponsors/manulife.svg';
 import scotiabank from '../../res/images/sponsors/scotiabank.svg';
+import janestreet from '../../res/images/sponsors/janestreet.svg';
 import {StyledSubSectionWrapper} from "../../res/globalStyles";
 import CustomAccordion from "../../components/CustomAccordion/CustomAccordion";
 import SponsorTierCard from "../../components/SponsorTierCard/SponsorTierCard";
@@ -48,25 +50,16 @@ class Sponsors extends Component {
     const {screenWidth} = this.state;
     //dictionary of platinum sponsors and their pictures and links
     const platinumSponsors = {
+  
       s1: {
-        logo: scotiabank,
-        name: "Scotiabank",
-        link: 'https://www.scotiabank.com/ca/en/personal.html'
+        logo: manulife,
+        name: "Manulife",
+        link: 'https://www.manulife.ca/about-us.html'
       },
       s2: {
-        logo: bam,
-        name: "Balyansy Asset Management",
-        link: 'https://www.bamfunds.com/'
-      },
-      s3: {
         logo: citadel,
         name: "Citadel",
         link: 'https://www.citadel.com/'
-      },
-      s4: {
-        logo: wish,
-        name: "Wish",
-        link: 'https://www.wish.com/careers?hide_login_modal=true'
       },
     };
 
@@ -93,9 +86,14 @@ class Sponsors extends Component {
         link: 'https://www.zynga.com/'
       },
       s5: {
-        logo: meta,
-        name: "Meta",
-        link: 'https://about.meta.com/metaverse/'
+        logo: janestreet,
+        name: "Jane Street",
+        link: 'https://www.janestreet.com/'
+      },
+      s6: {
+        logo: balyansy,
+        name: "Balyansy Asset Management",
+        link: 'https://www.bamfunds.com/'
       },
     };
 
@@ -108,6 +106,14 @@ class Sponsors extends Component {
       s2: {
         name: 'Microsoft',
         link: 'https://www.microsoft.com/en-ca'
+      },
+      s3: {
+        name: 'Zynga',
+        link: 'https://www.zynga.com/',
+      },
+      s4: {
+        name: 'HOOPP',
+        link: 'https://hoopp.com/',
       },
     };
 
