@@ -14,6 +14,22 @@ import Neelab from "../../res/images/s24execs/Neelab.jpg";
 import Shriya from "../../res/images/s24execs/Shriya.png";
 import Amya from "../../res/images/s24execs/Amya.jpg";
 
+import claudia from "../../res/images/w25execs/claudia.jpg";
+import molly from "../../res/images/w25execs/molly.jpg";
+import amanda from "../../res/images/w25execs/amanda.png";
+import anne from "../../res/images/w25execs/anne.jpeg";
+import fatema from "../../res/images/w25execs/fatema.jpg";
+import iris from "../../res/images/w25execs/iris.jpeg";
+import madeline from "../../res/images/w25execs/madeline.jpg";
+import neelab from "../../res/images/w25execs/neelab.jpg";
+import ruby from "../../res/images/w25execs/ruby.jpg";
+import samantha from "../../res/images/w25execs/samantha.jpg";
+import shriya from "../../res/images/w25execs/shriya.jpg";
+import yiyan from "../../res/images/w25execs/yiyan.jpeg";
+import yuyeon from "../../res/images/w25execs/yuyeon.jpg";
+
+
+
 import CurrentCommitteeCard from "../../components/CurrentCommitteeCard/CurrentCommitteeCard";
 import { GridColumn } from "semantic-ui-react";
 import {
@@ -81,53 +97,69 @@ class CurrentCommittee extends Component {
     // Change current executives' images, names, and positions here
     const executives = {
       exec1: {
-        pic: Layne,
-        name: "Layne Lim",
+        pic: claudia,
+        name: "Claudia Mcomb",
         position: "Co-chair",
       },
       exec2: {
-        pic: Dora,
-        name: "Dora Su",
+        pic: molly,
+        name: "Molly Xu",
         position: "Co-chair",
       },
       exec3: {
-        pic: Sachi,
-        name: "Sachi Shah",
+        pic: madeline,
+        name: "Madeline Pinto",
         position: "Secretary",
       },
       exec4: {
-        pic: Damilola,
-        name: "Damilola Adeyemo",
+        pic: fatema,
+        name: "Fatema Husain",
         position: "Systems Administrator",
       },
       exec5: {
-        pic: Shriya,
-        name: "Shriya Kaistha",
+        pic: neelab,
+        name: "Neelab Karimi",
         position: "Systems Administrator",
       },
       exec6: {
-        pic: Amya,
-        name: " Amya Singhal",
-        position: "Director of Outreach & Internal Affairs",
+        pic: amanda,
+        name: "Amanda Bishop",
+        position: "Director of Outreach",
+      },
+      exec11: {
+        pic: shriya,
+        name: "Shriya Kaistha",
+        position: "Director of Internal Affairs",
       },
       exec7: {
-        pic: Hanya,
-        name: "Hanya Sakr",
+        pic: yuyeon,
+        name: "Yuyeon Kim",
         position: "Director of Finance",
       },
       exec8: {
-        pic: Jemima,
-        name: "Jemima Vijayasenan",
+        pic: yiyan,
+        name: "Yiyan Huang",
+        position: "Director of Publicity",
+      },
+      exec12: {
+        pic: anne,
+        name: "Anne Sun",
         position: "Director of Publicity",
       },
       exec9: {
-        pic: Vanshika,
-        name: "Vanshika Bansal",
+        pic: iris,
+        name: "Iris Mo",
         position: "Operations Manager",
       },
       exec10: {
-        pic: Neelab,
-        name: "Neelab Karimi",
+        pic: samantha,
+        name: "Samantha Mac ",
+        position: "First Year Representative",
+      },
+      
+      exec13: {
+        pic: ruby,
+        name: "Ruby Zhou",
         position: "First Year Representative",
       },
     };
