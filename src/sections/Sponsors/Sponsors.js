@@ -11,6 +11,9 @@ import google from '../../res/images/sponsors/google.svg';
 import opentext from '../../res/images/sponsors/opentext.svg';
 import hrt from '../../res/images/sponsors/hrt.svg';
 import manulife from '../../res/images/sponsors/manulife.svg';
+import hoopp from '../../res/images/sponsors/hoopp.svg';
+import avanade from '../../res/images/sponsors/avanade.svg';
+import microsoft from '../../res/images/sponsors/microsoft.svg';
 import scotiabank from '../../res/images/sponsors/scotiabank.svg';
 import janestreet from '../../res/images/sponsors/janestreet.svg';
 import {StyledSubSectionWrapper} from "../../res/globalStyles";
@@ -81,16 +84,11 @@ class Sponsors extends Component {
         link: 'https://www.opentext.com/'
       },
       s4: {
-        logo: zynga,
-        name: "Zynga",
-        link: 'https://www.zynga.com/'
-      },
-      s5: {
         logo: janestreet,
         name: "Jane Street",
         link: 'https://www.janestreet.com/'
       },
-      s6: {
+      s5: {
         logo: balyansy,
         name: "Balyansy Asset Management",
         link: 'https://www.bamfunds.com/'
@@ -100,20 +98,25 @@ class Sponsors extends Component {
     //dictionary of silver sponsors and their links
     const silverSponsors = {
       s1: {
+        logo: avanade,
         name: 'Avanade',
         link: 'https://www.avanade.com/en-ca'
       },
       s2: {
+        logo: microsoft,
         name: 'Microsoft',
         link: 'https://www.microsoft.com/en-ca'
       },
       s3: {
+        logo: zynga,
         name: 'Zynga',
         link: 'https://www.zynga.com/',
       },
       s4: {
+        logo: hoopp,
         name: 'HOOPP',
         link: 'https://hoopp.com/',
+        
       },
     };
 
@@ -128,6 +131,7 @@ class Sponsors extends Component {
         <SponsorTierCard
           type={sponsorStrings.platinum}
           sponsors={platinumSponsors}/>
+        
         {/*Only show gold on laptop size*/}
         {screenWidth <= 425
           ? <></>
@@ -135,18 +139,10 @@ class Sponsors extends Component {
             type={sponsorStrings.gold}
             sponsors={goldSponsors}/>}
 
-        <CustomAccordion title={sponsorStrings.accordionTitle}>
-          {/*Only show gold here on mobile size*/}
-          {screenWidth <= 425
-            ? <SponsorLinkCard
-              type={sponsorStrings.gold}
-              sponsors={goldSponsors}/>
-            : <></>}
-          <SponsorLinkCard
-            type={sponsorStrings.silver}
-            sponsors={silverSponsors}/>
-        </CustomAccordion>
+        {/* Silver sponsors moved outside of the accordion */}
+        <SponsorTierCard type={sponsorStrings.silver} sponsors={silverSponsors} />
 
+    
         {/* Call to action button */}
         <MoreWrapper>
           <Interested> {sponsorStrings.interested}</Interested>
