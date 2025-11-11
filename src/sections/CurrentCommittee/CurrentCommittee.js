@@ -3,32 +3,18 @@ import SectionTitleDescription from "../../components/SectionTitleDescription/Se
 import currentExecStrings from "../../res/strings/currentExecStrings";
 
 // current committee member pictures
-import Layne from "../../res/images/s24execs/Layne.jpg";
-import Dora from "../../res/images/s24execs/Dora.png";
-import Sachi from "../../res/images/s24execs/Sachi.jpg";
-import Damilola from "../../res/images/s24execs/Dami.png";
-import Hanya from "../../res/images/s24execs/Hanya.jpg";
-import Jemima from "../../res/images/s24execs/Jemima.jpg";
-import Vanshika from "../../res/images/s24execs/Vanshika.jpg";
-import Neelab from "../../res/images/s24execs/Neelab.jpg";
-import Shriya from "../../res/images/s24execs/Shriya.png";
-import Amya from "../../res/images/s24execs/Amya.jpg";
-
-import claudia from "../../res/images/w25execs/claudia.jpg";
-import molly from "../../res/images/w25execs/molly.jpg";
-import amanda from "../../res/images/w25execs/amanda.png";
-import anne from "../../res/images/w25execs/anne.jpeg";
-import fatema from "../../res/images/w25execs/fatema.jpg";
-import iris from "../../res/images/w25execs/iris.jpeg";
-import madeline from "../../res/images/w25execs/madeline.jpg";
-import neelab from "../../res/images/w25execs/neelab.jpg";
-import ruby from "../../res/images/w25execs/ruby.jpg";
-import samantha from "../../res/images/w25execs/samantha.jpg";
-import shriya from "../../res/images/w25execs/shriya.jpg";
 import yiyan from "../../res/images/w25execs/yiyan.jpeg";
 import yuyeon from "../../res/images/w25execs/yuyeon.jpg";
-
-
+import ale from "../../res/images/f25execs/Ale.jpg";
+import ashley from "../../res/images/f25execs/Ashley.jpg";
+import divyanshi from "../../res/images/f25execs/Divyanshi.jpg";
+import lucy from "../../res/images/f25execs/Lucy.jpg";
+import maitreyee from "../../res/images/f25execs/Maitreyee.jpg";
+import sam  from "../../res/images/f25execs/Samantha.jpg";
+import sherry from "../../res/images/f25execs/Sherry.jpg";
+import shreeya  from "../../res/images/f25execs/Shreeya.jpg";  
+import sunny from "../../res/images/f25execs/Sunny.jpg";
+import shriya from "../../res/images/w25execs/shriya.jpg";
 
 import CurrentCommitteeCard from "../../components/CurrentCommitteeCard/CurrentCommitteeCard";
 import { GridColumn } from "semantic-ui-react";
@@ -97,69 +83,70 @@ class CurrentCommittee extends Component {
     // Change current executives' images, names, and positions here
     const executives = {
       exec1: {
-        pic: claudia,
-        name: "Claudia Mcomb",
+        pic: yiyan,
+        name: "Yiyan Huang",
         position: "Co-chair",
       },
       exec2: {
-        pic: molly,
-        name: "Molly Xu",
+        pic: yuyeon,
+        name: "Yuyeon Kim",
         position: "Co-chair",
       },
       exec3: {
-        pic: madeline,
-        name: "Madeline Pinto",
+        pic: shriya,
+        name: "Shriya ",
         position: "Secretary",
       },
       exec4: {
-        pic: fatema,
-        name: "Fatema Husain",
+        pic: divyanshi,
+        name: "Divyanshi Dave",
         position: "Systems Administrator",
       },
       exec5: {
-        pic: neelab,
-        name: "Neelab Karimi",
+        pic: shreeya,
+        name: "Shreeya Santha",
         position: "Systems Administrator",
       },
       exec6: {
-        pic: amanda,
-        name: "Amanda Bishop",
-        position: "Director of Outreach",
+        pic:sam,
+        name: "Samantha Mac",
+        position: "Director of Outreach &  Internal Affairs",
       },
+      /*
       exec11: {
         pic: shriya,
         name: "Shriya Kaistha",
         position: "Director of Internal Affairs",
       },
+      */
       exec7: {
-        pic: yuyeon,
-        name: "Yuyeon Kim",
+        pic: sherry,
+        name: "Sherry Lin",
         position: "Director of Finance",
       },
       exec8: {
-        pic: yiyan,
-        name: "Yiyan Huang",
+        pic: lucy,
+        name: "Lucy Qi",
         position: "Director of Publicity",
       },
       exec12: {
-        pic: anne,
-        name: "Anne Sun",
+        pic: ale,
+        name: "Sasha Boruk",
         position: "Director of Publicity",
       },
       exec9: {
-        pic: iris,
-        name: "Iris Mo",
+        pic: ashley,
+        name: "Ashley Ge",
         position: "Operations Manager",
       },
       exec10: {
-        pic: samantha,
-        name: "Samantha Mac ",
+        pic: sunny,
+        name: "Sunny Wu",
         position: "First Year Representative",
       },
-      
       exec13: {
-        pic: ruby,
-        name: "Ruby Zhou",
+        pic: maitreyee,
+        name: "Maitreyee Gangal",
         position: "First Year Representative",
       },
     };

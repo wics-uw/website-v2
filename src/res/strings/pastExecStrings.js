@@ -13,7 +13,43 @@ const pastExecStrings = {
   // exec1 must be the chair of the corresponding term
   // exec1a and exec2a must be the co-chairs of the corresponding term
   pastExecs: {
-
+    "Spring 2025": {
+      exec1a: "Helena X.",
+      exec2a: "Jemima V.",
+      exec3: "Lia M.",
+      exec4: "Iris M.",
+      exec5: "Ruby Z.",
+      exec6: "Layne L.",
+      exec7: "Karen W.",
+      exec8: "Shreeya S.",
+      exec9: "Vijeta L.",
+    }, 
+    "Winter 2025" : {
+      exec1a: "Claudia M.",
+      exec2a: "Molly X.",
+      exec3: "Iris M.",
+      exec4: "Fatema H.",
+      exec5: "Anne S.",
+      exec6: "Madeline P.",
+      exec7: "Amanda B.",
+      exec8: "Neelab K.",
+      exec9: "Yuyeon K.",
+      exec10: "Yiyan H.",
+      exec11: "Shriya K.",
+      exec12: "Samantha M.",
+      exec13: "Ruby Z.",
+    }, 
+    "Fall 2024" : {
+      exec1a: "Veronika S.",
+      exec2a: "Shriya K.",
+      exec3: "Neelab K.", 
+      exec4: "Jemima V.",
+      exec5: "Gloria W.",
+      exec6: "Yiyan H.", 
+      exec7: "Amanda B.", 
+      exec8: "Helena X.", 
+      exec9: "Yuyeon K.", 
+    }, 
     "Spring 2024": {
       exec1a: "Layne L.",
       exec2a: "Dora S.",
@@ -26,7 +62,6 @@ const pastExecStrings = {
       exec9: "Neelab K.",
       exec10: "Vanshika B.", 
       },
-
     "Winter 2024": {
       exec1a: "Star X.",
       exec2a: "Valerie F.",
